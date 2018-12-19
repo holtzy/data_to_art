@@ -69,27 +69,40 @@ body {
 .item {
   width: 400px;
   float: left;
+  margin-bottom: 30px;
 }
 
 .item img {
   display: block;
   width: 100%;
-  opacity: .9;
+  opacity: .4;
   border: solid;
   border-color: black;
 }
 
 .item img:hover {
-  opacity: .1;
+  opacity: 1;
 }
 </style>
 
 
 
 <div id="container"></div>
+
+<div style="color: white; background-color: black; position: fixed; top: 50%; right: 50%; text-align: center; border: solid; border-color: white; border-radius: 6px; padding: 80px">
+  <h1>from Data to Art</h1>
+  <p>Welcome mate</p>
+  <div style="display: inline">
+    <span>Artists</span>
+    <span>Expo</span>
+    <span>About</span>
+</div>
+
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://unpkg.com/masonry-layout@3/dist/masonry.pkgd.js'></script>
 <script src='https://unpkg.com/imagesloaded@3/imagesloaded.pkgd.js'></script>
+
+
 <script>
 $( function() {
 
@@ -100,8 +113,6 @@ $( function() {
 
   $(function() {
     var $items = getItems();
-    // hide by default
-    //$items.hide();
     // append to container
     $container.append( $items );
     $items.imagesLoaded().progress( function( imgLoad, image ) {
@@ -127,7 +138,7 @@ function getItem() {
   var height = randomInt( 150, 250 );
   var item = '<div class="item">'+
     '<img src="https://lorempixel.com/' +
-      width + '/' + height + '/nightlife" /></div>';
+      width + '/' + height + '/nature" /></div>';
   return item;
 }
 
@@ -149,49 +160,6 @@ function getItems() {
 
 
 
-
-
-<!-- ======================= FOOTER SECTION ================================ -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <span class="copyright">Copyright &copy; The Como project 2018</span>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/R_Graph_Gallery">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/holtzy">
-                  <i class="fa fa-github"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/yan-holtz-2477534a/">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-inline quicklinks">
-              <li class="list-inline-item">
-                <a href="#">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Terms of Use</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-<!-- ======================================================================= -->
 
 
 
