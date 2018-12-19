@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Mortality and mental disorders</title>
+  <title>From Data to Art</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="A review on mental disorders">
   <meta name="keywords" content="Mental, Disorders, Schizoprenia">
@@ -33,9 +33,10 @@
   <script src="js/d3.v4.min.js"></script>
   <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 
+
 </head>
 
-<body id="page-top">
+<body id="page-top" style="background-color: black">
 
 
 
@@ -49,30 +50,96 @@
 
 
 
-<!-- =======================  LANDING SECTION ======================= -->
-<header>
- <div style="background-color: #b8b8b8; height: 100vh">
-   <div class="container">
-     <div class="outer">
-       <div class="middle">
-         <div class="inner" align="center">
-           <h1>The Content</h1>
-           <p>Once upon a midnigh</p>
-           <center><div id="viz_heatmap"></div></center>
-           <center><div id="my_dataviz"></div></center>
-           <center><div id="my_dataviz2"></div></center>
-           <center><div id="my_dataviz3"></div></center>
-         </div>
-       </div>
-     </div>
-    </div>
-  </div>
-</header>
 
 
 
 
 
+<style>
+body {
+  font-family: sans-serif;
+}
+
+#container {
+  background: black;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.item {
+  width: 400px;
+  float: left;
+}
+
+.item img {
+  display: block;
+  width: 100%;
+  opacity: .9;
+  border: solid;
+  border-color: black;
+}
+
+.item img:hover {
+  opacity: .1;
+}
+</style>
+
+
+
+<div id="container"></div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://unpkg.com/masonry-layout@3/dist/masonry.pkgd.js'></script>
+<script src='https://unpkg.com/imagesloaded@3/imagesloaded.pkgd.js'></script>
+<script>
+$( function() {
+
+  var $container = $('#container').masonry({
+    itemSelector: '.item',
+    columnWidth: 400
+  });
+
+  $(function() {
+    var $items = getItems();
+    // hide by default
+    //$items.hide();
+    // append to container
+    $container.append( $items );
+    $items.imagesLoaded().progress( function( imgLoad, image ) {
+      // get item
+      // image is imagesLoaded class, not <img>
+      // <img> is image.img
+      var $item = $( image.img ).parents('.item');
+      // un-hide item
+      $item.show();
+      // masonry does its thing
+      $container.masonry( 'appended', $item );
+    });
+  });
+
+});
+
+function randomInt( min, max ) {
+  return Math.floor( Math.random() * max + min );
+}
+
+function getItem() {
+  var width = randomInt( 150, 400 );
+  var height = randomInt( 150, 250 );
+  var item = '<div class="item">'+
+    '<img src="https://lorempixel.com/' +
+      width + '/' + height + '/nightlife" /></div>';
+  return item;
+}
+
+function getItems() {
+  var items = '';
+  for ( var i=0; i < 25; i++ ) {
+    items += getItem();
+  }
+  // return jQuery object
+  return $( items );
+}
+</script>
 
 
 
@@ -131,50 +198,21 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ======================== JAVASCRIPT SECTION =========================== -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="LIB/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JQUERY -->
-    <script src="LIB/jquery-easing/jquery.easing.min.js"></script>
-    <script src="LIB/jquery/jquery.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
-    <!-- General objects needed -->
-    <script src="js/general.js"></script>
 
-    <!-- DATA -->
-    <script src="DATA/LYL.js"></script>
-    <script src="DATA/MRR.js"></script>
-    <script src="DATA/MRRage.js"></script>
-
-    <!-- Charts -->
-    <script src="js/heatmap.js"></script>
-    <!-- <script src="js/stackedBar.js"></script>
-    <script src="js/lollipop.js"></script>
-    <script src="js/line.js"></script> -->
 
 
 <!-- ======================================================================= -->
-  </body>
+
+</body>
 
 
 
