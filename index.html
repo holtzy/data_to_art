@@ -2,8 +2,19 @@
 <html lang="en">
 
 <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135918098-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-135918098-1');
+  </script>
+
   <meta charset="utf-8">
-  <title>From Data to Art</title>
+  <title>Mortality and mental disorders</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="A review on mental disorders">
   <meta name="keywords" content="Mental, Disorders, Schizoprenia">
@@ -29,14 +40,22 @@
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- D3.JS -->
-  <script src="js/d3.v4.min.js"></script>
-  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <!-- JQUERY -->
+  <script src="LIB/jquery/jquery.min.js"></script>
+  <script src="LIB/jquery-easing/jquery.easing.min.js"></script>
+
+	<!-- Load Css provided with masonry example -->
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+  <!-- Found with masonry example -->
+	<script src="js/modernizr.custom.js"></script>
 
 
 </head>
 
-<body id="page-top" style="background-color: black">
+<body id="page-top">
 
 
 
@@ -44,117 +63,172 @@
 
 
 
+<!-- =======================  NAVIGATION ======================= -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a href="index.html">
+      DATA TO ART
+    </a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#intro">Artist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#mortality">Exposition</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#causality">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#lyl">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" href="#method">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- ======================= IMAGES ================================ -->
+
+<section>
+  <div class="container">
+  	<ul class="grid effect-1" id="grid">
+  		<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+  		<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+  		<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+  		<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+  		<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+  		<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+  		<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+  		<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+  		<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+  		<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+  		<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+  		<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+  		<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+  		<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+  		<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+  		<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+  		<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+  		<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+  		<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+  		<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+  		<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+  		<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+  		<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+  		<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+  		<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+  		<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+  		<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+  		<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+  		<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+  		<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+  		<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+  		<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+  		<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+  		<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+  		<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+  		<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+  		<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+  		<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+  		<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+  		<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+  		<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+  		<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+  		<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+  		<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+  		<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+  		<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+  		<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+  		<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+  		<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+  		<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+  		<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+  		<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+  		<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+  		<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+  		<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+  		<li><a href="http://drbl.in/fQdt"><img src="images/12.png"></a></li>
+  		<li><a href="http://drbl.in/fHaa"><img src="images/13.png"></a></li>
+  		<li><a href="http://drbl.in/gXMo"><img src="images/10.png"></a></li>
+  		<li><a href="http://drbl.in/gXMn"><img src="images/11.png"></a></li>
+  		<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+  		<li><a href="http://drbl.in/fARU"><img src="images/14.png"></a></li>
+  		<li><a href="http://drbl.in/fWMM"><img src="images/1.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWMT"><img src="images/4.jpg"></a></li>
+  		<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+  		<li><a href="http://drbl.in/fKCf"><img src="images/6.jpg"></a></li>
+  		<li><a href="http://drbl.in/fLBG"><img src="images/7.jpg"></a></li>
+  		<li><a href="http://drbl.in/fPEY"><img src="images/8.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWwG"><img src="images/9.jpg"></a></li>
+  		<li><a href="http://drbl.in/fWPV"><img src="images/3.jpg"></a></li>
+  		<li><a href="http://drbl.in/fGhI"><img src="images/5.jpg"></a></li>
+  		<li><a href="http://drbl.in/fzYo"><img src="images/2.jpg"></a></li>
+  	</ul>
+  </div>
+</section>
 
 
 
 
 
+<!-- ======================= FOOTER SECTION ================================ -->
+    <footer class="bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; The Como project 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.nbepi.com">
+                  <i class="fa fa-home"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-
-
-
-
-<style>
-body {
-  font-family: sans-serif;
-}
-
-#container {
-  background: black;
-  max-width: 100vw;
-  max-height: 100vh;
-}
-
-.item {
-  width: 400px;
-  float: left;
-  margin-bottom: 30px;
-}
-
-.item img {
-  display: block;
-  width: 100%;
-  opacity: .4;
-  border: solid;
-  border-color: black;
-}
-
-.item img:hover {
-  opacity: 1;
-}
-</style>
-
-
-
-<div id="container"></div>
-
-<div style="color: white; background-color: black; position: fixed; top: 50%; right: 50%; text-align: center; border: solid; border-color: white; border-radius: 6px; padding: 80px">
-  <h1>from Data to Art</h1>
-  <p>Welcome mate</p>
-  <div style="display: inline">
-    <span>Artists</span>
-    <span>Expo</span>
-    <span>About</span>
-</div>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://unpkg.com/masonry-layout@3/dist/masonry.pkgd.js'></script>
-<script src='https://unpkg.com/imagesloaded@3/imagesloaded.pkgd.js'></script>
-
-
-<script>
-$( function() {
-
-  var $container = $('#container').masonry({
-    itemSelector: '.item',
-    columnWidth: 400
-  });
-
-  $(function() {
-    var $items = getItems();
-    // append to container
-    $container.append( $items );
-    $items.imagesLoaded().progress( function( imgLoad, image ) {
-      // get item
-      // image is imagesLoaded class, not <img>
-      // <img> is image.img
-      var $item = $( image.img ).parents('.item');
-      // un-hide item
-      $item.show();
-      // masonry does its thing
-      $container.masonry( 'appended', $item );
-    });
-  });
-
-});
-
-function randomInt( min, max ) {
-  return Math.floor( Math.random() * max + min );
-}
-
-function getItem() {
-  var width = randomInt( 150, 400 );
-  var height = randomInt( 150, 250 );
-  var item = '<div class="item">'+
-    '<img src="https://lorempixel.com/' +
-      width + '/' + height + '/nature" /></div>';
-  return item;
-}
-
-function getItems() {
-  var items = '';
-  for ( var i=0; i < 25; i++ ) {
-    items += getItem();
-  }
-  // return jQuery object
-  return $( items );
-}
-</script>
-
-
-
-
+<!-- ======================================================================= -->
 
 
 
@@ -171,16 +245,24 @@ function getItems() {
     <!-- Bootstrap core JavaScript -->
     <script src="LIB/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
-
-
+    <!-- Provided with Mansory example -->
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/imagesloaded.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>
 
 <!-- ======================================================================= -->
-
-</body>
+  </body>
 
 
 

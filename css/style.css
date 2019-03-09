@@ -9,15 +9,15 @@ p {
 }
 
 a {
-  color: #69b3a2;
+  color: #ED3A3B;
 }
 
 a:hover {
-  color: #251667;
+  color: #ED3A3B;
 }
 
 .text-primary {
-  color: #69b3a2 !important;
+  color: #ED3A3B !important;
 }
 
 h1,
@@ -28,6 +28,16 @@ h5,
 h6 {
   font-weight: 10;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 35px
+}
+h2 {
+  font-size: 15px;
+  font-family: SFMono-Regular,Menlo;
+  color: #e83e8c;
+
 }
 
 section {
@@ -68,10 +78,104 @@ u {
 
 
 
+
+/* ---------- NAVBAR ----------------- */
+
+
+#mainNav {
+  background-color: white;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #ED3A3B;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Color of 'from data to viz' on the top left */
+#mainNav .navbar-brand {
+  color: #ED3A3B;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #251667;
+}
+
+/* Color of the TEXT of the menu top right*/
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: black;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #ED3A3B;
+  background-color: white;
+  border-bottom: 3px solid #ED3A3B;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: white;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+
+
+
+
+
+/* ---------- Select button dropdown ----------------- */
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+   background-image: url(...);   /* add custom arrow */
+   border: none;
+}
+
+
+
+
+
 /* ---------- BUTTON ----------------- */
 .btn {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
+  box-shadow: none !important;
 }
 
 .btn-xl {
@@ -81,51 +185,51 @@ u {
 
 .btn-primary {
   background-color: transparent;
-  border-color: #69b3a2;
-  color: #69b3a2;
+  border-color: #ED3A3B;
+  color: #ED3A3B;
   border-width: medium;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #69b3a2 !important;
-  border-color: #69b3a2 !important;
+  background-color: #ED3A3B !important;
+  border-color: #ED3A3B !important;
   color: white;
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0rem rgba(254, 209, 55, 0) !important;
 }
 
 .btn-secondary {
   background-color: transparent;
-  border-color: #69b3a2;
-  color: #69b3a2;
+  border-color: #ED3A3B;
+  color: #ED3A3B;
   border-width: small;
 }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #69b3a2 !important;
-  border-color: #69b3a2 !important;
+  background-color: #ED3A3B !important;
+  border-color: #ED3A3B !important;
   color: white;
 }
 
 .btn-secondary:active, .btn-secondary:focus {
-  background-color: #69b3a2 !important;
+  background-color: #ED3A3B !important;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active {
-  background-color: #69b3a2 !important;
-  border-color: #69b3a2 !important;
+  background-color: #ED3A3B !important;
+  border-color: #ED3A3B !important;
   color: white;
 }
 
 ::-moz-selection {
-  background: #69b3a2;
+  background: #ED3A3B;
   text-shadow: none;
 }
 
 ::selection {
-  background: #69b3a2;
+  background: #ED3A3B;
   text-shadow: none;
 }
 
@@ -178,6 +282,204 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 
 
+/* ---------- FORMAT INTRODUCTION ----------------- */
+.masthead {
+  text-align: center;
+  color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* ---------- WRITE TEXT IN SEVERAL COLUMNS ----------------- */
+.threeColumns{
+    -webkit-column-gap: 36px;
+       -moz-column-gap: 36px;
+            column-gap: 36px;
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+}
+@media (max-width: 974px) {
+  .threeColumns {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+}
+@media (max-width: 764px) {
+  .threeColumns {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
+}
+
+
+
+/* -------------------- TOOLTIP ------------------ */
+
+.tooltip {
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: left;
+  color: white;
+}
+
+.dark{
+  filter: brightness(0.1)
+}
+
+
+
+
+/* -------------------- MODAL ------------------ */
+
+/* width of modal: different following the device: small (100%), medium(50%), large(30%); */
+.portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+@media (min-width: 1000px) {
+  .portfolio-modal .modal-dialog {
+    max-width: 100vw;
+  }
+}
+@media (min-width: 1800px) {
+  .portfolio-modal .modal-dialog {
+    max-width: 100vw;
+  }
+}
+
+.portfolio-modal .modal-content {
+  padding: 10px 0;
+}
+
+.portfolio-modal .modal-content h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.portfolio-modal .modal-content p {
+  margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 30px;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+  margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content button {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* -------------------- MODAL DATA DOWNLOAD------------------ */
+
+/* width of modal: different following the device: small (100%), medium(50%), large(30%); */
+/* #dataDownload.portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 50vw;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+#dataDownload @media (min-width: 1000px) {
+  .portfolio-modal .modal-dialog {
+    max-width: 50vw;
+  }
+}
+#dataDownload @media (min-width: 1800px) {
+  .portfolio-modal .modal-dialog {
+    max-width: 50vw;
+  }
+}
+#dataDownload .portfolio-modal .modal-content {
+  padding: 10px 0;
+} */
+
+
+
+
+
+
+
+
+
+
+/* -------------------- CLOSING MODAL ------------------ */
+
+
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+
+.portfolio-modal .close-modal .lr {
+  /* Safari and Chrome */
+  z-index: 1051;
+  width: 1px;
+  height: 75px;
+  margin-left: 35px;
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #212529;
+}
+
+.portfolio-modal .close-modal .lr .rl {
+  /* Safari and Chrome */
+  z-index: 1052;
+  width: 1px;
+  height: 75px;
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #212529;
+}
+
+
+
+
+
+
 
 
 
@@ -201,4 +503,65 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   margin-left: auto;
   margin-right: auto;
   width: 800px;
+}
+
+
+
+
+
+/* ---------- CUSTOM STYLE FOR THIS PROJECT ----------------- */
+
+.maleStyle{
+  color: #1E8F89;
+  cursor: pointer;
+}
+.femaleStyle{
+  color: #EE5A45;
+  cursor: pointer;
+}
+.persoBtn{
+  border: solid;
+  border-color: #ED3A3B;
+  border-width: 0.7px;
+  border-radius: 3px;
+  padding: 3px;
+  color: black;
+  cursor: pointer;
+  background-color: rgba(237,58,59,0.1);
+}
+
+
+
+
+
+/* ---------- BIG LETTER START PARAGRAPH ----------------- */
+
+.drop-cap::first-letter {
+  -webkit-initial-letter: 2;
+          initial-letter: 2;
+  margin-right: .7em;
+}
+
+
+
+
+/* ---------- CSS MULTI LOLLIPOP ----------------- */
+
+circle.highlightLollipop{
+  opacity: 1 !important;
+  fill: red !important;
+}
+text.highlightLollipop{
+  opacity: 1 !important;
+  fill: red !important;
+  font-size: 14px !important;
+}
+line.highlightLollipop{
+  opacity: 1 !important;
+  fill: red !important;
+  stroke: red !important;
+}
+
+.hideLollipop{
+  opacity: 0.2 !important;
 }

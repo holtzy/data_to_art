@@ -1,0 +1,309 @@
+"dx2" "cod_label" "sex" "cases" "LYL"
+"Organic Disorders" "Infectious Diseases" "Females" 294 0.0397996505658644
+"Organic Disorders" "Infectious Diseases" "Males" 198 0.116661248726576
+"Organic Disorders" "Neoplasms" "Females" 4678 -0.277281950558391
+"Organic Disorders" "Neoplasms" "Males" 4311 -0.713843080992647
+"Organic Disorders" "Diabetes Mellitus" "Females" 1037 0.10878949242454
+"Organic Disorders" "Diabetes Mellitus" "Males" 1010 0.29424717914443
+"Organic Disorders" "Dis. Circulatory System" "Females" 24207 1.83432154757149
+"Organic Disorders" "Dis. Circulatory System" "Males" 15866 2.0106939384218
+"Organic Disorders" "Respiratory Diseases" "Females" 5120 0.477612431999592
+"Organic Disorders" "Respiratory Diseases" "Males" 4206 0.554864822696999
+"Organic Disorders" "Digestive Diseases" "Females" 1569 0.110826535657617
+"Organic Disorders" "Digestive Diseases" "Males" 1011 0.189466677908889
+"Organic Disorders" "Alcohol Misuse" "Females" 466 0.338724891979417
+"Organic Disorders" "Alcohol Misuse" "Males" 1083 0.989554908535509
+"Organic Disorders" "Suicide" "Females" 171 0.105677954762896
+"Organic Disorders" "Suicide" "Males" 283 0.201381910981468
+"Organic Disorders" "Accidents" "Females" 1684 0.279543622597679
+"Organic Disorders" "Accidents" "Males" 1354 0.529181550271555
+"Organic Disorders" "Homicide" "Females" 9 0.00664990635355472
+"Organic Disorders" "Homicide" "Males" 9 0.00788120453523715
+"Organic Disorders" "Other Causes" "Females" 12910 2.17026637920133
+"Organic Disorders" "Other Causes" "Males" 8668 2.60103060524616
+"Organic Disorders" "Natural Causes" "Females" 50281 4.80305897884146
+"Organic Disorders" "Natural Causes" "Males" 36353 6.04267629968773
+"Organic Disorders" "Unnatural Causes" "Females" 1864 0.39187148371413
+"Organic Disorders" "Unnatural Causes" "Males" 1646 0.73844466578826
+"Organic Disorders" "All Causes" "Females" 52145 5.19493046118749
+"Organic Disorders" "All Causes" "Males" 37999 6.78112094446324
+"Substance Use" "Infectious Diseases" "Females" 140 0.152276946337054
+"Substance Use" "Infectious Diseases" "Males" 297 0.215040392992809
+"Substance Use" "Neoplasms" "Females" 4133 0.324797697975755
+"Substance Use" "Neoplasms" "Males" 6330 -0.296474864222503
+"Substance Use" "Diabetes Mellitus" "Females" 367 0.152609799600489
+"Substance Use" "Diabetes Mellitus" "Males" 770 0.217991895282205
+"Substance Use" "Dis. Circulatory System" "Females" 4199 0.369120856084296
+"Substance Use" "Dis. Circulatory System" "Males" 6248 -0.251221929626856
+"Substance Use" "Respiratory Diseases" "Females" 2760 1.68071053138415
+"Substance Use" "Respiratory Diseases" "Males" 3023 0.852705228561415
+"Substance Use" "Digestive Diseases" "Females" 968 0.696199347880641
+"Substance Use" "Digestive Diseases" "Males" 1393 0.731390035204513
+"Substance Use" "Alcohol Misuse" "Females" 2744 3.90419365505922
+"Substance Use" "Alcohol Misuse" "Males" 6878 5.69970488922698
+"Substance Use" "Suicide" "Females" 830 1.38211159344368
+"Substance Use" "Suicide" "Males" 1867 1.81862402164389
+"Substance Use" "Accidents" "Females" 1532 2.36197933865567
+"Substance Use" "Accidents" "Males" 3403 3.44645266768574
+"Substance Use" "Homicide" "Females" 39 0.073327720307639
+"Substance Use" "Homicide" "Males" 135 0.141991633046439
+"Substance Use" "Other Causes" "Females" 3054 1.95008241583099
+"Substance Use" "Other Causes" "Males" 4729 2.09164353924465
+"Substance Use" "Natural Causes" "Females" 18365 9.2299912501526
+"Substance Use" "Natural Causes" "Males" 29668 9.26077918666321
+"Substance Use" "Unnatural Causes" "Females" 2401 3.81741865240699
+"Substance Use" "Unnatural Causes" "Males" 5405 5.40706832237607
+"Substance Use" "All Causes" "Females" 20766 13.047409901854
+"Substance Use" "All Causes" "Males" 35073 14.6678475000926
+"Schizophrenia" "Infectious Diseases" "Females" 94 0.0568946535688062
+"Schizophrenia" "Infectious Diseases" "Males" 132 0.200917932728113
+"Schizophrenia" "Neoplasms" "Females" 3085 -0.0911351617546163
+"Schizophrenia" "Neoplasms" "Males" 2204 -1.02154033691698
+"Schizophrenia" "Diabetes Mellitus" "Females" 457 0.292062614368347
+"Schizophrenia" "Diabetes Mellitus" "Males" 434 0.421248383300147
+"Schizophrenia" "Dis. Circulatory System" "Females" 5536 1.19477661093626
+"Schizophrenia" "Dis. Circulatory System" "Males" 3449 0.848865908042296
+"Schizophrenia" "Respiratory Diseases" "Females" 2385 1.40317395322049
+"Schizophrenia" "Respiratory Diseases" "Males" 1460 1.13390379368747
+"Schizophrenia" "Digestive Diseases" "Females" 683 0.321825153206475
+"Schizophrenia" "Digestive Diseases" "Males" 512 0.521825709476745
+"Schizophrenia" "Alcohol Misuse" "Females" 462 0.659188176134994
+"Schizophrenia" "Alcohol Misuse" "Males" 1001 1.46171815979418
+"Schizophrenia" "Suicide" "Females" 681 1.47326152056665
+"Schizophrenia" "Suicide" "Males" 1035 2.2688890676219
+"Schizophrenia" "Accidents" "Females" 872 1.11397551653597
+"Schizophrenia" "Accidents" "Males" 1307 2.47934674829303
+"Schizophrenia" "Homicide" "Females" 13 0.0201899496626194
+"Schizophrenia" "Homicide" "Males" 33 0.0608456066663435
+"Schizophrenia" "Other Causes" "Females" 3672 2.65276655293484
+"Schizophrenia" "Other Causes" "Males" 2847 3.51798482515792
+"Schizophrenia" "Natural Causes" "Females" 16374 6.4895525526156
+"Schizophrenia" "Natural Causes" "Males" 12039 7.0849243752699
+"Schizophrenia" "Unnatural Causes" "Females" 1566 2.60742698676523
+"Schizophrenia" "Unnatural Causes" "Males" 2375 4.80908142258128
+"Schizophrenia" "All Causes" "Females" 17940 9.09697967690723
+"Schizophrenia" "All Causes" "Males" 14414 11.8940072036611
+"Mood Disorders" "Infectious Diseases" "Females" 233 0.025292312443092
+"Mood Disorders" "Infectious Diseases" "Males" 172 0.0867883380805232
+"Mood Disorders" "Neoplasms" "Females" 8208 -0.02824757020508
+"Mood Disorders" "Neoplasms" "Males" 5063 -0.687227244388795
+"Mood Disorders" "Diabetes Mellitus" "Females" 960 0.139041027139787
+"Mood Disorders" "Diabetes Mellitus" "Males" 807 0.330890509536355
+"Mood Disorders" "Dis. Circulatory System" "Females" 14804 0.777729682585217
+"Mood Disorders" "Dis. Circulatory System" "Males" 7876 0.659570163582607
+"Mood Disorders" "Respiratory Diseases" "Females" 5758 1.00890063913202
+"Mood Disorders" "Respiratory Diseases" "Males" 3040 0.733677457197977
+"Mood Disorders" "Digestive Diseases" "Females" 1823 0.282647610586696
+"Mood Disorders" "Digestive Diseases" "Males" 880 0.279307777468729
+"Mood Disorders" "Alcohol Misuse" "Females" 1128 0.692073603401672
+"Mood Disorders" "Alcohol Misuse" "Males" 1751 1.49384090209611
+"Mood Disorders" "Suicide" "Females" 1537 1.18611076870445
+"Mood Disorders" "Suicide" "Males" 1946 2.28465580887549
+"Mood Disorders" "Accidents" "Females" 1767 0.629616858586867
+"Mood Disorders" "Accidents" "Males" 1410 1.08678128590583
+"Mood Disorders" "Homicide" "Females" 23 0.0107879504579634
+"Mood Disorders" "Homicide" "Males" 28 0.025906414768937
+"Mood Disorders" "Other Causes" "Females" 7713 1.2922457750081
+"Mood Disorders" "Other Causes" "Males" 4221 1.45853470822266
+"Mood Disorders" "Natural Causes" "Females" 40627 4.18968308009151
+"Mood Disorders" "Natural Causes" "Males" 23810 4.35538261179617
+"Mood Disorders" "Unnatural Causes" "Females" 3327 1.82651557774928
+"Mood Disorders" "Unnatural Causes" "Males" 3384 3.39734350955026
+"Mood Disorders" "All Causes" "Females" 43954 6.01619865707019
+"Mood Disorders" "All Causes" "Males" 27194 7.75272611104675
+"Neurotic Disorders" "Infectious Diseases" "Females" 177 0.0480542257432103
+"Neurotic Disorders" "Infectious Diseases" "Males" 165 0.115150763985588
+"Neurotic Disorders" "Neoplasms" "Females" 7085 0.375001960045408
+"Neurotic Disorders" "Neoplasms" "Males" 4236 -0.285781040179168
+"Neurotic Disorders" "Diabetes Mellitus" "Females" 632 0.130952316734637
+"Neurotic Disorders" "Diabetes Mellitus" "Males" 592 0.272358347140265
+"Neurotic Disorders" "Dis. Circulatory System" "Females" 7530 0.376566158333247
+"Neurotic Disorders" "Dis. Circulatory System" "Males" 4775 0.254229079291615
+"Neurotic Disorders" "Respiratory Diseases" "Females" 4153 1.30922230718617
+"Neurotic Disorders" "Respiratory Diseases" "Males" 2033 0.860513110782417
+"Neurotic Disorders" "Digestive Diseases" "Females" 1261 0.333115326737539
+"Neurotic Disorders" "Digestive Diseases" "Males" 699 0.333496345435867
+"Neurotic Disorders" "Alcohol Misuse" "Females" 1544 0.999638315777695
+"Neurotic Disorders" "Alcohol Misuse" "Males" 2243 2.04220472030028
+"Neurotic Disorders" "Suicide" "Females" 1287 0.918360120386898
+"Neurotic Disorders" "Suicide" "Males" 1844 1.97953098648937
+"Neurotic Disorders" "Accidents" "Females" 1451 0.701704728675816
+"Neurotic Disorders" "Accidents" "Males" 1650 1.41338856435545
+"Neurotic Disorders" "Homicide" "Females" 52 0.0328094527912005
+"Neurotic Disorders" "Homicide" "Males" 56 0.0519154691015399
+"Neurotic Disorders" "Other Causes" "Females" 4629 1.11552658401091
+"Neurotic Disorders" "Other Causes" "Males" 3101 1.35432173928485
+"Neurotic Disorders" "Natural Causes" "Females" 27011 4.68807719456881
+"Neurotic Disorders" "Natural Causes" "Males" 17844 4.94649306604171
+"Neurotic Disorders" "Unnatural Causes" "Females" 2790 1.65287430185391
+"Neurotic Disorders" "Unnatural Causes" "Males" 3550 3.44483501994636
+"Neurotic Disorders" "All Causes" "Females" 29801 6.34095149573984
+"Neurotic Disorders" "All Causes" "Males" 21394 8.39132807681317
+"Eating Disorders" "Infectious Diseases" "Females" NA NA
+"Eating Disorders" "Infectious Diseases" "Males" NA NA
+"Eating Disorders" "Neoplasms" "Females" 89 -0.656191723253687
+"Eating Disorders" "Neoplasms" "Males" 9 -0.573386503631623
+"Eating Disorders" "Diabetes Mellitus" "Females" 8 0.042309147982835
+"Eating Disorders" "Diabetes Mellitus" "Males" 5 0.848320885067665
+"Eating Disorders" "Dis. Circulatory System" "Females" 61 0.209585259576392
+"Eating Disorders" "Dis. Circulatory System" "Males" 8 -0.173132867193271
+"Eating Disorders" "Respiratory Diseases" "Females" 40 1.46693379646488
+"Eating Disorders" "Respiratory Diseases" "Males" 4 0.98115284593259
+"Eating Disorders" "Digestive Diseases" "Females" 25 0.820108579333905
+"Eating Disorders" "Digestive Diseases" "Males" NA NA
+"Eating Disorders" "Alcohol Misuse" "Females" 42 1.10757749131234
+"Eating Disorders" "Alcohol Misuse" "Males" 9 2.12895787365215
+"Eating Disorders" "Suicide" "Females" 83 1.28270300259745
+"Eating Disorders" "Suicide" "Males" 12 2.83109122803521
+"Eating Disorders" "Accidents" "Females" 63 0.781738792109717
+"Eating Disorders" "Accidents" "Males" 7 1.59527191202037
+"Eating Disorders" "Homicide" "Females" NA NA
+"Eating Disorders" "Homicide" "Males" NA NA
+"Eating Disorders" "Other Causes" "Females" 138 3.57249893018192
+"Eating Disorders" "Other Causes" "Males" 13 3.87853500643447
+"Eating Disorders" "Natural Causes" "Females" 406 6.6223372750635
+"Eating Disorders" "Natural Causes" "Males" 50 7.5402541505391
+"Eating Disorders" "Unnatural Causes" "Females" 148 2.08527956965583
+"Eating Disorders" "Unnatural Causes" "Males" 19 4.39478664611415
+"Eating Disorders" "All Causes" "Females" 554 8.70761684411003
+"Eating Disorders" "All Causes" "Males" 69 11.935040787953
+"Personality Disorders" "Infectious Diseases" "Females" 116 0.0703016156194156
+"Personality Disorders" "Infectious Diseases" "Males" 149 0.19100681312218
+"Personality Disorders" "Neoplasms" "Females" 4573 0.142944459741544
+"Personality Disorders" "Neoplasms" "Males" 3275 -0.490937156570219
+"Personality Disorders" "Diabetes Mellitus" "Females" 467 0.210041527400749
+"Personality Disorders" "Diabetes Mellitus" "Males" 469 0.309061653245663
+"Personality Disorders" "Dis. Circulatory System" "Females" 4886 0.514211139805352
+"Personality Disorders" "Dis. Circulatory System" "Males" 3550 0.11953831210207
+"Personality Disorders" "Respiratory Diseases" "Females" 2782 1.36712342775105
+"Personality Disorders" "Respiratory Diseases" "Males" 1625 0.938741622070826
+"Personality Disorders" "Digestive Diseases" "Females" 868 0.40724727617577
+"Personality Disorders" "Digestive Diseases" "Males" 587 0.452335745203105
+"Personality Disorders" "Alcohol Misuse" "Females" 1094 1.20520509028924
+"Personality Disorders" "Alcohol Misuse" "Males" 1876 2.54971514066562
+"Personality Disorders" "Suicide" "Females" 907 1.24519363876403
+"Personality Disorders" "Suicide" "Males" 1056 1.9520153075503
+"Personality Disorders" "Accidents" "Females" 1110 1.1049994720328
+"Personality Disorders" "Accidents" "Males" 1495 2.66826067249679
+"Personality Disorders" "Homicide" "Females" 21 0.0212238174899581
+"Personality Disorders" "Homicide" "Males" 58 0.1165590965302
+"Personality Disorders" "Other Causes" "Females" 3176 1.44323004710816
+"Personality Disorders" "Other Causes" "Males" 2382 1.74350599386882
+"Personality Disorders" "Natural Causes" "Females" 17962 5.36030458389129
+"Personality Disorders" "Natural Causes" "Males" 13913 5.81296812370807
+"Personality Disorders" "Unnatural Causes" "Females" 2038 2.37141692828679
+"Personality Disorders" "Unnatural Causes" "Males" 2609 4.73683507657729
+"Personality Disorders" "All Causes" "Females" 20000 7.73172151151967
+"Personality Disorders" "All Causes" "Males" 16522 10.5498031915615
+"Intellectual Disabilities" "Infectious Diseases" "Females" 7 0.0536000885660181
+"Intellectual Disabilities" "Infectious Diseases" "Males" 17 0.230138151042014
+"Intellectual Disabilities" "Neoplasms" "Females" 242 -0.487368761314917
+"Intellectual Disabilities" "Neoplasms" "Males" 223 -1.7462858107816
+"Intellectual Disabilities" "Diabetes Mellitus" "Females" 44 0.372484562747841
+"Intellectual Disabilities" "Diabetes Mellitus" "Males" 51 0.412948492029126
+"Intellectual Disabilities" "Dis. Circulatory System" "Females" 407 2.21642439737274
+"Intellectual Disabilities" "Dis. Circulatory System" "Males" 398 1.13116453591524
+"Intellectual Disabilities" "Respiratory Diseases" "Females" 192 1.65407892221026
+"Intellectual Disabilities" "Respiratory Diseases" "Males" 215 1.87379607357794
+"Intellectual Disabilities" "Digestive Diseases" "Females" 70 0.641514199951163
+"Intellectual Disabilities" "Digestive Diseases" "Males" 93 1.1470886709855
+"Intellectual Disabilities" "Alcohol Misuse" "Females" 18 0.10404527877066
+"Intellectual Disabilities" "Alcohol Misuse" "Males" 66 0.387092134456673
+"Intellectual Disabilities" "Suicide" "Females" 29 0.479061097857165
+"Intellectual Disabilities" "Suicide" "Males" 40 0.336310378937724
+"Intellectual Disabilities" "Accidents" "Females" 66 0.832064630785537
+"Intellectual Disabilities" "Accidents" "Males" 123 1.51532948276911
+"Intellectual Disabilities" "Homicide" "Females" NA NA
+"Intellectual Disabilities" "Homicide" "Males" NA NA
+"Intellectual Disabilities" "Other Causes" "Females" 501 7.18282804500102
+"Intellectual Disabilities" "Other Causes" "Males" 551 7.29821253641287
+"Intellectual Disabilities" "Natural Causes" "Females" 1481 11.7376067333048
+"Intellectual Disabilities" "Natural Causes" "Males" 1614 10.7341547836378
+"Intellectual Disabilities" "Unnatural Causes" "Females" 97 1.35145025284067
+"Intellectual Disabilities" "Unnatural Causes" "Males" 165 1.86576374068098
+"Intellectual Disabilities" "All Causes" "Females" 1578 13.0890569854574
+"Intellectual Disabilities" "All Causes" "Males" 1779 12.5999185153952
+"Developmental Disorders" "Infectious Diseases" "Females" NA NA
+"Developmental Disorders" "Infectious Diseases" "Males" NA NA
+"Developmental Disorders" "Neoplasms" "Females" 19 0.980881845385261
+"Developmental Disorders" "Neoplasms" "Males" 27 -2.15082082411962
+"Developmental Disorders" "Diabetes Mellitus" "Females" NA NA
+"Developmental Disorders" "Diabetes Mellitus" "Males" NA NA
+"Developmental Disorders" "Dis. Circulatory System" "Females" 15 1.56911962474082
+"Developmental Disorders" "Dis. Circulatory System" "Males" 31 -0.118237669739327
+"Developmental Disorders" "Respiratory Diseases" "Females" 10 2.03617381203835
+"Developmental Disorders" "Respiratory Diseases" "Males" 11 0.888735136697358
+"Developmental Disorders" "Digestive Diseases" "Females" 5 0.871662034155501
+"Developmental Disorders" "Digestive Diseases" "Males" 19 1.89419910818943
+"Developmental Disorders" "Alcohol Misuse" "Females" NA NA
+"Developmental Disorders" "Alcohol Misuse" "Males" 8 0.0299626701060385
+"Developmental Disorders" "Suicide" "Females" 6 0.326879388103124
+"Developmental Disorders" "Suicide" "Males" 32 0.337631050863955
+"Developmental Disorders" "Accidents" "Females" 10 1.05041399767952
+"Developmental Disorders" "Accidents" "Males" 26 -0.118444853446455
+"Developmental Disorders" "Homicide" "Females" NA NA
+"Developmental Disorders" "Homicide" "Males" NA NA
+"Developmental Disorders" "Other Causes" "Females" 31 4.3850645255884
+"Developmental Disorders" "Other Causes" "Males" 71 5.92014749682942
+"Developmental Disorders" "Natural Causes" "Females" 84 10.2366260353964
+"Developmental Disorders" "Natural Causes" "Males" 172 6.565064986995
+"Developmental Disorders" "Unnatural Causes" "Females" 16 1.35640885254794
+"Developmental Disorders" "Unnatural Causes" "Males" 60 0.234476996170569
+"Developmental Disorders" "All Causes" "Females" 100 11.5930348872821
+"Developmental Disorders" "All Causes" "Males" 232 6.79954197447957
+"Behavioral Disorders" "Infectious Diseases" "Females" 8 0.180129284020874
+"Behavioral Disorders" "Infectious Diseases" "Males" 8 0.0588321857137882
+"Behavioral Disorders" "Neoplasms" "Females" 143 0.547111429052018
+"Behavioral Disorders" "Neoplasms" "Males" 137 -0.254130578396352
+"Behavioral Disorders" "Diabetes Mellitus" "Females" 15 0.178546195163677
+"Behavioral Disorders" "Diabetes Mellitus" "Males" 26 0.163774421325394
+"Behavioral Disorders" "Dis. Circulatory System" "Females" 159 0.719986868184494
+"Behavioral Disorders" "Dis. Circulatory System" "Males" 147 0.471343606049536
+"Behavioral Disorders" "Respiratory Diseases" "Females" 79 1.67426401155683
+"Behavioral Disorders" "Respiratory Diseases" "Males" 55 0.858694661307584
+"Behavioral Disorders" "Digestive Diseases" "Females" 20 0.212386215083139
+"Behavioral Disorders" "Digestive Diseases" "Males" 37 0.729557204614752
+"Behavioral Disorders" "Alcohol Misuse" "Females" 31 0.881200684921272
+"Behavioral Disorders" "Alcohol Misuse" "Males" 83 1.76308217445347
+"Behavioral Disorders" "Suicide" "Females" 44 0.728973778043709
+"Behavioral Disorders" "Suicide" "Males" 128 1.13586470850541
+"Behavioral Disorders" "Accidents" "Females" 76 1.23324582798969
+"Behavioral Disorders" "Accidents" "Males" 267 2.21119782896331
+"Behavioral Disorders" "Homicide" "Females" NA NA
+"Behavioral Disorders" "Homicide" "Males" 12 0.094598947216317
+"Behavioral Disorders" "Other Causes" "Females" 129 1.91052052964256
+"Behavioral Disorders" "Other Causes" "Males" 211 2.50335141695169
+"Behavioral Disorders" "Natural Causes" "Females" 584 6.30414521762486
+"Behavioral Disorders" "Natural Causes" "Males" 704 6.29450509201986
+"Behavioral Disorders" "Unnatural Causes" "Females" 123 1.9725804619273
+"Behavioral Disorders" "Unnatural Causes" "Males" 407 3.44166148468504
+"Behavioral Disorders" "All Causes" "Females" 707 8.27672567890948
+"Behavioral Disorders" "All Causes" "Males" 1111 9.7361665680025
+"Any Disorder" "Infectious Diseases" "Females" 636 0.0487177791477733
+"Any Disorder" "Infectious Diseases" "Males" 634 0.135660673611602
+"Any Disorder" "Neoplasms" "Females" 19093 0.111847955465854
+"Any Disorder" "Neoplasms" "Males" 15889 -0.452646654231319
+"Any Disorder" "Diabetes Mellitus" "Females" 2425 0.15886279307265
+"Any Disorder" "Diabetes Mellitus" "Males" 2526 0.299557798594943
+"Any Disorder" "Dis. Circulatory System" "Females" 41125 1.11816033403193
+"Any Disorder" "Dis. Circulatory System" "Males" 28374 0.848333638329232
+"Any Disorder" "Respiratory Diseases" "Females" 13205 0.933144144458594
+"Any Disorder" "Respiratory Diseases" "Males" 9404 0.662446618580664
+"Any Disorder" "Digestive Diseases" "Females" 4218 0.276663073686297
+"Any Disorder" "Digestive Diseases" "Males" 3062 0.406763076610114
+"Any Disorder" "Alcohol Misuse" "Females" 3512 0.967308469736743
+"Any Disorder" "Alcohol Misuse" "Males" 8011 2.51471335987207
+"Any Disorder" "Suicide" "Females" 2449 0.733037549288196
+"Any Disorder" "Suicide" "Males" 4154 1.48839365763144
+"Any Disorder" "Accidents" "Females" 4593 0.664134020956809
+"Any Disorder" "Accidents" "Males" 5790 1.62065168065504
+"Any Disorder" "Homicide" "Females" 83 0.0217548093871293
+"Any Disorder" "Homicide" "Males" 176 0.0651280704450844
+"Any Disorder" "Other Causes" "Females" 22419 1.7347988282118
+"Any Disorder" "Other Causes" "Males" 16877 2.16376695141383
+"Any Disorder" "Natural Causes" "Females" 106633 5.34950337781163
+"Any Disorder" "Natural Causes" "Males" 84777 6.57859546278114
+"Any Disorder" "Unnatural Causes" "Females" 7125 1.41892637963213
+"Any Disorder" "Unnatural Causes" "Males" 10120 3.17417340873157
+"Any Disorder" "All Causes" "Females" 113758 6.76842977349687
+"Any Disorder" "All Causes" "Males" 94897 9.75276886857459
