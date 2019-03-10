@@ -22,7 +22,10 @@
 .grid li a,
 .grid li img {
 	outline: none;
-	border: none;
+	border: solid;
+	border-color: #C8C8C8;
+	border-width: 1px;
+	border-radius: 5px;
 	display: block;
 	max-width: 100%;
 }
