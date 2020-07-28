@@ -1,6 +1,4 @@
-Mortality and Mental disorders
+Data to Art
 ==========
 
-Article: A comprehensive analysis of mortality-related health metrics associated with treated mental disorders: a nationwide, register-based cohort study based on 6·6 million persons
-
-https://holtzy.github.io/data_to_art/
+A work in progress
