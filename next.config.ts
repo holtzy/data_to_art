@@ -3,8 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: 'export',
   images: { unoptimized: true }, // GitHub Pages can't optimize images
-  basePath: '/data_to_art/',
-  assetPrefix: '/data_to_art/',
 
   typescript: {
     ignoreBuildErrors: true,
