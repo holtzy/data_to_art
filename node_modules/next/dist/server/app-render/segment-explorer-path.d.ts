@@ -1,9 +1,0 @@
-import type { LoaderTree } from '../lib/app-dir-module';
-export declare const BUILTIN_PREFIX = "__next_builtin__";
-export declare function normalizeConventionFilePath(projectDir: string, conventionPath: string | undefined): string;
-export declare const BOUNDARY_SUFFIX = "@boundary";
-export declare function normalizeBoundaryFilename(filename: string): string;
-export declare const BOUNDARY_PREFIX = "boundary:";
-export declare function isBoundaryFile(fileType: string): boolean;
-export declare function getBoundaryOriginFileType(fileType: string): string;
-export declare function getConventionPathByType(tree: LoaderTree, dir: string, conventionType: 'layout' | 'template' | 'page' | 'not-found' | 'error' | 'loading' | 'forbidden' | 'unauthorized' | 'defaultPage'): string | undefined;

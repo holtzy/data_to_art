@@ -1,1 +1,0 @@
-export declare function computeCacheBustingSearchParam(prefetchHeader: string | string[] | undefined, segmentPrefetchHeader: string | string[] | undefined, stateTreeHeader: string | string[] | undefined, nextUrlHeader: string | string[] | undefined): string;
