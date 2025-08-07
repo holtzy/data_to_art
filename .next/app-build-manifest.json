@@ -1,3 +1,99 @@
 {
-  "pages": {}
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/app/_not-found/page-6bf75c59f6f67928.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/css/f1cedcdeef2ceeb3.css",
+      "static/chunks/app/layout-4d639d12ef20b908.js"
+    ],
+    "/artist/florent-lavergne/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/app/artist/florent-lavergne/page-23a390202750d1a6.js"
+    ],
+    "/artists/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/874-437a265a67d6cfee.js",
+      "static/chunks/app/artists/page-c3bc1936752f86df.js"
+    ],
+    "/flowfield-animated/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/app/flowfield-animated/page-677510512de1f6bd.js"
+    ],
+    "/flowfield-streamlines/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/app/flowfield-streamlines/page-8c3c9e8ad52ab6ae.js"
+    ],
+    "/flowfield-simple/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/app/flowfield-simple/page-d55cb530c482b869.js"
+    ],
+    "/flowfield/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/app/flowfield/page-a1f634859969004a.js"
+    ],
+    "/noise3d/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/app/noise3d/page-716d2d4bd19f9d32.js"
+    ],
+    "/linechart/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/app/linechart/page-09c27da662cd5987.js"
+    ],
+    "/project/nick-whiteley/vanishing-points/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/app/project/nick-whiteley/vanishing-points/page-e9275720599c4ac6.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/874-437a265a67d6cfee.js",
+      "static/chunks/app/page-eb8125a59c423384.js"
+    ],
+    "/projects/page": [
+      "static/chunks/webpack-a7c481ebacc46e30.js",
+      "static/chunks/4bd1b696-cf72ae8a39fa05aa.js",
+      "static/chunks/583-63bba09ccdf43624.js",
+      "static/chunks/main-app-f67c89090234e7d8.js",
+      "static/chunks/874-437a265a67d6cfee.js",
+      "static/chunks/app/projects/page-0f25ca1f5c81478a.js"
+    ]
+  }
 }
