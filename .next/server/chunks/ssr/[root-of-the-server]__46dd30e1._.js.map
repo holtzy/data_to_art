@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":["file:///Users/yanholtz/Desktop/data_to_art/app/page.tsx"],"sourcesContent":["\"use client\";\n\nimport Link from \"next/link\";\n\nexport default function Home() {\n  return (\n    <div>\n      <h1>Data To Art</h1>\n      <Link href=\"/artists\">Artists</Link>\n      <Link href=\"/projects\">Projects</Link>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAEA;AAFA;;;AAIe,SAAS;IACtB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC,4JAAA,CAAA,UAAI;gBAAC,MAAK;0BAAW;;;;;;0BACtB,8OAAC,4JAAA,CAAA,UAAI;gBAAC,MAAK;0BAAY;;;;;;;;;;;;AAG7B","debugId":null}}]
-}

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import * as THREE from "three";
 import Globe from "globe.gl";
 import { artistList } from "@/lib/artist-list";
 
