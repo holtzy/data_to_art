@@ -1,0 +1,30 @@
+import type { HydrationErrorState } from './shared/hydration-error';
+import type { DebugInfo } from './shared/types';
+import type { DevIndicatorServerState } from '../server/dev/dev-indicator-server-state';
+import type { VersionInfo } from '../server/dev/parse-version-info';
+import type { SegmentNodeState } from './userspace/app/segment-explorer-node';
+export interface Dispatcher {
+    onBuildOk(): void;
+    onBuildError(message: string): void;
+    onVersionInfo(versionInfo: VersionInfo): void;
+    onDebugInfo(debugInfo: DebugInfo): void;
+    onBeforeRefresh(): void;
+    onRefresh(): void;
+    onStaticIndicator(status: boolean): void;
+    onDevIndicator(devIndicator: DevIndicatorServerState): void;
+    onUnhandledError(reason: Error): void;
+    onUnhandledRejection(reason: Error): void;
+    openErrorOverlay(): void;
+    closeErrorOverlay(): void;
+    toggleErrorOverlay(): void;
+    buildingIndicatorHide(): void;
+    buildingIndicatorShow(): void;
+    renderingIndicatorHide(): void;
+    renderingIndicatorShow(): void;
+    segmentExplorerNodeAdd(nodeState: SegmentNodeState): void;
+    segmentExplorerNodeRemove(nodeState: SegmentNodeState): void;
+    segmentExplorerUpdateRouteState(page: string): void;
+}
+export declare const dispatcher: Dispatcher;
+export declare function renderAppDevOverlay(getComponentStack: (error: Error) => string | undefined, getOwnerStack: (error: Error) => string | null | undefined, isRecoverableError: (error: Error) => boolean): void;
+export declare function renderPagesDevOverlay(getComponentStack: (error: Error) => string | undefined, getOwnerStack: (error: Error) => string | null | undefined, getSquashedHydrationErrorDetails: (error: Error) => HydrationErrorState | null, isRecoverableError: (error: Error) => boolean): void;

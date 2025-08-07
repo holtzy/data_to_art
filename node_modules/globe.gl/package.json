@@ -1,0 +1,75 @@
+{
+  "name": "globe.gl",
+  "version": "2.43.0",
+  "description": "UI component for Globe Data Visualization using ThreeJS/WebGL",
+  "type": "module",
+  "unpkg": "dist/globe.gl.min.js",
+  "jsdelivr": "dist/globe.gl.min.js",
+  "main": "dist/globe.gl.mjs",
+  "module": "dist/globe.gl.mjs",
+  "types": "dist/globe.gl.d.ts",
+  "exports": {
+    "types": "./dist/globe.gl.d.ts",
+    "umd": "./dist/globe.gl.min.js",
+    "default": "./dist/globe.gl.mjs"
+  },
+  "sideEffects": [
+    "./src/*.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasturiano/globe.gl.git"
+  },
+  "keywords": [
+    "webgl",
+    "three",
+    "globe",
+    "geo",
+    "spherical",
+    "projection",
+    "orthographic"
+  ],
+  "author": {
+    "name": "Vasco Asturiano",
+    "url": "https://github.com/vasturiano"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vasturiano/globe.gl/issues"
+  },
+  "homepage": "https://github.com/vasturiano/globe.gl",
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "dev": "rollup -w -c rollup.config.dev.js",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist/**/*",
+    "example/**/*"
+  ],
+  "dependencies": {
+    "@tweenjs/tween.js": "18 - 25",
+    "accessor-fn": "1",
+    "kapsule": "^1.16",
+    "three": ">=0.154 <1",
+    "three-globe": "^2.44",
+    "three-render-objects": "^1.40"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "postcss": "^8.5.6",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.46.2",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}

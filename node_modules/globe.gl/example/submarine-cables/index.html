@@ -1,0 +1,38 @@
+<head>
+  <style> body { margin: 0; } </style>
+
+  <script src="//cdn.jsdelivr.net/npm/globe.gl"></script>
+  <!--<script src="../../dist/globe.gl.js"></script>-->
+</head>
+
+<body>
+<div id="globeViz"></div>
+
+  <script>
+    const globe = new Globe(document.getElementById('globeViz'))
+      .globeImageUrl('//cdn.jsdelivr.net/npm/three-globe/example/img/earth-dark.jpg')
+      .bumpImageUrl('//cdn.jsdelivr.net/npm/three-globe/example/img/earth-topology.png')
+      .backgroundImageUrl('//cdn.jsdelivr.net/npm/three-globe/example/img/night-sky.png');
+
+    // from https://www.submarinecablemap.com
+    fetch('//http-proxy.vastur.com?url=https://www.submarinecablemap.com/api/v3/cable/cable-geo.json')
+      .then(r => r.json())
+      .then(cablesGeo => {
+        let cablePaths = [];
+        cablesGeo.features.forEach(({ geometry, properties }) => {
+          geometry.coordinates.forEach(coords => cablePaths.push({ coords, properties }));
+        });
+
+        globe
+          .pathsData(cablePaths)
+          .pathPoints('coords')
+          .pathPointLat(p => p[1])
+          .pathPointLng(p => p[0])
+          .pathColor(path => path.properties.color)
+          .pathLabel(path => path.properties.name)
+          .pathDashLength(0.1)
+          .pathDashGap(0.008)
+          .pathDashAnimateTime(12000);
+      });
+  </script>
+</body>

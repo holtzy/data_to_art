@@ -1,0 +1,37 @@
+<head>
+  <script src="//cdn.jsdelivr.net/npm/data-bind-mapper"></script>
+<!--  <script src="../dist/data-bind-mapper.js"></script>-->
+</head>
+<body>
+  <script>
+    const myView = new Set();
+    const myDataMapper = new DataBindMapper();
+
+    myDataMapper
+      .id('id')
+      .onCreateObj(d => {
+        console.log('createObj', d);
+
+        const obj = {};
+        myView.add(obj);
+        return obj;
+      })
+      .onRemoveObj(obj => {
+        myView.delete(obj);
+        obj.double = 0;
+
+        console.log('removeObj', obj);
+      })
+      .onUpdateObj((obj, d) => {
+        obj.double = d.val * 2;
+
+        console.log('updateObj', obj, d);
+      });
+
+    myDataMapper
+      .digest([{ id: 0, val: 2 }, { id: 1, val: 4 }, { id: 2, val: 7 }])
+      .digest([{ id: 1, val: 4 }, { id: 2, val: 3 }, { id: 3, val: 9 }]);
+
+    console.log('final data', [...myView]);
+  </script>
+</body>

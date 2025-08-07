@@ -1,0 +1,67 @@
+{
+  "name": "data-bind-mapper",
+  "version": "1.0.3",
+  "description": "Bind data arrays to any type of JS objects",
+  "type": "module",
+  "jsdelivr": "dist/data-bind-mapper.min.js",
+  "unpkg": "dist/data-bind-mapper.min.js",
+  "main": "dist/data-bind-mapper.mjs",
+  "module": "dist/data-bind-mapper.mjs",
+  "types": "dist/data-bind-mapper.d.ts",
+  "exports": {
+    "types": "./dist/data-bind-mapper.d.ts",
+    "umd": "./dist/data-bind-mapper.min.js",
+    "default": "./dist/data-bind-mapper.mjs"
+  },
+  "sideEffects": false,
+  "homepage": "https://github.com/vasturiano/data-bind-mapper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasturiano/data-bind-mapper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vasturiano/data-bind-mapper/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "data",
+    "array",
+    "binder",
+    "mapper",
+    "join",
+    "digest",
+    "performance"
+  ],
+  "author": {
+    "name": "Vasco Asturiano",
+    "url": "https://github.com/vasturiano"
+  },
+  "files": [
+    "src/**/*",
+    "dist/**/*",
+    "example/**/*"
+  ],
+  "scripts": {
+    "build": "rimraf dist && rollup -c",
+    "dev": "rollup -w -c",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "accessor-fn": "1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.34.8",
+    "rollup-plugin-dts": "^6.1.1",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
