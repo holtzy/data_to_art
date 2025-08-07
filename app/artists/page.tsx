@@ -13,6 +13,7 @@ export default function Page() {
   return (
     <>
       <div className="flex flex-wrap gap-2">
+        <p>yoooo</p>
         {artistList.map((a, i) => {
           return (
             <Link
