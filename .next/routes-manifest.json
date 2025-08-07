@@ -1,0 +1,127 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "/data_to_art",
+  "redirects": [
+    {
+      "source": "/data_to_art/",
+      "destination": "/data_to_art",
+      "basePath": false,
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^/data_to_art/$"
+    },
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/artist/florent-lavergne",
+      "regex": "^/artist/florent\\-lavergne(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/artist/florent\\-lavergne(?:/)?$"
+    },
+    {
+      "page": "/artists",
+      "regex": "^/artists(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/artists(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/flowfield",
+      "regex": "^/flowfield(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/flowfield(?:/)?$"
+    },
+    {
+      "page": "/flowfield-animated",
+      "regex": "^/flowfield\\-animated(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/flowfield\\-animated(?:/)?$"
+    },
+    {
+      "page": "/flowfield-simple",
+      "regex": "^/flowfield\\-simple(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/flowfield\\-simple(?:/)?$"
+    },
+    {
+      "page": "/flowfield-streamlines",
+      "regex": "^/flowfield\\-streamlines(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/flowfield\\-streamlines(?:/)?$"
+    },
+    {
+      "page": "/linechart",
+      "regex": "^/linechart(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/linechart(?:/)?$"
+    },
+    {
+      "page": "/noise3d",
+      "regex": "^/noise3d(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/noise3d(?:/)?$"
+    },
+    {
+      "page": "/project/nick-whiteley/vanishing-points",
+      "regex": "^/project/nick\\-whiteley/vanishing\\-points(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/project/nick\\-whiteley/vanishing\\-points(?:/)?$"
+    },
+    {
+      "page": "/projects",
+      "regex": "^/projects(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/projects(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
