@@ -2,6 +2,7 @@
 
 import FiveImgsGallery from "@/components/FiveImgsGallery";
 import Parallax from "@/components/Parallax";
+import { ProjectHero } from "@/components/ProjectHero";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
@@ -12,74 +13,23 @@ const PROJECT = "naturality";
 
 export default function Page() {
   const projectInfo = projectList.find((p) => p.folder === PROJECT);
-
   if (!projectInfo) return null;
-
-  const { name, artist, date, descriptionShort } = projectInfo;
-
-  const artistInfo = artistList.find((a) => a.folder === artist);
+  const artistInfo = artistList.find((a) => a.folder === projectInfo.artist);
+  if (!artistInfo) {
+    return null;
+  }
 
   const images = [
     "01-thumb.webp",
     "02-thumb.webp",
     "03-thumb.webp",
-    "04-thumb.webp",
+    "01-thumb.webp",
     "05-thumb.webp",
   ];
 
   return (
     <>
-      <section className="min-h-screen flex flex-col lg:flex-row gap-8 p-8 max-w-[900px] mx-auto">
-        {/* Left column */}
-        <div className="lg:w-1/2 flex flex-col justify-center items-end">
-          <h1 className="text-4xl font-bold mb-4">{name}</h1>
-          <p className="text-md text-gray-600 mb-6 text-right">
-            {descriptionShort}
-          </p>
-
-          <div className="flex gap-2">
-            <span>A project by </span>
-            <Link href="" className="underline">
-              {artistInfo?.name}
-            </Link>
-            <Avatar>
-              <AvatarImage src={`/artist/${artist}.webp`} />
-              <AvatarFallback>{artistInfo?.name}</AvatarFallback>
-            </Avatar>
-          </div>
-          <p className="mb-6">
-            Published on <span>{formatDate(date)}</span>
-          </p>
-        </div>
-
-        {/* Right column - Masonry style */}
-        <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-          <div className="space-y-4 pt-8">
-            {images
-              .filter((_, i) => i % 2 === 0)
-              .map((img, i) => (
-                <img
-                  key={i}
-                  src={`/project/${artist}/${PROJECT}/${img}`}
-                  alt=""
-                  className="w-full object-cover rounded-lg"
-                />
-              ))}
-          </div>
-          <div className="space-y-4">
-            {images
-              .filter((_, i) => i % 2 !== 0)
-              .map((img, i) => (
-                <img
-                  key={i}
-                  src={`/project/${artist}/${PROJECT}/${img}`}
-                  alt=""
-                  className="w-full object-cover rounded-lg"
-                />
-              ))}
-          </div>
-        </div>
-      </section>
+      <ProjectHero artist={artistInfo} project={projectInfo} images={images} />
 
       <div className="wrapper">
         <p>
