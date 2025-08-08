@@ -11,6 +11,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import ArtistHero from "@/components/ArtistHero";
 
 export default function Page() {
   const infos = artistList.find((a) => a.folder === "florent-lavergne");
@@ -23,46 +24,12 @@ export default function Page() {
 
   return (
     <>
-      <section
-        className="relative h-[80vh] w-full bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('/project/florent-lavergne/naturality/01-full.webp')",
-        }}
-      >
-        {/* Optional overlay */}
-        <div className="absolute inset-0 bg-white/80" />
-
-        {/* Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center  px-4">
-          <img
-            src={"/artist/" + folder + ".webp"}
-            className="rounded-full w-40 h-40"
-          />
-          <h1>{name}</h1>
-
-          <p>A french visual practionner with a taste for this and that.</p>
-
-          <div className="flex gap-2">
-            {homepageLink && (
-              <Link
-                className={cn(buttonVariants({ size: "sm" }))}
-                href={homepageLink}
-              >
-                Homepage
-              </Link>
-            )}
-            {linkedinLink && (
-              <Link
-                className={cn(buttonVariants({ size: "sm" }))}
-                href={linkedinLink}
-              >
-                LinkedIn
-              </Link>
-            )}
-          </div>
-        </div>
-      </section>
+      <ArtistHero
+        name={name}
+        folder={folder}
+        homepageLink={homepageLink}
+        linkedinLink={linkedinLink}
+      />
 
       <div className="relative wrapper py-52">
         <h2>Bio</h2>
