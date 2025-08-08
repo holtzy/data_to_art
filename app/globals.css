@@ -120,3 +120,72 @@
     @apply bg-background text-foreground;
   }
 }
+
+/*
+Implement the typography from Shadcn UI
+https://ui.shadcn.com/docs/components/typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-bricolage);
+}
+h1 {
+  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+}
+h2 {
+  @apply mt-32 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
+}
+h3 {
+  @apply mt-12 scroll-m-20 text-2xl font-semibold tracking-tight transition-colors first:mt-0;
+}
+p {
+  @apply leading-7 [&:not(:first-child)]:mt-6;
+}
+
+.text-xs p {
+  @apply leading-5 [&:not(:first-child)]:mt-3;
+}
+
+ul {
+  @apply my-6 ml-6 list-disc [&>li]:mt-2;
+}
+a {
+  @apply font-medium underline underline-offset-4;
+}
+a.no-underline {
+  @apply no-underline;
+}
+blockquote {
+  @apply mt-6 border-l-2 pl-6 italic;
+}
+
+/* ---------- PAGE LAYOUT ----------------- */
+/* Inspired from https://www.joshwcomeau.com/css/full-bleed/ */
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(560px, 100%)
+    1fr;
+}
+.wrapper > * {
+  grid-column: 2;
+}
+.full-bleed {
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  grid-column: 1 / 4;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+.no-decoration:hover {
+  text-decoration: none;
+}

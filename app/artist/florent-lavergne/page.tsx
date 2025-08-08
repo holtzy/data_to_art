@@ -1,3 +1,72 @@
+import { Button, buttonVariants } from "@/components/ui/button";
+import { artistList } from "@/lib/artist-list";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+
 export default function Page() {
-  return <p>Hi I'm Florent!!!!!</p>;
+  const infos = artistList.find((a) => a.folder === "florent-lavergne");
+
+  if (!infos) {
+    return null;
+  }
+
+  const { name, folder, homepageLink, linkedinLink } = infos;
+
+  return (
+    <div className="wrapper">
+      <h1>{name}</h1>
+
+      <img
+        src={"/artist/" + folder + ".webp"}
+        className="rounded-full w-40 h-40"
+      />
+
+      <div className="flex gap-2">
+        {homepageLink && (
+          <Link className={cn(buttonVariants())} href={homepageLink}>
+            Homepage
+          </Link>
+        )}
+        {linkedinLink && (
+          <Link className={cn(buttonVariants())} href={linkedinLink}>
+            LinkedIn
+          </Link>
+        )}
+      </div>
+
+      <h2>Bio</h2>
+      <div className="">
+        <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+          Florent is an information designer focused on geospatial and
+          environmental data, working with Microsoft's AI For Good Lab.
+        </p>
+        <p>
+          He loves exploring the intersection of data and art, and turning
+          complex and difficult topics into inviting visual experiences. I use
+          3D tools and photo editing techniques to achieve the natural textures
+          and color palettes that define my graphic identity.
+        </p>
+      </div>
+
+      <section className="full-bleed my-8">
+        <div className="h-[400px] bg-fixed bg-center bg-cover bg-[url('/project/florent-lavergne/wet-feet/04-full.webp')]">
+          <div className="h-full flex items-center justify-center bg-black/0">
+            <h1 className="text-5xl text-white font-bold">Parallax Effect</h1>
+          </div>
+        </div>
+      </section>
+
+      <h2>Projects</h2>
+
+      <h2>Exhibition</h2>
+      <p>There is no exhibition planned for this artist yet.</p>
+
+      <section className="full-bleed bg-slate-50 my-20 py-20">
+        <div className="wrapper">
+          <h2>Know an artist?</h2>
+          <p>Contact us!</p>
+        </div>
+      </section>
+    </div>
+  );
 }
