@@ -105,7 +105,7 @@ export default function Page() {
             .filter((p) => p.artist === folder)
             .map((p, i) => {
               return (
-                <Link key={i} href={`/project/${p.folder}`}>
+                <Link key={i} href={`/artist/${folder}/${p.folder}`}>
                   <div className="flex flex-col gap-2">
                     <img src={`/project/${folder}/${p.folder}/01-thumb.webp`} />
                     <span>{p.name}</span>

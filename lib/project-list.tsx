@@ -25,7 +25,12 @@ export const projectList: Project[] = [
     date: new Date("2025-08-06"), // Year, Month, Day (6th of August)
     descriptionShort: (
       <>
-        <p>A deep dive into the world of naturality</p>
+        <p>
+          What if nature could tell us where it thrives — and where it’s fading
+          away? This map reveals the hidden gradient of naturality across
+          France, inviting you to explore the unseen impact of humans on
+          ecosystems.
+        </p>
       </>
     ),
     descriptionLong: (
