@@ -25,7 +25,7 @@ export const projectList: Project[] = [
     date: new Date("2025-08-06"), // Year, Month, Day (6th of August)
     descriptionShort: (
       <>
-        <p></p>
+        <p>A deep dive into the world of naturality</p>
       </>
     ),
     descriptionLong: (

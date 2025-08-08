@@ -22,23 +22,22 @@ const Navbar = () => {
 
           {/* RIGHT: Buttons */}
           <div className="flex space-x-2 items-center">
-            <a href="https://discord.gg/rJSRamzwmV" target="_blank">
-              <img
-                src="/asset/discord-logo.webp"
-                alt="discord logo"
-                width={30}
-                height={30}
-                className="transition ease-in-out duration-300 hover:brightness-150"
-              />
-            </a>
-
             <Link
-              href="/login"
+              href="/artists"
               className={
-                buttonVariants({ variant: "outline" }) + " " + "no-decoration"
+                buttonVariants({ variant: "ghost" }) + " " + "no-decoration"
               }
             >
-              Login
+              Artists
+            </Link>
+
+            <Link
+              href="/projects"
+              className={
+                buttonVariants({ variant: "ghost" }) + " " + "no-decoration"
+              }
+            >
+              Projects
             </Link>
           </div>
         </div>

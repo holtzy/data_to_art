@@ -1,5 +1,6 @@
 import { Button, buttonVariants } from "@/components/ui/button";
 import { artistList } from "@/lib/artist-list";
+import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -14,21 +15,29 @@ export default function Page() {
 
   return (
     <div className="wrapper py-52">
-      <h1>{name}</h1>
-
       <img
         src={"/artist/" + folder + ".webp"}
         className="rounded-full w-40 h-40"
       />
 
+      <h1>{name}</h1>
+
+      <p>A french visual practionner with a taste for this and that.</p>
+
       <div className="flex gap-2">
         {homepageLink && (
-          <Link className={cn(buttonVariants())} href={homepageLink}>
+          <Link
+            className={cn(buttonVariants({ size: "sm" }))}
+            href={homepageLink}
+          >
             Homepage
           </Link>
         )}
         {linkedinLink && (
-          <Link className={cn(buttonVariants())} href={linkedinLink}>
+          <Link
+            className={cn(buttonVariants({ size: "sm" }))}
+            href={linkedinLink}
+          >
             LinkedIn
           </Link>
         )}
@@ -56,7 +65,39 @@ export default function Page() {
         </div>
       </section>
 
+      <div className="">
+        <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+          Florent is an information designer focused on geospatial and
+          environmental data, working with Microsoft's AI For Good Lab.
+        </p>
+        <p>
+          He loves exploring the intersection of data and art, and turning
+          complex and difficult topics into inviting visual experiences. I use
+          3D tools and photo editing techniques to achieve the natural textures
+          and color palettes that define my graphic identity.
+        </p>
+      </div>
+
+      <h2>Gallery</h2>
+
       <h2>Projects</h2>
+      <div className="flex gap-2">
+        {projectList
+          .filter((p) => p.artist === folder)
+          .map((p, i) => {
+            return (
+              <Link key={i} href={`/project/${p.folder}`}>
+                <div className="flex flex-col gap-2">
+                  <img src={`/project/${folder}/${p.folder}/01-thumb.webp`} />
+                  <span>{p.name}</span>
+                  <div className="text-xs text-slate-500 !no-underline">
+                    {p.descriptionShort}
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+      </div>
 
       <h2>Exhibition</h2>
       <p>There is no exhibition planned for this artist yet.</p>
