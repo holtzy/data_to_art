@@ -1,5 +1,7 @@
 "use client";
 
+import FiveImgsGallery from "@/components/FiveImgsGallery";
+import Parallax from "@/components/Parallax";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
@@ -88,6 +90,11 @@ export default function Page() {
           the Gradient of Naturality across mainland France.
         </p>
 
+        <Parallax
+          text="hello"
+          imageUrl="/project/florent-lavergne/naturality/04-full.webp"
+        />
+
         <p>
           Developed in collaboration with IUCN France, this map uses a grid of
           colored hexagons to represent the "naturality" — a measure of how much
@@ -103,6 +110,21 @@ export default function Page() {
           hexagons, each analyzed to reflect average naturality and other
           environmental factors.
         </p>
+
+        <div className="full-bleed ">
+          <div className="max-w-[900px] mx-auto">
+            <FiveImgsGallery
+              images={[
+                "/project/florent-lavergne/naturality/01-full.webp",
+                "/project/florent-lavergne/naturality/02-full.webp",
+                "/project/florent-lavergne/naturality/03-full.webp",
+                "/project/florent-lavergne/naturality/04-full.webp",
+                "/project/florent-lavergne/naturality/05-full.webp",
+              ]}
+              height={400}
+            />
+          </div>
+        </div>
 
         <p>
           But the story doesn’t stop with numbers. Using Blender’s powerful 3D

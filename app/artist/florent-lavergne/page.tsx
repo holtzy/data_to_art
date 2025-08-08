@@ -12,6 +12,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ArtistHero from "@/components/ArtistHero";
+import Parallax from "@/components/Parallax";
 
 export default function Page() {
   const infos = artistList.find((a) => a.folder === "florent-lavergne");
@@ -46,13 +47,10 @@ export default function Page() {
           </p>
         </div>
 
-        <section className="full-bleed my-8">
-          <div className="h-[400px] bg-fixed bg-center bg-cover bg-[url('/project/florent-lavergne/wet-feet/04-full.webp')]">
-            <div className="h-full flex items-center justify-center bg-black/0">
-              <h1 className="text-5xl text-white font-bold">Parallax Effect</h1>
-            </div>
-          </div>
-        </section>
+        <Parallax
+          text="hello"
+          imageUrl="/project/florent-lavergne/wet-feet/04-full.webp"
+        />
 
         <div className="">
           <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
