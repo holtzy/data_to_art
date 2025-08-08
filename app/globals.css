@@ -161,7 +161,9 @@ a.no-underline {
 blockquote {
   @apply mt-6 border-l-2 pl-6 italic;
 }
-
+.drop-cap {
+  @apply first-letter:float-left first-letter:text-7xl first-letter:pr-4 first-letter:pt-2;
+}
 /* ---------- PAGE LAYOUT ----------------- */
 /* Inspired from https://www.joshwcomeau.com/css/full-bleed/ */
 .wrapper {

@@ -36,7 +36,7 @@ export default function Page() {
       />
 
       <div className="wrapper">
-        <p>
+        <p className="drop-cap">
           How does nature survive alongside human civilization? It’s a question
           easier asked than answered. While we can see the visible scars of
           human activity — cities, roads, farms — the subtle ways ecosystems
@@ -57,7 +57,7 @@ export default function Page() {
           balance, tension, and survival.
         </p>
 
-        <p>
+        <p className="drop-cap">
           The data behind the map comes from a careful combination of sources:
           ecological statistics, population density, and terrain elevation.
           Using GIS software, these layers were combined into a grid of 8 km²
