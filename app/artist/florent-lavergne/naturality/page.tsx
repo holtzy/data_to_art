@@ -3,7 +3,6 @@
 import FiveImgsGallery from "@/components/FiveImgsGallery";
 import Parallax from "@/components/Parallax";
 import { ProjectHero } from "@/components/ProjectHero";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { formatDate } from "@/lib/utils";
@@ -29,7 +28,12 @@ export default function Page() {
 
   return (
     <>
-      <ProjectHero artist={artistInfo} project={projectInfo} images={images} />
+      <ProjectHero
+        artist={artistInfo}
+        project={projectInfo}
+        images={images}
+        marginTopRightColumn={82}
+      />
 
       <div className="wrapper">
         <p>
