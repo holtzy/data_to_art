@@ -13,7 +13,7 @@ export default function Page() {
   const { name, folder, homepageLink, linkedinLink } = infos;
 
   return (
-    <div className="wrapper">
+    <div className="wrapper py-52">
       <h1>{name}</h1>
 
       <img
