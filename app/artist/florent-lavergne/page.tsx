@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import ArtistHero from "@/components/ArtistHero";
 import Parallax from "@/components/Parallax";
+import { Spacing } from "@/components/Spacing";
 
 export default function Page() {
   const infos = artistList.find((a) => a.folder === "florent-lavergne");
@@ -21,26 +22,20 @@ export default function Page() {
     return null;
   }
 
-  const { name, folder, homepageLink, linkedinLink } = infos;
+  const { folder } = infos;
 
   return (
     <>
-      <ArtistHero
-        name={name}
-        folder={folder}
-        homepageLink={homepageLink}
-        linkedinLink={linkedinLink}
-      />
+      <ArtistHero artist={infos} />
 
-      <div className="relative wrapper py-52">
-        <h2>Bio</h2>
+      <Spacing />
+
+      <div className="relative wrapper">
         <div className="">
-          <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+          <p className="drop-cap">
             Florent is an information designer focused on geospatial and
-            environmental data, working with Microsoft's AI For Good Lab.
-          </p>
-          <p>
-            He loves exploring the intersection of data and art, and turning
+            environmental data, working with Microsoft's AI For Good Lab. He
+            loves exploring the intersection of data and art, and turning
             complex and difficult topics into inviting visual experiences. I use
             3D tools and photo editing techniques to achieve the natural
             textures and color palettes that define my graphic identity.
@@ -48,7 +43,7 @@ export default function Page() {
         </div>
 
         <Parallax
-          text="hello"
+          text=""
           imageUrl="/project/florent-lavergne/wet-feet/04-full.webp"
         />
 

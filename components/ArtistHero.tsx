@@ -2,23 +2,18 @@
 
 import { useState } from "react";
 import { buttonVariants } from "./ui/button";
+import { Artist } from "@/lib/artist-list";
 
 type ArtistHeroProps = {
-  folder: string;
-  name: string;
-  homepageLink: string;
-  linkedinLink: string;
+  artist: Artist;
 };
 
-export default function ArtistHero({
-  folder,
-  name,
-  homepageLink,
-  linkedinLink,
-}: ArtistHeroProps) {
-  const [spotlight, setSpotlight] = useState({ x: 0, y: 0 });
+const RADIUS = 30;
 
-  const RADIUS = 100; // circle radius in px
+export default function ArtistHero({ artist }: ArtistHeroProps) {
+  const { folder, name, homepageLink, linkedinLink, descriptionShort } = artist;
+
+  const [spotlight, setSpotlight] = useState({ x: -100, y: -100 }); // start off-screen
 
   return (
     <section
@@ -33,6 +28,9 @@ export default function ArtistHero({
           x: e.clientX - rect.left,
           y: e.clientY - rect.top,
         });
+      }}
+      onMouseLeave={() => {
+        setSpotlight({ x: -100, y: -100 });
       }}
     >
       {/* White overlay with a circular hole */}
@@ -52,17 +50,6 @@ export default function ArtistHero({
         }}
       />
 
-      {/* Grey border for the hole */}
-      <div
-        className="absolute pointer-events-none rounded-full border border-gray-400"
-        style={{
-          width: `${RADIUS * 2}px`,
-          height: `${RADIUS * 2}px`,
-          left: `${spotlight.x - RADIUS}px`,
-          top: `${spotlight.y - RADIUS}px`,
-        }}
-      />
-
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <img
@@ -70,16 +57,23 @@ export default function ArtistHero({
           className="rounded-full w-40 h-40"
         />
         <h1>{name}</h1>
-        <p>A french visual practionner with a taste for this and that.</p>
 
-        <div className="flex gap-2">
+        <p className="text-center max-w-96">{descriptionShort}</p>
+
+        <div className="mt-8 flex gap-2">
           {homepageLink && (
-            <a className={buttonVariants()} href={homepageLink}>
+            <a
+              className={buttonVariants({ variant: "outline" })}
+              href={homepageLink}
+            >
               Homepage
             </a>
           )}
           {linkedinLink && (
-            <a className={buttonVariants()} href={linkedinLink}>
+            <a
+              className={buttonVariants({ variant: "outline" })}
+              href={linkedinLink}
+            >
               LinkedIn
             </a>
           )}
