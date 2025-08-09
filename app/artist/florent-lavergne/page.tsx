@@ -30,15 +30,13 @@ export default function Page() {
 
       <Spacing />
 
-      <div className="relative wrapper">
-        <div className="">
+      <div className="relative wrapper max-w-6xl mx-auto px-4">
+        <div className="mb-12">
           <p className="drop-cap">
-            Florent is an information designer focused on geospatial and
-            environmental data, working with Microsoft's AI For Good Lab. He
-            loves exploring the intersection of data and art, and turning
-            complex and difficult topics into inviting visual experiences. I use
-            3D tools and photo editing techniques to achieve the natural
-            textures and color palettes that define my graphic identity.
+            Florent Lavergne is an information designer specializing in
+            geospatial and environmental data. At Microsoft’s AI For Good Lab,
+            he creates innovative visual narratives that make complex scientific
+            and social topics accessible and engaging to diverse audiences.
           </p>
         </div>
 
@@ -47,77 +45,92 @@ export default function Page() {
           imageUrl="/project/florent-lavergne/wet-feet/04-full.webp"
         />
 
-        <div className="">
+        <div className="my-12">
           <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
-            Florent is an information designer focused on geospatial and
-            environmental data, working with Microsoft's AI For Good Lab.
+            Deeply passionate about the intersection of data and art, Florent
+            transforms raw information into immersive visual experiences. Using
+            advanced 3D tools and photo editing techniques, he crafts natural
+            textures and harmonious color palettes that define a unique graphic
+            identity.
           </p>
-          <p>
-            He loves exploring the intersection of data and art, and turning
-            complex and difficult topics into inviting visual experiences. I use
-            3D tools and photo editing techniques to achieve the natural
-            textures and color palettes that define my graphic identity.
+          <p className="mt-4">
+            His work reflects a commitment to illuminating environmental
+            challenges and human stories, bridging science, policy, and society
+            with clarity and beauty. Florent’s designs invite viewers not only
+            to understand data but to feel it — inspiring curiosity, empathy,
+            and action.
+          </p>
+          <p className="mt-4">
+            With years of experience blending technical precision and creative
+            expression, he pushes the boundaries of information design to create
+            artworks that are both scientifically rigorous and visually
+            captivating.
           </p>
         </div>
 
-        <h2>Gallery</h2>
-        <div className="full-bleed flex justify-center">
-          <Carousel
-            opts={{
-              align: "start",
-            }}
-            className="w-[90%]"
-          >
+        <h2 className="mb-6">Gallery</h2>
+        <div className="full-bleed flex justify-center mb-12">
+          <Carousel opts={{ align: "start" }} className="w-[90%]">
             <CarouselContent>
-              <CarouselItem className="md:basis-1/2 lg:basis-1/5">
-                <img src={`/project/florent-lavergne/wet-feet/04-full.webp`} />
-              </CarouselItem>
-
-              <CarouselItem className="md:basis-1/2 lg:basis-1/5">
-                <img src={`/project/florent-lavergne/wet-feet/02-full.webp`} />
-              </CarouselItem>
-
-              <CarouselItem className="md:basis-1/2 lg:basis-1/5">
-                <img
-                  src={`/project/florent-lavergne/naturality/01-full.webp`}
-                />
-              </CarouselItem>
-
-              <CarouselItem className="md:basis-1/2 lg:basis-1/5">
-                <img src={`/project/florent-lavergne/wet-feet/03-full.webp`} />
-              </CarouselItem>
+              {[
+                "wet-feet/04-thumb.webp",
+                "wet-feet/02-thumb.webp",
+                "naturality/01-thumb.webp",
+                "wet-feet/03-thumb.webp",
+                "other/02-thumb.webp",
+                "other/03-thumb.webp",
+                "other/01-thumb.webp",
+                "other/04-thumb.webp",
+                "other/05-thumb.webp",
+                "other/06-thumb.webp",
+              ].map((img, i) => (
+                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/4">
+                  <img
+                    src={`/project/florent-lavergne/${img}`}
+                    alt={`Florent Lavergne artwork ${i + 1}`}
+                  />
+                </CarouselItem>
+              ))}
             </CarouselContent>
             <CarouselPrevious />
             <CarouselNext />
           </Carousel>
         </div>
 
-        <h2>Projects</h2>
-        <div className="flex gap-2">
+        <h2 className="mb-6">Projects</h2>
+        <div className="flex flex-wrap gap-6 mb-12">
           {projectList
             .filter((p) => p.artist === folder)
-            .map((p, i) => {
-              return (
-                <Link key={i} href={`/artist/${folder}/${p.folder}`}>
-                  <div className="flex flex-col gap-2">
-                    <img src={`/project/${folder}/${p.folder}/01-thumb.webp`} />
-                    <span>{p.name}</span>
-                    <div className="text-xs text-slate-500 !no-underline">
-                      {p.descriptionShort}
-                    </div>
+            .map((p, i) => (
+              <Link
+                key={i}
+                href={`/artist/${folder}/${p.folder}`}
+                className="w-full sm:w-1/2 lg:w-1/4 cursor-pointer group"
+              >
+                <div className="flex flex-col gap-2">
+                  <img
+                    src={`/project/${folder}/${p.folder}/01-thumb.webp`}
+                    alt={`${p.name} project thumbnail`}
+                    className="rounded-md transition-transform group-hover:scale-105"
+                  />
+                  <span className="font-semibold text-lg">{p.name}</span>
+                  <div className="text-xs text-slate-500">
+                    {p.descriptionShort}
                   </div>
-                </Link>
-              );
-            })}
+                </div>
+              </Link>
+            ))}
         </div>
 
-        <h2>Exhibition</h2>
-        <p>There is no exhibition planned for this artist yet.</p>
+        <h2 className="mb-4">Exhibition</h2>
+        <p className="mb-12">
+          No exhibitions are planned for this artist at the moment.
+        </p>
 
-        <section className="full-bleed bg-slate-50 my-20 py-20">
-          <div className="wrapper">
-            <h2>Know an artist?</h2>
-            <p>Contact us!</p>
+        <section className="full-bleed bg-slate-50 py-20">
+          <div className="wrapper max-w-3xl mx-auto text-center">
+            <h2 className="mb-4">Know an artist?</h2>
+            <p className="mb-0">Contact us to feature them here!</p>
           </div>
         </section>
       </div>
