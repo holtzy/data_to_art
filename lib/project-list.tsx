@@ -8,7 +8,6 @@ export type Project = {
   artist: (typeof artistList)[number]["folder"]; // must be one of the artist in the artistList object!
   date: Date;
   descriptionShort: ReactNode;
-  descriptionLong: ReactNode;
 };
 
 export const projectList: Project[] = [
@@ -20,9 +19,9 @@ export const projectList: Project[] = [
   {
     name: "Naturality",
     folder: "naturality",
-    link: "https:",
+    link: "https://www.behance.net/gallery/223921953/The-Gradient-of-Naturality-France",
     artist: "florent-lavergne",
-    date: new Date("2025-08-06"), // Year, Month, Day (6th of August)
+    date: new Date("2021-08-02"),
     descriptionShort: (
       <>
         <p>
@@ -33,26 +32,19 @@ export const projectList: Project[] = [
         </p>
       </>
     ),
-    descriptionLong: (
-      <>
-        <p>k</p>
-      </>
-    ),
   },
   {
     name: "Wet Feet",
     folder: "wet-feet",
-    link: "https:",
+    link: "https://www.behance.net/gallery/124067143/Wet-Feet-Data-Visualization",
     artist: "florent-lavergne",
-    date: new Date("2025-08-06"), // Year, Month, Day (6th of August)
+    date: new Date("2025-08-06"),
     descriptionShort: (
       <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
-      <>
-        <p>k</p>
+        <p>
+          A data-driven visualization of coastal flood risk today and in 2100,
+          under two greenhouse gas emission scenarios.
+        </p>
       </>
     ),
   },
@@ -68,11 +60,6 @@ export const projectList: Project[] = [
     artist: "jeremy-wanner",
     date: new Date("2025-08-06"),
     descriptionShort: (
-      <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
       <>
         <p>
           The Glove Rose is a new species of Rose, created using Olympic boxing
@@ -106,11 +93,6 @@ export const projectList: Project[] = [
     date: new Date("2025-08-06"),
     descriptionShort: (
       <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
-      <>
         <p>Write description from totem digital age</p>
       </>
     ),
@@ -135,11 +117,6 @@ export const projectList: Project[] = [
         </p>
       </>
     ),
-    descriptionLong: (
-      <>
-        <p>Write description from totem digital age</p>
-      </>
-    ),
   },
 
   ////////
@@ -161,14 +138,6 @@ export const projectList: Project[] = [
         </p>
       </>
     ),
-    descriptionLong: (
-      <>
-        <p>
-          From 6th Oct 2023 - 8th August 2024: 33,696 Palestinian people were
-          killed, each dot is someone who was killed.
-        </p>
-      </>
-    ),
   },
 
   ////////
@@ -183,11 +152,6 @@ export const projectList: Project[] = [
     artist: "laura-castro",
     date: new Date("2018-01-01"),
     descriptionShort: (
-      <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
       <>
         <p>
           Fresquita Party is a visual exploration of a 60-song Spotify playlist,
@@ -208,13 +172,8 @@ export const projectList: Project[] = [
     folder: "dos-juegos",
     link: "ll",
     artist: "laura-castro",
-    date: new Date("2025-08-06"), // Year, Month, Day (6th of August)
+    date: new Date("2025-08-06"),
     descriptionShort: (
-      <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
       <>
         <p></p>
       </>

@@ -2,5 +2,6 @@
   "/_not-found/page": "app/_not-found/page.js",
   "/artist/florent-lavergne/naturality/page": "app/artist/florent-lavergne/naturality/page.js",
   "/artist/florent-lavergne/page": "app/artist/florent-lavergne/page.js",
+  "/artist/florent-lavergne/wet-feet/page": "app/artist/florent-lavergne/wet-feet/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }
