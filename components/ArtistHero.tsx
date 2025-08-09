@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { buttonVariants } from "./ui/button";
 
 type ArtistHeroProps = {
   folder: string;
@@ -73,18 +74,12 @@ export default function ArtistHero({
 
         <div className="flex gap-2">
           {homepageLink && (
-            <a
-              className="px-3 py-1 bg-black text-white rounded"
-              href={homepageLink}
-            >
+            <a className={buttonVariants()} href={homepageLink}>
               Homepage
             </a>
           )}
           {linkedinLink && (
-            <a
-              className="px-3 py-1 bg-black text-white rounded"
-              href={linkedinLink}
-            >
+            <a className={buttonVariants()} href={linkedinLink}>
               LinkedIn
             </a>
           )}

@@ -2,10 +2,13 @@
 
 import FiveImgsGallery from "@/components/FiveImgsGallery";
 import Parallax from "@/components/Parallax";
+import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
+import { Spacing } from "@/components/Spacing";
+import { buttonVariants } from "@/components/ui/button";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
-import { formatDate } from "@/lib/utils";
+import { cn, formatDate } from "@/lib/utils";
 import Link from "next/link";
 
 const PROJECT = "naturality";
@@ -40,24 +43,27 @@ export default function Page() {
           How does nature survive alongside human civilization? It’s a question
           easier asked than answered. While we can see the visible scars of
           human activity — cities, roads, farms — the subtle ways ecosystems
-          respond remain largely hidden. This project unveils a new perspective:
-          the Gradient of Naturality across mainland France.
+          respond remain largely hidden.
+        </p>
+        <p>
+          This project unveils a new perspective: the Gradient of Naturality
+          across mainland France.
         </p>
 
         <Parallax
-          text="hello"
+          text=""
           imageUrl="/project/florent-lavergne/naturality/04-full.webp"
         />
 
-        <p>
+        <p className="drop-cap">
           Developed in collaboration with IUCN France, this map uses a grid of
-          colored hexagons to represent the "naturality" — a measure of how much
+          colored hexagons to represent the "naturality": a measure of how much
           ecosystems are exposed to human presence. From densely populated urban
           centers to remote mountainous forests, each hexagon tells a story of
           balance, tension, and survival.
         </p>
 
-        <p className="drop-cap">
+        <p>
           The data behind the map comes from a careful combination of sources:
           ecological statistics, population density, and terrain elevation.
           Using GIS software, these layers were combined into a grid of 8 km²
@@ -107,6 +113,16 @@ export default function Page() {
           Explore the Gradient of Naturality and discover how data visualization
           can reveal hidden truths about our planet — one hexagon at a time.
         </p>
+
+        <div className="mt-4">
+          <Link href={""} className={cn(buttonVariants())}>
+            Official project page
+          </Link>
+        </div>
+
+        <Spacing />
+
+        <PrevAndNextProjectLinks currentProject={PROJECT} />
       </div>
     </>
   );
