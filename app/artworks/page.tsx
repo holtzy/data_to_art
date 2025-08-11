@@ -26,6 +26,7 @@ export default function Home() {
 
   walk(publicDir);
 
+  console.log(items);
   return (
     <div>
       <section className="relative h-screen flex flex-col justify-center items-center">
