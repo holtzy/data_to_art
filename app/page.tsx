@@ -5,6 +5,9 @@ import fs from "fs";
 import path from "path";
 import { cn, shuffleArray } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
+import { Spacing } from "@/components/Spacing";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { artistList } from "@/lib/artist-list";
 
 export default function Home() {
   return (
@@ -38,6 +41,72 @@ export default function Home() {
         </div>
       </section>
 
+      <Spacing />
+
+      <div className="wrapper ">
+        <h2>{`${artistList.length} artists showcased`}</h2>
+        <p>
+          Our goal is to showcase as many talented data artists as possible,
+          celebrating diverse voices and styles across the globe. Explore their
+          unique creations and get inspired by the endless ways data can be
+          transformed into art.
+        </p>
+        <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
+          {artistList.map((a, i) => {
+            return (
+              <div key={i}>
+                <Avatar className="w-12 h-12">
+                  {" "}
+                  {/* for example, 6rem x 6rem */}
+                  <AvatarImage src={`/artist/${a.folder}.webp`} alt="@shadcn" />
+                  <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
+              </div>
+            );
+          })}
+        </div>
+        <div className="w-full flex gap-2 justify-center my-10">
+          <Link
+            href={"/artworks"}
+            className={cn(
+              buttonVariants({ size: "lg", variant: "outline" }),
+              "mb-12"
+            )}
+          >
+            See all artists
+          </Link>{" "}
+          <Link
+            href={"/artists"}
+            className={cn(buttonVariants({ size: "lg" }), "mb-12")}
+          >
+            Suggest an artist
+          </Link>
+        </div>
+      </div>
+
+      <Spacing />
+
+      <div className="wrapper">
+        <h2>What is Data Art?</h2>
+        <p>
+          Data art is a creative practice that transforms raw data into visually
+          compelling artworks. By blending aesthetics with information, data
+          artists use charts, patterns, and interactive visuals to reveal
+          stories, emotions, and insights hidden within datasets.{" "}
+        </p>
+
+        <p>
+          While data art and generative art both involve digital creativity,
+          they are not the same. Data art specifically uses real-world data as
+          its source material, aiming to visualize information, patterns, or
+          stories embedded in that data. In contrast, generative art is created
+          through algorithms and autonomous systems that generate visuals often
+          without a direct connection to external data. Data art focuses on
+          revealing meaning and insights from existing datasets, whereas
+          generative art emphasizes process, randomness, and system-driven
+          creativity.
+        </p>
+      </div>
       <div className="wrapper my-36 ">
         <p>HEllo</p>
         <Link href="/artists">Artists</Link>
