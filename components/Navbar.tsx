@@ -32,6 +32,15 @@ const Navbar = () => {
             </Link>
 
             <Link
+              href="/artworks"
+              className={
+                buttonVariants({ variant: "ghost" }) + " " + "no-decoration"
+              }
+            >
+              Artworks
+            </Link>
+
+            <Link
               href="/projects"
               className={
                 buttonVariants({ variant: "ghost" }) + " " + "no-decoration"
