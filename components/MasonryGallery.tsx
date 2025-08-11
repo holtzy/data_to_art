@@ -1,3 +1,5 @@
+"use client";
+
 // Gallery.tsx
 import React from "react";
 import { Masonry, RenderComponentProps } from "masonic";
@@ -9,13 +11,9 @@ export interface GalleryItem {
 
 interface MasonryGalleryProps {
   items: GalleryItem[];
-  loadMore?: () => void;
 }
 
-export default function MasonryGallery({
-  items,
-  loadMore,
-}: MasonryGalleryProps) {
+export default function MasonryGallery({ items }: MasonryGalleryProps) {
   const Card: React.FC<RenderComponentProps<GalleryItem>> = ({
     width,
     data,
@@ -59,15 +57,10 @@ export default function MasonryGallery({
     <Masonry<GalleryItem>
       items={items}
       render={Card}
-      columnWidth={170}
-      columnGutter={2}
+      columnWidth={300}
+      columnGutter={0}
       itemHeightEstimate={320}
       overscanBy={2}
-      onRender={(startIndex, stopIndex) => {
-        if (stopIndex >= items.length - 20 && loadMore) {
-          loadMore();
-        }
-      }}
     />
   );
 }
