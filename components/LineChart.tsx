@@ -105,7 +105,7 @@ export default function LineChart() {
   }, []);
 
   return (
-    <div className="w-full flex justify-center items-center py-8">
+    <div className="w-full flex justify-center items-center py-8 bg-white">
       <canvas
         ref={canvasRef}
         className="block"

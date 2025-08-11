@@ -4,5 +4,6 @@
   "/artist/florent-lavergne/page": "app/artist/florent-lavergne/page.js",
   "/artist/florent-lavergne/wet-feet/page": "app/artist/florent-lavergne/wet-feet/page.js",
   "/artists/page": "app/artists/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
 }
