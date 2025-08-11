@@ -8,16 +8,17 @@ import { buttonVariants } from "@/components/ui/button";
 import { Spacing } from "@/components/Spacing";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { artistList } from "@/lib/artist-list";
+import FiveImgsGallery from "@/components/FiveImgsGallery";
 
 export default function Home() {
   return (
     <div>
-      <section className="relative h-screen flex flex-col justify-center items-center">
+      <section className="relative flex flex-col justify-center items-center">
         <div className="absolute inset-0 flex items-center">
           <LineChart />
         </div>
 
-        <div className="relative bg-white/70 p-20 flex flex-col items-center">
+        <div className="relative bg-white/70 p-20 flex flex-col items-center my-20">
           <h1>Data To Art</h1>
           <p className="text-center max-w-96">
             A curated collection of stunning works from the world’s most
@@ -107,10 +108,29 @@ export default function Home() {
           creativity.
         </p>
       </div>
+      <Spacing />
+
+      <div className="wrapper">
+        <h2>Feature project</h2>
+        <div className="full-bleed">
+          <div className="max-w-[900px] mx-auto">
+            <FiveImgsGallery
+              images={[
+                "/project/florent-lavergne/wet-feet/01-full.webp",
+                "/project/florent-lavergne/wet-feet/02-full.webp",
+                "/project/florent-lavergne/wet-feet/03-full.webp",
+                "/project/florent-lavergne/wet-feet/04-full.webp",
+                "/project/florent-lavergne/wet-feet/05-full.webp",
+              ]}
+              height={400}
+            />
+          </div>
+        </div>
+      </div>
+
       <div className="wrapper my-36 ">
-        <p>HEllo</p>
-        <Link href="/artists">Artists</Link>
-        <Link href="/projects">Projects</Link>
+        <h2>Made with ❤️ from Frane</h2>
+        <p>Who we are, why do we make this?</p>
       </div>
     </div>
   );
