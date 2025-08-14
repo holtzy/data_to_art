@@ -6,12 +6,17 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 import { useState } from "react";
+import { BubbleMap } from "../viz/bubbleMap/BubbleMap";
 
 export const ArtistSection = () => {
   const [hovered, setHovered] = useState<null | Artist>(null);
 
   return (
-    <div className="wrapper ">
+    <div className="wrapper  relative">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2">
+        <BubbleMap width={400} height={400} selectedArtist={hovered} />
+      </div>
+
       <h2>{`${artistList.length} artists showcased`}</h2>
       <p>
         Our goal is to showcase as many talented data artists as possible,

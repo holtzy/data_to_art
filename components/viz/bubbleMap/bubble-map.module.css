@@ -1,0 +1,20 @@
+.circleContainer {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* When the bubble g group is hovered, make everything inside with a low opacity */
+.hasHighlight .circleContainer {
+  opacity: 0.1;
+}
+
+.hasHighlight .circleContainer:hover {
+  opacity: 1;
+}
+
+.circleText {
+  opacity: 0;
+}
+
+.hasHighlight .circleContainer:hover .circleText {
+  opacity: 1;
+}
