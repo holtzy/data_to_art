@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { BookDashed, Circle, Minus } from "lucide-react";
+import { Logo } from "./Logo";
 
 const NAVBAR_HEIGHT = 80;
 
@@ -25,15 +26,8 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="col-span-4 flex justify-center items-center gap-4">
-            <Minus className="text-black" size={8} />
-            <Link
-              href="/"
-              className="invisible sm:visible no-decoration uppercase text-xl font-brown-sugar font-bold"
-            >
-              Data <span className="text-sm">To</span> Art
-            </Link>
-            <Minus className="text-black" size={8} />
+          <div className="col-span-4 flex items-center">
+            <Logo />
           </div>
 
           <div className="col-span-4 flex items-center justify-end">

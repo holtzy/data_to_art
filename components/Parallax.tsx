@@ -18,7 +18,9 @@ export default function Parallax({
         style={{ backgroundImage: `url('${imageUrl}')`, height }}
       >
         <div className="h-full flex items-center justify-center bg-black/0">
-          <h1 className="text-5xl text-white font-bold">{text}</h1>
+          <h1 className="text-center bg-white/20 text-black text-5xl font-bold max-w-[400px]">
+            {text}
+          </h1>
         </div>
       </div>
     </section>

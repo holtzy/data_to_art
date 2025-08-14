@@ -26,7 +26,7 @@ export default function LineChart() {
     const AMPLITUDE = height * 0.6;
     const OFFSET_Y = height / 2;
 
-    const LINE_COUNT = 2;
+    const LINE_COUNT = 4;
     const ANIMATION_DURATION = 8800; // ms for a line to fully draw
     const STAGGER_MAX = 1200; // max ms delay for a line to start
     const FADE_DURATION = 1200; // ms for a line to fade out

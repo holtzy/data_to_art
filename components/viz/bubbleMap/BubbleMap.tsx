@@ -8,10 +8,12 @@ import { useRef } from "react";
 import { geoData } from "./GeoData";
 import { Artist, artistList } from "@/lib/artist-list";
 
+const BUBBLE_SIZE = 8;
+
 type BubbleMapProps = {
   width: number;
   height: number;
-  selectedArtist: Artist;
+  selectedArtist: Artist | null;
 };
 
 export const BubbleMap = ({
@@ -51,12 +53,13 @@ export const BubbleMap = ({
   const allBubbles = artistList.map((a) => {
     const [x, y] = projection(a.location);
 
-    const color = "blue";
+    const color =
+      selectedArtist && selectedArtist.folder === a.folder ? "blue" : "grey";
 
-    const r = 14;
-    //   selectedIsland === island.name || !selectedIsland
-    //     ? bubbleSize * 2
-    //     : bubbleSize;
+    const r =
+      selectedArtist && selectedArtist.folder === a.folder
+        ? BUBBLE_SIZE * 2
+        : BUBBLE_SIZE;
 
     return (
       <g className={styles.circleContainer} key={a.folder}>
