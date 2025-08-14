@@ -23,10 +23,10 @@ export default function LineChart() {
 
     const noise2D = createNoise2D();
     const NOISE_SCALE = 0.008;
-    const AMPLITUDE = height * 0.8;
+    const AMPLITUDE = height * 0.6;
     const OFFSET_Y = height / 2;
 
-    const LINE_COUNT = 12;
+    const LINE_COUNT = 2;
     const ANIMATION_DURATION = 8800; // ms for a line to fully draw
     const STAGGER_MAX = 1200; // max ms delay for a line to start
     const FADE_DURATION = 1200; // ms for a line to fade out
@@ -90,8 +90,8 @@ export default function LineChart() {
           }
         }
         ctx.strokeStyle = `hsl(${210 + l * 8}, 70%, 55%)`;
-        ctx.lineWidth = 1.5;
-        ctx.globalAlpha = 0.7;
+        ctx.lineWidth = 0.5;
+        ctx.globalAlpha = 1;
         ctx.stroke();
       }
       ctx.globalAlpha = 1;

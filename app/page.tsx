@@ -7,6 +7,9 @@ import { Spacing } from "@/components/Spacing";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { artistList } from "@/lib/artist-list";
 import FiveImgsGallery from "@/components/FiveImgsGallery";
+import { NoiseDivider } from "@/components/NoiseDivider";
+import AvatarCirclePacking from "@/components/AvatarCirclePacking";
+import AvatarBeeswarm from "@/components/AvatarBeeswarm";
 
 export default function Home() {
   return (
@@ -56,20 +59,11 @@ export default function Home() {
           unique creations and get inspired by the endless ways data can be
           transformed into art.
         </p>
-        <div className="*:data-[slot=avatar]:ring-background flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:grayscale">
-          {artistList.map((a, i) => {
-            return (
-              <div key={i}>
-                <Avatar className="w-12 h-12">
-                  {" "}
-                  {/* for example, 6rem x 6rem */}
-                  <AvatarImage src={`/artist/${a.folder}.webp`} alt="@shadcn" />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-              </div>
-            );
-          })}
-        </div>
+
+        <center>
+          <AvatarBeeswarm artistList={artistList} width={500} height={200} />
+        </center>
+
         <div className="w-full flex gap-2 justify-center my-10">
           <Link
             href={"/artworks"}
@@ -91,27 +85,33 @@ export default function Home() {
 
       <Spacing />
 
-      <div className="wrapper">
-        <h2>What is Data Art?</h2>
-        <p>
-          Data art is a creative practice that transforms raw data into visually
-          compelling artworks. By blending aesthetics with information, data
-          artists use charts, patterns, and interactive visuals to reveal
-          stories, emotions, and insights hidden within datasets.{" "}
-        </p>
+      <section className="relative bg-slate-50">
+        <NoiseDivider height={10} />
 
-        <p>
-          While data art and generative art both involve digital creativity,
-          they are not the same. Data art specifically uses real-world data as
-          its source material, aiming to visualize information, patterns, or
-          stories embedded in that data. In contrast, generative art is created
-          through algorithms and autonomous systems that generate visuals often
-          without a direct connection to external data. Data art focuses on
-          revealing meaning and insights from existing datasets, whereas
-          generative art emphasizes process, randomness, and system-driven
-          creativity.
-        </p>
-      </div>
+        <div className="wrapper py-20">
+          <h2>What is Data Art?</h2>
+          <p>
+            Data art is a creative practice that transforms raw data into
+            visually compelling artworks. By blending aesthetics with
+            information, data artists use charts, patterns, and interactive
+            visuals to reveal stories, emotions, and insights hidden within
+            datasets.{" "}
+          </p>
+
+          <p>
+            While data art and generative art both involve digital creativity,
+            they are not the same. Data art specifically uses real-world data as
+            its source material, aiming to visualize information, patterns, or
+            stories embedded in that data. In contrast, generative art is
+            created through algorithms and autonomous systems that generate
+            visuals often without a direct connection to external data. Data art
+            focuses on revealing meaning and insights from existing datasets,
+            whereas generative art emphasizes process, randomness, and
+            system-driven creativity.
+          </p>
+        </div>
+      </section>
+
       <Spacing />
 
       <div className="wrapper">

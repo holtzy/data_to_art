@@ -115,10 +115,11 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    font-family: "font-pptelegraph";
+    font-family: "pptelegraph";
   }
   body {
     @apply bg-background text-foreground;
+    font-size: 18px;
   }
 }
 
@@ -185,6 +186,7 @@ blockquote {
 .drop-cap {
   @apply first-letter:float-left first-letter:text-7xl first-letter:pr-4 first-letter:pt-2;
 }
+
 /* ---------- PAGE LAYOUT ----------------- */
 /* Inspired from https://www.joshwcomeau.com/css/full-bleed/ */
 .wrapper {
