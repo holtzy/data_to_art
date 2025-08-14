@@ -4,12 +4,9 @@ import LineChart from "./linechart/page";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Spacing } from "@/components/Spacing";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { artistList } from "@/lib/artist-list";
 import FiveImgsGallery from "@/components/FiveImgsGallery";
 import { NoiseDivider } from "@/components/NoiseDivider";
-import AvatarCirclePacking from "@/components/AvatarCirclePacking";
-import AvatarBeeswarm from "@/components/AvatarBeeswarm";
+import { ArtistSection } from "@/components/section/ArtistSection";
 
 export default function Home() {
   return (
@@ -33,7 +30,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       <section>
         <div className="relative max-w-[900px] mx-auto h-[900px] overflow-hidden">
           <MasonryGallery items={BEST_IMAGES} />
@@ -51,37 +47,7 @@ export default function Home() {
 
       <Spacing />
 
-      <div className="wrapper ">
-        <h2>{`${artistList.length} artists showcased`}</h2>
-        <p>
-          Our goal is to showcase as many talented data artists as possible,
-          celebrating diverse voices and styles across the globe. Explore their
-          unique creations and get inspired by the endless ways data can be
-          transformed into art.
-        </p>
-
-        <center>
-          <AvatarBeeswarm artistList={artistList} width={500} height={200} />
-        </center>
-
-        <div className="w-full flex gap-2 justify-center my-10">
-          <Link
-            href={"/artworks"}
-            className={cn(
-              buttonVariants({ size: "lg", variant: "outline" }),
-              "mb-12"
-            )}
-          >
-            See all artists
-          </Link>{" "}
-          <Link
-            href={"/artists"}
-            className={cn(buttonVariants({ size: "lg" }), "mb-12")}
-          >
-            Suggest an artist
-          </Link>
-        </div>
-      </div>
+      <ArtistSection />
 
       <Spacing />
 
@@ -111,9 +77,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       <Spacing />
-
       <div className="wrapper">
         <h2>Feature project</h2>
         <div className="full-bleed">
@@ -131,7 +95,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <div className="wrapper my-36 ">
         <h2>Made with ❤️ from Frane</h2>
         <p>Who we are, why do we make this?</p>

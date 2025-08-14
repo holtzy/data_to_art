@@ -1,20 +1,19 @@
 import React, { useMemo } from "react";
 import * as d3 from "d3";
-
-type Artist = {
-  folder: string;
-};
+import { Artist } from "@/lib/artist-list";
 
 interface AvatarBeeswarmProps {
   artistList: Artist[];
   width?: number;
   height?: number;
+  setHovered: (a: Artist) => void;
 }
 
 export default function AvatarBeeswarm({
   artistList,
   width = 800,
   height = 200,
+  setHovered,
 }: AvatarBeeswarmProps) {
   const nodes = useMemo(() => {
     // Assign random radius to each node
@@ -54,7 +53,13 @@ export default function AvatarBeeswarm({
       </defs>
 
       {nodes.map((d, i) => (
-        <g key={i}>
+        <g
+          key={i}
+          onMouseEnter={() => {
+            setHovered(d);
+          }}
+          onMouseLeave={() => setHovered(null)}
+        >
           <image
             href={`/artist/${d.folder}.webp`}
             clipPath={`url(#clip-${i})`}
