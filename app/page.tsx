@@ -1,9 +1,7 @@
 import MasonryGallery, { GalleryItem } from "@/components/MasonryGallery";
 import Link from "next/link";
 import LineChart from "./linechart/page";
-import fs from "fs";
-import path from "path";
-import { cn, shuffleArray } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Spacing } from "@/components/Spacing";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -13,24 +11,30 @@ import FiveImgsGallery from "@/components/FiveImgsGallery";
 export default function Home() {
   return (
     <div>
-      <section className="relative flex flex-col justify-center items-center">
-        <div className="absolute inset-0 flex items-center">
+      <section className="relative flex flex-col justify-center items-center pt-20">
+        <div className="absolute inset-0 flex items-center pt-20">
           <LineChart />
         </div>
 
-        <div className="relative bg-white/70 p-20 flex flex-col items-center my-20">
-          <h1>Data To Art</h1>
+        <div className="relative bg-gradient-to-r from-transparent via-white to-transparent px-40 pt-20 pb-4 flex flex-col items-center mt-20">
+          <h1 className="font-brown-sugar text-7xl">
+            Data is{" "}
+            <span className="font-brown-sugar underline [text-decoration-thickness:1px] [text-underline-offset:14px]">
+              beautiful
+            </span>
+          </h1>
           <p className="text-center max-w-96">
-            A curated collection of stunning works from the world’s most
-            innovative data artists. Each piece transforms raw information into
-            visual experiences that inspire, inform, and amaze.
+            We collect stunning works from the world’s most innovative data
+            artists. Each piece transforms raw information into visual
+            experiences that inspire, inform, and amaze.
           </p>
         </div>
       </section>
 
       <section>
-        <div className="relative max-w-[900px] mx-auto  h-[900px] overflow-hidden">
+        <div className="relative max-w-[900px] mx-auto h-[900px] overflow-hidden">
           <MasonryGallery items={BEST_IMAGES} />
+          <div className="absolute top-0 left-0 w-full h-42 bg-gradient-to-b from-white to-transparent "></div>
           <div className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-white to-transparent flex justify-center items-end">
             <Link
               href={"/artworks"}
@@ -138,8 +142,15 @@ export default function Home() {
 
 export const BEST_IMAGES = [
   {
+    src: "/asset/white-bg-tiny.webp",
+  },
+  {
+    src: "/asset/white-bg-small.webp",
+  },
+  {
     src: "/project/florent-lavergne/naturality/01-full.webp",
   },
+
   {
     src: "/project/florent-lavergne/naturality/02-full.webp",
   },

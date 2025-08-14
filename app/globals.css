@@ -115,10 +115,31 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    font-family: "font-pptelegraph";
   }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Fonts not offered by Next or Google fonts, so stored locally */
+@font-face {
+  font-family: "brown-sugar";
+  src: url("/fonts/brown-sugar.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-brown-sugar {
+  font-family: "brown-sugar";
+}
+@font-face {
+  font-family: "pptelegraf";
+  src: url("/fonts/PPTelegraf-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-pptelegraph {
+  font-family: "brown-sugar";
 }
 
 /*
@@ -130,7 +151,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-bricolage);
+  font-family: "brown-sugar";
 }
 h1 {
   @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;

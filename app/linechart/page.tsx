@@ -89,9 +89,9 @@ export default function LineChart() {
             ctx.lineTo(x, y);
           }
         }
-        ctx.strokeStyle = `hsl(${210 + l * 8}, 70%, 55%)`;
-        ctx.lineWidth = 1.5;
-        ctx.globalAlpha = 0.7;
+        ctx.strokeStyle = "black"; //`hsl(${210 + l * 8}, 70%, 55%)`;
+        ctx.lineWidth = 1;
+        ctx.globalAlpha = 0.4;
         ctx.stroke();
       }
       ctx.globalAlpha = 1;
