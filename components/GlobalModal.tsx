@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { useModal } from "@/context/ModalContext";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -44,6 +45,19 @@ export const GlobalModal = () => {
     setModalData({ imgPath: firstImg });
   };
 
+  // Keyboard support
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!modalData) return;
+      if (e.key === "ArrowLeft") showPrev();
+      if (e.key === "ArrowRight") showNext();
+      if (e.key === "Escape") closeModal();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [modalData, currentIndex]);
+
   return (
     <Dialog open={!!modalData} onOpenChange={(open) => !open && closeModal()}>
       <DialogContent className="sm:max-w-7xl w-full p-10">
@@ -59,8 +73,9 @@ export const GlobalModal = () => {
               <h2 className="text-2xl font-bold mb-2">{name}</h2>
               <p className="text-gray-600">{name}</p>
             </div>
-            <div className="mt-4 self-end">
-              <Button onClick={() => showPrev()}>Action</Button>
+            <div className="mt-4 self-end flex gap-2">
+              <Button onClick={showPrev}>Prev</Button>
+              <Button onClick={showNext}>Next</Button>
             </div>
           </div>
         </div>
