@@ -65,13 +65,23 @@ export default function Home() {
         <NoiseDivider height={10} />
 
         <div className="wrapper py-20">
-          <h2>What is Data Art?</h2>
+          <h2 className="border-none !text-6xl ">
+            <span className="block !text-4xl text-slate-400">Data Art</span>
+            What's that?
+          </h2>
           <p className="drop-cap">
             Data art is a creative practice that transforms raw data into
             visually compelling artworks. By blending aesthetics with
             information, data artists use charts, patterns, and interactive
             visuals to reveal stories, emotions, and insights hidden within
             datasets.{" "}
+          </p>
+
+          <p>
+            Data art acts as a cursor between science and abstraction. Some
+            works feel like scientific figures, with annotations and numbers
+            that speak for themselves. Others drift into pure abstraction, only
+            revealing their meaning with extra context.
           </p>
 
           <div className="flex gap-6 items-center justify-center mt-8">
@@ -176,6 +186,33 @@ export const BEST_IMAGES = [
   "/project/florent-lavergne/naturality/02-full.webp",
   "/project/florent-lavergne/naturality/03-full.webp",
   "/project/florent-lavergne/naturality/06-full.webp",
+  "/project/florent-lavergne/other/01-full.webp",
+  "/project/florent-lavergne/other/02-full.webp",
+  "/project/florent-lavergne/other/03-full.webp",
+  "/project/florent-lavergne/other/04-full.webp",
+  "/project/florent-lavergne/other/05-full.webp",
+  "/project/florent-lavergne/other/06-full.webp",
+  "/project/florent-lavergne/other/07-full.webp",
+  "/project/florent-lavergne/wet-feet/01-full.webp",
+  "/project/florent-lavergne/wet-feet/02-full.webp",
+  "/project/florent-lavergne/wet-feet/03-full.webp",
+  "/project/florent-lavergne/wet-feet/04-full.webp",
+  "/project/florent-lavergne/wet-feet/05-full.webp",
+  "/project/florent-lavergne/wet-feet/06-full.webp",
+  "/project/jeremy-wanner/glove-rose/01-full.webp",
+  "/project/jeremy-wanner/glove-rose/02-full.webp",
+  "/project/jeremy-wanner/glove-rose/03-full.webp",
+  "/project/jeremy-wanner/glove-rose/04-full.webp",
+  "/project/laura-castro/dos-juegos/01-full.webp",
+  "/project/laura-castro/dos-juegos/02-full.webp",
+  "/project/laura-castro/dos-juegos/03-full.webp",
+  "/project/laura-castro/dos-juegos/04-full.webp",
+  "/project/laura-castro/dos-juegos/05-full.webp",
+  "/project/laura-castro/dos-juegos/06-full.webp",
+  "/project/laura-castro/fresquita-party/01-full.webp",
+  "/project/laura-castro/fresquita-party/02-full.webp",
+  "/project/laura-castro/fresquita-party/03-full.webp",
+  "/project/laura-castro/fresquita-party/04-full.webp",
   "/project/florent-lavergne/other/01-full.webp",
   "/project/florent-lavergne/other/02-full.webp",
   "/project/florent-lavergne/other/03-full.webp",

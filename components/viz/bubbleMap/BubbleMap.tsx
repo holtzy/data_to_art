@@ -24,7 +24,10 @@ export const BubbleMap = ({
   const bubbleContainerRef = useRef(null);
 
   const projection = geoOrthographic()
-    .rotate(selectedArtist?.location || [20, 10])
+    .rotate([
+      -(selectedArtist?.location[0] || 0), // -longitude
+      -(selectedArtist?.location[1] || 0), // -latitude
+    ])
     .scale(100)
     .translate([width / 2, height / 2]);
 

@@ -36,7 +36,7 @@ export const artistList = [
       </>
     ),
     folder: "florent-lavergne",
-    location: [12, 12],
+    location: [3.0795, 45.7935],
     homepageLink: "behance.net/lavergneflor",
     linkedinLink: "https://www.linkedin.com/in/lavergneflor",
   },

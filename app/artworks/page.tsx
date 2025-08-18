@@ -29,7 +29,7 @@ export default function Home() {
   walk(publicDir);
 
   return (
-    <div className="relative mt-34 max-w-[900px] mx-auto">
+    <div className="relative mt-52 max-w-[900px] mx-auto">
       <div className="mt-8">
         <MasonryGallery
           imgPaths={[

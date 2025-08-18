@@ -17,7 +17,13 @@ export const ArtistSection = () => {
         <BubbleMap width={400} height={400} selectedArtist={hovered} />
       </div>
 
-      <h2>{`${artistList.length} artists showcased`}</h2>
+      <h2 className="border-none !text-6xl ">
+        <span className="block !text-4xl text-slate-400">
+          From all over the world
+        </span>
+        Meet the artists
+      </h2>
+
       <p>
         Our goal is to showcase as many talented data artists as possible,
         celebrating diverse voices and styles across the globe. Explore their
