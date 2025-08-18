@@ -1,12 +1,11 @@
-"use client";
-
+import { Project } from "@/lib/project-list";
 import {
   Dialog,
   DialogTrigger,
   DialogContent,
   DialogClose,
 } from "@/components/ui/dialog";
-import { Project } from "@/lib/project-list";
+import { Button } from "@/components/ui/button";
 
 export type ImageWithModalProps = {
   width: number;
@@ -19,6 +18,10 @@ export const ImageWithModal = ({
   project,
   width,
 }: ImageWithModalProps) => {
+  if (!project) {
+    return null;
+  }
+
   return (
     <article style={{ width, boxSizing: "border-box", padding: 8 }}>
       <Dialog>
@@ -37,12 +40,28 @@ export const ImageWithModal = ({
             />
           </div>
         </DialogTrigger>
-        <DialogContent className="p-0 w-auto max-w-[90vw] max-h-[90vh] flex justify-center items-center">
+
+        <DialogContent className="p-6 max-w-[calc(100%)] flex gap-6 items-start">
+          {/* Left: Image */}
           <img
             src={src}
             alt={project.name}
-            className="max-w-full max-h-full object-contain"
+            className="max-h-[70vh] object-contain rounded-md flex-shrink-0"
           />
+
+          {/* Right: Text + Button */}
+          <div className="flex flex-col justify-between h-full">
+            <div>
+              <h2 className="text-2xl font-bold mb-2">{project.name}</h2>
+              <p className="text-gray-600">{project.name}</p>
+            </div>
+            <div className="mt-4 self-end">
+              <Button onClick={() => console.log("Button clicked")}>
+                Action
+              </Button>
+            </div>
+          </div>
+
           <DialogClose />
         </DialogContent>
       </Dialog>

@@ -10,10 +10,7 @@ interface MasonryGalleryProps {
 }
 
 export default function MasonryGallery({ items }: MasonryGalleryProps) {
-  const Card: React.FC<RenderComponentProps<ImageWithModalProps>> = ({
-    width,
-    data,
-  }) => {
+  const Card = ({ width, data }: RenderComponentProps<ImageWithModalProps>) => {
     return (
       <ImageWithModal width={width} project={data.project} src={data.src} />
     );
