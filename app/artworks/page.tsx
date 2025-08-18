@@ -3,11 +3,10 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import { shuffleArray } from "@/lib/utils";
-import { ImageWithModalProps } from "@/components/ImageWithModal";
 
 export default function Home() {
   const publicDir = path.join(process.cwd(), "public", "project");
-  const items: ImageWithModalProps[] = [];
+  const items: string[] = [];
 
   function walk(dir: string) {
     const files = fs.readdirSync(dir);
@@ -20,27 +19,7 @@ export default function Home() {
         const relPath = fullPath
           .replace(publicDir, "/project")
           .replace(/\\/g, "/");
-        items.push({
-          src: relPath,
-          width: 200,
-          project: {
-            name: "Naturality",
-            folder: "naturality",
-            link: "https://www.behance.net/gallery/223921953/The-Gradient-of-Naturality-France",
-            artist: "florent-lavergne",
-            date: new Date("2021-08-02"),
-            descriptionShort: (
-              <>
-                <p>
-                  What if nature could tell us where it thrives — and where it’s
-                  fading away? This map reveals the hidden gradient of
-                  naturality across France, inviting you to explore the unseen
-                  impact of humans on ecosystems.
-                </p>
-              </>
-            ),
-          },
-        });
+        items.push(relPath);
       }
     }
   }
@@ -58,7 +37,7 @@ export default function Home() {
 
       <section>
         <div className="max-w-[900px] mx-auto -my-40">
-          <MasonryGallery items={shuffleArray(items)} />
+          <MasonryGallery imgPaths={shuffleArray(items)} />
         </div>
       </section>
 
