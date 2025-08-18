@@ -8,6 +8,7 @@ import { projectList } from "@/lib/project-list";
 import { a } from "@react-spring/web";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { CircleArrowLeft, CircleArrowRight } from "lucide-react";
 
 export const GlobalModal = () => {
   const { modalData, closeModal, setModalData } = useModal();
@@ -91,11 +92,16 @@ export const GlobalModal = () => {
           />
         )}
 
-        <div className="flex flex-col justify-between">
-          <div className="mt-4 self-end flex gap-2">
-            <Button onClick={showPrev}>Prev</Button>
-            <Button onClick={showNext}>Next</Button>
-          </div>
+        <div className="absolute bottom-4 left-4">
+          <Button onClick={showPrev} variant={"ghost"} size={"lg"}>
+            <CircleArrowLeft size={62} />
+          </Button>
+        </div>
+
+        <div className="absolute bottom-4 right-4">
+          <Button onClick={showNext} variant={"ghost"} size={"lg"}>
+            <CircleArrowRight size={62} />
+          </Button>
         </div>
 
         <DialogClose />
@@ -121,6 +127,7 @@ const TallImgModalContent = ({
   descriptionShort,
   artist,
   folder,
+  closeModal,
 }: ModalContentProps) => {
   return (
     <div className="flex h-full w-full">
@@ -136,9 +143,23 @@ const TallImgModalContent = ({
 
       {/* Fixed width text */}
       <div className="w-80 flex flex-col justify-center p-4 gap-2 bg-white">
-        <h2 className="text-2xl font-bold">{name}</h2>
-        <p className="text-gray-600">{descriptionShort}</p>
-        <p>{artist}</p>
+        <span className="text-4xl font-bold font-brown-sugar">{name}</span>
+        <span className="block text-xs text-slate-600">
+          <span>by </span>
+          <Link onClick={() => closeModal()} href={`/artist/${artist}`}>
+            {artist}
+          </Link>
+        </span>
+        <p className="text-gray-600 text-sm">{descriptionShort}</p>
+        <div>
+          <Link
+            onClick={() => closeModal()}
+            href={`/artist/${artist}/${folder}`}
+            className={cn(buttonVariants(), "mt-4")}
+          >
+            Read more
+          </Link>
+        </div>
       </div>
     </div>
   );
