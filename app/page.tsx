@@ -1,4 +1,4 @@
-import MasonryGallery, { GalleryItem } from "@/components/MasonryGallery";
+import MasonryGallery from "@/components/MasonryGallery";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";

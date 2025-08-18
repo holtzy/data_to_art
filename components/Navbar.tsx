@@ -10,10 +10,10 @@ const NAVBAR_HEIGHT = 80;
 const Navbar = () => {
   return (
     <nav
-      className="fixed bg-opacity-0 w-full backdrop-blur-sm z-30 font-extralight"
+      className="fixed top-0 left-0 bg-opacity-0 w-full backdrop-blur-sm z-30 font-extralight"
       style={{ height: NAVBAR_HEIGHT }}
     >
-      <div className="h-full max-w-[700px] mx-auto">
+      <div className="h-full max-w-[700px] mx-auto ">
         <div className="grid grid-cols-12 h-full">
           <div className="col-span-4 flex items-center">
             <Link
@@ -26,7 +26,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <div className="col-span-4 flex items-center">
+          <div className="col-span-4 flex justify-center items-center">
             <Logo />
           </div>
 
