@@ -42,7 +42,7 @@ export default function Home() {
       </section>
       <section>
         <div className="relative max-w-[900px] mx-auto h-[900px] overflow-hidden">
-          <MasonryGallery items={BEST_IMAGES} />
+          <MasonryGallery imgPaths={BEST_IMAGES} />
           <div className="absolute top-0 left-0 w-full h-42 bg-gradient-to-b from-white to-transparent "></div>
           <div className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-white to-transparent flex justify-center items-end">
             <Link
@@ -170,120 +170,42 @@ export default function Home() {
 }
 
 export const BEST_IMAGES = [
-  {
-    src: "/asset/white-bg-tiny.webp",
-  },
-  {
-    src: "/asset/white-bg-small.webp",
-  },
-  {
-    src: "/project/florent-lavergne/naturality/01-full.webp",
-  },
-
-  {
-    src: "/project/florent-lavergne/naturality/02-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/naturality/03-full.webp",
-  },
-
-  {
-    src: "/project/florent-lavergne/naturality/06-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/other/01-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/other/02-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/other/03-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/other/04-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/other/05-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/other/06-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/other/07-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/wet-feet/01-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/wet-feet/02-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/wet-feet/03-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/wet-feet/04-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/wet-feet/05-full.webp",
-  },
-  {
-    src: "/project/florent-lavergne/wet-feet/06-full.webp",
-  },
-  {
-    src: "/project/jeremy-wanner/glove-rose/01-full.webp",
-  },
-  {
-    src: "/project/jeremy-wanner/glove-rose/02-full.webp",
-  },
-  {
-    src: "/project/jeremy-wanner/glove-rose/03-full.webp",
-  },
-  {
-    src: "/project/jeremy-wanner/glove-rose/04-full.webp",
-  },
-  {
-    src: "/project/laura-castro/dos-juegos/01-full.webp",
-  },
-  {
-    src: "/project/laura-castro/dos-juegos/02-full.webp",
-  },
-  {
-    src: "/project/laura-castro/dos-juegos/03-full.webp",
-  },
-  {
-    src: "/project/laura-castro/dos-juegos/04-full.webp",
-  },
-  {
-    src: "/project/laura-castro/dos-juegos/05-full.webp",
-  },
-  {
-    src: "/project/laura-castro/dos-juegos/06-full.webp",
-  },
-  {
-    src: "/project/laura-castro/fresquita-party/01-full.webp",
-  },
-  {
-    src: "/project/laura-castro/fresquita-party/02-full.webp",
-  },
-  {
-    src: "/project/laura-castro/fresquita-party/03-full.webp",
-  },
-  {
-    src: "/project/laura-castro/fresquita-party/04-full.webp",
-  },
-  {
-    src: "/project/laura-castro/fresquita-party/05-full.webp",
-  },
-  {
-    src: "/project/nick-whiteley/vanishing-points/01-full.webp",
-  },
-  {
-    src: "/project/nick-whiteley/vanishing-points/02-full.webp",
-  },
-  {
-    src: "/project/soha-elghany/gaza/01-full.webp",
-  },
-  {
-    src: "/project/soha-elghany/gaza/02-full.webp",
-  },
+  "/asset/white-bg-tiny.webp",
+  "/asset/white-bg-small.webp",
+  "/project/florent-lavergne/naturality/01-full.webp",
+  "/project/florent-lavergne/naturality/02-full.webp",
+  "/project/florent-lavergne/naturality/03-full.webp",
+  "/project/florent-lavergne/naturality/06-full.webp",
+  "/project/florent-lavergne/other/01-full.webp",
+  "/project/florent-lavergne/other/02-full.webp",
+  "/project/florent-lavergne/other/03-full.webp",
+  "/project/florent-lavergne/other/04-full.webp",
+  "/project/florent-lavergne/other/05-full.webp",
+  "/project/florent-lavergne/other/06-full.webp",
+  "/project/florent-lavergne/other/07-full.webp",
+  "/project/florent-lavergne/wet-feet/01-full.webp",
+  "/project/florent-lavergne/wet-feet/02-full.webp",
+  "/project/florent-lavergne/wet-feet/03-full.webp",
+  "/project/florent-lavergne/wet-feet/04-full.webp",
+  "/project/florent-lavergne/wet-feet/05-full.webp",
+  "/project/florent-lavergne/wet-feet/06-full.webp",
+  "/project/jeremy-wanner/glove-rose/01-full.webp",
+  "/project/jeremy-wanner/glove-rose/02-full.webp",
+  "/project/jeremy-wanner/glove-rose/03-full.webp",
+  "/project/jeremy-wanner/glove-rose/04-full.webp",
+  "/project/laura-castro/dos-juegos/01-full.webp",
+  "/project/laura-castro/dos-juegos/02-full.webp",
+  "/project/laura-castro/dos-juegos/03-full.webp",
+  "/project/laura-castro/dos-juegos/04-full.webp",
+  "/project/laura-castro/dos-juegos/05-full.webp",
+  "/project/laura-castro/dos-juegos/06-full.webp",
+  "/project/laura-castro/fresquita-party/01-full.webp",
+  "/project/laura-castro/fresquita-party/02-full.webp",
+  "/project/laura-castro/fresquita-party/03-full.webp",
+  "/project/laura-castro/fresquita-party/04-full.webp",
+  "/project/laura-castro/fresquita-party/05-full.webp",
+  "/project/nick-whiteley/vanishing-points/01-full.webp",
+  "/project/nick-whiteley/vanishing-points/02-full.webp",
+  "/project/soha-elghany/gaza/01-full.webp",
+  "/project/soha-elghany/gaza/02-full.webp",
 ];

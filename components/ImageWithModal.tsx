@@ -1,4 +1,4 @@
-import { Project } from "@/lib/project-list";
+import { Project, projectList } from "@/lib/project-list";
 import {
   Dialog,
   DialogTrigger,
@@ -9,18 +9,25 @@ import { Button } from "@/components/ui/button";
 
 export type ImageWithModalProps = {
   width: number;
-  src: string;
-  project: Project;
+  imgPath: string;
 };
 
-export const ImageWithModal = ({
-  src,
-  project,
-  width,
-}: ImageWithModalProps) => {
+export const ImageWithModal = ({ imgPath, width }: ImageWithModalProps) => {
+  console.log("imgpath", imgPath);
+
+  const parts = imgPath.split("/");
+  const foundAuthor = parts[2];
+  const foundProject = parts[3];
+
+  const project = projectList.find(
+    (p) => p.artist === foundAuthor && p.folder === foundProject
+  );
+
   if (!project) {
     return null;
   }
+
+  const { name } = project;
 
   return (
     <article style={{ width, boxSizing: "border-box", padding: 8 }}>
@@ -28,8 +35,8 @@ export const ImageWithModal = ({
         <DialogTrigger asChild>
           <div className="w-full rounded-md overflow-hidden cursor-pointer">
             <img
-              src={src}
-              alt={project.name}
+              src={imgPath}
+              alt={name}
               style={{
                 width: "100%",
                 height: "auto",
@@ -44,8 +51,8 @@ export const ImageWithModal = ({
         <DialogContent className="p-6 max-w-[calc(100%)] flex gap-6 items-start">
           {/* Left: Image */}
           <img
-            src={src}
-            alt={project.name}
+            src={imgPath}
+            alt={name}
             className="max-h-[70vh] object-contain rounded-md flex-shrink-0"
           />
 

@@ -1,24 +1,28 @@
 "use client";
 
-// Gallery.tsx
 import React from "react";
 import { Masonry, RenderComponentProps } from "masonic";
-import { ImageWithModal, ImageWithModalProps } from "./ImageWithModal";
+import { ImageWithModal } from "./ImageWithModal";
 
-interface MasonryGalleryProps {
-  items: ImageWithModalProps[];
+interface Item {
+  imgPath: string;
 }
 
-export default function MasonryGallery({ items }: MasonryGalleryProps) {
-  const Card = ({ width, data }: RenderComponentProps<ImageWithModalProps>) => {
-    return (
-      <ImageWithModal width={width} project={data.project} src={data.src} />
-    );
+interface MasonryGalleryProps {
+  imgPaths: string[];
+}
+
+export default function MasonryGallery({ imgPaths }: MasonryGalleryProps) {
+  // convert array of strings into array of objects
+  const items: Item[] = imgPaths.map((p) => ({ imgPath: p }));
+
+  const Card = ({ width, data }: RenderComponentProps<Item>) => {
+    return <ImageWithModal width={width} imgPath={data.imgPath} />;
   };
 
   return (
-    <Masonry<ImageWithModalProps>
-      items={items}
+    <Masonry<Item>
+      items={items} // Note: I cannot use an array of strings here, this is why I had to make this items object
       render={Card}
       columnWidth={300}
       columnGutter={0}
