@@ -13,8 +13,8 @@ export type ImageWithModalProps = {
 };
 
 export const ImageWithModal = ({ imgPath, width }: ImageWithModalProps) => {
-  console.log("imgpath", imgPath);
-
+  // This component just receive the path of an image as input
+  // from this path, I can get the related project details as the path always follow the same nomenclature
   const parts = imgPath.split("/");
   const foundAuthor = parts[2];
   const foundProject = parts[3];
@@ -23,8 +23,25 @@ export const ImageWithModal = ({ imgPath, width }: ImageWithModalProps) => {
     (p) => p.artist === foundAuthor && p.folder === foundProject
   );
 
+  // Sometimes there is no associated project
+  // For instance for the white images used to create a gap at the top
   if (!project) {
-    return null;
+    return (
+      <div style={{ width, boxSizing: "border-box", padding: 8 }}>
+        <div className="w-full rounded-md overflow-hidden">
+          <img
+            src={imgPath}
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              objectFit: "cover",
+            }}
+            loading="lazy"
+          />
+        </div>
+      </div>
+    );
   }
 
   const { name } = project;
@@ -48,7 +65,7 @@ export const ImageWithModal = ({ imgPath, width }: ImageWithModalProps) => {
           </div>
         </DialogTrigger>
 
-        <DialogContent className="p-6 max-w-[calc(100%)] flex gap-6 items-start">
+        <DialogContent className="sm:max-w-7xl w-full p-10">
           {/* Left: Image */}
           <img
             src={imgPath}
