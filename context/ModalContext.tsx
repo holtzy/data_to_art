@@ -2,15 +2,17 @@
 
 import { createContext, useContext, useState, ReactNode } from "react";
 
-type ModalData = {
-  imgPath: string;
-  projectName?: string;
-} | null;
+// There is a modal set at the summit of the app tree
+// Clicking on any image in the app will open the modal on top of the app
+// This allow to switch to next/prev project easily
+
+type ModalData = { imgPath: string } | null;
 
 type ModalContextType = {
   openModal: (data: ModalData) => void;
   closeModal: () => void;
   modalData: ModalData;
+  setModalData: (data: ModalData) => void;
 };
 
 const ModalContext = createContext<ModalContextType | undefined>(undefined);
@@ -22,7 +24,9 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
   const closeModal = () => setModalData(null);
 
   return (
-    <ModalContext.Provider value={{ openModal, closeModal, modalData }}>
+    <ModalContext.Provider
+      value={{ openModal, closeModal, modalData, setModalData }}
+    >
       {children}
     </ModalContext.Provider>
   );

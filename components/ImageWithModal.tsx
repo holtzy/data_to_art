@@ -1,4 +1,4 @@
-import { projectList } from "@/lib/project-list";
+"use client";
 
 import { useModal } from "@/context/ModalContext";
 
@@ -10,14 +10,6 @@ export type ImageWithModalProps = {
 export const ImageWithModal = ({ imgPath, width }: ImageWithModalProps) => {
   const { openModal } = useModal();
 
-  const parts = imgPath.split("/");
-  const foundAuthor = parts[2];
-  const foundProject = parts[3];
-
-  const project = projectList.find(
-    (p) => p.artist === foundAuthor && p.folder === foundProject
-  );
-
   return (
     <div style={{ width, boxSizing: "border-box", padding: 8 }}>
       <div
@@ -25,13 +17,12 @@ export const ImageWithModal = ({ imgPath, width }: ImageWithModalProps) => {
         onClick={() =>
           openModal({
             imgPath,
-            projectName: project?.name,
           })
         }
       >
         <img
           src={imgPath}
-          alt={project?.name || ""}
+          alt={"data art img"}
           style={{
             width: "100%",
             height: "auto",
