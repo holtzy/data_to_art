@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 import { useState } from "react";
 import { BubbleMap } from "../viz/bubbleMap/BubbleMap";
+import { Home, Linkedin } from "lucide-react";
 
 export const ArtistSection = () => {
   const [hovered, setHovered] = useState<null | Artist>(null);
@@ -31,42 +32,66 @@ export const ArtistSection = () => {
         transformed into art.
       </p>
 
-      <center>
+      <center className="my-12">
         <AvatarBeeswarm
           artistList={artistList}
           width={500}
           height={200}
           setHovered={setHovered}
+          hovered={hovered}
         />
       </center>
 
-      <div className="h-[300px]">
-        {!hovered && (
-          <div className="w-full flex gap-2 justify-center my-10">
-            <Link
-              href={"/artworks"}
-              className={cn(
-                buttonVariants({ size: "lg", variant: "outline" }),
-                "mb-12"
-              )}
-            >
-              See all artists
-            </Link>{" "}
-            <Link
-              href={"/artists"}
-              className={cn(buttonVariants({ size: "lg" }), "mb-12")}
-            >
-              Suggest an artist
-            </Link>
-          </div>
-        )}
+      <div
+        className="overflow-hidden transition-all duration-900 max-h-0"
+        style={{ maxHeight: hovered ? 200 : 0 }}
+      >
+        <div className="p-2">
+          <div className="flex gap-4 items-center">
+            <span className="text-xl font-bold bg-gradient-to-r from-black  to-purple-500 bg-clip-text text-transparent">
+              {hovered?.name}
+            </span>
 
-        {hovered && (
-          <div>
-            <span className="font-brown-sugar text-xl">{hovered.name}</span>
-            <p>{hovered.descriptionShort}</p>
+            <div className="flex gap-1 mb-1">
+              {hovered?.linkedinLink && (
+                <Link
+                  href={hovered.linkedinLink}
+                  target="_blank"
+                  className={buttonVariants({ variant: "outline", size: "sm" })}
+                >
+                  <Linkedin stroke="none" fill="black" size={14} />
+                </Link>
+              )}
+
+              {hovered?.homepageLink && (
+                <Link
+                  href={hovered.homepageLink}
+                  target="_blank"
+                  className={buttonVariants({ variant: "outline", size: "sm" })}
+                >
+                  <Home stroke="black" fill="none" size={14} />
+                </Link>
+              )}
+            </div>
           </div>
-        )}
+          <span className="block text-sm text-slate-500">{hovered?.city}</span>
+          <p className="text-sm">{hovered?.descriptionShort}</p>
+        </div>
+      </div>
+
+      <div className="w-full flex gap-2 justify-center my-4">
+        <Link
+          href={"/artworks"}
+          className={cn(
+            buttonVariants({ size: "lg", variant: "outline" }),
+            "mb-12"
+          )}
+        >
+          See all artists
+        </Link>{" "}
+        <Link href={"/artists"} className={cn(buttonVariants({ size: "lg" }))}>
+          Suggest an artist
+        </Link>
       </div>
     </div>
   );

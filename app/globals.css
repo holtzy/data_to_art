@@ -166,6 +166,9 @@ h3 {
 p {
   @apply leading-7 [&:not(:first-child)]:mt-6;
 }
+.text-sm p {
+  @apply leading-5 [&:not(:first-child)]:mt-3;
+}
 
 .text-xs p {
   @apply leading-5 [&:not(:first-child)]:mt-3;

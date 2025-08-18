@@ -7,6 +7,7 @@ interface AvatarBeeswarmProps {
   width?: number;
   height?: number;
   setHovered: (a: Artist) => void;
+  hovered: Artist;
 }
 
 export default function AvatarBeeswarm({
@@ -14,6 +15,7 @@ export default function AvatarBeeswarm({
   width = 800,
   height = 200,
   setHovered,
+  hovered,
 }: AvatarBeeswarmProps) {
   const nodes = useMemo(() => {
     // Assign random radius to each node
@@ -58,7 +60,7 @@ export default function AvatarBeeswarm({
           onMouseEnter={() => {
             setHovered(d);
           }}
-          onMouseLeave={() => setHovered(null)}
+          className="cursor-pointer"
         >
           <image
             href={`/artist/${d.folder}.webp`}
@@ -68,13 +70,22 @@ export default function AvatarBeeswarm({
             width={d.r * 2}
             height={d.r * 2}
             preserveAspectRatio="xMidYMid slice"
+            style={{
+              opacity: !hovered
+                ? 1
+                : hovered && hovered.folder === d.folder
+                ? 1
+                : 0.4,
+            }}
           />
           <circle
             cx={d.x!}
             cy={d.y!}
             r={d.r}
             fill="none"
-            stroke="white"
+            stroke={
+              hovered && hovered.folder === d.folder ? "purple" : "transparent"
+            }
             strokeWidth={2}
           />
         </g>

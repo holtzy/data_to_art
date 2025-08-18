@@ -9,6 +9,7 @@ export type Artist = {
   location: [number, number];
   homepageLink: string;
   linkedinLink?: string;
+  city: string;
 };
 
 export const artistList = [
@@ -37,6 +38,7 @@ export const artistList = [
     ),
     folder: "florent-lavergne",
     location: [3.0795, 45.7935],
+    city: "Clermont Ferrand - 🇫🇷",
     homepageLink: "behance.net/lavergneflor",
     linkedinLink: "https://www.linkedin.com/in/lavergneflor",
   },
@@ -64,6 +66,7 @@ export const artistList = [
     ),
     folder: "soha-elghany",
     location: [12, 12],
+    city: "Clermont Ferrand - 🇫🇷",
     homepageLink: "https://public.tableau.com/app/profile/soha.elghany/vizzes",
     linkedinLink: "https://www.linkedin.com/in/soha-elghany/",
   },
@@ -87,6 +90,7 @@ export const artistList = [
     ),
     folder: "laura-castro",
     location: [12, 12],
+    city: "Clermont Ferrand - 🇫🇷",
     homepageLink: "www.iamlauracastro.com",
     linkedinLink: "https://www.linkedin.com/in/lauracastrosoto/",
   },
@@ -114,6 +118,7 @@ export const artistList = [
     ),
     folder: "cinzia-bongino",
     location: [45.0703, 7.6869],
+    city: "Clermont Ferrand - 🇫🇷",
     homepageLink: "https://www.cinziabongino.com",
     linkedinLink: "https://www.linkedin.com/in/cinzia-bongino-b8ab8a7a/",
   },
@@ -149,6 +154,7 @@ export const artistList = [
     ),
     folder: "jeremy-wanner",
     location: [48.8575, 2.3514],
+    city: "Clermont Ferrand - 🇫🇷",
     homepageLink: "https://oiiwa.fr/",
     linkedinLink: "https://www.linkedin.com/in/jeremy-wanner-oiiwa/",
   },
@@ -179,6 +185,7 @@ export const artistList = [
     ),
     folder: "nick-whiteley",
     location: [44.8994, 6.6432],
+    city: "Clermont Ferrand - 🇫🇷",
     homepageLink: "https://totem-digital.com",
     linkedinLink: "https://www.linkedin.com/in/nhwhiteley",
   },
@@ -210,6 +217,7 @@ export const artistList = [
     ),
     folder: "marlene-dorgny",
     location: [48.8575, 2.3514],
+    city: "Clermont Ferrand - 🇫🇷",
     homepageLink: "https://www.md-graphiste.com",
     linkedinLink: "https://www.linkedin.com/in/marlenedorgny/",
   },
@@ -236,6 +244,7 @@ export const artistList = [
     ),
     folder: "marta-sierra",
     location: [52.3676, 4.9041],
+    city: "Clermont Ferrand - 🇫🇷",
     homepageLink: "martaviz.nl",
     linkedinLink:
       "https://www.linkedin.com/in/martasierragarcia/?originalSubdomain=nl",
@@ -261,6 +270,7 @@ export const artistList = [
     ),
     folder: "alisa-singer",
     location: [41.8832, 87.6324],
+    city: "Clermont Ferrand - 🇫🇷",
     homepageLink: "https://www.environmentalgraphiti.org/",
     linkedinLink:
       "https://www.linkedin.com/in/martasierragarcia/?originalSubdomain=nl",
