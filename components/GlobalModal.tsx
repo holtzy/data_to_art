@@ -3,9 +3,11 @@
 import { ReactNode, useEffect, useState } from "react";
 import { useModal } from "@/context/ModalContext";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { projectList } from "@/lib/project-list";
 import { a } from "@react-spring/web";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export const GlobalModal = () => {
   const { modalData, closeModal, setModalData } = useModal();
@@ -74,6 +76,8 @@ export const GlobalModal = () => {
             path={imgPath}
             descriptionShort={descriptionShort}
             artist={artist}
+            closeModal={closeModal}
+            folder={folder}
           />
         ) : (
           <WideImgModalContent
@@ -82,6 +86,8 @@ export const GlobalModal = () => {
             path={imgPath}
             descriptionShort={descriptionShort}
             artist={artist}
+            closeModal={closeModal}
+            folder={folder}
           />
         )}
 
@@ -104,6 +110,8 @@ type ModalContentProps = {
   path: string;
   descriptionShort: ReactNode;
   artist: string;
+  closeModal: () => void;
+  folder: string;
 };
 
 const TallImgModalContent = ({
@@ -112,6 +120,7 @@ const TallImgModalContent = ({
   handleImageLoad,
   descriptionShort,
   artist,
+  folder,
 }: ModalContentProps) => {
   return (
     <div className="flex h-full w-full">
@@ -141,6 +150,8 @@ const WideImgModalContent = ({
   handleImageLoad,
   descriptionShort,
   artist,
+  closeModal,
+  folder,
 }: ModalContentProps) => {
   return (
     <div className="flex flex-col h-full w-full ">
@@ -149,16 +160,34 @@ const WideImgModalContent = ({
         <img
           src={path}
           alt={name || "Image"}
-          className="max-h-[60vh] max-w-full object-contain"
+          className="max-h-[50vh] max-w-full object-contain"
           onLoad={handleImageLoad}
         />
       </div>
 
       {/* Text below */}
-      <div className="wrapper">
-        <h2 className="text-2xl font-bold">{name}</h2>
-        <p className="text-gray-600">{descriptionShort}</p>
-        <p>{artist}</p>
+      <div className="wrapper mt-8">
+        <div className="flex justify-start items-center gap-8">
+          <div>
+            <span className="text-4xl font-bold font-brown-sugar">{name}</span>
+            <span className="block text-xs text-slate-600">
+              <span>by </span>
+              <Link onClick={() => closeModal()} href={`/artist/${artist}`}>
+                {artist}
+              </Link>
+            </span>
+          </div>
+          <div className="w-96">
+            <p className="text-gray-600 text-sm">{descriptionShort}</p>
+            <Link
+              onClick={() => closeModal()}
+              href={`/artist/${artist}/${folder}`}
+              className={cn(buttonVariants(), "mt-4")}
+            >
+              Read more
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
