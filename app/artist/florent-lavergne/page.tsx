@@ -14,6 +14,7 @@ import {
 import ArtistHero from "@/components/ArtistHero";
 import Parallax from "@/components/Parallax";
 import { Spacing } from "@/components/Spacing";
+import { Contact } from "@/components/Contact";
 
 export default function Page() {
   const infos = artistList.find((a) => a.folder === "florent-lavergne");
@@ -127,12 +128,7 @@ export default function Page() {
           No exhibitions are planned for this artist at the moment.
         </p>
 
-        <section className="full-bleed bg-slate-50 py-20">
-          <div className="wrapper max-w-3xl mx-auto text-center">
-            <h2 className="mb-4">Know an artist?</h2>
-            <p className="mb-0">Contact us to feature them here!</p>
-          </div>
-        </section>
+        <Contact />
       </div>
     </>
   );

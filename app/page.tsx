@@ -10,6 +10,7 @@ import Parallax from "@/components/Parallax";
 import { Slider } from "@/components/ui/slider";
 import LineChart from "@/components/LineChart";
 import { Quote } from "lucide-react";
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -148,11 +149,15 @@ export default function Home() {
       </section>
       <Spacing />
       <div className="wrapper">
-        <h2>Latest project</h2>
+        <h2 className="border-none !text-6xl ">
+          <span className="block !text-4xl text-slate-400">What's up?</span>
+          Latest
+        </h2>
         <p>
           Data to Art is constantly growing, adding new artists and projects to
           the gallery as soon as we discover them. Here is our latest addition,
-          but you can see all the available projects here.
+          but you can see all the available projects{" "}
+          <Link href="/projects">here</Link>.
         </p>
         <div className="full-bleed">
           <div className="max-w-[900px] mx-auto">
@@ -187,10 +192,26 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="wrapper my-36 ">
-        <h2>Made with ❤️ from Frane</h2>
-        <p>Who we are, why do we make this?</p>
-      </div>
+      <section className="my-24 wrapper">
+        <h2 className="border-none !text-6xl ">
+          <span className="block !text-4xl text-slate-400">In real life</span>
+          Exhibition
+        </h2>
+        <p>
+          Data art is captivating on a screen, but its true magic comes alive in
+          the real world—on a canvas you can see, touch, and feel.
+        </p>
+        <p>
+          We highlight data art exhibitions happening worldwide, and even curate
+          some ourselves. For inquiries, feel free to get in touch.
+        </p>
+
+        <div className="full-bleed my-12">
+          <img src="/asset/gallery.jpg" className="h-72 w-full object-cover" />
+        </div>
+      </section>
+
+      <Contact />
     </div>
   );
 }
