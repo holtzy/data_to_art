@@ -1,4 +1,7 @@
-import MasonryGallery from "@/components/MasonryGallery";
+"use client";
+
+import dynamic from "next/dynamic";
+
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
@@ -9,9 +12,12 @@ import { ArtistSection } from "@/components/section/ArtistSection";
 import Parallax from "@/components/Parallax";
 import { Slider } from "@/components/ui/slider";
 import LineChart from "@/components/LineChart";
-import { Quote } from "lucide-react";
 import { Contact } from "@/components/Contact";
 import { QuoteSection } from "@/components/QuoteSection";
+
+const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
