@@ -7,30 +7,16 @@ import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 import { useState } from "react";
 import { BubbleMap } from "../viz/bubbleMap/BubbleMap";
-import { Home, Linkedin } from "lucide-react";
+import { Activity, Home, Linkedin } from "lucide-react";
 
 export const ArtistSection = () => {
   const [hovered, setHovered] = useState<null | Artist>(null);
 
   return (
-    <div className="wrapper  relative">
+    <div className="wrapper relative">
       <div className="absolute right-0 top-1/2 -translate-y-1/2">
         <BubbleMap width={400} height={400} selectedArtist={hovered} />
       </div>
-
-      <h2 className="border-none !text-6xl ">
-        <span className="block !text-4xl text-slate-400">
-          From all over the world
-        </span>
-        Meet the artists
-      </h2>
-
-      <p>
-        Our goal is to showcase as many talented data artists as possible,
-        celebrating diverse voices and styles across the globe. Explore their
-        unique creations and get inspired by the endless ways data can be
-        transformed into art.
-      </p>
 
       <center className="my-12">
         <AvatarBeeswarm
@@ -48,7 +34,7 @@ export const ArtistSection = () => {
       >
         <div className="p-2">
           <div className="flex gap-4 items-center">
-            <span className="text-xl font-bold bg-gradient-to-r from-black  to-purple-500 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-purple-900  to-purple-500 bg-clip-text text-transparent">
               {hovered?.name}
             </span>
 
@@ -79,16 +65,20 @@ export const ArtistSection = () => {
         </div>
       </div>
 
+      <div className="mx-auto my-12 opacity-85">
+        <Activity />
+      </div>
+
       <div className="w-full flex gap-2 justify-center my-4">
         <Link
-          href={"/artworks"}
+          href={"/artists"}
           className={cn(
             buttonVariants({ size: "lg", variant: "outline" }),
             "mb-12"
           )}
         >
           See all artists
-        </Link>{" "}
+        </Link>
         <Link href={"/artists"} className={cn(buttonVariants({ size: "lg" }))}>
           Suggest an artist
         </Link>

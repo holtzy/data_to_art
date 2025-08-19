@@ -2,7 +2,7 @@
 
 import { artistList } from "@/lib/artist-list";
 import Link from "next/link";
-import { ArtistGlobe } from "./ArtistGlobe";
+import { ArtistSection } from "@/components/section/ArtistSection";
 
 // TODO
 // Here I want several options to visualize the artists:
@@ -12,27 +12,19 @@ import { ArtistGlobe } from "./ArtistGlobe";
 export default function Page() {
   return (
     <>
-      <div className="flex flex-wrap gap-2">
-        <p>yoooo</p>
-        {artistList.map((a, i) => {
-          return (
-            <Link
-              key={i}
-              href={"/artist/" + a.folder}
-              className="border border-slate-100 p-8 rounded-md hover:bg-slate-50 flex flex-col justify-center items-center gap-4"
-            >
-              <img
-                src={"/artist/" + a.folder + ".webp"}
-                className="rounded-full w-40 h-40"
-              />
-              <span>{a.name}</span>
-            </Link>
-          );
-        })}
+      <div className="relative mt-52 max-w-[900px] mx-auto">
+        <div className="w-full flex flex-col items-center bg-gradient-to-t from-transparent to-white">
+          <h1 className="text-9xl">Artists</h1>
+          <p className="text-center max-w-96">
+            <span>
+              {`Data to art would not be possible without the  ${artistList.length} stunning artists who agreed to share their work with us. We're deeply grateful to them and hope you'll find the one that matches your taste and style here.`}
+            </span>
+            <Link href="/about">Suggest an artist</Link>
+          </p>
+        </div>
       </div>
-      <div className="bg-white">
-        <ArtistGlobe />
-      </div>
+
+      <ArtistSection />
     </>
   );
 }

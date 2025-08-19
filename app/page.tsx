@@ -57,6 +57,22 @@ export default function Home() {
 
       <Spacing />
 
+      <div className="wrapper relative">
+        <h2 className="border-none !text-6xl ">
+          <span className="block !text-4xl text-slate-400">
+            From all over the world
+          </span>
+          Meet the artists
+        </h2>
+
+        <p>
+          Our goal is to showcase as many talented data artists as possible,
+          celebrating diverse voices and styles across the globe. Explore their
+          unique creations and get inspired by the endless ways data can be
+          transformed into art.
+        </p>
+      </div>
+
       <ArtistSection />
 
       <Spacing />
