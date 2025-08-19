@@ -3,7 +3,6 @@ import { ReactNode } from "react";
 export type Artist = {
   name: string;
   descriptionShort: ReactNode;
-  descriptionLong: ReactNode;
   folder: string;
   location: [number, number];
   homepageLink: string;
@@ -23,18 +22,6 @@ export const artistList = [
         </p>
       </>
     ),
-    descriptionLong: (
-      <>
-        <p>
-          Florent is an information designer focused on geospatial and
-          environmental data, working with Microsoft's AI For Good Lab. I love
-          exploring the intersection of data and art, and turning complex and
-          difficult topics into inviting visual experiences. I use 3D tools and
-          photo editing techniques to achieve the natural textures and color
-          palettes that define my graphic identity.
-        </p>
-      </>
-    ),
     folder: "florent-lavergne",
     location: [3.0795, 45.7935],
     city: "Clermont Ferrand - 🇫🇷",
@@ -44,11 +31,6 @@ export const artistList = [
   {
     name: "Soha Elghany",
     descriptionShort: (
-      <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
       <>
         <p>
           Soha is a data visualisation designer that focuses on humanising data
@@ -63,6 +45,7 @@ export const artistList = [
         </p>
       </>
     ),
+
     folder: "soha-elghany",
     location: [12, 12],
     city: "Clermont Ferrand - 🇫🇷",
@@ -72,11 +55,6 @@ export const artistList = [
   {
     name: "Laura Castro",
     descriptionShort: (
-      <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
       <>
         <p>
           Laura Castro – Information and Product Designer. I translate complex
@@ -97,11 +75,6 @@ export const artistList = [
   {
     name: "Cinzia Bongino",
     descriptionShort: (
-      <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
       <>
         <p>
           Cinzia Bongino is a graphic, information, and web designer with a
@@ -125,11 +98,6 @@ export const artistList = [
   {
     name: "Jeremy Wanner",
     descriptionShort: (
-      <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
       <>
         <p>
           I come from the Jura mountains where I spent my childhood between
@@ -162,11 +130,6 @@ export const artistList = [
     name: "Nick Whiteley",
     descriptionShort: (
       <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
-      <>
         <p>
           Installé dans les alpes françaises, Nick Whiteley est designer et
           fondateur de totem design company, un studio spécialisé dans la
@@ -192,11 +155,6 @@ export const artistList = [
   {
     name: "Marlène Dorgny",
     descriptionShort: (
-      <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
       <>
         <p>
           Marlene Dorgny est une graphiste d’information française. Elle a
@@ -225,11 +183,6 @@ export const artistList = [
     name: "Marta Sierra",
     descriptionShort: (
       <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
-      <>
         <p>
           I'm an information designer, but graphics sometimes can’t touch me.
           Outside work, I explore feelings I can’t always name. I started
@@ -252,11 +205,6 @@ export const artistList = [
   {
     name: "Alisa Singer",
     descriptionShort: (
-      <>
-        <p></p>
-      </>
-    ),
-    descriptionLong: (
       <>
         <p>
           Alisa believes climate change to be the most critical challenge facing

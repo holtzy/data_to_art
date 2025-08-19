@@ -11,6 +11,7 @@ import { Slider } from "@/components/ui/slider";
 import LineChart from "@/components/LineChart";
 import { Quote } from "lucide-react";
 import { Contact } from "@/components/Contact";
+import { QuoteSection } from "@/components/QuoteSection";
 
 export default function Home() {
   return (
@@ -58,7 +59,7 @@ export default function Home() {
 
       <Spacing />
 
-      <div className="wrapper relative">
+      <div className="wrapper relative mt-20">
         <h2 className="border-none !text-6xl ">
           <span className="block !text-4xl text-slate-400">
             From all over the world
@@ -68,9 +69,11 @@ export default function Home() {
 
         <p>
           Our goal is to showcase as many talented data artists as possible,
-          celebrating diverse voices and styles across the globe. Explore their
-          unique creations and get inspired by the endless ways data can be
-          transformed into art.
+          celebrating diverse voices and styles across the globe.
+        </p>
+        <p>
+          Explore their unique creations and get inspired by the endless ways
+          data can be transformed into art.
         </p>
       </div>
 
@@ -124,19 +127,10 @@ export default function Home() {
             stories embedded in that data.
           </p>
 
-          <div className="full-bleed my-20">
-            <div className="relative flex justify-center max-w-[700px] mx-auto">
-              <div className="absolute -top-4 -left-8">
-                <Quote />
-              </div>
-              <div className="absolute -bottom-4 -right-8">
-                <Quote />
-              </div>
-              <span className="font-brown-sugar text-4xl ">
-                The intersection between science and art is something magical
-              </span>
-            </div>
-          </div>
+          <QuoteSection
+            text="Data art reveals meaning from datasets, while generative art
+                emphasizes process, randomness, and system-driven creativity."
+          />
 
           <p>
             In contrast, generative art is created through algorithms and

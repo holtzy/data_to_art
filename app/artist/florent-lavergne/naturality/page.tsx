@@ -8,7 +8,7 @@ import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
-import { cn, formatDate } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const PROJECT = "naturality";

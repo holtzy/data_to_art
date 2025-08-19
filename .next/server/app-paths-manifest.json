@@ -1,9 +1,11 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/artist/cinzia-bongino/page": "app/artist/cinzia-bongino/page.js",
   "/artist/florent-lavergne/naturality/page": "app/artist/florent-lavergne/naturality/page.js",
   "/artist/florent-lavergne/page": "app/artist/florent-lavergne/page.js",
   "/artists/page": "app/artists/page.js",
   "/artworks/page": "app/artworks/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/projects/page": "app/projects/page.js"
 }
