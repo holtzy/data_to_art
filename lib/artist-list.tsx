@@ -77,20 +77,16 @@ export const artistList = [
     descriptionShort: (
       <>
         <p>
-          Cinzia Bongino is a graphic, information, and web designer with a
-          specialization in data visualization and UI/UX design. She has taught
-          two courses as a visiting professor at the Gengdan Institute of
-          Beijing University of Technology; since 2024, she teaches a
-          postgraduate course in UX/UI design at IED Milano. Aside from
-          commercial work, she sometimes develops research projects for artistic
-          contexts, in which she combines data journalism and storytelling
+          Cinzia is a graphic, information, and web designer specializing in
+          data visualization and UI/UX design. She also creates research-driven
+          artistic projects, blending data journalism with storytelling
           techniques.
         </p>
       </>
     ),
     folder: "cinzia-bongino",
-    location: [45.0703, 7.6869],
-    city: "Clermont Ferrand - 🇫🇷",
+    location: [7.6869, 45.0703],
+    city: "Turin - 🇮🇹",
     homepageLink: "https://www.cinziabongino.com",
     linkedinLink: "https://www.linkedin.com/in/cinzia-bongino-b8ab8a7a/",
   },

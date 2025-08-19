@@ -19,8 +19,7 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
     <section
       className="relative h-[80vh] w-full bg-cover bg-center"
       style={{
-        backgroundImage:
-          "url('/project/florent-lavergne/naturality/01-full.webp')",
+        backgroundImage: `url("/project/${folder}/cover.webp")`,
       }}
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
