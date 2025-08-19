@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { Project } from "./project-list";
 
 export type Artist = {
   name: string;
