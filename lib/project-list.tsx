@@ -104,16 +104,17 @@ export const projectList: Project[] = [
   ////////
   ///////
   {
-    name: "Environmental Graffiti",
-    folder: "environmental-graffiti",
+    name: "Environmental Graphiti",
+    folder: "environmental-graphiti",
     link: "https://www.environmentalgraphiti.org/",
     artist: "alisa-singer",
     date: new Date("2025-08-06"),
     descriptionShort: (
       <>
         <p>
-          Environmental Graphiti® uses art to dramatize the critical science of
-          climate change.{" "}
+          Environmental Graphiti transforms ecological data into striking visual
+          narratives, merging art and sustainability to spark reflection on our
+          natural world.
         </p>
       </>
     ),
@@ -176,6 +177,29 @@ export const projectList: Project[] = [
     descriptionShort: (
       <>
         <p></p>
+      </>
+    ),
+  },
+
+  ////////
+  ///////
+  // LAURA CASTRO
+  ////////
+  ///////
+  {
+    name: "Names on the moon",
+    folder: "names-on-the-moon",
+    link: "https://www.behance.net/gallery/168652141/The-Names-on-the-Moon",
+    artist: "cinzia-bongino",
+    date: new Date("2023-02-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A visualization of the lunar surface features through their assigned
+          names, categorizing them by people, places, proper nouns, and
+          astronaut-named sites, and presenting the data in detailed lunar
+          portraits inspired by NASA’s maps.
+        </p>
       </>
     ),
   },

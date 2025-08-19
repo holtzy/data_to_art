@@ -53,8 +53,9 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <img
           src={`/artist/${folder}.webp`}
-          className="rounded-full w-40 h-40"
+          className="rounded-full w-40 h-40 mb-8"
         />
+
         <h1>{name}</h1>
 
         <p className="text-center max-w-96">{descriptionShort}</p>

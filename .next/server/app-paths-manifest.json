@@ -1,5 +1,8 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
+  "/artist/alisa-singer/environmental-graphiti/page": "app/artist/alisa-singer/environmental-graphiti/page.js",
+  "/artist/alisa-singer/page": "app/artist/alisa-singer/page.js",
+  "/artist/cinzia-bongino/names-on-the-moon/page": "app/artist/cinzia-bongino/names-on-the-moon/page.js",
   "/artist/cinzia-bongino/page": "app/artist/cinzia-bongino/page.js",
   "/artist/florent-lavergne/naturality/page": "app/artist/florent-lavergne/naturality/page.js",
   "/artist/florent-lavergne/page": "app/artist/florent-lavergne/page.js",

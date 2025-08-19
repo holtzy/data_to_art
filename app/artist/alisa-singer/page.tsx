@@ -15,7 +15,7 @@ import { Spacing } from "@/components/Spacing";
 import { Contact } from "@/components/Contact";
 
 export default function Page() {
-  const infos = artistList.find((a) => a.folder === "cinzia-bongino");
+  const infos = artistList.find((a) => a.folder === "alisa-singer");
 
   if (!infos) {
     return null;
@@ -32,36 +32,36 @@ export default function Page() {
       <div className="relative wrapper max-w-6xl mx-auto px-4">
         <div className="mb-12">
           <p className="drop-cap">
-            Cinzia Bongino is a multidisciplinary designer working across
-            information, UX/UI, web, and editorial design. Her practice blends
-            rigorous data research with clear visual storytelling, resulting in
-            projects that make complex subjects accessible and engaging.
+            Alisa Singer is a digital artist whose work transforms climate
+            science, social issues, and personal experiences into vibrant,
+            data-driven visual art. Her practice combines analytical research
+            with creative storytelling to create compelling, visually engaging
+            narratives.
           </p>
         </div>
 
         <Parallax
           text=""
-          imageUrl="/project/cinzia-bongino/names-on-the-moon/04-full.webp"
+          imageUrl="/project/alisa-singer/environmental-graphiti/04.webp"
         />
 
         <div className="my-12">
           <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
-            Whether translating advanced climate models into intuitive tools,
-            illustrating the history of satellites in orbit, or designing
-            engaging editorial pieces, Cinzia’s work is defined by clarity,
-            accessibility, and care for visual detail.
+            From translating complex climate data into striking visual
+            statements to exploring social themes through digital painting,
+            Alisa’s work is defined by clarity, vibrancy, and thought-provoking
+            aesthetics.
           </p>
           <p className="mt-4">
-            She collaborates with institutions, startups, and cultural
-            organizations, bridging technical precision with creative
-            expression. From interactive dashboards to printed posters, her
-            designs invite audiences to explore, learn, and reflect.
+            She collaborates with cultural institutions, environmental
+            organizations, and tech platforms, turning information into art that
+            resonates with diverse audiences. Each project is both an artistic
+            expression and a tool for awareness and reflection.
           </p>
           <p className="mt-4">
-            In addition to her design practice, Cinzia teaches UX/UI design at
-            institutions such as IED Milano and Boolean Careers, fostering the
-            next generation of designers through a mix of theory, critical
-            thinking, and hands-on practice.
+            Her series, including <em>Environmental Graphiti</em> and{" "}
+            <em>What's Your Mission?</em>, have been exhibited internationally
+            and continue to push the boundaries of data-driven contemporary art.
           </p>
         </div>
 
@@ -70,19 +70,15 @@ export default function Page() {
           <Carousel opts={{ align: "start" }} className="w-[90%]">
             <CarouselContent>
               {[
-                "/names-on-the-moon/01-thumb.webp",
-                "/names-on-the-moon/02-thumb.webp",
-                "/names-on-the-moon/03-thumb.webp",
-                "/names-on-the-moon/04-thumb.webp",
-                "/names-on-the-moon/05-thumb.webp",
-                "/names-on-the-moon/06-thumb.webp",
-                "/names-on-the-moon/07-thumb.webp",
-                "/names-on-the-moon/08-thumb.webp",
+                "/environmental-graphiti/01.webp",
+                "/environmental-graphiti/02.webp",
+                "/environmental-graphiti/03.webp",
+                "/environmental-graphiti/04.webp",
               ].map((img, i) => (
                 <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/4">
                   <img
-                    src={`/project/cinzia-bongino/${img}`}
-                    alt={`Cinzia Bongino artwork ${i + 1}`}
+                    src={`/project/alisa-singer/${img}`}
+                    alt={`Alisa Singer artwork ${i + 1}`}
                   />
                 </CarouselItem>
               ))}
@@ -104,7 +100,7 @@ export default function Page() {
               >
                 <div className="flex flex-col gap-2">
                   <img
-                    src={`/project/${folder}/${p.folder}/01-thumb.webp`}
+                    src={`/project/${folder}/${p.folder}/01.webp`}
                     alt={`${p.name} project thumbnail`}
                     className="rounded-md transition-transform group-hover:scale-105"
                   />

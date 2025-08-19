@@ -212,8 +212,8 @@ export const artistList = [
       </>
     ),
     folder: "alisa-singer",
-    location: [41.8832, 87.6324],
-    city: "Clermont Ferrand - 🇫🇷",
+    location: [87.6324, 41.8832],
+    city: "Chicago - 🇺🇸",
     homepageLink: "https://www.environmentalgraphiti.org/",
     linkedinLink:
       "https://www.linkedin.com/in/martasierragarcia/?originalSubdomain=nl",
