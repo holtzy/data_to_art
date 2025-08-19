@@ -1,14 +1,20 @@
 "use client";
 
 import { useState } from "react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
+import { Button, buttonVariants } from "./ui/button";
 
-const EmailButton = ({ link, name }: { link: string; name: string }) => {
+export const EmailButton = ({ link, name }: { link: string; name: string }) => {
   const [text, setText] = useState("Copy");
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button size={"lg"} variant={isPrimary ? "default" : "outline"}>
+        <Button size={"lg"} variant={"default"}>
           {name}
         </Button>
       </DropdownMenuTrigger>
