@@ -50,11 +50,9 @@ export const artistList = [
     descriptionShort: (
       <>
         <p>
-          Laura Castro – Information and Product Designer. I translate complex
-          data into visual stories. With a background in audiovisual
-          communication, graphic design, and a master’s in infographics and data
-          visualization, I navigate the intersection of science, design, and
-          technology to craft clear and engaging experiences.
+          Laura Castro bridges product and information design to create data
+          stories that are not only insightful but also seamlessly woven into
+          user-centered digital experiences.
         </p>
       </>
     ),

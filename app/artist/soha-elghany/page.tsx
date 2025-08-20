@@ -1,6 +1,4 @@
 import { artistList } from "@/lib/artist-list";
-import { projectList } from "@/lib/project-list";
-import Link from "next/link";
 import ArtistHero from "@/components/ArtistHero";
 import Parallax from "@/components/Parallax";
 import { Spacing } from "@/components/Spacing";
@@ -17,7 +15,6 @@ export default function Page() {
     return null;
   }
   const allImages = getArtistImages(ARTIST);
-  const { folder } = infos;
 
   return (
     <>
