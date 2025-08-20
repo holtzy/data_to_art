@@ -33,22 +33,15 @@ export const artistList = [
     descriptionShort: (
       <>
         <p>
-          Soha is a data visualisation designer that focuses on humanising data
-          through data art. There is just something about data when it comes to
-          real life events and figuring out a way to visualise it in a way that
-          can tell a powerful story and provoke emotion that she is passionate
-          about, especially figuring out how to do provoke an emotional reaction
-          from the audience. We as human being are visual creatures and showing
-          a spreadsheet of number doesnt tell a story that can tug at people's
-          empathy level, instead the visual representation of that story does a
-          better job.
+          A data visualisation designer that focuses on humanising data through
+          data art.
         </p>
       </>
     ),
 
     folder: "soha-elghany",
-    location: [12, 12],
-    city: "Clermont Ferrand - 🇫🇷",
+    location: [0.1276, 51.5072],
+    city: "London - 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     homepageLink: "https://public.tableau.com/app/profile/soha.elghany/vizzes",
     linkedinLink: "https://www.linkedin.com/in/soha-elghany/",
   },

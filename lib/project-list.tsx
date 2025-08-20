@@ -140,6 +140,23 @@ export const projectList: Project[] = [
       </>
     ),
   },
+  {
+    name: "Missing Migrants",
+    folder: "missing-migrants",
+    link: "https://public.tableau.com/app/profile/soha.elghany/viz/MissingMigrantsprintpt_1/Dashboard13",
+    artist: "soha-elghany",
+    date: new Date("2022-31-05"),
+    descriptionShort: (
+      <>
+        <p>
+          The Missing Migrants Project tracks people who died or went missing
+          during migration toward international destinations. Each spiral
+          represents a migration route, and each mark along it corresponds to an
+          individual incident.
+        </p>
+      </>
+    ),
+  },
 
   ////////
   ///////
