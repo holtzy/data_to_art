@@ -7,18 +7,16 @@ import { Spacing } from "@/components/Spacing";
 import { Contact } from "@/components/Contact";
 import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
+import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
 
 const ARTIST = "soha-elghany";
 
 export default function Page() {
   const infos = artistList.find((a) => a.folder === ARTIST);
-
   if (!infos) {
     return null;
   }
-
   const allImages = getArtistImages(ARTIST);
-
   const { folder } = infos;
 
   return (
@@ -27,7 +25,7 @@ export default function Page() {
 
       <Spacing />
 
-      <div className="relative wrapper max-w-6xl mx-auto px-4">
+      <div className="wrapper">
         <div className="mb-12">
           <p>
             Soha is a data visualisation designer that focuses on{" "}
@@ -62,30 +60,7 @@ export default function Page() {
 
         <Spacing />
 
-        <h2 className="mb-6">Projects</h2>
-        <div className="flex flex-wrap gap-6 mb-12">
-          {projectList
-            .filter((p) => p.artist === folder)
-            .map((p, i) => (
-              <Link
-                key={i}
-                href={`/artist/${folder}/${p.folder}`}
-                className="w-full sm:w-1/2 lg:w-1/4 cursor-pointer group"
-              >
-                <div className="flex flex-col gap-2">
-                  <img
-                    src={`/project/${folder}/${p.folder}/01-thumb.webp`}
-                    alt={`${p.name} project thumbnail`}
-                    className="rounded-md transition-transform group-hover:scale-105"
-                  />
-                  <span className="font-semibold text-lg">{p.name}</span>
-                  <div className="text-xs text-slate-500">
-                    {p.descriptionShort}
-                  </div>
-                </div>
-              </Link>
-            ))}
-        </div>
+        <ArtistProjectsSection artistId={ARTIST} />
 
         <h2 className="mb-4">Exhibition</h2>
         <p className="mb-12">

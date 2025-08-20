@@ -9,7 +9,6 @@ import {
 type ArtistGallerySectionProps = { imgs: string[] };
 
 export const ArtistGallerySection = ({ imgs }: ArtistGallerySectionProps) => {
-  console.log("imgs", imgs);
   return (
     <>
       <h2 className="mb-6">Gallery</h2>
