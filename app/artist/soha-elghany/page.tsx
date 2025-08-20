@@ -1,18 +1,12 @@
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import Link from "next/link";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import ArtistHero from "@/components/ArtistHero";
 import Parallax from "@/components/Parallax";
 import { Spacing } from "@/components/Spacing";
 import { Contact } from "@/components/Contact";
+import { ArtistGallerySection } from "@/components/ArtistGallerySection";
+import { getArtistImages } from "@/lib/get-artist-images";
 
 const ARTIST = "soha-elghany";
 
@@ -22,6 +16,8 @@ export default function Page() {
   if (!infos) {
     return null;
   }
+
+  const allImages = getArtistImages(ARTIST);
 
   const { folder } = infos;
 
@@ -60,35 +56,11 @@ export default function Page() {
           </p>
         </div>
 
-        <h2 className="mb-6">Gallery</h2>
-        <div className="full-bleed flex justify-center mb-12">
-          <Carousel opts={{ align: "start" }} className="w-[90%]">
-            <CarouselContent>
-              {[
-                "wet-feet/04-thumb.webp",
-                "wet-feet/02-thumb.webp",
-                "naturality/01-thumb.webp",
-                "wet-feet/03-thumb.webp",
-                "other/02-thumb.webp",
-                "other/03-thumb.webp",
-                "other/01-thumb.webp",
-                "other/04-thumb.webp",
-                "other/05-thumb.webp",
-                "other/06-thumb.webp",
-              ].map((img, i) => (
-                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/4">
-                  <img
-                    src={`/project/florent-lavergne/${img}`}
-                    alt={`Florent Lavergne artwork ${i + 1}`}
-                    className="h-72 object-cover"
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
+        <Spacing />
+
+        <ArtistGallerySection imgs={allImages} />
+
+        <Spacing />
 
         <h2 className="mb-6">Projects</h2>
         <div className="flex flex-wrap gap-6 mb-12">
