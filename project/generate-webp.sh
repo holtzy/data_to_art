@@ -20,7 +20,7 @@ FULL_WIDTH=1600
 BLUR_WIDTH=20
 
 # Process images
-for file in "$INPUT_DIR"/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp}; do
+for file in "$INPUT_DIR"/*.{jpg,jpeg,png,JPG,JPEG,PNG,webp,avif}; do
   [ -e "$file" ] || continue  # Skip if no match
 
   filename=$(basename -- "$file")
