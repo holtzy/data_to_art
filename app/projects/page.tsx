@@ -9,7 +9,7 @@ export default function Page() {
     <div>
       <div className="mt-44 flex flex-col items-center bg-gradient-to-t from-transparent to-white">
         <h1 className="text-9xl">Projects</h1>
-        <p className="text-center max-w-62">{`kkk`}</p>
+        <p className="text-center max-w-62">{}</p>
       </div>
       <div className="wrapper">
         <div className="grid grid-cols-2 gap-2">

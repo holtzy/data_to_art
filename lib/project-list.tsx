@@ -58,23 +58,13 @@ export const projectList: Project[] = [
     folder: "glove-rose",
     link: "https:",
     artist: "jeremy-wanner",
-    date: new Date("2025-08-06"),
+    date: new Date("2023-08-06"),
     descriptionShort: (
       <>
         <p>
-          The Glove Rose is a new species of Rose, created using Olympic boxing
-          data from the PerfAnalytics research project. The data first is
-          collected through a markerless technique using only pre-calibrated
-          cameras around the boxing ring. Computer visions algorithms developed
-          by the research team transform the video flux into useful insights for
-          athletes and coaches. Together with Alexandre Schortgen PhD candidate
-          at INSEP and INRIA within the PerfAnalytics team, we later turned the
-          data captured at the french Olympic Qualification Tournament into a
-          new specie of roses : Rosa Pugilatu. More commonly known as the Glove
-          Rose, it blossoms following an Olympic flowering cycle. Each rose
-          represents different facets of a boxing match : if it is growing in
-          the direction of the outcome of a fight, beware of its fierce thorns,
-          which are all blows to the opponent wishing to pick it!
+          The Glove Rose is a unique data art project that transforms Olympic
+          boxing analytics into a blooming digital rose, visually capturing the
+          dynamics and outcomes of each match.
         </p>
       </>
     ),

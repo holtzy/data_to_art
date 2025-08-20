@@ -57,8 +57,8 @@ export const artistList = [
       </>
     ),
     folder: "laura-castro",
-    location: [12, 12],
-    city: "Clermont Ferrand - 🇫🇷",
+    location: [8.5417, 47.3769],
+    city: "Zurich - 🇨🇭",
     homepageLink: "www.iamlauracastro.com",
     linkedinLink: "https://www.linkedin.com/in/lauracastrosoto/",
   },
@@ -87,28 +87,15 @@ export const artistList = [
     descriptionShort: (
       <>
         <p>
-          I come from the Jura mountains where I spent my childhood between
-          forest trails and sports fields. After following a sports-study
-          training in handball until the baccalaureate, I moved to Switzerland
-          to study biomechanics at the Swiss Federal Institute of Technology
-          (EPFL) in Lausanne. During my studies, I passionately discovered the
-          multiple facets of scientific outreach for the general public. In
-          2020, I joined the French National Institute of Sport, Expertise, and
-          Performance (INSEP) and its Medalability project as a data-scientist,
-          analyzing international competition in preparation for the Paris 2024
-          Games. At the same time, I devoted my free time to turning everyday
-          tools into means of artistic expression. Passionate about detours and
-          creation, I founded Oiiwa in 2024. From my digital adventure
-          playground, I transform a digital raw material into a fun and
-          intelligible form. Aimed at a wide range of audiences and whether
-          intended for printed, digital or plastic media, my creations are new
-          ways of interacting with data by making them tangible and interactive!
+          Jeremy Wanner is a data scientist and creative from the Jura
+          mountains, transforming digital raw material into playful, tangible,
+          and interactive data art for diverse audiences.
         </p>
       </>
     ),
     folder: "jeremy-wanner",
-    location: [48.8575, 2.3514],
-    city: "Clermont Ferrand - 🇫🇷",
+    location: [2.3514, 48.8575],
+    city: "Paris - 🇫🇷",
     homepageLink: "https://oiiwa.fr/",
     linkedinLink: "https://www.linkedin.com/in/jeremy-wanner-oiiwa/",
   },

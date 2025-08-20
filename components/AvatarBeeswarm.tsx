@@ -7,7 +7,7 @@ interface AvatarBeeswarmProps {
   width?: number;
   height?: number;
   setHovered: (a: Artist) => void;
-  hovered: Artist;
+  hovered: Artist | null;
 }
 
 export default function AvatarBeeswarm({
@@ -61,6 +61,7 @@ export default function AvatarBeeswarm({
             setHovered(d);
           }}
           className="cursor-pointer"
+          onClick={() => (window.location.href = `/artist/${d.folder}`)}
         >
           <image
             href={`/artist/${d.folder}.webp`}
