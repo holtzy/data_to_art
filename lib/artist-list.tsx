@@ -105,17 +105,10 @@ export const artistList = [
     descriptionShort: (
       <>
         <p>
-          Installé dans les alpes françaises, Nick Whiteley est designer et
-          fondateur de totem design company, un studio spécialisé dans la
-          création d’identités visuelles, de web design et le développement de
-          stratégies numériques. Son approche allie esthétique et engagement,
-          avec une attention particulière à l’impact social et environnemental
-          du design. Inspiré par un documentaire sur les gorilles de montagne,
-          il s’est tourné vers la data visualisation pour sensibiliser à la
-          disparition des espèces et à la dégradation des habitats naturels. À
-          la croisée de l’illustration et de la data, son travail montre une
-          volonté de faire du design un outil de compréhension et d’impact
-          émotionnel, au service d’enjeux concrets.
+          Nick Whiteley is a designer based in the French Alps, founder of TOTEM
+          Design Company, who uses thoughtful, honest design and data
+          visualization to create impactful brands and raise awareness about
+          environmental and social issues.
         </p>
       </>
     ),

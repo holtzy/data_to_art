@@ -83,7 +83,11 @@ export const projectList: Project[] = [
     date: new Date("2025-08-06"),
     descriptionShort: (
       <>
-        <p>Write description from totem digital age</p>
+        <p>
+          A generative design project that visualizes endangered species
+          populations, where each dot represents a living animal and the image
+          gradually disappears as numbers decline.
+        </p>
       </>
     ),
   },
