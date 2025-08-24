@@ -35,7 +35,7 @@ export default function Page() {
 
         <Parallax
           text=""
-          imageUrl="/project/marlene-dorgny/sample-image.webp"
+          imageUrl="/project/marlene-dorgny/riot/02-full.webp"
         />
 
         <div className="my-12">
