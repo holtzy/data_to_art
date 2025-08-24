@@ -214,4 +214,40 @@ export const projectList: Project[] = [
       </>
     ),
   },
+
+  ////////
+  ///////
+  // MARLENE
+  ////////
+  ///////
+  {
+    name: "Riot Grrrl",
+    folder: "riot",
+    link: "https://md-graphiste.com/portfolio_page/the-dataviz-riot-grrrl-project/",
+    artist: "marlene-dorgny",
+    date: new Date("2023-02-01"),
+    descriptionShort: (
+      <>
+        <p>
+          An exploration of the feminist punk movement Riot Grrrl, which emerged
+          in the early 1990s in the Pacific Northwest of the United States.
+        </p>
+      </>
+    ),
+  },
+  {
+    name: "Manchester Music City",
+    folder: "manchester",
+    link: "https://md-graphiste.com/portfolio_page/manchester-music-city-1976-1996/",
+    artist: "marlene-dorgny",
+    date: new Date("2023-02-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A data-driven network map revealing the web of relationships that
+          shaped Manchester’s vibrant music scene from 1976 to 1996.
+        </p>
+      </>
+    ),
+  },
 ];
