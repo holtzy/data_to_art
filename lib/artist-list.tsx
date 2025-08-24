@@ -113,8 +113,8 @@ export const artistList = [
       </>
     ),
     folder: "nick-whiteley",
-    location: [44.8994, 6.6432],
-    city: "Clermont Ferrand - 🇫🇷",
+    location: [6.6432, 44.8994],
+    city: "Briançon - 🇫🇷",
     homepageLink: "https://totem-digital.com",
     linkedinLink: "https://www.linkedin.com/in/nhwhiteley",
   },
@@ -124,24 +124,15 @@ export const artistList = [
     descriptionShort: (
       <>
         <p>
-          Marlene Dorgny est une graphiste d’information française. Elle a
-          découvert la datavisualisation en tapant dans Google la question d’un
-          client « comment rendre un tableau joli ? ». Elle a découvert une
-          discipline mêlant l’analyse et le design, le sens avant le beau, le
-          fond avant mais avec la forme. Se plonger dans des données, trouver
-          l’histoire qui se cache derrière, structurer le tout pour transmettre
-          une information compréhensible et utile, telle est la démarche à
-          chaque fois passionnante. En 2018, elle commence à visualiser un livre
-          sur la scène musicale mancunienne. Sous forme de témoignages, le livre
-          raconte comment les personnes se sont croisées, connectées, ont fait
-          de la musique ensemble. Une passion pour la cartographie de réseaux
-          était née.
+          Marlene Dorgny is a French information designer who transforms data
+          into clear, meaningful, and beautifully structured stories, with a
+          special passion for network mapping.
         </p>
       </>
     ),
     folder: "marlene-dorgny",
-    location: [48.8575, 2.3514],
-    city: "Clermont Ferrand - 🇫🇷",
+    location: [2.3514, 48.8575],
+    city: "Paris - 🇫🇷",
     homepageLink: "https://www.md-graphiste.com",
     linkedinLink: "https://www.linkedin.com/in/marlenedorgny/",
   },

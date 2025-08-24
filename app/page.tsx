@@ -49,7 +49,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="relative max-w-[900px] mx-auto h-[900px] overflow-hidden">
+        <div className="relative max-w-[900px] mx-auto h-[2000px] overflow-hidden">
           <MasonryGallery imgPaths={BEST_IMAGES} />
           <div className="absolute top-0 left-0 w-full h-42 bg-gradient-to-b from-white to-transparent pointer-events-none"></div>
           <div className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-white to-transparent flex justify-center items-end">

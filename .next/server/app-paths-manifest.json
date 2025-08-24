@@ -1,17 +1,5 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/artist/cinzia-bongino/page": "app/artist/cinzia-bongino/page.js",
-  "/artist/florent-lavergne/page": "app/artist/florent-lavergne/page.js",
-  "/artist/florent-lavergne/wet-feet/page": "app/artist/florent-lavergne/wet-feet/page.js",
-  "/artist/jeremy-wanner/glove-rose/page": "app/artist/jeremy-wanner/glove-rose/page.js",
-  "/artist/jeremy-wanner/page": "app/artist/jeremy-wanner/page.js",
-  "/artist/laura-castro/page": "app/artist/laura-castro/page.js",
-  "/artist/nick-whiteley/page": "app/artist/nick-whiteley/page.js",
-  "/artist/nick-whiteley/vanishing-points/page": "app/artist/nick-whiteley/vanishing-points/page.js",
-  "/artist/soha-elghany/page": "app/artist/soha-elghany/page.js",
-  "/artists/page": "app/artists/page.js",
-  "/artworks/page": "app/artworks/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/projects/page": "app/projects/page.js"
+  "/artist/marlene-dorgny/page": "app/artist/marlene-dorgny/page.js",
+  "/page": "app/page.js"
 }
