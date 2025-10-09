@@ -142,13 +142,10 @@ export const artistList = [
     descriptionShort: (
       <>
         <p>
-          I'm an information designer, but graphics sometimes can’t touch me.
-          Outside work, I explore feelings I can’t always name. I started
-          journaling, then began collecting data and making it visual. I create
-          handmade pieces from personal data. Habits, memories, moods. It’s a
-          slow, reflective process that helps me listen to myself. I move away
-          from standard charts, experimenting with intuitive, expressive forms.
-          My work sits between data, emotion and self-awareness.
+          Marta creates handmade data visualizations that turn personal
+          feelings, habits, and memories into expressive visual forms. Her work
+          sits between data, emotion, and self-awareness, exploring what
+          standard charts can’t capture.
         </p>
       </>
     ),

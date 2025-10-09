@@ -250,4 +250,27 @@ export const projectList: Project[] = [
       </>
     ),
   },
+
+  ////////
+  ///////
+  // MARTA SIERRA
+  ////////
+  ///////
+  {
+    name: "Inner Metrics",
+    folder: "inner-metrics",
+    link: "https://www.martaviz.nl/journal-dataviz",
+    artist: "marta-sierra",
+    date: new Date("2022-01-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A fun and creative challenge for experimenting with data visualization
+          techniques using personal data. I joined in 2022 to push my creative
+          boundaries and explore new visualization methods, creating both a
+          drawing and a digital version.
+        </p>
+      </>
+    ),
+  },
 ];

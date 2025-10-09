@@ -25,37 +25,47 @@ export default function Page() {
       <div className="relative wrapper max-w-6xl mx-auto px-4">
         <div className="mb-12">
           <p className="drop-cap">
-            I come from the Jura mountains where I spent my childhood between
-            forest trails and sports fields. After following a sports-study
-            training in handball until the baccalaureate, I moved to Switzerland
-            to study biomechanics at the Swiss Federal Institute of Technology
-            (EPFL) in Lausanne. During my studies, I passionately discovered the
-            multiple facets of scientific outreach for the general public.
+            Marta Sierra is an Amsterdam-based information designer who
+            transforms complex data into meaningful, <b>human-centered</b>{" "}
+            visual stories. With a background in information design, she loves
+            distilling complexity and exploring creative, intuitive ways to
+            represent information.
+          </p>
+          <p>
+            Her goal is to make data not only understandable and accessible but
+            also <b>visually captivating</b> and emotionally resonant.
           </p>
         </div>
 
         <Parallax
           text=""
-          imageUrl="/project/jeremy-wanner/glove-rose/01-full.webp"
+          imageUrl="/project/marta-sierra/inner-metrics/01_ThankYou_MartaSierra-full.webp"
         />
 
         <div className="my-12">
           <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
-            In 2020, I joined the French National Institute of Sport, Expertise,
-            and Performance (INSEP) and its Medalability project as a
-            data-scientist, analyzing international competition in preparation
-            for the Paris 2024 Games. At the same time, I devoted my free time
-            to turning everyday tools into means of artistic expression.
+            Her personal work goes beyond traditional charts, blending data,
+            emotion, and self-awareness. Marta collects data about her own
+            habits, moods, and memories, then turns them into handmade visual
+            pieces.
+          </p>
+          <p>
+            This slow, reflective process helps her listen to herself and
+            express what words often can’t capture. The result is a body of work
+            that feels both analytical and deeply personal—where data becomes a
+            mirror for the inner world.
           </p>
           <p className="mt-4">
-            Passionate about detours and creation, I founded Oiiwa in 2024. From
-            my digital adventure playground, I transform a digital raw material
-            into a fun and intelligible form.
+            Marta’s creations often connect to broader themes such as
+            sustainability, well-being, and social awareness. By revealing the
+            human stories within data, she invites viewers to reflect on their
+            own experiences and relationships with information.
           </p>
-          <p className="mt-4">
-            Aimed at a wide range of audiences and whether intended for printed,
-            digital or plastic media, my creations are new ways of interacting
-            with data by making them tangible and interactive!
+          <p>
+            Her participation in the <b>#journaldataviz</b> challenge in 2022,
+            where she created both handmade and digital visualizations from
+            personal data, perfectly embodies her approach: blending rigor,
+            creativity, and emotion to turn data into art.
           </p>
         </div>
 
