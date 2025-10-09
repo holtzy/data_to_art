@@ -45,25 +45,39 @@ export default function Page() {
           imageUrl="/project/alisa-singer/environmental-graphiti/04.webp"
         />
 
-        <div className="my-12">
-          <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
-            From translating complex climate data into striking visual
-            statements to exploring social themes through digital painting,
-            Alisa’s work is defined by clarity, vibrancy, and thought-provoking
-            aesthetics.
-          </p>
-          <p className="mt-4">
-            She collaborates with cultural institutions, environmental
-            organizations, and tech platforms, turning information into art that
-            resonates with diverse audiences. Each project is both an artistic
-            expression and a tool for awareness and reflection.
-          </p>
-          <p className="mt-4">
-            Her series, including <em>Environmental Graphiti</em> and{" "}
-            <em>What's Your Mission?</em>, have been exhibited internationally
-            and continue to push the boundaries of data-driven contemporary art.
-          </p>
+        <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+          From translating complex climate data into striking visual statements
+          to exploring social themes through digital painting, Alisa’s work is
+          defined by clarity, vibrancy, and thought-provoking aesthetics.
+        </p>
+        <p className="mt-4">
+          She collaborates with cultural institutions, environmental
+          organizations, and tech platforms, turning information into art that
+          resonates with diverse audiences. Each project is both an artistic
+          expression and a tool for awareness and reflection.
+        </p>
+
+        <div className="full-bleed my-12">
+          <div className="">
+            <img
+              src="/project/alisa-singer/environmental-graphiti/06.webp"
+              className="w-full"
+            />
+            <div className="flex justify-end">
+              <p className="text-slate-500 text-sm text-right max-w-[250px] mt-4 !leading-snug">
+                Walking into the moon by Alisa Singer shows the evolution of the
+                number of kangarro. Read more about the environmental graphiti
+                project it's part of.
+              </p>
+            </div>
+          </div>
         </div>
+
+        <p className="mt-4">
+          Her series, including <em>Environmental Graphiti</em> and{" "}
+          <em>What's Your Mission?</em>, have been exhibited internationally and
+          continue to push the boundaries of data-driven contemporary art.
+        </p>
 
         <h2 className="mb-6">Gallery</h2>
         <div className="full-bleed flex justify-center mb-12">

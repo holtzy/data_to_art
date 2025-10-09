@@ -160,11 +160,9 @@ export const artistList = [
     descriptionShort: (
       <>
         <p>
-          Alisa believes climate change to be the most critical challenge facing
-          our world and sought to find a way to use her art to further efforts
-          to bring awareness to the issue. She was attracted by the inherently
-          aesthetic design elements of scientific charts and graphs, and
-          intrigued by the idea of using art to give them dramatic effect.
+          Alisa Singer is a digital artist who transforms climate data and
+          social issues into vibrant, thought-provoking visual art that inspires
+          awareness and reflection.
         </p>
       </>
     ),

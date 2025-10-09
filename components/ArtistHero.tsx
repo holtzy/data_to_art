@@ -35,22 +35,22 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
       {/* White overlay with a circular hole */}
       <div
         className="absolute inset-0 bg-white/80 pointer-events-none"
-        style={{
-          WebkitMaskImage: `radial-gradient(circle ${RADIUS}px at ${
-            spotlight.x
-          }px ${spotlight.y}px, transparent ${RADIUS}px, black ${
-            RADIUS + 1
-          }px)`,
-          WebkitMaskRepeat: "no-repeat",
-          maskImage: `radial-gradient(circle ${RADIUS}px at ${spotlight.x}px ${
-            spotlight.y
-          }px, transparent ${RADIUS}px, black ${RADIUS + 1}px)`,
-          maskRepeat: "no-repeat",
-        }}
+        // style={{
+        //   WebkitMaskImage: `radial-gradient(circle ${RADIUS}px at ${
+        //     spotlight.x
+        //   }px ${spotlight.y}px, transparent ${RADIUS}px, black ${
+        //     RADIUS + 1
+        //   }px)`,
+        //   WebkitMaskRepeat: "no-repeat",
+        //   maskImage: `radial-gradient(circle ${RADIUS}px at ${spotlight.x}px ${
+        //     spotlight.y
+        //   }px, transparent ${RADIUS}px, black ${RADIUS + 1}px)`,
+        //   maskRepeat: "no-repeat",
+        // }}
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-row gap-6 items-center justify-center h-full text-center px-4">
+      <div className="relative z-10 flex flex-row gap-12 items-center justify-center h-full text-center px-4">
         <img src={`/artist/${folder}.webp`} className="w-82 h-82" />
 
         <div className="flex flex-col items-start">
