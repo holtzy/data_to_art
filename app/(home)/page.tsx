@@ -111,7 +111,7 @@ export default function Home() {
           </p>
 
           <div className="flex gap-6 items-center justify-center mt-8">
-            <span className="uppercase font-light">More Science</span>
+            <span className="font-light">More Science</span>
             <Slider
               defaultValue={[60]}
               max={100}
