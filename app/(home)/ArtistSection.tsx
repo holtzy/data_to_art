@@ -1,13 +1,13 @@
 "use client";
 
 import { Artist, artistList } from "@/lib/artist-list";
-import AvatarBeeswarm from "../AvatarBeeswarm";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "../ui/button";
 import { useState } from "react";
-import { BubbleMap } from "../viz/bubbleMap/BubbleMap";
 import { Activity, Home, Linkedin } from "lucide-react";
+import { BubbleMap } from "@/components/viz/bubbleMap/BubbleMap";
+import AvatarBeeswarm from "@/components/AvatarBeeswarm";
+import { buttonVariants } from "@/components/ui/button";
 
 export const ArtistSection = () => {
   const [hovered, setHovered] = useState<null | Artist>(null);

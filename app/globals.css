@@ -115,7 +115,7 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    font-family: "pptelegraph";
+    font-family: var(--font-instrument-serif);
   }
   body {
     @apply bg-background text-foreground;
@@ -152,7 +152,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "brown-sugar";
+  font-family: var(--font-instrument-serif);
 }
 h1 {
   @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;

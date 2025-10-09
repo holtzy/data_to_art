@@ -8,12 +8,13 @@ import { buttonVariants } from "@/components/ui/button";
 import { Spacing } from "@/components/Spacing";
 import FiveImgsGallery from "@/components/FiveImgsGallery";
 import { NoiseDivider } from "@/components/NoiseDivider";
-import { ArtistSection } from "@/components/section/ArtistSection";
+import { ArtistSection } from "./ArtistSection";
 import Parallax from "@/components/Parallax";
 import { Slider } from "@/components/ui/slider";
 import LineChart from "@/components/LineChart";
 import { Contact } from "@/components/Contact";
 import { QuoteSection } from "@/components/QuoteSection";
+import { ArtScienceCursorSection } from "./ArtScienceCursorSection";
 
 const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), {
   ssr: false,
@@ -23,10 +24,6 @@ export default function Home() {
   return (
     <div>
       <section className="relative flex flex-col justify-center items-center pt-20">
-        <div className="absolute inset-0 flex items-center pt-20">
-          <LineChart />
-        </div>
-
         <div className="relative bg-gradient-to-r from-transparent via-white to-transparent px-40 pt-14 pb-4 flex flex-col items-center mt-20">
           <div>
             <div className="w-full flex justify-end">
@@ -48,6 +45,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+
       <section>
         <div className="relative max-w-[900px] mx-auto h-[2000px] overflow-hidden">
           <MasonryGallery imgPaths={BEST_IMAGES} />
@@ -110,21 +108,7 @@ export default function Home() {
             revealing their meaning with extra context.
           </p>
 
-          <div className="flex gap-6 items-center justify-center mt-8">
-            <span className="font-light">More Science</span>
-            <Slider
-              defaultValue={[60]}
-              max={100}
-              step={20}
-              className={cn("w-[200px]")}
-            />
-            <span>More Art</span>
-          </div>
-
-          <Parallax
-            text=""
-            imageUrl="/project/florent-lavergne/wet-feet/04-full.webp"
-          />
+          <ArtScienceCursorSection />
 
           <p>
             While data art and generative art both involve digital creativity,

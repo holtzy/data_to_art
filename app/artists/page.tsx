@@ -2,7 +2,7 @@
 
 import { artistList } from "@/lib/artist-list";
 import Link from "next/link";
-import { ArtistSection } from "@/components/section/ArtistSection";
+import { ArtistSection } from "../(home)/ArtistSection";
 
 // TODO
 // Here I want several options to visualize the artists:
