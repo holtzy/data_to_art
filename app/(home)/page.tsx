@@ -9,9 +9,6 @@ import { Spacing } from "@/components/Spacing";
 import FiveImgsGallery from "@/components/FiveImgsGallery";
 import { NoiseDivider } from "@/components/NoiseDivider";
 import { ArtistSection } from "./ArtistSection";
-import Parallax from "@/components/Parallax";
-import { Slider } from "@/components/ui/slider";
-import LineChart from "@/components/LineChart";
 import { Contact } from "@/components/Contact";
 import { QuoteSection } from "@/components/QuoteSection";
 import { ArtScienceCursorSection } from "./ArtScienceCursorSection";
@@ -27,21 +24,16 @@ export default function Home() {
         <div className="relative bg-gradient-to-r from-transparent via-white to-transparent px-40 pt-14 pb-4 flex flex-col items-center mt-20">
           <div>
             <div className="w-full flex justify-end">
-              <span className="text-slate-600 text-md text-right uppercase font-extralight mb-2 tracking-wider">
-                Dive into the
+              <span className="font-opensauce text-slate-400 text-md text-right uppercase font-extralight mb-2 tracking-wider">
+                Dive into the beauty of data
               </span>
             </div>
-            <h1 className="font-brown-sugar text-7xl">
-              <span className="font-brown-sugar underline [text-decoration-thickness:1px] [text-underline-offset:14px]">
-                beauty
-              </span>{" "}
-              of data
-            </h1>
+            <h1 className="font-brown-sugar !text-9xl">Data To Art</h1>
           </div>
-          <p className="text-center max-w-[500px]">
-            We collect stunning works from the world’s most innovative data
-            artists. Each piece transforms raw information into visual
-            experiences that inspire, inform, and amaze.
+          <p className="text-center max-w-[500px] text-2xl">
+            We're a curated online gallery showcasing the work of international
+            data experts. We believe in the beauty of data, and in the power of
+            visuals to tell stories.
           </p>
         </div>
       </section>
@@ -63,6 +55,24 @@ export default function Home() {
 
       <Spacing />
 
+      <div
+        className="full-bleed bg-repeat bg-[length:auto] py-20"
+        style={{ backgroundImage: "url('/asset/texture.png')" }}
+      >
+        <div className="wrapper relative mt-20 text-white">
+          <p className="text-center max-w-md text-3xl">
+            We collect stunning works from the world’s most innovative data
+            artists. Each piece transforms raw information into visual
+            experiences that inspire, inform, and amaze.
+          </p>
+          <div className="full-bleed flex justify-center mt-8">
+            <img src="project/jeremy-wanner/other/03.png" />
+          </div>
+        </div>
+      </div>
+
+      <Spacing />
+
       <div className="wrapper relative mt-20">
         <h2 className="border-none !text-6xl ">
           <span className="block !text-4xl text-slate-400">
@@ -70,7 +80,6 @@ export default function Home() {
           </span>
           Meet the artists
         </h2>
-
         <p>
           Our goal is to showcase as many talented data artists as possible,
           celebrating diverse voices and styles across the globe.

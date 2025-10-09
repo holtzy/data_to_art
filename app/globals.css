@@ -142,6 +142,15 @@
 .font-pptelegraph {
   font-family: "brown-sugar";
 }
+@font-face {
+  font-family: "open-sauce";
+  src: url("/fonts/open-sauce/OpenSauceSans-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-opensauce {
+  font-family: "open-sauce";
+}
 
 /*
 Implement the typography from Shadcn UI
