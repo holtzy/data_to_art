@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Carousel,
   CarouselContent,
@@ -5,10 +7,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ImageWithModal } from "./ImageWithModal";
+import { useModal } from "@/context/ModalContext";
 
 type ArtistGallerySectionProps = { imgs: string[] };
 
 export const ArtistGallerySection = ({ imgs }: ArtistGallerySectionProps) => {
+  const { openModal } = useModal();
+
   return (
     <>
       <h2 className="mb-6">Gallery</h2>
@@ -17,7 +23,16 @@ export const ArtistGallerySection = ({ imgs }: ArtistGallerySectionProps) => {
           <CarouselContent>
             {imgs.map((img, i) => (
               <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/4">
-                <img src={img} alt={`TOOD`} className="h-72 object-cover" />
+                <img
+                  src={img}
+                  alt={`data art image`}
+                  className="h-72 object-cover cursor-pointer"
+                  onClick={() =>
+                    openModal({
+                      imgPath: img,
+                    })
+                  }
+                />
               </CarouselItem>
             ))}
           </CarouselContent>
