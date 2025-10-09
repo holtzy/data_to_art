@@ -15,11 +15,9 @@ export const artistList = [
     name: "Florent Lavergne",
     descriptionShort: (
       <>
-        <p>
-          Florent is a data visualization designer who transforms data into
-          compelling visual art. He blends creativity and clarity to turn
-          complex information into meaningful stories.
-        </p>
+        Florent is a data visualization designer who transforms data into
+        compelling visual art. He blends creativity and clarity to turn complex
+        information into meaningful stories.
       </>
     ),
     folder: "florent-lavergne",

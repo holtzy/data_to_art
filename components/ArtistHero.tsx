@@ -51,28 +51,33 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
 
       {/* Content */}
       <div className="relative z-10 flex flex-row gap-6 items-center justify-center h-full text-center px-4">
-        <img src={`/artist/${folder}.webp`} className="w-82 h-82 mb-8" />
+        <img src={`/artist/${folder}.webp`} className="w-82 h-82" />
 
         <div className="flex flex-col items-start">
-          <h1>{name}</h1>
+          <h1 className="!text-8xl !font-normal">{name}</h1>
 
-          <p className="text-left max-w-96">{descriptionShort}</p>
+          <p
+            className="text-left max-w-96 text-2xl"
+            style={{ lineHeight: 1.3 }}
+          >
+            {descriptionShort}
+          </p>
 
           <div className="mt-8 flex gap-2">
-            {homepageLink && (
-              <a
-                className={buttonVariants({ variant: "outline" })}
-                href={homepageLink}
-              >
-                Homepage
-              </a>
-            )}
             {linkedinLink && (
               <a
                 className={buttonVariants({ variant: "outline" })}
                 href={linkedinLink}
               >
                 LinkedIn
+              </a>
+            )}
+            {homepageLink && (
+              <a
+                className={buttonVariants({ variant: "default" })}
+                href={homepageLink}
+              >
+                Homepage
               </a>
             )}
           </div>
