@@ -39,7 +39,7 @@ export default function Page() {
 
         <Parallax
           text=""
-          imageUrl="/project/marta-sierra/inner-metrics/01_ThankYou_MartaSierra-full.webp"
+          imageUrl="/project/marta-sierra/inner-metrics/01-full.webp"
         />
 
         <div className="my-12">
