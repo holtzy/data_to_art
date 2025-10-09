@@ -133,9 +133,8 @@ export default function Page() {
         <p className="mb-12">
           No exhibitions are planned for this artist at the moment.
         </p>
-
-        <Contact />
       </div>
+      <Contact />
     </>
   );
 }

@@ -54,10 +54,10 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
         <img src={`/artist/${folder}.webp`} className="w-82 h-82" />
 
         <div className="flex flex-col items-start">
-          <h1 className="!text-8xl !font-normal">{name}</h1>
+          <h1 className="!text-8xl !font-normal !tracking-wide">{name}</h1>
 
           <p
-            className="text-left max-w-96 text-2xl"
+            className="text-left max-w-96 text-2xl tracking-wide"
             style={{ lineHeight: 1.3 }}
           >
             {descriptionShort}
