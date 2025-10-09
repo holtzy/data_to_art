@@ -266,9 +266,7 @@ export const projectList: Project[] = [
       <>
         <p>
           A fun and creative challenge for experimenting with data visualization
-          techniques using personal data. I joined in 2022 to push my creative
-          boundaries and explore new visualization methods, creating both a
-          drawing and a digital version.
+          techniques using personal data.
         </p>
       </>
     ),
