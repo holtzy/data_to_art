@@ -110,7 +110,7 @@ export default function Page() {
               <Link
                 key={i}
                 href={`/artist/${folder}/${p.folder}`}
-                className="w-full sm:w-1/2 lg:w-1/4 cursor-pointer group"
+                className="w-full sm:w-1/2 cursor-pointer group"
               >
                 <div className="flex flex-col gap-2">
                   <img
@@ -118,8 +118,10 @@ export default function Page() {
                     alt={`${p.name} project thumbnail`}
                     className="rounded-md transition-transform group-hover:scale-105"
                   />
-                  <span className="font-semibold text-lg">{p.name}</span>
-                  <div className="text-xs text-slate-500">
+                  <span className="font-semibold text-2xl !no-underline no-decoration">
+                    {p.name}
+                  </span>
+                  <div className="text-sm text-slate-500">
                     {p.descriptionShort}
                   </div>
                 </div>
