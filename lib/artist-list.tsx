@@ -154,7 +154,7 @@ export const artistList = [
     ),
     folder: "marta-sierra",
     location: [52.3676, 4.9041],
-    city: "Clermont Ferrand - 🇫🇷",
+    city: "Amsterdam - 🇳🇱",
     homepageLink: "martaviz.nl",
     linkedinLink:
       "https://www.linkedin.com/in/martasierragarcia/?originalSubdomain=nl",
