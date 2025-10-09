@@ -20,22 +20,22 @@ export const PrevAndNextProjectLinks = ({
     <div className="flex justify-center items-center space-x-6 my-4">
       <Link
         href={`/artist/${prev.artist}/${prev.folder}`}
-        className="no-decoration flex flex-col justify-center items-end w-96 h-32 border-r border-black/30 p-8 hover:bg-slate-50"
+        className="no-decoration flex flex-col justify-center items-end w-96 h-32 border-none border-black/30 p-8 hover:bg-slate-100 bg-slate-50"
       >
-        <span className="uppercase font-semibold text-transparent bg-gradient-to-l from-blue-200 to-blue-900 bg-clip-text font-bricolage">
+        <span className="font-opensauce uppercase tracking-wide text-xl">
           &larr; Previous
         </span>
-        <p>{prev.name}</p>
+        <p className="!mt-2">{prev.name}</p>
       </Link>
 
       <Link
         href={`/artist/${next.artist}/${next.folder}`}
-        className="no-decoration flex flex-col justify-center w-96 h-32 border-l border-black/30 p-8 hover:bg-slate-50"
+        className="no-decoration flex flex-col justify-center w-96 h-32 border-none border-black/30 p-8 hover:bg-slate-100 bg-slate-50"
       >
-        <span className="uppercase font-semibold text-transparent bg-gradient-to-l from-blue-200 to-blue-900 bg-clip-text font-bricolage">
+        <span className="font-opensauce uppercase tracking-wide text-xl">
           Next &rarr;
         </span>
-        <p>{next.name}</p>
+        <p className="!mt-2">{next.name}</p>
       </Link>
     </div>
   );

@@ -9,7 +9,7 @@ export const Contact = () => {
       >
         <div className="flex flex-col justify-center items-center max-w-[700px] mx-auto bg-white/90 py-20 px-10 text-black">
           <h2 className="mb-4 border-none">Know an artist?</h2>
-          <p className="mb-12 text-center">
+          <p className="mb-12 text-center max-w-lg">
             We’re always looking to enrich our gallery with outstanding data
             art. If you are—or know—an artist whose work deserves to be
             featured, we’d love to hear from you.

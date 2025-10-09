@@ -21,7 +21,7 @@ export default function Page() {
     return null;
   }
 
-  const images = ["01.webp", "02.webp", "03.webp", "04.webp", "05.webp"];
+  const images = ["01.webp", "02.webp", "03.webp", "04.webp", "07.webp"];
 
   return (
     <>
@@ -38,7 +38,7 @@ export default function Page() {
           data into environmental-graphiti-inspired visuals, revealing the
           subtle ways human activity shapes our planet.
         </p>
-        <p>
+        <p className="mb-8">
           This project explores forests, carbon storage, and land-use patterns
           across Europe, presenting them through detailed, hand-drawn-like
           textures that invite both reflection and curiosity.
@@ -97,7 +97,7 @@ export default function Page() {
           insight can merge to make invisible planetary dynamics visible.
         </p>
 
-        <div className="mt-4">
+        <div className="mt-8">
           <Link
             href="https://environmentalenvironmental-graphiti.com"
             className={cn(buttonVariants())}

@@ -23,7 +23,9 @@ export const ProjectHero = ({
     <section className="h-screen flex flex-col lg:flex-row gap-8 max-w-[900px] mx-auto overflow-hidden">
       {/* Left column */}
       <div className="lg:w-1/2 flex flex-col justify-center items-end">
-        <h1 className="text-4xl font-bold mb-4">{name}</h1>
+        <h1 className="!text-6xl !tracking-wider mb-4 text-right !font-normal">
+          {name}
+        </h1>
         <p className="text-md mb-6 text-right text-black">{descriptionShort}</p>
 
         <div className="flex gap-2 items-center text-sm">
@@ -40,12 +42,12 @@ export const ProjectHero = ({
       </div>
 
       {/* Right column - Masonry style */}
-      <div className="relative lg:w-1/2 grid grid-cols-2 gap-1">
+      <div className="relative lg:w-1/2 grid grid-cols-2 gap-3">
         {/* White gradients*/}
         <div className="pointer-events-none absolute top-0 left-0 w-full h-54 bg-gradient-to-b from-white to-transparent z-10" />
         <div className="pointer-events-none absolute bottom-0 left-0 w-full h-54 bg-gradient-to-t from-white to-transparent z-10" />
 
-        <div className=" flex flex-col gap-1 justify-center">
+        <div className="flex flex-col gap-3 justify-center">
           {images
             .filter((_, i) => i % 2 === 0)
             .map((img, i) => (
@@ -53,7 +55,7 @@ export const ProjectHero = ({
                 key={i}
                 src={`/project/${artist.folder}/${folder}/${img}`}
                 alt=""
-                className="w-full object-cover rounded-lg opacity-90 hover:opacity-100"
+                className="w-full object-cover opacity-90 hover:opacity-100"
               />
             ))}
         </div>
@@ -66,7 +68,7 @@ export const ProjectHero = ({
                 key={i}
                 src={`/project/${artist.folder}/${folder}/${img}`}
                 alt=""
-                className="w-full object-cover rounded-lg opacity-90 hover:opacity-100"
+                className="w-full object-cover opacity-90 hover:opacity-100"
               />
             ))}
         </div>
