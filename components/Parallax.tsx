@@ -1,5 +1,6 @@
 "use client";
 
+import { useModal } from "@/context/ModalContext";
 import { ReactNode } from "react";
 
 type ParallaxProps = {
@@ -15,11 +16,18 @@ export default function Parallax({
   imageUrl,
   height = 400,
 }: ParallaxProps) {
+  const { openModal } = useModal();
+
   return (
     <section className="full-bleed my-8">
       <div
-        className="bg-fixed bg-center bg-cover"
+        className="bg-fixed bg-center bg-cover cursor-pointer"
         style={{ backgroundImage: `url('${imageUrl}')`, height }}
+        onClick={() =>
+          openModal({
+            imgPath: imageUrl,
+          })
+        }
       >
         <div className="h-full flex items-center justify-center bg-black/0">
           <h1 className="text-center bg-white/20 text-black text-5xl font-bold max-w-[400px]">
