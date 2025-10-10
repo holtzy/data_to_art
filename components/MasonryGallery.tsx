@@ -25,9 +25,10 @@ export default function MasonryGallery({ imgPaths }: MasonryGalleryProps) {
       items={items} // Note: I cannot use an array of strings here, this is why I had to make this items object
       render={Card}
       columnWidth={300}
-      columnGutter={0}
+      columnGutter={20}
       itemHeightEstimate={320}
       overscanBy={2}
+      columnCount={3}
     />
   );
 }

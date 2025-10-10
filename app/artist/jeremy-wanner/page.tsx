@@ -45,25 +45,44 @@ export default function Page() {
           }
         />
 
-        <div className="my-12">
-          <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
-            In 2020, I joined the French National Institute of Sport, Expertise,
-            and Performance (INSEP) and its Medalability project as a
-            data-scientist, analyzing international competition in preparation
-            for the Paris 2024 Games. At the same time, I devoted my free time
-            to turning everyday tools into means of artistic expression.
-          </p>
-          <p className="mt-4">
-            Passionate about detours and creation, I founded Oiiwa in 2024. From
-            my digital adventure playground, I transform a digital raw material
-            into a fun and intelligible form.
-          </p>
-          <p className="mt-4">
-            Aimed at a wide range of audiences and whether intended for printed,
-            digital or plastic media, my creations are new ways of interacting
-            with data by making them tangible and interactive!
-          </p>
+        <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+          In 2020, I joined the French National Institute of Sport, Expertise,
+          and Performance (INSEP) and its Medalability project as a
+          data-scientist, analyzing international competition in preparation for
+          the Paris 2024 Games. At the same time, I devoted my free time to
+          turning everyday tools into means of artistic expression.
+        </p>
+        <p className="mt-4">
+          Passionate about detours and creation, I founded Oiiwa in 2024. From
+          my digital adventure playground, I transform a digital raw material
+          into a fun and intelligible form.
+        </p>
+
+        <div className="full-bleed my-12">
+          <div className="">
+            <img
+              src="/project/jeremy-wanner/glove-rose/01-full.webp"
+              className="w-full"
+            />
+            <div className="flex justify-end">
+              <p className="text-slate-500 text-sm text-right max-w-[250px] mt-4 !leading-snug">
+                <span>
+                  <Link href="/artist/jeremy-wanner/glove-rose">
+                    Glove rose
+                  </Link>{" "}
+                  transforms Olympic boxing analytics into a blooming digital
+                  rose
+                </span>
+              </p>
+            </div>
+          </div>
         </div>
+
+        <p className="mt-4">
+          Aimed at a wide range of audiences and whether intended for printed,
+          digital or plastic media, my creations are new ways of interacting
+          with data by making them tangible and interactive!
+        </p>
 
         <Spacing />
 

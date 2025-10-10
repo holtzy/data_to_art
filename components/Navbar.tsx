@@ -19,10 +19,22 @@ const Navbar = () => {
             <Link
               href="/artists"
               className={
-                buttonVariants({ variant: "ghost" }) + " " + "no-decoration"
+                buttonVariants({ variant: "ghost" }) +
+                " " +
+                "no-decoration !font-bolder !text-md"
               }
             >
               Artists
+            </Link>
+            <Link
+              href="/about"
+              className={
+                buttonVariants({ variant: "ghost" }) +
+                " " +
+                "no-decoration !font-bolder !text-md"
+              }
+            >
+              About
             </Link>
           </div>
 
@@ -34,7 +46,9 @@ const Navbar = () => {
             <Link
               href="/artworks"
               className={
-                buttonVariants({ variant: "ghost" }) + " " + "no-decoration"
+                buttonVariants({ variant: "ghost" }) +
+                " " +
+                "no-decoration !font-bolder !text-md"
               }
             >
               Artworks
@@ -43,7 +57,9 @@ const Navbar = () => {
             <Link
               href="/projects"
               className={
-                buttonVariants({ variant: "ghost" }) + " " + "no-decoration"
+                buttonVariants({ variant: "ghost" }) +
+                " " +
+                "no-decoration !font-bolder !text-md"
               }
             >
               Projects

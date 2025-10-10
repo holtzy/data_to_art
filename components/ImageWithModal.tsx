@@ -13,7 +13,7 @@ export const ImageWithModal = ({ imgPath, width }: ImageWithModalProps) => {
   return (
     <div style={{ width, boxSizing: "border-box", padding: 8 }}>
       <div
-        className="w-full rounded-md overflow-hidden cursor-pointer"
+        className="w-full rounded-none overflow-hidden cursor-pointer"
         onClick={() =>
           openModal({
             imgPath,

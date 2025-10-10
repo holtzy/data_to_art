@@ -46,7 +46,7 @@
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: #191919;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -118,8 +118,9 @@
     font-family: var(--font-instrument-serif);
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     font-size: 22px;
+    background-color: #f8fafc;
   }
 }
 
