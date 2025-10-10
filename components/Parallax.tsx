@@ -1,13 +1,17 @@
 "use client";
 
+import { ReactNode } from "react";
+
 type ParallaxProps = {
-  text: string;
   imageUrl: string;
+  text?: string;
   height?: number;
+  caption?: ReactNode;
 };
 
 export default function Parallax({
   text,
+  caption,
   imageUrl,
   height = 400,
 }: ParallaxProps) {
@@ -22,6 +26,9 @@ export default function Parallax({
             {text}
           </h1>
         </div>
+      </div>
+      <div className="flex justify-end text-right text-sm text-slate-600 mt-2">
+        <div className="max-w-[250px]">{caption}</div>
       </div>
     </section>
   );

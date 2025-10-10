@@ -6,6 +6,7 @@ import { Contact } from "@/components/Contact";
 import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
+import Link from "next/link";
 
 const ARTIST = "jeremy-wanner";
 
@@ -35,8 +36,13 @@ export default function Page() {
         </div>
 
         <Parallax
-          text=""
-          imageUrl="/project/jeremy-wanner/glove-rose/01-full.webp"
+          imageUrl="/project/jeremy-wanner/glove-rose/02-full.webp"
+          caption={
+            <span>
+              <Link href="/artist/jeremy-wanner/glove-rose">Glove rose</Link>{" "}
+              transforms Olympic boxing analytics into a blooming digital rose
+            </span>
+          }
         />
 
         <div className="my-12">
