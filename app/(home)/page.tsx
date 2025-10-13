@@ -79,8 +79,8 @@ export default function Home() {
       <Spacing /> */}
 
       <div className="wrapper relative mt-20">
-        <h2 className="border-none !text-6xl ">
-          <span className="block !text-4xl text-slate-400">
+        <h2 className="border-none !text-7xl ">
+          <span className="block !text-sm text-slate-400 font-opensauce">
             From all over the world
           </span>
           Meet the artists

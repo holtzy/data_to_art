@@ -148,7 +148,7 @@ export const artistList = [
       </>
     ),
     folder: "marta-sierra",
-    location: [52.3676, 4.9041],
+    location: [4.9041, 52.3676],
     city: "Amsterdam - 🇳🇱",
     homepageLink: "martaviz.nl",
     linkedinLink:
@@ -167,7 +167,7 @@ export const artistList = [
       </>
     ),
     folder: "alisa-singer",
-    location: [87.6324, 41.8832],
+    location: [41.8832, 87.6324],
     city: "Chicago - 🇺🇸",
     homepageLink: "https://www.environmentalgraphiti.org/",
     linkedinLink:
