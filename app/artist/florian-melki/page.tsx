@@ -1,20 +1,13 @@
 import { artistList } from "@/lib/artist-list";
-import { projectList } from "@/lib/project-list";
 import Link from "next/link";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import ArtistHero from "@/components/ArtistHero";
 import Parallax from "@/components/Parallax";
 import { Spacing } from "@/components/Spacing";
 import { Contact } from "@/components/Contact";
 import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
+import { ArtistGallerySection } from "@/components/ArtistGallerySection";
+import { getArtistImages } from "@/lib/get-artist-images";
 
 const AUTHOR = "florian-melki";
 
@@ -25,7 +18,7 @@ export default function Page() {
     return null;
   }
 
-  const { folder } = infos;
+  const allImages = getArtistImages(AUTHOR);
 
   return (
     <>
@@ -41,11 +34,11 @@ export default function Page() {
             constraints come later. After all, walls are meant to be broken.
           </p>
           <p>
-            For example, I wrote every single day—when I went to bed, woke up,
+            For example, he wrote every single day—when he went to bed, woke up,
             worked, and so on—for an entire year, just to uncover hidden
-            patterns. I scraped every post from an online forum on a
+            patterns. He scraped every post from an online forum on a
             controversial topic (women in video games) to analyze how
-            conversations unfold. I even transcribed a two-hour political TV
+            conversations unfold. He even transcribed a two-hour political TV
             debate to study manterrupting. No limits, no walls.
           </p>
         </div>
@@ -56,8 +49,8 @@ export default function Page() {
         />
 
         <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
-          Then comes my favorite part: experimenting with data visualization. As
-          a data analyst, I dive into data from a statistical perspective to
+          Then comes his favorite part: experimenting with data visualization.
+          As a data analyst, I dive into data from a statistical perspective to
           identify trends. Then I code my own visualizations from scratch,
           testing and iterating to discover new, creative ways of telling a
           story.
@@ -80,28 +73,7 @@ export default function Page() {
           }
         />
 
-        <h2 className="mb-6">Gallery</h2>
-        <div className="full-bleed flex justify-center mb-12">
-          <Carousel opts={{ align: "start" }} className="w-[90%]">
-            <CarouselContent>
-              {[
-                "/environmental-graphiti/01.webp",
-                "/environmental-graphiti/02.webp",
-                "/environmental-graphiti/03.webp",
-                "/environmental-graphiti/04.webp",
-              ].map((img, i) => (
-                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/4">
-                  <img
-                    src={`/project/alisa-singer/${img}`}
-                    alt={`Alisa Singer artwork ${i + 1}`}
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
+        <ArtistGallerySection imgs={allImages} />
 
         <ArtistProjectsSection artistId={AUTHOR} />
 

@@ -7,7 +7,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { ImageWithModal } from "./ImageWithModal";
 import { useModal } from "@/context/ModalContext";
 
 type ArtistGallerySectionProps = { imgs: string[] };

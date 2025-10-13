@@ -231,4 +231,5 @@ export const BEST_IMAGES = [
   "/project/soha-elghany/gaza/01-full.webp",
   "/project/alisa-singer/environmental-graphiti/04-full.webp",
   "/project/florent-lavergne/other/05-full.webp",
+  "/project/florian-melki/missing-time/07-full.webp",
 ];

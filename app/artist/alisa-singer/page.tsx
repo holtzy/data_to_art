@@ -1,19 +1,12 @@
 import { artistList } from "@/lib/artist-list";
-import { projectList } from "@/lib/project-list";
-import Link from "next/link";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import ArtistHero from "@/components/ArtistHero";
 import Parallax from "@/components/Parallax";
 import { Spacing } from "@/components/Spacing";
 import { Contact } from "@/components/Contact";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
+import { ArtistGallerySection } from "@/components/ArtistGallerySection";
+import { getArtistImages } from "@/lib/get-artist-images";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 
 const AUTHOR = "alisa-singer";
 
@@ -23,6 +16,8 @@ export default function Page() {
   if (!infos) {
     return null;
   }
+
+  const allImages = getArtistImages(AUTHOR);
 
   return (
     <>
@@ -58,21 +53,16 @@ export default function Page() {
           expression and a tool for awareness and reflection.
         </p>
 
-        <div className="full-bleed my-12">
-          <div className="">
-            <img
-              src="/project/alisa-singer/environmental-graphiti/06.webp"
-              className="w-full"
-            />
-            <div className="flex justify-end">
-              <p className="text-slate-500 text-sm text-right max-w-[250px] mt-4 !leading-snug">
-                Walking into the moon by Alisa Singer shows the evolution of the
-                number of kangarro. Read more about the environmental graphiti
-                project it's part of.
-              </p>
-            </div>
-          </div>
-        </div>
+        <ImgWithCaption
+          img="/project/alisa-singer/environmental-graphiti/06.webp"
+          caption={
+            <span>
+              Walking into the moon by Alisa Singer shows the evolution of the
+              number of kangarro. Read more about the environmental graphiti
+              project it's part of.
+            </span>
+          }
+        />
 
         <p className="mt-4">
           Her series, including <em>Environmental Graphiti</em> and{" "}
@@ -80,28 +70,7 @@ export default function Page() {
           continue to push the boundaries of data-driven contemporary art.
         </p>
 
-        <h2 className="mb-6">Gallery</h2>
-        <div className="full-bleed flex justify-center mb-12">
-          <Carousel opts={{ align: "start" }} className="w-[90%]">
-            <CarouselContent>
-              {[
-                "/environmental-graphiti/01.webp",
-                "/environmental-graphiti/02.webp",
-                "/environmental-graphiti/03.webp",
-                "/environmental-graphiti/04.webp",
-              ].map((img, i) => (
-                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/4">
-                  <img
-                    src={`/project/alisa-singer/${img}`}
-                    alt={`Alisa Singer artwork ${i + 1}`}
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
+        <ArtistGallerySection imgs={allImages} />
 
         <ArtistProjectsSection artistId={AUTHOR} />
 

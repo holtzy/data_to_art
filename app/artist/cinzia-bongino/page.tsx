@@ -1,19 +1,11 @@
 import { artistList } from "@/lib/artist-list";
-import { projectList } from "@/lib/project-list";
-import Link from "next/link";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import ArtistHero from "@/components/ArtistHero";
 import Parallax from "@/components/Parallax";
 import { Spacing } from "@/components/Spacing";
 import { Contact } from "@/components/Contact";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
+import { ArtistGallerySection } from "@/components/ArtistGallerySection";
+import { getArtistImages } from "@/lib/get-artist-images";
 
 const AUTHOR = "cinzia-bongino";
 
@@ -24,7 +16,7 @@ export default function Page() {
     return null;
   }
 
-  const { folder } = infos;
+  const allImages = getArtistImages(AUTHOR);
 
   return (
     <>
@@ -68,32 +60,7 @@ export default function Page() {
           </p>
         </div>
 
-        <h2 className="mb-6">Gallery</h2>
-        <div className="full-bleed flex justify-center mb-12">
-          <Carousel opts={{ align: "start" }} className="w-[90%]">
-            <CarouselContent>
-              {[
-                "/names-on-the-moon/01-thumb.webp",
-                "/names-on-the-moon/02-thumb.webp",
-                "/names-on-the-moon/03-thumb.webp",
-                "/names-on-the-moon/04-thumb.webp",
-                "/names-on-the-moon/05-thumb.webp",
-                "/names-on-the-moon/06-thumb.webp",
-                "/names-on-the-moon/07-thumb.webp",
-                "/names-on-the-moon/08-thumb.webp",
-              ].map((img, i) => (
-                <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/4">
-                  <img
-                    src={`/project/cinzia-bongino/${img}`}
-                    alt={`Cinzia Bongino artwork ${i + 1}`}
-                  />
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
+        <ArtistGallerySection imgs={allImages} />
 
         <ArtistProjectsSection artistId={AUTHOR} />
 
