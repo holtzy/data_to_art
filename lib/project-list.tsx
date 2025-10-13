@@ -271,4 +271,26 @@ export const projectList: Project[] = [
       </>
     ),
   },
+
+  ////////
+  ///////
+  //FLORIAN MELKI
+  ////////
+  ///////
+  {
+    name: "Le temps qui nous manque",
+    folder: "missing-time",
+    link: "https://www.behance.net/gallery/234144353/50-nuances-de-dataviz",
+    artist: "florian-melki",
+    date: new Date("2025-08-09"),
+    descriptionShort: (
+      <>
+        <p>
+          An exploration of the author own life data, where he visualized his
+          sleep, work, and daily rhythms in dozens of creative, experimental
+          ways to reveal hidden patterns.
+        </p>
+      </>
+    ),
+  },
 ];

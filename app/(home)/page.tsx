@@ -61,7 +61,7 @@ export default function Home() {
 
       <Spacing />
 
-      <div
+      {/* <div
         className="full-bleed bg-repeat bg-[length:auto] py-20"
         style={{ backgroundImage: "url('/asset/texture.png')" }}
       >
@@ -77,7 +77,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Spacing />
+      <Spacing /> */}
 
       <div className="wrapper relative mt-20">
         <h2 className="border-none !text-6xl ">
