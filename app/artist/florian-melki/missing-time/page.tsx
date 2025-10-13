@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 
 const PROJECT = "missing-time";
+const AUTHOR = "florian-melki";
 
 export default function Page() {
   const projectInfo = projectList.find((p) => p.folder === PROJECT);
@@ -30,11 +31,11 @@ export default function Page() {
   ];
 
   const images5 = [
-    "/project/florian-melki/missing-time/01-full.webp",
-    "/project/florian-melki/missing-time/02-full.webp",
-    "/project/florian-melki/missing-time/03-full.webp",
-    "/project/florian-melki/missing-time/04-full.webp",
-    "/project/florian-melki/missing-time/05-full.webp",
+    `/project/${AUTHOR}/missing-time/01-full.webp`,
+    `/project/${AUTHOR}/missing-time/02-full.webp`,
+    `/project/${AUTHOR}/missing-time/03-full.webp`,
+    `/project/${AUTHOR}/missing-time/04-full.webp`,
+    `/project/${AUTHOR}/missing-time/05-full.webp`,
   ];
 
   return (
@@ -71,7 +72,7 @@ export default function Page() {
 
         <Parallax
           text="Missing Time"
-          imageUrl="/project/florian-melki/missing-time/01-full.webp"
+          imageUrl={`/project/${AUTHOR}/missing-time/01-full.webp`}
         />
 
         <p className="drop-cap">
