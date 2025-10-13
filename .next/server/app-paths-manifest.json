@@ -4,5 +4,6 @@
   "/artist/anne-laure-freant/flood-necklace/page": "app/artist/anne-laure-freant/flood-necklace/page.js",
   "/artist/anne-laure-freant/life-of-a-river/page": "app/artist/anne-laure-freant/life-of-a-river/page.js",
   "/artist/anne-laure-freant/page": "app/artist/anne-laure-freant/page.js",
+  "/artists/page": "app/artists/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

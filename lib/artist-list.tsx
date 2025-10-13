@@ -193,24 +193,6 @@ export const artistList = [
   },
 
   {
-    name: "Florian Melki",
-    descriptionShort: (
-      <>
-        <p>
-          Florian is a data analyst who explores human behavior through creative
-          data visualization, turning complex patterns into engaging, human
-          stories.
-        </p>
-      </>
-    ),
-    folder: "florian-melki",
-    location: [1.5536, 47.2184],
-    city: "Nantes - 🇫🇷",
-    homepageLink: "https://www.behance.net/florianm1",
-    linkedinLink: "https://www.linkedin.com/in/florian-m-26842718/",
-  },
-
-  {
     name: "Anne-Laure Fréant",
     descriptionShort: (
       <>

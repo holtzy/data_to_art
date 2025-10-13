@@ -20,35 +20,34 @@ const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), {
 export default function Home() {
   return (
     <div>
-      <section className="relative flex flex-col justify-center items-center pt-20">
-        <div className="relative bg-gradient-to-r from-transparent via-[#F8FAFC] to-transparent px-40 pb-4 flex flex-col items-center mt-20">
+      <section className="relative flex flex-col justify-center items-center pt-20 z-40">
+        <div className="relative px-40 pb-4 flex flex-col items-center mt-20">
           <div>
             <div className="w-full flex justify-end">
-              <span className="font-opensauce text-slate-400 text-md text-right uppercase font-extralight mb-2 tracking-wider">
+              <span className="font-opensauce text-slate-400 text-sm text-right uppercase font-extralight mb-2 tracking-wider">
                 Dive into the beauty of data
               </span>
             </div>
             <h1
               className="!font-normal !uppercase !tracking-wider"
-              style={{ fontSize: 170 }}
+              style={{ fontSize: 150 }}
             >
               Data T<span className="!lowercase">o</span> Art
             </h1>
           </div>
-          <p className="text-center max-w-[500px] text-2xl">
-            We're a curated online gallery showcasing the work
-            <br />
-            of international data experts. We believe in the beauty of data, and
-            in the power of visuals to tell stories.
+          <p className="text-center max-w-[340px] text-2xl">
+            We're a curated online gallery showcasing the work of international
+            data experts. We believe in the beauty of data, and in the power of
+            visuals to tell stories.
           </p>
         </div>
       </section>
 
-      <section>
+      <section className="-mt-30 z-10">
         <div className="relative max-w-[1700px] mx-auto h-[2000px] overflow-hidden px-24">
           <MasonryGallery imgPaths={BEST_IMAGES} />
-          <div className="absolute top-0 left-0 w-full h-42 bg-gradient-to-b from-[#F8FAFC] to-transparent pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-[#F8FAFC] to-transparent flex justify-center items-end">
+          <div className="absolute top-0 left-0 w-full h-42 bg-gradient-to-b from-background to-transparent pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-background to-transparent flex justify-center items-end">
             <Link
               href={"/artworks"}
               className={cn(buttonVariants({ size: "lg" }), "mb-12")}
@@ -228,6 +227,7 @@ export const BEST_IMAGES = [
   "/project/laura-castro/fresquita-party/04-full.webp",
   "/project/alisa-singer/environmental-graphiti/06-medium.webp",
   "/project/nick-whiteley/vanishing-points/04-full.webp",
+  "/project/anne-laure-freant/flood-necklace/08-full.webp",
   "/project/soha-elghany/gaza/01-full.webp",
   "/project/alisa-singer/environmental-graphiti/04-full.webp",
   "/project/florent-lavergne/other/05-full.webp",

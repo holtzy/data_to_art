@@ -13,7 +13,7 @@ export const ImageWithModal = ({ imgPath, width }: ImageWithModalProps) => {
   return (
     <div style={{ width, boxSizing: "border-box", padding: 8 }}>
       <div
-        className="w-full rounded-none overflow-hidden cursor-pointer"
+        className="w-full overflow-hidden cursor-pointer rounded-none"
         onClick={() =>
           openModal({
             imgPath,
@@ -22,13 +22,8 @@ export const ImageWithModal = ({ imgPath, width }: ImageWithModalProps) => {
       >
         <img
           src={imgPath}
-          alt={"data art img"}
-          style={{
-            width: "100%",
-            height: "auto",
-            display: "block",
-            objectFit: "cover",
-          }}
+          alt="data art img"
+          className="w-full h-auto block object-cover transition-transform duration-300 ease-in-out hover:scale-105"
           loading="lazy"
         />
       </div>
