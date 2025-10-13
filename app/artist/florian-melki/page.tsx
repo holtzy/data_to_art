@@ -8,6 +8,7 @@ import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
 import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
+import { QuoteSection } from "@/components/QuoteSection";
 
 const AUTHOR = "florian-melki";
 
@@ -43,10 +44,7 @@ export default function Page() {
           </p>
         </div>
 
-        <Parallax
-          text=""
-          imageUrl={`/project/${AUTHOR}/missing-time/06-full.webp`}
-        />
+        <QuoteSection text="Idea comes first; technical constraints come later. After all, walls are meant to be broken." />
 
         <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
           Then comes his favorite part: experimenting with data visualization.
@@ -68,7 +66,30 @@ export default function Page() {
           caption={
             <span>
               "Le temps qui nous manque" (the time we miss). Read the full{" "}
-              <Link href="">project description</Link>.
+              <Link href="/artist/florian-melki/missing-time">
+                project description
+              </Link>
+              .
+            </span>
+          }
+        />
+
+        <h2 className="mb-4">Exhibition</h2>
+        <p className="mb-12">
+          <i>Missing Time</i> was also presented as part of{" "}
+          <strong>Datarama #6</strong> during the{" "}
+          <strong>Nantes Digital Week</strong> in France, in September 2021 — an
+          exhibition co-organized by Florian and dedicated to the theme of
+          network visualization. The event brought together eight artists and
+          researchers from cities such as Nantes, Paris, Milan, and Montréal,
+          all exploring how data can become a creative medium.
+        </p>
+        <ImgWithCaption
+          img={`/project/florian-melki/other/01-full.webp`}
+          caption={
+            <span>
+              Florian and his giant dataviz at the Nantes Digital Week expo.
+              Nantes. 2021.
             </span>
           }
         />
@@ -77,10 +98,7 @@ export default function Page() {
 
         <ArtistProjectsSection artistId={AUTHOR} />
 
-        <h2 className="mb-4">Exhibition</h2>
-        <p className="mb-12">
-          No exhibitions are planned for this artist at the moment.
-        </p>
+        <Spacing />
       </div>
       <Contact />
     </>
