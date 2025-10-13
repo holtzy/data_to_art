@@ -13,15 +13,16 @@ import ArtistHero from "@/components/ArtistHero";
 import Parallax from "@/components/Parallax";
 import { Spacing } from "@/components/Spacing";
 import { Contact } from "@/components/Contact";
+import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
+
+const AUTHOR = "alisa-singer";
 
 export default function Page() {
-  const infos = artistList.find((a) => a.folder === "alisa-singer");
+  const infos = artistList.find((a) => a.folder === AUTHOR);
 
   if (!infos) {
     return null;
   }
-
-  const { folder } = infos;
 
   return (
     <>
@@ -102,32 +103,7 @@ export default function Page() {
           </Carousel>
         </div>
 
-        <h2 className="mb-6">Projects</h2>
-        <div className="flex flex-wrap gap-6 mb-12">
-          {projectList
-            .filter((p) => p.artist === folder)
-            .map((p, i) => (
-              <Link
-                key={i}
-                href={`/artist/${folder}/${p.folder}`}
-                className="w-full sm:w-1/2 cursor-pointer group"
-              >
-                <div className="flex flex-col gap-2">
-                  <img
-                    src={`/project/${folder}/${p.folder}/01.webp`}
-                    alt={`${p.name} project thumbnail`}
-                    className="rounded-md transition-transform group-hover:scale-105"
-                  />
-                  <span className="font-semibold text-2xl !no-underline no-decoration">
-                    {p.name}
-                  </span>
-                  <div className="text-sm text-slate-500">
-                    {p.descriptionShort}
-                  </div>
-                </div>
-              </Link>
-            ))}
-        </div>
+        <ArtistProjectsSection artistId={AUTHOR} />
 
         <h2 className="mb-4">Exhibition</h2>
         <p className="mb-12">
