@@ -120,7 +120,7 @@
   body {
     @apply text-foreground;
     font-size: 22px;
-    background-color: #f8fafc;
+    background-color: #fefeff;
   }
 }
 

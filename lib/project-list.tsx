@@ -293,4 +293,42 @@ export const projectList: Project[] = [
       </>
     ),
   },
+
+  ////////
+  ///////
+  // ANNE LAURE FREANT
+  ////////
+  ///////
+  {
+    name: "Flood necklace",
+    folder: "flood-necklace",
+    link: "https://datartefacts.hypotheses.org/450",
+    artist: "anne-laure-freant",
+    date: new Date("2025-08-09"),
+    descriptionShort: (
+      <>
+        <p>
+          A ceramic datasculpture made from Loire Valley clay, where each sphere
+          represents a recorded flood of the Loire River in Orléans between 1800
+          and 2003.
+        </p>
+      </>
+    ),
+  },
+  {
+    name: "The Life of a River",
+    folder: "life-of-a-river",
+    link: "https://datartefacts.hypotheses.org/1950",
+    artist: "anne-laure-freant",
+    date: new Date("2025-08-09"),
+    descriptionShort: (
+      <>
+        <p>
+          A wooden datasculpture representing monthly water height data of the
+          Loire River in Orléans from 2000 to 2022, each disc symbolizing a year
+          in the river’s changing flow.
+        </p>
+      </>
+    ),
+  },
 ];
