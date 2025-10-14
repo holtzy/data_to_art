@@ -26,6 +26,7 @@
     "masonic": "^4.1.0",
     "next": "15.4.4",
     "react": "19.1.0",
+    "react-data-table-component": "^7.7.0",
     "react-dom": "19.1.0",
     "simplex-noise": "^4.0.3",
     "swiper": "^11.2.10",
