@@ -119,7 +119,8 @@
   }
   body {
     @apply text-foreground bg-background;
-    font-size: 22px;
+    font-size: 21px;
+    letter-spacing: 0.6px;
   }
 }
 
@@ -196,7 +197,7 @@ blockquote {
   @apply mt-6 border-l-2 pl-6 italic;
 }
 .drop-cap {
-  @apply first-letter:float-left first-letter:text-7xl first-letter:pr-4 first-letter:pt-2;
+  @apply first-letter:float-left first-letter:leading-14 first-letter:text-6xl first-letter:pr-3;
 }
 
 /* ---------- PAGE LAYOUT ----------------- */
