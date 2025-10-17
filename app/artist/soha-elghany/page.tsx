@@ -6,6 +6,7 @@ import { Contact } from "@/components/Contact";
 import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
+import Link from "next/link";
 
 const ARTIST = "soha-elghany";
 
@@ -38,7 +39,18 @@ export default function Page() {
         </div>
 
         <Parallax
-          text=""
+          caption={
+            <span>
+              The{" "}
+              <Link href="/artist/soha-elghany/missing-migrants">
+                Missing Migrants
+              </Link>{" "}
+              Project tracks people who died or went missing during migration
+              toward international destinations. Each spiral represents a
+              migration route, and each mark along it corresponds to an
+              individual incident.
+            </span>
+          }
           imageUrl={`/project/${ARTIST}/missing-migrants/07-full.webp`}
         />
 

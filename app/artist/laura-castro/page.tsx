@@ -6,6 +6,7 @@ import { Contact } from "@/components/Contact";
 import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
+import Link from "next/link";
 
 const ARTIST = "laura-castro";
 
@@ -35,7 +36,16 @@ export default function Page() {
         </div>
 
         <Parallax
-          text=""
+          caption={
+            <span>
+              <Link href="/artist/laura-castro/fresquita-party">
+                Fresquita Party
+              </Link>{" "}
+              is a data-driven visualization project that analyzes a 60-song
+              Spotify playlist to reveal patterns of gender, diversity, and
+              career representation among the artists behind the music.
+            </span>
+          }
           imageUrl="/project/laura-castro/fresquita-party/01-full.webp"
         />
 

@@ -166,15 +166,9 @@ export const projectList: Project[] = [
     descriptionShort: (
       <>
         <p>
-          Fresquita Party is a visual exploration of a 60-song Spotify playlist,
-          aimed at uncovering who is behind the music we casually consume.
-          Inspired by contemporary feminist movements and personal curiosity,
-          the project collects and analyzes data about the artists, including
-          gender, age, genre, nationality, and career timeline, to reveal
-          patterns of representation and diversity. It seeks to answer questions
-          like: How many women are producing the music I listen to? Are they at
-          the start or peak of their careers? The result is a colorful,
-          data-driven snapshot of the playlist’s authors.
+          Fresquita Party is a data-driven visualization project that analyzes a
+          60-song Spotify playlist to reveal patterns of gender, diversity, and
+          career representation among the artists behind the music.
         </p>
       </>
     ),
@@ -182,12 +176,16 @@ export const projectList: Project[] = [
   {
     name: "Dos Juegos",
     folder: "dos-juegos",
-    link: "ll",
+    link: "http://dosjuegos.es/index.html",
     artist: "laura-castro",
-    date: new Date("2025-08-06"),
+    date: new Date("2019-01-01"),
     descriptionShort: (
       <>
-        <p></p>
+        <p>
+          Dos Juegos is an experimental project that visualizes the trajectories
+          of basketball players to explore how data analysis and visualization
+          can enhance team performance and decision-making in sports.
+        </p>
       </>
     ),
   },
