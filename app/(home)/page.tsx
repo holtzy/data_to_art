@@ -13,6 +13,7 @@ import { Contact } from "@/components/Contact";
 import { QuoteSection } from "@/components/QuoteSection";
 import { ArtScienceCursorSection } from "./ArtScienceCursorSection";
 import { EmailButton } from "@/components/EmailButton";
+import { SectionTitle } from "./SectionTitle";
 
 const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), {
   ssr: false,
@@ -80,12 +81,11 @@ export default function Home() {
       <Spacing /> */}
 
       <div className="wrapper relative mt-20">
-        <h2 className="border-none !text-7xl ">
-          <span className="block !text-sm text-slate-400 font-opensauce">
-            From all over the world
-          </span>
-          Meet the artists
-        </h2>
+        <SectionTitle
+          title={"Meet the artists"}
+          subtitle="From all over the world"
+        />
+
         <p>
           Our goal is to showcase as many talented data artists as possible,
           celebrating diverse voices and styles across the globe.
@@ -104,10 +104,8 @@ export default function Home() {
         <NoiseDivider height={10} />
 
         <div className="wrapper py-20">
-          <h2 className="border-none !text-6xl ">
-            <span className="block !text-4xl text-slate-400">Data Art</span>
-            What's that?
-          </h2>
+          <SectionTitle title={"What's that?"} subtitle="Data Art" />
+
           <p className="drop-cap">
             Data art is a creative practice that transforms raw data into
             visually compelling artworks. By blending aesthetics with
@@ -148,10 +146,8 @@ export default function Home() {
       </section>
       <Spacing />
       <div className="wrapper">
-        <h2 className="border-none !text-6xl ">
-          <span className="block !text-4xl text-slate-400">What's up?</span>
-          Latest
-        </h2>
+        <SectionTitle title={"Latest"} subtitle="What's up" />
+
         <p>
           Data to Art is constantly growing, adding new artists and projects to
           the gallery as soon as we discover them. Here is our latest addition,
@@ -192,10 +188,8 @@ export default function Home() {
       </div>
 
       <section className="my-24 wrapper">
-        <h2 className="border-none !text-6xl ">
-          <span className="block !text-4xl text-slate-400">In real life</span>
-          Exhibition
-        </h2>
+        <SectionTitle title={"Exhibition"} subtitle="In real life" />
+
         <p>
           Data art is captivating on a screen, but its true magic comes alive in
           the real world — on a canvas you can see, touch, and feel.
