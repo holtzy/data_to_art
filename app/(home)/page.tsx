@@ -12,6 +12,7 @@ import { ArtistSection } from "./ArtistSection";
 import { Contact } from "@/components/Contact";
 import { QuoteSection } from "@/components/QuoteSection";
 import { ArtScienceCursorSection } from "./ArtScienceCursorSection";
+import { EmailButton } from "@/components/EmailButton";
 
 const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), {
   ssr: false,
@@ -197,15 +198,60 @@ export default function Home() {
         </h2>
         <p>
           Data art is captivating on a screen, but its true magic comes alive in
-          the real world—on a canvas you can see, touch, and feel.
+          the real world — on a canvas you can see, touch, and feel.
         </p>
         <p>
-          We highlight data art exhibitions happening worldwide, and even curate
-          some ourselves. For inquiries, feel free to get in touch.
+          We celebrate this intersection of data, design, and emotion by
+          gathering exhibitions, installations, and events from around the
+          world. Our goal is to build the most comprehensive archive of data art
+          — past, present, and future. If you’ve come across an exhibition we
+          should know about, we’d love for you to share it with us.
         </p>
 
-        <div className="full-bleed my-12">
-          <img src="/asset/gallery.jpg" className="h-72 w-full object-cover" />
+        <div className="full-bleed my-12 grid gap-2">
+          <img
+            src="/asset/gallery.jpg"
+            className="h-72 w-full object-cover"
+            alt="Gallery"
+          />
+          <div className="grid grid-cols-2 gap-2">
+            <img
+              src="/asset/mockup1.webp"
+              className="h-[400px] w-full object-cover"
+              alt="Mockup 1"
+            />
+            <img
+              src="/asset/mockup2.webp"
+              className="h-[400px] w-full object-cover"
+              alt="Mockup 2"
+            />
+          </div>
+        </div>
+
+        <p>
+          Beyond curation, we also organize bespoke data art exhibitions — from
+          small private showcases to large-scale themed events. Whether you want
+          to explore a specific dataset, tell a story through data, or bring a
+          data-driven experience to your organization, we can help make it
+          happen.
+        </p>
+        <p>
+          If that resonates with you — whether you’re an artist, curator, or
+          simply passionate about data and art — feel free to reach out.
+        </p>
+
+        <div className="flex justify-center gap-2 mt-8">
+          <EmailButton
+            name={"Contact us"}
+            variant="outline"
+            link="wakeupdataviz@gmail.com"
+          />
+          <Link
+            href="/exhibition"
+            className={cn(buttonVariants({ size: "lg" }))}
+          >
+            See all exhibitions
+          </Link>
         </div>
       </section>
 

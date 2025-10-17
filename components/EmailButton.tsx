@@ -8,21 +8,27 @@ import {
 } from "./ui/dropdown-menu";
 import { Button, buttonVariants } from "./ui/button";
 
-export const EmailButton = ({ link, name }: { link: string; name: string }) => {
+export const EmailButton = ({
+  link,
+  name,
+  variant = "default",
+}: {
+  link: string;
+  name: string;
+  variant?: "default" | "outline";
+}) => {
   const [text, setText] = useState("Copy");
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button size={"lg"} variant={"default"}>
+        <Button size={"lg"} variant={variant}>
           {name}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="start">
+      <DropdownMenuContent align="start" className="rounded-none shadow-2xl">
         <div className="p-4">
-          <p className="text-sm text-slate-500">
-            Please use this email adress:
-          </p>
+          <p className="text-sm ">Please use this email adress:</p>
           <div className="flex gap-2 mt-2">
             <div className={buttonVariants({ variant: "outline" })}>{link}</div>
             <Button
@@ -30,6 +36,7 @@ export const EmailButton = ({ link, name }: { link: string; name: string }) => {
                 navigator.clipboard.writeText(link);
                 setText("✅");
               }}
+              variant={"default"}
             >
               {text}
             </Button>
