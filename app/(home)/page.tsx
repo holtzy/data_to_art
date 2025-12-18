@@ -231,22 +231,18 @@ export default function Home() {
         <p>
           We celebrate this intersection of data, design, and emotion by
           gathering exhibitions, installations, and events from around the
-          world. Our goal is to build the most comprehensive archive of data art
-          — past, present, and future. If you’ve come across an exhibition we
-          should know about, we’d love for you to share it with us.
+          world.
         </p>
-
         <p>
-          Beyond curation, we also organize bespoke data art exhibitions — from
-          small private showcases to large-scale themed events. Whether you want
-          to explore a specific dataset, tell a story through data, or bring a
-          data-driven experience to your organization, we can help make it
-          happen.
+          Our goal is to build the most comprehensive archive of data art —
+          past, present, and future. If you’ve come across an exhibition we
+          should know about, we’d love for you to{" "}
+          <Link href="#contact">share it with us</Link>.
         </p>
 
         <div className="full-bleed">
           <div className="relative max-w-[1100px] mx-auto">
-            <div className="relative  origin-top">
+            <div className="relative">
               <div className="scale-[0.65]">
                 <DataArtEventTable />
               </div>
@@ -267,24 +263,65 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
 
-        <p>
-          If that resonates with you — whether you’re an artist, curator, or
-          simply passionate about data and art — feel free to reach out.
+      <section className="my-24 wrapper">
+        <SectionTitle title="Transform your data" subtitle="we can help" />
+
+        <div className="mt-12 grid grid-cols-12 gap-10 items-start">
+          {/* Image */}
+          <div className="relative col-span-3">
+            <div className="relative -ml-52">
+              <img
+                src="/asset/marthe-expo.jpeg"
+                alt="Data exhibition by Marthe Viallet"
+                className="w-full h-auto rounded-sm"
+              />
+            </div>
+          </div>
+
+          {/* Text */}
+          <div className="col-span-9 space-y-6">
+            <p>
+              Institutions and organizations today produce rich content — data,
+              research, narratives — yet often lack the formats needed to make
+              this content visible, readable and meaningful for their audiences.
+            </p>
+
+            <p>
+              In an era of constant scrolling, data remains confined to
+              standardized, screen-based formats, when it could instead be
+              experienced in physical space.
+            </p>
+          </div>
+        </div>
+
+        <p className="mt-8">
+          For over ten years, Marthe Viallet has been helping organizations{" "}
+          <b>transform complex data into exhibitions</b> and large-scale data
+          artworks designed beyond the screen. Through a curatorial approach
+          that brings together multiple visual languages, she helps reveal the
+          full value of existing data — turning information into clear, engaging
+          and culturally resonant experiences.
         </p>
 
-        <div className="flex justify-center gap-2 mt-8">
+        <p>
+          If you want to turn your data into a compelling medium for
+          communicating your findings, feel free to reach out to Marthe.
+        </p>
+
+        <div className="flex justify-start gap-2 mt-12">
+          <a
+            href="https://www.wakeupdataviz.com/"
+            className={cn(buttonVariants({ size: "lg", variant: "outline" }))}
+          >
+            See Marthe's work
+          </a>
           <EmailButton
-            name={"Contact us"}
-            variant="outline"
+            name="Contact Marthe"
+            variant="default"
             link="wakeupdataviz@gmail.com"
           />
-          <Link
-            href="/exhibition"
-            className={cn(buttonVariants({ size: "lg" }))}
-          >
-            See all exhibitions
-          </Link>
         </div>
       </section>
 

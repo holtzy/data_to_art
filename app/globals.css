@@ -116,7 +116,7 @@
   * {
     @apply border-border outline-ring/50;
     font-family: var(--font-instrument-serif);
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
   }
   body {
     @apply text-foreground bg-background;
