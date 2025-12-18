@@ -38,7 +38,9 @@ export const ArtistSection = () => {
         >
           <div className="p-2">
             <div className="flex gap-4 items-center">
-              <span className="text-2xl font-bold">{hovered?.name}</span>
+              <span className="text-2xl font-bold font-opensauce">
+                {hovered?.name}
+              </span>
 
               <div className="flex gap-1 mb-1">
                 {hovered?.linkedinLink && (
@@ -68,7 +70,7 @@ export const ArtistSection = () => {
                 )}
               </div>
             </div>
-            <span className="block text-sm text-slate-500">
+            <span className="block text-sm text-slate-500 font-opensauce">
               {hovered?.city}
             </span>
             <p className="text-sm">{hovered?.descriptionShort}</p>

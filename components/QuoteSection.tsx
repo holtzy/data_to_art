@@ -16,7 +16,7 @@ export const QuoteSection = ({ text }: QuoteProps) => {
         <div className="absolute -bottom-4 -right-8">
           <Quote className="fill-black stroke-0" />
         </div>
-        <span className="text-4xl ">{text}</span>
+        <span className="text-4xl font-opensauce">{text}</span>
       </div>
     </div>
   );

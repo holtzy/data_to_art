@@ -15,7 +15,7 @@ const SELECTED_IMAGES = [
 ];
 
 const p1 = (
-  <span>
+  <span className="font-opensans">
     In his project{" "}
     <Link href="/artist/florent-lavergne/naturality">Naturality</Link>, Florent
     measures the extent of human impact on ecosystems.
@@ -67,7 +67,7 @@ export const ArtScienceCursorSection = () => {
   return (
     <>
       <div className="flex gap-6 items-center justify-center mt-8">
-        <span className="font-light">More Science</span>
+        <span className="font-light font-opensauce">More Science</span>
         <Slider
           value={[level]}
           min={0}
@@ -76,7 +76,7 @@ export const ArtScienceCursorSection = () => {
           onValueChange={(value) => setLevel(value[0])}
           className={cn("w-[200px]")}
         />
-        <span>More Art</span>
+        <span className="font-light  font-opensauce">More Art</span>
       </div>
 
       <Parallax caption={CAPTIONS[level]} imageUrl={SELECTED_IMAGES[level]} />

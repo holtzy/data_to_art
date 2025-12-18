@@ -89,7 +89,7 @@ export default function Home() {
         <SectionTitle
           title={"Meet the artists"}
           subtitle={
-            <p>
+            <p className="font-opensauce">
               Currently{" "}
               <div className="w-3 inline-block">
                 <AnimatedCounter value={artistNumber} />
@@ -133,7 +133,10 @@ export default function Home() {
         <NoiseDivider height={10} />
 
         <div className="wrapper py-20">
-          <SectionTitle title={"What's that?"} subtitle="Data Art" />
+          <SectionTitle
+            title={"What's that?"}
+            subtitle={<p className="font-opensauce">Data Art</p>}
+          />
 
           <p className="drop-cap">
             Data art is a creative practice that transforms raw data into
@@ -175,7 +178,10 @@ export default function Home() {
       </section>
       <Spacing />
       <div className="wrapper">
-        <SectionTitle title={"Latest"} subtitle="What's up" />
+        <SectionTitle
+          title={"Latest"}
+          subtitle={<span className="font-opensauce">What's up</span>}
+        />
         <p>
           Data to Art is constantly growing, with new artists and projects added
           to the gallery as soon as we discover them.
@@ -221,7 +227,10 @@ export default function Home() {
       </div>
 
       <section className="my-24 wrapper">
-        <SectionTitle title={"Exhibition"} subtitle="In real life" />
+        <SectionTitle
+          title={"Exhibition"}
+          subtitle={<span className="font-opensauce">In real life</span>}
+        />
 
         <p>
           Data art is captivating on a screen, but its true magic comes alive in
@@ -286,7 +295,10 @@ export default function Home() {
       </section>
 
       <section className="my-24 wrapper">
-        <SectionTitle title="Transform your data" subtitle="we can help" />
+        <SectionTitle
+          title="Transform your data"
+          subtitle={<span className="font-opensauce">We can help</span>}
+        />
 
         <div className="mt-12 grid grid-cols-12 gap-10 items-start">
           {/* Image */}
