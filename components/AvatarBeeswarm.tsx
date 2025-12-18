@@ -88,7 +88,7 @@ export default function AvatarBeeswarm({
             r={d.r}
             fill="none"
             stroke={
-              hovered && hovered.folder === d.folder ? "purple" : "transparent"
+              hovered && hovered.folder === d.folder ? "black" : "transparent"
             }
             strokeWidth={2}
           />

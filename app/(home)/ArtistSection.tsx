@@ -38,9 +38,7 @@ export const ArtistSection = () => {
         >
           <div className="p-2">
             <div className="flex gap-4 items-center">
-              <span className="text-xl font-bold bg-gradient-to-r from-purple-900  to-purple-500 bg-clip-text text-transparent">
-                {hovered?.name}
-              </span>
+              <span className="text-2xl font-bold">{hovered?.name}</span>
 
               <div className="flex gap-1 mb-1">
                 {hovered?.linkedinLink && (
