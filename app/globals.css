@@ -166,7 +166,7 @@ h6 {
   font-family: var(--font-instrument-serif);
 }
 h1 {
-  @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  @apply scroll-m-20 text-3xl lg:text-7xl;
 }
 h2 {
   @apply uppercase tracking-wider mt-32 scroll-m-20 border-b pb-2 text-4xl transition-colors first:mt-0;
