@@ -25,7 +25,7 @@ const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), {
 export default function Home() {
   return (
     <div>
-      <section className="relative flex flex-col justify-center items-center pt-20 z-40">
+      <section className="relative flex flex-col justify-center items-center pt-20 z-40 pointer-events-none">
         <div className="relative px-40 pb-4 flex flex-col items-center mt-20">
           <div>
             <div className="w-full flex justify-end">
@@ -146,7 +146,7 @@ export default function Home() {
             datasets.{" "}
           </p>
 
-          <p>
+          <p className="mb-12">
             Data art acts as a cursor between science and abstraction. Some
             works feel like scientific figures, with annotations and numbers
             that speak for themselves. Others drift into pure abstraction, only
