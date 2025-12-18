@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react";
 import { DataArtEventTable } from "./DataArtEventTable";
 import { DataArtEvent } from "./DataArtEventTable";
+import { Contact } from "@/components/Contact";
+import { Spacing } from "@/components/Spacing";
+import { Button } from "@/components/ui/button";
 
 type Row = {
   [key: string]: string;
@@ -32,8 +35,6 @@ export default function ExibPage() {
       .catch(() => setError("Failed to fetch Google Sheet data."));
   }, []);
 
-  console.log("data", data);
-
   return (
     <div>
       {error && <p className="text-red-600">{error}</p>}
@@ -41,12 +42,24 @@ export default function ExibPage() {
 
       <div className="mt-44 flex flex-col items-center bg-gradient-to-t from-transparent to-white">
         <h1 className="text-9xl">Exhibitions</h1>
-        <p className="text-center max-w-62">{}</p>
+        <p className="text-center max-w-96">
+          We love data art and exhibitions. Please help us maintain this list!
+          If you heard about an even send it to us!
+        </p>
+        <div className="mt-10">
+          <Button>Add an event</Button>
+        </div>
       </div>
+
+      <Spacing />
 
       <div className="max-w-[1100px] mx-auto">
         {data.length > 0 && <DataArtEventTable events={data} />}
       </div>
+
+      <Spacing />
+
+      <Contact />
     </div>
   );
 }
