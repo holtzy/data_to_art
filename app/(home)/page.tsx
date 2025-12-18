@@ -16,6 +16,7 @@ import { EmailButton } from "@/components/EmailButton";
 import { SectionTitle } from "./SectionTitle";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { artistNumber } from "@/lib/artist-list";
+import { DataArtEventTable } from "../exhibition/DataArtEventTable";
 
 const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), {
   ssr: false,
@@ -242,6 +243,31 @@ export default function Home() {
           data-driven experience to your organization, we can help make it
           happen.
         </p>
+
+        <div className="full-bleed">
+          <div className="relative max-w-[1100px] mx-auto">
+            <div className="relative  origin-top">
+              <div className="scale-[0.65]">
+                <DataArtEventTable />
+              </div>
+              {/* top fade */}
+              <div className="pointer-events-none absolute top-0 left-0 right-0 h-96 bg-gradient-to-b from-white to-transparent" />
+              {/* bottom fade */}
+              <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-white to-transparent" />
+            </div>
+
+            {/* top centered button */}
+            <div className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
+              <Link
+                href="/exhibitions"
+                className={buttonVariants({ size: "lg" })}
+              >
+                See all exhibitions
+              </Link>
+            </div>
+          </div>
+        </div>
+
         <p>
           If that resonates with you — whether you’re an artist, curator, or
           simply passionate about data and art — feel free to reach out.

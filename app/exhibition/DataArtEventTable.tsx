@@ -1,9 +1,7 @@
 "use client";
-
+import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
 export type DataArtEvent = {
@@ -17,11 +15,34 @@ export type DataArtEvent = {
   descriptionShort: string;
 };
 
-type DataArtEventTableProps = {
-  events: DataArtEvent[];
+type Row = {
+  [key: string]: string;
 };
 
-export function DataArtEventTable({ events }: DataArtEventTableProps) {
+const URL =
+  "https://docs.google.com/spreadsheets/d/1lXvTLBOsCudCMOvByLq0yruGwssWXjSqSOHg41Nh6iQ/export?format=tsv&gid=1987880223";
+
+export function DataArtEventTable() {
+  const [data, setData] = useState<DataArtEvent[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch(URL)
+      .then((res) => res.text())
+      .then((text) => {
+        const rows = text.split("\n").map((r) => r.split("\t"));
+        const headers = rows[0];
+        const items = rows.slice(1).map((r) =>
+          headers.reduce((acc: Row, header, i) => {
+            acc[header.trim()] = r[i] ?? "";
+            return acc;
+          }, {})
+        );
+        setData(items as DataArtEvent[]);
+      })
+      .catch(() => setError("Failed to fetch Google Sheet data."));
+  }, []);
+
   const customStyles = {
     rows: {
       style: {
@@ -116,15 +137,25 @@ export function DataArtEventTable({ events }: DataArtEventTableProps) {
   ];
 
   return (
-    <DataTable
-      columns={columns}
-      data={events}
-      highlightOnHover
-      responsive
-      striped
-      defaultSortFieldId={3} // Sort by "From" by default
-      customStyles={customStyles}
-    />
+    <>
+      {error && <p className="text-red-600">{error}</p>}
+
+      {!error && data.length === 0 && (
+        <p className="text-xs">Loading data...</p>
+      )}
+
+      {data.length > 0 && (
+        <DataTable
+          columns={columns}
+          data={data}
+          highlightOnHover
+          responsive
+          striped
+          defaultSortFieldId={3} // Sort by "From" by default
+          customStyles={customStyles}
+        />
+      )}
+    </>
   );
 }
 
