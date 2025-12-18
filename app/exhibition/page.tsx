@@ -1,10 +1,8 @@
 "use client";
 
-import { ProjectCard } from "@/components/ProjectCard";
-import { projectList } from "@/lib/project-list";
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Table } from "./Table";
+import { DataArtEventTable } from "./DataArtEventTable";
+import { DataArtEvent } from "./DataArtEventTable";
 
 type Row = {
   [key: string]: string;
@@ -14,7 +12,7 @@ const URL =
   "https://docs.google.com/spreadsheets/d/1lXvTLBOsCudCMOvByLq0yruGwssWXjSqSOHg41Nh6iQ/export?format=tsv&gid=1987880223";
 
 export default function ExibPage() {
-  const [data, setData] = useState<Row[]>([]);
+  const [data, setData] = useState<DataArtEvent[]>([]);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -29,7 +27,7 @@ export default function ExibPage() {
             return acc;
           }, {})
         );
-        setData(items);
+        setData(items as DataArtEvent[]);
       })
       .catch(() => setError("Failed to fetch Google Sheet data."));
   }, []);
@@ -45,8 +43,9 @@ export default function ExibPage() {
         <h1 className="text-9xl">Exhibitions</h1>
         <p className="text-center max-w-62">{}</p>
       </div>
+
       <div className="max-w-[1100px] mx-auto">
-        {data.length > 0 && <Table events={data} />}
+        {data.length > 0 && <DataArtEventTable events={data} />}
       </div>
     </div>
   );

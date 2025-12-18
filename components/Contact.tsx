@@ -2,7 +2,7 @@ import { EmailButton } from "./EmailButton";
 
 export const Contact = () => {
   return (
-    <section className="full-bleed bg-repeat bg-[length:auto]">
+    <section id="contact" className="full-bleed bg-repeat bg-[length:auto]">
       <div
         style={{ backgroundImage: "url('/asset/texture.png')" }}
         className="flex justify-center items-center h-[600px]"

@@ -155,22 +155,26 @@ export default function Home() {
       <Spacing />
       <div className="wrapper">
         <SectionTitle title={"Latest"} subtitle="What's up" />
-
         <p>
-          Data to Art is constantly growing, adding new artists and projects to
-          the gallery as soon as we discover them. Here is our latest addition,
-          but you can see all the available projects{" "}
-          <Link href="/projects">here</Link>.
+          Data to Art is constantly growing, with new artists and projects added
+          to the gallery as soon as we discover them.
         </p>
+        <p>
+          Most recently, we were pleased to add the work of{" "}
+          <Link href="/artist/alisa-singer">Alisa Singer</Link>, whose art
+          transforms climate science, social issues, and personal experiences
+          into vibrant, data-driven visual pieces.
+        </p>
+
         <div className="full-bleed">
           <div className="max-w-[900px] mx-auto">
             <FiveImgsGallery
               images={[
-                "/project/florent-lavergne/wet-feet/01-full.webp",
-                "/project/florent-lavergne/wet-feet/02-full.webp",
-                "/project/florent-lavergne/wet-feet/03-full.webp",
-                "/project/florent-lavergne/wet-feet/04-full.webp",
-                "/project/florent-lavergne/wet-feet/05-full.webp",
+                "/project/alisa-singer/environmental-graphiti/01-full.webp",
+                "/project/alisa-singer/environmental-graphiti/02-full.webp",
+                "/project/alisa-singer/environmental-graphiti/03-full.webp",
+                "/project/alisa-singer/environmental-graphiti/04-full.webp",
+                "/project/alisa-singer/environmental-graphiti/05-full.webp",
               ]}
               height={400}
             />
@@ -178,19 +182,19 @@ export default function Home() {
         </div>
         <div className="w-full flex gap-2 justify-center my-10">
           <Link
-            href={"/ar"}
+            href={"#contact"}
             className={cn(
               buttonVariants({ size: "lg", variant: "outline" }),
               "mb-12"
             )}
           >
-            See all artists
+            Suggest an artist
           </Link>{" "}
           <Link
-            href={"/projects"}
+            href={"/artist/alisa-singer"}
             className={cn(buttonVariants({ size: "lg" }), "mb-12")}
           >
-            See all projects
+            Read more about Alisa
           </Link>
         </div>
       </div>
@@ -201,13 +205,6 @@ export default function Home() {
         <p>
           Data art is captivating on a screen, but its true magic comes alive in
           the real world — on a canvas you can see, touch, and feel.
-        </p>
-        <p>
-          We celebrate this intersection of data, design, and emotion by
-          gathering exhibitions, installations, and events from around the
-          world. Our goal is to build the most comprehensive archive of data art
-          — past, present, and future. If you’ve come across an exhibition we
-          should know about, we’d love for you to share it with us.
         </p>
 
         <div className="full-bleed my-12 grid gap-2">
@@ -229,6 +226,14 @@ export default function Home() {
             />
           </div>
         </div>
+
+        <p>
+          We celebrate this intersection of data, design, and emotion by
+          gathering exhibitions, installations, and events from around the
+          world. Our goal is to build the most comprehensive archive of data art
+          — past, present, and future. If you’ve come across an exhibition we
+          should know about, we’d love for you to share it with us.
+        </p>
 
         <p>
           Beyond curation, we also organize bespoke data art exhibitions — from

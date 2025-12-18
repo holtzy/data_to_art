@@ -5,7 +5,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-type Event = {
+export type DataArtEvent = {
   name: string;
   link: string;
   from: string;
@@ -15,11 +15,11 @@ type Event = {
   description: string;
 };
 
-type TableProps = {
-  events: Event[];
+type DataArtEventTableProps = {
+  events: DataArtEvent[];
 };
 
-export function Table({ events }: TableProps) {
+export function DataArtEventTable({ events }: DataArtEventTableProps) {
   // Helper function for status pill
   const getStatus = (from: string, to: string) => {
     const now = new Date();
