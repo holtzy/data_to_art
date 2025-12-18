@@ -30,7 +30,7 @@ export const ProjectHero = ({
 
         <div className="flex gap-2 items-center text-sm">
           <span>A project by </span>
-          <Link href="">{artist?.name}</Link>
+          <Link href={"/artist/" + artist.folder}>{artist?.name}</Link>
           <Avatar>
             <AvatarImage src={`/artist/${artist.folder}.webp`} />
             <AvatarFallback>{artist?.name}</AvatarFallback>
