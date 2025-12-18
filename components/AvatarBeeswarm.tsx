@@ -6,7 +6,7 @@ interface AvatarBeeswarmProps {
   artistList: Artist[];
   width?: number;
   height?: number;
-  setHovered: (a: Artist) => void;
+  setHovered: (a: Artist | null) => void;
   hovered: Artist | null;
 }
 
@@ -21,7 +21,7 @@ export default function AvatarBeeswarm({
     // Assign random radius to each node
     const initialNodes = artistList.map((a) => ({
       ...a,
-      r: Math.random() * 25 + 20, // 20-45px radius
+      r: 50, // Math.random() * 25 + 20, // 20-45px radius
     }));
 
     // Force simulation for beeswarm layout
@@ -31,7 +31,7 @@ export default function AvatarBeeswarm({
         "x",
         d3.forceX((_, i) => (i / initialNodes.length) * width).strength(0.5)
       )
-      .force("y", d3.forceY(height / 2).strength(0.05))
+      .force("y", d3.forceY(height / 2).strength(0.8))
       .force(
         "collide",
         d3.forceCollide<Artist & { r: number }>((d) => d.r + 2)
@@ -60,6 +60,9 @@ export default function AvatarBeeswarm({
           onMouseEnter={() => {
             setHovered(d);
           }}
+          // onMouseLeave={() => {
+          //   setHovered(null);
+          // }}
           className="cursor-pointer"
           onClick={() => (window.location.href = `/artist/${d.folder}`)}
         >

@@ -210,3 +210,5 @@ export const artistList = [
     linkedinLink: "https://www.linkedin.com/in/annelaurefreant/",
   },
 ] as const satisfies readonly Artist[];
+
+export const artistNumber = artistList.length;

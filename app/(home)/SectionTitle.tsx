@@ -1,6 +1,8 @@
+import { ReactNode } from "react";
+
 type SectionTitleProps = {
   title: string;
-  subtitle: string;
+  subtitle: ReactNode;
 };
 
 export const SectionTitle = ({ title, subtitle }: SectionTitleProps) => {

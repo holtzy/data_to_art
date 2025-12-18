@@ -1,5 +1,7 @@
 {
   "/(home)/page": "app/(home)/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/manifesto/page": "app/manifesto/page.js"
+  "/artist/jeremy-wanner/page": "app/artist/jeremy-wanner/page.js",
+  "/artist/marta-sierra/page": "app/artist/marta-sierra/page.js",
+  "/exhibition/page": "app/exhibition/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

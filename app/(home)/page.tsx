@@ -14,6 +14,8 @@ import { QuoteSection } from "@/components/QuoteSection";
 import { ArtScienceCursorSection } from "./ArtScienceCursorSection";
 import { EmailButton } from "@/components/EmailButton";
 import { SectionTitle } from "./SectionTitle";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
+import { artistNumber } from "@/lib/artist-list";
 
 const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), {
   ssr: false,
@@ -83,9 +85,16 @@ export default function Home() {
       <div className="wrapper relative mt-20">
         <SectionTitle
           title={"Meet the artists"}
-          subtitle="From all over the world"
+          subtitle={
+            <p>
+              Currently{" "}
+              <div className="w-3 inline-block">
+                <AnimatedCounter value={artistNumber} />
+              </div>{" "}
+              creators listed
+            </p>
+          }
         />
-
         <p>
           Our goal is to showcase as many talented data artists as possible,
           celebrating diverse voices and styles across the globe.
@@ -95,7 +104,6 @@ export default function Home() {
           data can be transformed into art.
         </p>
       </div>
-
       <ArtistSection />
 
       <Spacing />
