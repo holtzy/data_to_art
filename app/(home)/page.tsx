@@ -43,7 +43,9 @@ export default function Home() {
           <p className="text-center max-w-[340px] text-2xl">
             We're a curated online gallery showcasing the work of international
             data experts. We believe in the beauty of data, and in the power of
-            visuals to tell stories.
+            visuals
+            <br />
+            to tell stories.
           </p>
         </div>
       </section>
