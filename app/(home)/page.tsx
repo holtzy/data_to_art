@@ -107,7 +107,25 @@ export default function Home() {
           data can be transformed into art.
         </p>
       </div>
+
       <ArtistSection />
+
+      <div className="w-full flex gap-2 justify-center my-4">
+        <EmailButton
+          name={"Suggest an Artist"}
+          variant="outline"
+          link="wakeupdataviz@gmail.com"
+        />
+        <Link
+          href={"/artists"}
+          className={cn(
+            buttonVariants({ size: "lg", variant: "default" }),
+            "mb-12"
+          )}
+        >
+          See all artists
+        </Link>
+      </div>
 
       <Spacing />
 
