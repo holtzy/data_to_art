@@ -59,6 +59,7 @@ export default function Page() {
             />
           </div>
         </div>
+
         <div className="my-12">
           <p>
             We as human being are visual creatures and showing a spreadsheet of
