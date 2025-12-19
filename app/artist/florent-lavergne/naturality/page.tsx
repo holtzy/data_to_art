@@ -115,7 +115,12 @@ export default function Page() {
         </p>
 
         <div className="mt-4">
-          <Link href={""} className={cn(buttonVariants())}>
+          <Link
+            href={
+              "https://www.behance.net/gallery/223921953/The-Gradient-of-Naturality-France"
+            }
+            className={cn(buttonVariants())}
+          >
             Official project page
           </Link>
         </div>

@@ -6,6 +6,7 @@ import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
@@ -21,10 +22,10 @@ export default function Page() {
 
   const images = [
     "01-thumb.webp",
-    "02-thumb.webp",
+    "09-thumb.webp",
+    "07-thumb.webp",
+    "08-thumb.webp",
     "03-thumb.webp",
-    "04-thumb.webp",
-    "05-thumb.webp",
   ];
 
   return (
@@ -71,15 +72,9 @@ export default function Page() {
 
         <div className="full-bleed">
           <div className="max-w-[900px] mx-auto">
-            <FiveImgsGallery
-              images={[
-                "/project/florent-lavergne/wet-feet/01-full.webp",
-                "/project/florent-lavergne/wet-feet/02-full.webp",
-                "/project/florent-lavergne/wet-feet/03-full.webp",
-                "/project/florent-lavergne/wet-feet/04-full.webp",
-                "/project/florent-lavergne/wet-feet/05-full.webp",
-              ]}
-              height={400}
+            <ImgWithCaption
+              img="/project/florent-lavergne/wet-feet/01-full.webp"
+              caption={<span>Wet feet, a project by Florent Lavergne</span>}
             />
           </div>
         </div>
@@ -93,7 +88,13 @@ export default function Page() {
         </p>
 
         <div className="mt-4">
-          <Link href={""} className={cn(buttonVariants())}>
+          <Link
+            target="_blank"
+            href={
+              "https://www.behance.net/gallery/124067143/Wet-Feet-Data-Visualization"
+            }
+            className={cn(buttonVariants())}
+          >
             Official project page
           </Link>
         </div>

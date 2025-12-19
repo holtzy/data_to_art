@@ -13,7 +13,7 @@ export default function AboutPage() {
     <>
       <div className="wrapper mt-40">
         <center>
-          <h1>About</h1>
+          <h1>About Data to Art</h1>
           <p className="max-w-96">
             Data to Art began as a meeting between a curator and a dataviz
             passionate. Both fascinated by the emotional side of data.
