@@ -43,7 +43,7 @@ export default function ArtworksPage() {
         </div>
 
         <div className="absolute top-0 w-full h-[400px] flex flex-col items-center bg-gradient-to-t from-transparent to-white">
-          <h1 className="text-9xl">The Wall</h1>
+          <h1 className="text-9xl">Collection</h1>
           <p className="text-center max-w-62">
             {`Data to Art features ${projectList.length} projects from ${artistList.length} artists. That’s ${items.length} unique images waiting to be explored below. Any other suggestion? `}
             <Link href="/about">Contact us</Link>

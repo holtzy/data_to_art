@@ -6,6 +6,7 @@ import { Spacing } from "@/components/Spacing";
 import { ArtScienceCursorSection } from "../(home)/ArtScienceCursorSection";
 import Link from "next/link";
 import { EmailButton } from "@/components/EmailButton";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 
 export default function AboutPage() {
   return (
@@ -20,9 +21,20 @@ export default function AboutPage() {
         </center>
       </div>
 
-      <Spacing />
+      <div className="full-bleed mt-2">
+        <div className="px-4">
+          <ImgWithCaption
+            img="/expo/expo2.jpg"
+            caption={
+              <span>
+                Work by Kirell Benzi at the xxx expo. Soon included in the
+                project.
+              </span>
+            }
+          />
+        </div>
+      </div>
 
-      <img src="/expo/expo2.jpg" className="px-10" />
       <Spacing />
 
       <section className="wrapper">
@@ -173,9 +185,9 @@ const YanHoltzDescription = (
     </p>
     <p>
       He’s also the creator of popular sites like{" "}
-      <a href="https://www.data-to-viz.com">Data-to-Viz</a> and the Python Graph{" "}
-      <a href="https://www.python-graph-gallery.com">Gallery</a>, so chances
-      are, you’ve already benefited from his work without even knowing it!
+      <a href="https://www.data-to-viz.com">Data-to-Viz</a> and the Graph{" "}
+      Galleries, so chances are, you’ve already benefited from his work without
+      even knowing it!
     </p>
   </>
 );
@@ -183,8 +195,11 @@ const YanHoltzDescription = (
 const MartheDescription = (
   <>
     <p>
-      Marthe Viallet curates and designs exhibitions that connect data, art, and
-      science to tell new stories about today’s world.
+      <Link href="https://www.wakeupdataviz.com/" target="_blank">
+        Marthe Viallet
+      </Link>{" "}
+      curates and designs exhibitions that connect data, art, and science to
+      tell new stories about today’s world.
     </p>
     <p>
       Specialized in data visualization, data art, and scientific mediation, she
