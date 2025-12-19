@@ -76,6 +76,7 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
               <a
                 className={buttonVariants({ variant: "default" })}
                 href={homepageLink}
+                target="_blank"
               >
                 Homepage
               </a>

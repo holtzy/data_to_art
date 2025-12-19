@@ -57,10 +57,9 @@ export const artistList = [
     folder: "laura-castro",
     location: [8.5417, 47.3769],
     city: "Zurich - 🇨🇭",
-    homepageLink: "www.iamlauracastro.com",
+    homepageLink: "https://www.iamlauracastro.com",
     linkedinLink: "https://www.linkedin.com/in/lauracastrosoto/",
   },
-
   {
     name: "Cinzia Bongino",
     descriptionShort: (
