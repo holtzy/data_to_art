@@ -6,6 +6,7 @@ import { Contact } from "@/components/Contact";
 import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
+import { QuoteSection } from "@/components/QuoteSection";
 
 const ARTIST = "marlene-dorgny";
 
@@ -27,9 +28,12 @@ export default function Page() {
           <p className="drop-cap">
             Marlene Dorgny is a French information designer who discovered data
             visualization after a client once asked her, “how can we make this
-            table look nice?” She found a discipline where analysis meets
-            design, where meaning comes before beauty, and where form serves
-            substance.
+            table look nice?”
+          </p>
+          <QuoteSection text="How can we make this table look nice?" />
+          <p>
+            She found a discipline where analysis meets design, where meaning
+            comes before beauty, and where form serves substance.
           </p>
         </div>
 

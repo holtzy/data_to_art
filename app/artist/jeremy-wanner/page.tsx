@@ -7,6 +7,7 @@ import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
 import Link from "next/link";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 
 const ARTIST = "jeremy-wanner";
 
@@ -92,12 +93,46 @@ export default function Page() {
         <Spacing />
 
         <ArtistProjectsSection artistId={ARTIST} />
+      </div>
 
+      <Spacing />
+
+      <div className="wrapper">
         <h2 className="mb-4">Exhibition</h2>
-        <p className="mb-12">
-          No exhibitions are planned for this artist at the moment.
+        <p>
+          Jeremy's work was exhibited at the{" "}
+          <a
+            href="https://www.wakeupdataviz.com/trajectoires-sport-data"
+            target="_blank"
+          >
+            Trajectoires
+          </a>{" "}
+          event in France, and while no future exhibitions are scheduled at the
+          moment, his projects continue to live online.
         </p>
+      </div>
+      <div className="full-bleed mt-8 bg-red-50">
+        <div className="px-2 flex gap-2">
+          <img
+            src="/project/jeremy-wanner/glove-rose/05.JPG"
+            className="w-1/3 h-[300px] object-cover"
+          />
+          <img
+            src="/project/jeremy-wanner/glove-rose/06.JPG"
+            className="w-1/3 h-[300px] object-cover"
+          />
+          <img
+            src="/project/jeremy-wanner/glove-rose/07.JPG"
+            className="w-1/3 h-[300px] object-cover"
+          />
+        </div>
+      </div>
 
+      <Spacing />
+      <Spacing />
+      <Spacing />
+
+      <div className="full-bleed">
         <Contact />
       </div>
     </>

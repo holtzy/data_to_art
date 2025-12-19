@@ -27,6 +27,7 @@ export default function Page() {
     "01-full.webp",
     "02-full.webp",
     "04-full.webp",
+    "05-full.webp",
     "09-full.webp",
   ];
   const images = [

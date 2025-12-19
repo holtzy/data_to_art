@@ -20,7 +20,7 @@ export const ProjectHero = ({
   const { name, descriptionShort, date, folder } = project;
 
   return (
-    <section className="h-screen flex flex-col lg:flex-row gap-8 max-w-[900px] mx-auto overflow-hidden">
+    <section className="h-screen max-h-[900px] flex flex-col lg:flex-row gap-8 max-w-[900px] mx-auto overflow-hidden">
       {/* Left column */}
       <div className="lg:w-1/2 flex flex-col justify-center items-end">
         <h1 className="!text-6xl !tracking-wider mb-4 text-right !font-normal">

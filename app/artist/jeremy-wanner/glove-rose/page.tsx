@@ -94,6 +94,39 @@ export default function Page() {
 
         <Spacing />
 
+        <div className="wrapper">
+          <h2 className="mb-4">Exhibition</h2>
+          <p>
+            Jeremy's work was exhibited at the{" "}
+            <a
+              href="https://www.wakeupdataviz.com/trajectoires-sport-data"
+              target="_blank"
+            >
+              Trajectoires
+            </a>{" "}
+            event in France, and while no future exhibitions are scheduled at
+            the moment, his projects continue to live online.
+          </p>
+        </div>
+        <div className="full-bleed mt-8 bg-red-50">
+          <div className="px-2 flex gap-2">
+            <img
+              src="/project/jeremy-wanner/glove-rose/05.JPG"
+              className="w-1/3 h-[300px] object-cover"
+            />
+            <img
+              src="/project/jeremy-wanner/glove-rose/06.JPG"
+              className="w-1/3 h-[300px] object-cover"
+            />
+            <img
+              src="/project/jeremy-wanner/glove-rose/07.JPG"
+              className="w-1/3 h-[300px] object-cover"
+            />
+          </div>
+        </div>
+
+        <Spacing />
+
         <div className="mt-4 mx-auto">
           <Link href={projectInfo.link || ""} className={cn(buttonVariants())}>
             Official project page
