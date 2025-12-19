@@ -113,9 +113,9 @@ export default function Page() {
 
         <Spacing />
         <Spacing />
-
-        <Contact />
       </div>
+
+      <Contact />
     </>
   );
 }

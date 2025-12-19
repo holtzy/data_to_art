@@ -7,6 +7,8 @@ import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
 import { QuoteSection } from "@/components/QuoteSection";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
+import Link from "next/link";
 
 const ARTIST = "marlene-dorgny";
 
@@ -29,30 +31,36 @@ export default function Page() {
             Marlene Dorgny is a French information designer who discovered data
             visualization after a client once asked her, “how can we make this
             table look nice?”
-          </p>
-          <QuoteSection text="How can we make this table look nice?" />
+          </p>{" "}
           <p>
             She found a discipline where analysis meets design, where meaning
             comes before beauty, and where form serves substance.
           </p>
-        </div>
-
-        <Parallax
-          text=""
-          imageUrl="/project/marlene-dorgny/riot/02-full.webp"
-        />
-
-        <div className="my-12">
-          <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+          <QuoteSection text="How can we make this table look nice?" />
+          <p>
             For Marlene, diving into data, uncovering the story behind it, and
             structuring it into clear and useful insights is always a
             fascinating journey. Her process blends curiosity, analytical rigor,
             and a strong sense of visual clarity.
           </p>
+        </div>
+
+        <ImgWithCaption
+          caption={
+            <span>
+              Overview of the{" "}
+              <Link href="/artist/marlene-dorgny/riot">Riot Girl</Link> project
+            </span>
+          }
+          img="/project/marlene-dorgny/riot/02-full.webp"
+        />
+
+        <div className="my-12">
           <p className="mt-4">
             In 2018, she began visualizing a book about the Manchester music
             scene, told through personal testimonies of people crossing paths,
-            connecting, and making music together. This project sparked a
+            connecting, and making music together. This{" "}
+            <Link href="/artist/marlene-dorgny/riot">project</Link> sparked a
             lasting passion for network mapping — a way to show relationships,
             encounters, and collaborations through data.
           </p>
@@ -65,19 +73,15 @@ export default function Page() {
 
         <Spacing />
 
-        <ArtistGallerySection imgs={allImages} />
-
-        <Spacing />
-
         <ArtistProjectsSection artistId={ARTIST} />
 
         <h2 className="mb-4">Exhibition</h2>
         <p className="mb-12">
           No exhibitions are planned for this artist at the moment.
         </p>
-
-        <Contact />
       </div>
+
+      <Contact />
     </>
   );
 }

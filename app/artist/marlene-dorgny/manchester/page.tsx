@@ -1,11 +1,11 @@
 "use client";
 
-import FiveImgsGallery from "@/components/FiveImgsGallery";
 import Parallax from "@/components/Parallax";
 import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
@@ -17,15 +17,13 @@ export default function Page() {
   const projectInfo = projectList.find((p) => p.folder === PROJECT);
   if (!projectInfo) return null;
   const artistInfo = artistList.find((a) => a.folder === projectInfo.artist);
-  if (!artistInfo) {
-    return null;
-  }
+  if (!artistInfo) return null;
 
   const images = [
     "01-thumb.webp",
     "02-thumb.webp",
     "03-thumb.webp",
-    "01-thumb.webp",
+    "04-thumb.webp",
     "05-thumb.webp",
   ];
 
@@ -40,82 +38,81 @@ export default function Page() {
 
       <div className="wrapper">
         <p className="drop-cap">
-          How does nature survive alongside human civilization? It’s a question
-          easier asked than answered. While we can see the visible scars of
-          human activity — cities, roads, farms — the subtle ways ecosystems
-          respond remain largely hidden.
-        </p>
-        <p>
-          This project unveils a new perspective: the Gradient of Naturality
-          across mainland France.
+          Manchester Music City is a data visualization project inspired by John
+          Robb’s 586-page book <em>Manchester Music City 1976–1996</em>. The
+          project translates this dense cultural history into a network-based
+          visual narrative.
         </p>
 
-        <Parallax
-          text=""
-          imageUrl="/project/florent-lavergne/naturality/04-full.webp"
+        <p>
+          Beyond musical emotion, technique, or performance, the project is
+          driven by a desire to recontextualize artists, bands, and movements
+          within their broader socio-economic environment. It connects personal
+          stories with larger historical forces, showing how scenes emerge from
+          relationships, encounters, shared spaces, and collective energy.
+        </p>
+
+        <ImgWithCaption
+          caption="Full view of the Manchester project"
+          img="/project/marlene-dorgny/manchester/05.png"
         />
 
         <p className="drop-cap">
-          Developed in collaboration with IUCN France, this map uses a grid of
-          colored hexagons to represent the "naturality": a measure of how much
-          ecosystems are exposed to human presence. From densely populated urban
-          centers to remote mountainous forests, each hexagon tells a story of
-          balance, tension, and survival.
+          Bands do not appear in isolation. They form because people meet.
+          Projects are born from friendships, tensions, emotions, and specific
+          moments in time. This is precisely what John Robb’s book captures.
         </p>
 
         <p>
-          The data behind the map comes from a careful combination of sources:
-          ecological statistics, population density, and terrain elevation.
-          Using GIS software, these layers were combined into a grid of 8 km²
-          hexagons, each analyzed to reflect average naturality and other
-          environmental factors.
+          Robb was both a witness and an active participant in the Manchester
+          scene. As a musician, journalist, and TV presenter, he occupied a
+          unique position that allowed him to gather testimonies, memories, and
+          connections from within the movement itself.
         </p>
 
-        <div className="full-bleed ">
-          <div className="max-w-[900px] mx-auto">
-            <FiveImgsGallery
-              images={[
-                "/project/florent-lavergne/naturality/01-full.webp",
-                "/project/florent-lavergne/naturality/02-full.webp",
-                "/project/florent-lavergne/naturality/03-full.webp",
-                "/project/florent-lavergne/naturality/04-full.webp",
-                "/project/florent-lavergne/naturality/05-full.webp",
-              ]}
-              height={400}
+        <div className="full-bleed my-12">
+          <div className="max-w-[1000px] mx-auto">
+            <ImgWithCaption
+              img="/project/marlene-dorgny/manchester/02-full.webp"
+              caption={
+                <span>
+                  Network map of artists, venues, labels, and relationships in
+                  Manchester’s music scene
+                </span>
+              }
             />
           </div>
         </div>
 
         <p>
-          But the story doesn’t stop with numbers. Using Blender’s powerful 3D
-          modeling tools, these data points were transformed into a vibrant
-          visual narrative. Hexagons rise and fall in three-dimensional space,
-          their heights and colors encoding elevation and naturality, while
-          spheres represent population density. The result is a striking,
-          dynamic cartographic visualization — a map that is not just seen but
-          experienced.
+          The resulting visualization reinforces a simple but powerful idea:
+          nothing and no one exists alone. Artists, labels, venues, and
+          audiences are deeply interconnected, forming an ecosystem that enables
+          certain scenes to flourish.
         </p>
 
         <p>
-          Finally, a touch of artistry in Photoshop enhanced the visual appeal,
-          balancing color and texture to create a compelling, shareable image
-          that brings data to life.
+          The project ultimately raises a broader question. Why do extraordinary
+          cultural movements emerge in specific places at specific moments. Why
+          Manchester. Why then.
         </p>
 
-        <p>
-          This project isn’t just about maps; it’s about raising awareness. It
-          challenges us to consider: what does it mean for nature to thrive in a
-          human-dominated world? And how can we use data to protect these
-          fragile ecosystems for future generations?
-        </p>
-
-        <p>
-          Explore the Gradient of Naturality and discover how data visualization
-          can reveal hidden truths about our planet — one hexagon at a time.
+        <p className="italic text-slate-600">
+          “Of course the Stone Roses came from Manchester. Where else could they
+          have come from. And The Smiths. And Joy Division. Where else could Ian
+          Curtis come from. And Factory Records. And The Hacienda. It’s obvious.
+          All this incredible music comes from a tiny city in the north of
+          England. People around the world ask me why Manchester is like this. I
+          tell them I have no idea.”
+          <br />— Noel Gallagher
         </p>
 
         <div className="mt-4">
-          <Link href={""} className={cn(buttonVariants())}>
+          <Link
+            target="_blank"
+            href="https://md-graphiste.com/portfolio_page/manchester-music-city-1976-1996/"
+            className={cn(buttonVariants())}
+          >
             Official project page
           </Link>
         </div>

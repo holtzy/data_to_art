@@ -1,11 +1,11 @@
 "use client";
 
-import FiveImgsGallery from "@/components/FiveImgsGallery";
 import Parallax from "@/components/Parallax";
 import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
@@ -17,15 +17,14 @@ export default function Page() {
   const projectInfo = projectList.find((p) => p.folder === PROJECT);
   if (!projectInfo) return null;
   const artistInfo = artistList.find((a) => a.folder === projectInfo.artist);
-  if (!artistInfo) {
-    return null;
-  }
+  if (!artistInfo) return null;
 
   const images = [
-    "01-medium.webp",
-    "02-medium.webp",
-    "03-medium.webp",
-    "04-medium.webp",
+    "01-thumb.webp",
+    "02-thumb.webp",
+    "03-thumb.webp",
+    "04-thumb.webp",
+    "05-thumb.webp",
   ];
 
   return (
@@ -38,32 +37,74 @@ export default function Page() {
       />
 
       <div className="wrapper">
-        <iframe
-          src="https://etudes.scan-datamining.com/embed/dataviz/157?display[header]=0&id=F015"
-          width="100%"
-          height="800"
-          frameBorder="0"
-        ></iframe>
+        <p className="drop-cap">
+          Riot Grrrl is a data visualization project that explores the feminist
+          punk movement that emerged in the early 1990s in the Pacific Northwest
+          of the United States.
+        </p>
 
-        <p>Visuals at the end of the project:</p>
+        <p>
+          Originating in Olympia, Washington, the movement combined music,
+          activism, and self-published media to challenge sexism in both society
+          and the punk scene itself. Riot Grrrl gave rise to a new form of
+          feminist expression, rooted in lived experience, collective action,
+          and a strong DIY ethic.
+        </p>
 
-        <div className="full-bleed ">
-          <div className="max-w-[900px] mx-auto">
-            <FiveImgsGallery
-              images={[
-                "/project/marlene-dorgny/riot/01-full.webp",
-                "/project/marlene-dorgny/riot/02-full.webp",
-                "/project/marlene-dorgny/riot/03-full.webp",
-                "/project/marlene-dorgny/riot/04-full.webp",
-                "/project/marlene-dorgny/riot/05-full.webp",
-              ]}
-              height={400}
+        <Parallax
+          text=""
+          imageUrl="/project/marlene-dorgny/riot/01-full.webp"
+        />
+
+        <p className="drop-cap">
+          The project traces the first wave of the movement between 1991 and
+          1994, followed by the emergence of the Sista Grrrl Riot movement.
+          Multiple geographic hubs played a key role in its development,
+          including the Pacific Northwest, Washington DC, and parts of England.
+        </p>
+
+        <p>
+          Through timelines, maps, and networks, the visualization highlights
+          how ideas circulated across locations and communities. Bands,
+          individuals, zines, and venues are treated as interconnected nodes,
+          revealing both the density and diversity of the movement.
+        </p>
+
+        <div className="full-bleed my-12">
+          <div className="max-w-[1000px] mx-auto">
+            <ImgWithCaption
+              img="/project/marlene-dorgny/riot/02-full.webp"
+              caption={
+                <span>
+                  Early phases of the Riot Grrrl movement and the emergence of
+                  Sista Grrrl Riot
+                </span>
+              }
             />
           </div>
         </div>
 
+        <p>
+          One of the central ambitions of the project is to represent the Riot
+          Grrrl movement as a whole. Rather than focusing on isolated events,
+          the visualization attempts to capture relationships, influences, and
+          shared spaces, making visible the social fabric that sustained the
+          movement.
+        </p>
+
+        <p>
+          The large-scale visualizations, presented at the bottom of the page,
+          invite slow exploration. They emphasize connections between people,
+          places, and creative families, offering a comprehensive view of a
+          movement that was both fragmented and deeply connected.
+        </p>
+
         <div className="mt-4">
-          <Link href={""} className={cn(buttonVariants())}>
+          <Link
+            target="_blank"
+            href="https://md-graphiste.com/portfolio_page/the-dataviz-riot-grrrl-project/"
+            className={cn(buttonVariants())}
+          >
             Official project page
           </Link>
         </div>

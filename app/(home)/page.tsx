@@ -356,7 +356,6 @@ export default function Home() {
           />
         </div>
       </section>
-
       <Contact />
     </div>
   );
