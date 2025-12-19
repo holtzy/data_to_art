@@ -26,12 +26,16 @@ export default function Page() {
       <div className="relative wrapper max-w-6xl mx-auto px-4">
         <div className="mb-12">
           <p className="drop-cap">
-            I come from the Jura mountains where I spent my childhood between
-            forest trails and sports fields. After following a sports-study
-            training in handball until the baccalaureate, I moved to Switzerland
-            to study biomechanics at the Swiss Federal Institute of Technology
-            (EPFL) in Lausanne. During my studies, I passionately discovered the
-            multiple facets of scientific outreach for the general public.
+            Jeremy Wanner grew up in the Jura mountains, spending his childhood
+            between forest trails and sports fields. After completing a
+            sports-study training in handball until the baccalaureate, he moved
+            to Switzerland to study biomechanics at the Swiss Federal Institute
+            of Technology (EPFL) in Lausanne.
+          </p>
+          <p>
+            During his studies, he developed a strong passion for scientific
+            outreach and making complex concepts accessible to the general
+            public.
           </p>
         </div>
 
@@ -46,16 +50,19 @@ export default function Page() {
         />
 
         <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
-          In 2020, I joined the French National Institute of Sport, Expertise,
+          In 2020, he joined the French National Institute of Sport, Expertise,
           and Performance (INSEP) and its Medalability project as a
           data-scientist, analyzing international competition in preparation for
-          the Paris 2024 Games. At the same time, I devoted my free time to
+          the Paris 2024 Games. At the same time, he dedicated his free time to
           turning everyday tools into means of artistic expression.
         </p>
         <p className="mt-4">
-          Passionate about detours and creation, I founded Oiiwa in 2024. From
-          my digital adventure playground, I transform a digital raw material
-          into a fun and intelligible form.
+          Passionate about creative detours, he founded{" "}
+          <a href="https://oiiwa.fr" target="_blank">
+            Oiiwa
+          </a>{" "}
+          in 2024. From this digital playground, he transforms raw digital
+          material into playful and intelligible forms.
         </p>
 
         <div className="full-bleed my-12">
@@ -70,8 +77,6 @@ export default function Page() {
                   <Link href="/artist/jeremy-wanner/glove-rose">
                     Glove rose
                   </Link>{" "}
-                  transforms Olympic boxing analytics into a blooming digital
-                  rose
                 </span>
               </p>
             </div>
@@ -79,14 +84,10 @@ export default function Page() {
         </div>
 
         <p className="mt-4">
-          Aimed at a wide range of audiences and whether intended for printed,
-          digital or plastic media, my creations are new ways of interacting
-          with data by making them tangible and interactive!
+          Designed for a wide range of audiences and adaptable to printed,
+          digital, or plastic media, his creations provide new ways to interact
+          with data by making it tangible and interactive.
         </p>
-
-        <Spacing />
-
-        <ArtistGallerySection imgs={allImages} />
 
         <Spacing />
 
