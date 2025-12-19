@@ -7,6 +7,8 @@ import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
 import Link from "next/link";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
+import { QuoteSection } from "@/components/QuoteSection";
 
 const ARTIST = "soha-elghany";
 
@@ -38,22 +40,25 @@ export default function Page() {
           </p>
         </div>
 
-        <Parallax
-          caption={
-            <span>
-              The{" "}
-              <Link href="/artist/soha-elghany/missing-migrants">
-                Missing Migrants
-              </Link>{" "}
-              Project tracks people who died or went missing during migration
-              toward international destinations. Each spiral represents a
-              migration route, and each mark along it corresponds to an
-              individual incident.
-            </span>
-          }
-          imageUrl={`/project/${ARTIST}/missing-migrants/07-full.webp`}
-        />
-
+        <div className="full-bleed">
+          <div className="max-w-[1000px] mx-auto">
+            <ImgWithCaption
+              caption={
+                <span>
+                  The{" "}
+                  <Link href="/artist/soha-elghany/missing-migrants">
+                    Missing Migrants
+                  </Link>{" "}
+                  Project tracks people who died or went missing during
+                  migration toward international destinations. Each spiral
+                  represents a migration route, and each mark along it
+                  corresponds to an individual incident.
+                </span>
+              }
+              img={`/project/${ARTIST}/missing-migrants/01-full.webp`}
+            />
+          </div>
+        </div>
         <div className="my-12">
           <p>
             We as human being are visual creatures and showing a spreadsheet of
@@ -61,9 +66,20 @@ export default function Page() {
             Instead the <b>visual representation of that story</b> does a better
             job.
           </p>
-        </div>
 
-        <Spacing />
+          <QuoteSection text="We as human being are visual creatures and showing a spreadsheet of number does not tell a story" />
+
+          <p>
+            A recurring thread in Soha’s work is her commitment to topics that
+            deeply matter. She chooses subjects rooted in human loss,
+            displacement, and injustice, using data not to abstract these
+            realities but to confront them directly.{" "}
+          </p>
+          <p>
+            Her projects do not shy away from difficult narratives; instead,
+            they give visibility to lives that are often reduced to statistics.
+          </p>
+        </div>
 
         <ArtistGallerySection imgs={allImages} />
 
@@ -72,9 +88,33 @@ export default function Page() {
         <ArtistProjectsSection artistId={ARTIST} />
 
         <h2 className="mb-4">Exhibition</h2>
-        <p className="mb-12">
-          No exhibitions are planned for this artist at the moment.
+        <p>
+          Soha’s work was exhibited at the{" "}
+          <a
+            href="https://www.wakeupdataviz.com/exposition-urgence-climatique-sociale-dataviz"
+            target="_blank"
+          >
+            Vizions d’urgence
+          </a>{" "}
+          event in France, and while no future exhibitions are scheduled at the
+          moment, her projects continue to live online.
         </p>
+        <div className="full-bleed">
+          <div className="max-w-[1000px] mx-auto">
+            <ImgWithCaption
+              caption={
+                <span>
+                  Soha and her work{" "}
+                  <Link href="/artist/soha-elghany/missing-migrants">
+                    Missing Migrants
+                  </Link>{" "}
+                  exposed during the Vizions d'Urgence event.
+                </span>
+              }
+              img={`/project/${ARTIST}/missing-migrants/06-full.webp`}
+            />
+          </div>
+        </div>
 
         <Contact />
       </div>

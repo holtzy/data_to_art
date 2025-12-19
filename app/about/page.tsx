@@ -27,8 +27,14 @@ export default function AboutPage() {
             img="/expo/expo2.jpg"
             caption={
               <span>
-                Work by Kirell Benzi at the xxx expo. Soon included in the
-                project.
+                Work by Kirell Benzi at the{" "}
+                <a
+                  href="https://www.behance.net/gallery/134515025/Dataviz-exhibition-I-Exposition-dataviz-I-Nantes-I-2021"
+                  target="_blank"
+                >
+                  Nantes Digital Week
+                </a>
+                . Soon included in Data to Art.
               </span>
             }
           />
