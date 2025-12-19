@@ -111,6 +111,18 @@ export default function Page() {
           </Link>
         </div>
 
+        <ImgWithCaption
+          caption={
+            <span>
+              Dos Juegos at the exposition{" "}
+              <a href="https://www.wakeupdataviz.com/trajectoires-sport-data">
+                Trajectoire
+              </a>
+            </span>
+          }
+          img={`/project/laura-castro/dos-juegos/07.png`}
+        />
+
         <Spacing />
 
         <PrevAndNextProjectLinks currentProject={PROJECT} />

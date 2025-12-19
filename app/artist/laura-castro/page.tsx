@@ -7,6 +7,7 @@ import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
 import Link from "next/link";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 
 const ARTIST = "laura-castro";
 
@@ -81,10 +82,32 @@ export default function Page() {
         <ArtistProjectsSection artistId={ARTIST} />
 
         <h2 className="mb-4">Exhibition</h2>
-        <p className="mb-12">
-          No exhibitions are planned for this artist at the moment.
+        <p>
+          Laura's work was exhibited at the{" "}
+          <a
+            href="https://www.wakeupdataviz.com/trajectoires-sport-data"
+            target="_blank"
+          >
+            Trajectoires
+          </a>{" "}
+          event in France, and while no future exhibitions are scheduled at the
+          moment, her projects continue to live online.
         </p>
 
+        <div className="full-bleed">
+          <div className="max-w-[1000px] mx-auto">
+            <ImgWithCaption
+              caption={
+                <span>
+                  People starring at the Dos Juegos project in a IRL exhibition.
+                </span>
+              }
+              img={`/project/laura-castro/dos-juegos/07.png`}
+            />
+          </div>
+        </div>
+
+        <Spacing />
         <Contact />
       </div>
     </>
