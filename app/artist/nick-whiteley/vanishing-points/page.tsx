@@ -6,6 +6,7 @@ import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
@@ -47,28 +48,73 @@ export default function Page() {
 
       <div className="wrapper">
         <p className="drop-cap">
-          Vanishing Points is a data-driven art project by Nick Whiteley,
-          inspired by the intersection of illustration and data, and motivated
-          by a desire to raise awareness about endangered species and the
-          degradation of natural habitats.
+          Vanishing Points is a data-driven art project by{" "}
+          <Link href="/artist/nick-whiteley">Nick Whiteley</Link>, inspired by
+          the intersection of illustration and data, and motivated by a desire
+          to raise awareness about endangered species and the degradation of
+          natural habitats.
         </p>
         <p>
           Drawing from his background in brand and web design, Nick uses visual
           storytelling to create emotional impact and foster understanding of
-          concrete environmental issues. The project was sparked by a
-          documentary on mountain gorillas, leading to a unique blend of
-          aesthetics, engagement, and advocacy through data visualization.
+          concrete environmental issues.
+        </p>
+        <p>
+          The project was sparked by a documentary on mountain gorillas, leading
+          to a unique blend of aesthetics, engagement, and advocacy through data
+          visualization.
         </p>
 
-        <Parallax
-          text="Vanishing Points"
-          imageUrl="/project/nick-whiteley/vanishing-points/01-full.webp"
+        <ImgWithCaption
+          caption={
+            <span>
+              Vanishing Points visualizes endangered species populations, with
+              each dot representing an individual animal.
+            </span>
+          }
+          img="/project/nick-whiteley/vanishing-points/01-full.webp"
         />
 
         <p className="drop-cap">
           Each piece in Vanishing Points combines digital illustration with data
-          to highlight the fragility of species and ecosystems, inviting viewers
-          to reflect on the social and environmental impact of human activity.
+          to highlight the fragility of species and ecosystems, encouraging
+          viewers to reflect on the social and environmental impact of human
+          activity.
+        </p>
+
+        <p>
+          Each animal comes with a slider that shows the evolution of its
+          population over time. For example, the Tiger gradually disappears
+          between 1960 and 2020.
+        </p>
+
+        <div className="full-bleed">
+          <div className="flex gap-2">
+            <ImgWithCaption
+              caption={<span>1960</span>}
+              img="/project/nick-whiteley/vanishing-points/11.png"
+            />
+            <ImgWithCaption
+              caption={<span>2020</span>}
+              img="/project/nick-whiteley/vanishing-points/10.png"
+            />
+          </div>
+        </div>
+
+        <p>
+          A variety of species are represented, each conveying a profound sense
+          of loss while making the disappearance of these animals tangible.
+        </p>
+
+        <p>
+          The project was exhibited at the{" "}
+          <a
+            href="https://www.wakeupdataviz.com/exposition-urgence-climatique-sociale-dataviz"
+            target="_blank"
+          >
+            Vizions d’urgence
+          </a>{" "}
+          exhibition in France.
         </p>
 
         <div className="full-bleed ">
