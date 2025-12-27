@@ -1,11 +1,12 @@
 import { artistList } from "@/lib/artist-list";
 import ArtistHero from "@/components/ArtistHero";
-import Parallax from "@/components/Parallax";
 import { Spacing } from "@/components/Spacing";
 import { Contact } from "@/components/Contact";
 import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
 import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
+import Link from "next/link";
 
 const AUTHOR = "cinzia-bongino";
 
@@ -34,9 +35,17 @@ export default function Page() {
           </p>
         </div>
 
-        <Parallax
-          text=""
-          imageUrl="/project/cinzia-bongino/names-on-the-moon/04-full.webp"
+        <ImgWithCaption
+          caption={
+            <p>
+              Interactive installation at the{" "}
+              <Link href="/artist/cinzia-bongino/waste-streams">
+                Turn Signals – Design is not a Dashboard
+              </Link>{" "}
+              exhibition.
+            </p>
+          }
+          img="/project/cinzia-bongino/waste-streams/10-full.webp"
         />
 
         <div className="my-12">

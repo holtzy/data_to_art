@@ -212,6 +212,21 @@ export const projectList: Project[] = [
       </>
     ),
   },
+  {
+    name: "Waste Streams",
+    folder: "waste-streams",
+    link: "https://www.cinziabongino.com/projects/waste-streams.html",
+    artist: "cinzia-bongino",
+    date: new Date("2023-02-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A data-driven installation that visualizes Romania’s and Europe’s
+          waste management systems as interconnected conveyor belts.
+        </p>
+      </>
+    ),
+  },
 
   ////////
   ///////
