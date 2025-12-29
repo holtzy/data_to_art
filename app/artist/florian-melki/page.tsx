@@ -46,7 +46,7 @@ export default function Page() {
 
         <QuoteSection text="Idea comes first; technical constraints come later. After all, walls are meant to be broken." />
 
-        <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+        <p className="drop-cap">
           Then comes his favorite part: experimenting with data visualization.
           As a data analyst, I dive into data from a statistical perspective to
           identify trends. Then I code my own visualizations from scratch,

@@ -50,7 +50,7 @@ export default function Page() {
           }
         />
 
-        <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+        <p className="drop-cap">
           In 2020, he joined the French National Institute of Sport, Expertise,
           and Performance (INSEP) and its Medalability project as a
           data-scientist, analyzing international competition in preparation for

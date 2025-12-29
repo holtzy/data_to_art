@@ -51,7 +51,7 @@ export default function Page() {
         />
 
         <div className="my-12">
-          <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+          <p className="drop-cap">
             Throughout her career, Laura has designed digital products and
             experiences for a wide range of companies, including Novartis,
             Affective Advisory, Graphext, Accurat, and Interactius. Her journey

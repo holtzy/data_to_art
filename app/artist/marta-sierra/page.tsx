@@ -43,7 +43,7 @@ export default function Page() {
         />
 
         <div className="my-12">
-          <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+          <p className="drop-cap">
             Her personal work goes beyond traditional charts, blending data,
             emotion, and self-awareness. Marta collects data about her own
             habits, moods, and memories, then turns them into handmade visual

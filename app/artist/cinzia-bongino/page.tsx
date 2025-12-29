@@ -49,7 +49,7 @@ export default function Page() {
         />
 
         <div className="my-12">
-          <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+          <p className="drop-cap">
             Whether translating advanced climate models into intuitive tools,
             illustrating the history of satellites in orbit, or designing
             engaging editorial pieces, Cinzia’s work is defined by clarity,

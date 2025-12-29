@@ -41,7 +41,7 @@ export default function Page() {
           imageUrl="/project/anne-laure-freant/flood-necklace/01-full.webp"
         />
 
-        <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
+        <p className="drop-cap">
           From embedding Loire River flood data into ceramic spheres to
           visualizing seasonal river flows in wood, Anne-Laure’s work blends
           rigorous research with inventive storytelling, turning numbers into

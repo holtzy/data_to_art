@@ -7,6 +7,8 @@ import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
 import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
+import Link from "next/link";
+import FiveImgsGallery from "@/components/FiveImgsGallery";
 
 const AUTHOR = "alisa-singer";
 
@@ -25,60 +27,102 @@ export default function Page() {
 
       <Spacing />
 
-      <div className="relative wrapper max-w-6xl mx-auto px-4">
+      <div className="relative wrapper mx-auto px-4">
         <div className="mb-12">
           <p className="drop-cap">
-            Alisa Singer is a digital artist whose work transforms climate
-            science, social issues, and personal experiences into vibrant,
-            data-driven visual art. Her practice combines analytical research
-            with creative storytelling to create compelling, visually engaging
-            narratives.
+            Alisa Singer is a Chicago-based digital artist whose work transforms
+            scientific data, social issues, and personal narratives into vibrant
+            visual compositions.
+          </p>
+          <p>
+            Her practice bridges analysis and emotion, using data as raw
+            material for contemporary art that invites reflection and dialogue.
           </p>
         </div>
 
         <Parallax
-          text=""
-          imageUrl="/project/alisa-singer/environmental-graphiti/04.webp"
+          caption={
+            <span>
+              Alisa’s work is organized into a project titled{" "}
+              <Link href="/artist/alisa-singer/environmental-graphiti">
+                Environmental Graphiti
+              </Link>
+              .
+            </span>
+          }
+          imageUrl="/project/alisa-singer/environmental-graphiti/01.webp"
         />
 
-        <p className="first-letter:float-left first-letter:text-6xl first-letter:leading-none first-letter:mr-2 first-letter:font-bold">
-          From translating complex climate data into striking visual statements
-          to exploring social themes through digital painting, Alisa’s work is
-          defined by clarity, vibrancy, and thought-provoking aesthetics.
+        <p className="drop-cap">
+          From climate science and environmental systems to questions of
+          identity, justice, and resilience, Singer’s work translates complex
+          information into bold, accessible visual statements.
         </p>
+
         <p className="mt-4">
-          She collaborates with cultural institutions, environmental
-          organizations, and tech platforms, turning information into art that
-          resonates with diverse audiences. Each project is both an artistic
-          expression and a tool for awareness and reflection.
+          Color, structure, and repetition play a central role in making
+          abstract data tangible and emotionally resonant. Her projects often
+          emerge from close collaboration with scientists, cultural
+          institutions, and advocacy organizations.
         </p>
 
         <ImgWithCaption
           img="/project/alisa-singer/environmental-graphiti/06.webp"
           caption={
             <span>
-              Walking into the moon by Alisa Singer shows the evolution of the
-              number of kangarro. Read more about the environmental graphiti
-              project it's part of.
+              <em>Walking into the Moon</em> explores the evolution of kangaroo
+              populations through layered data-driven imagery, part of the
+              <em> Environmental Graphiti</em> series.
             </span>
           }
         />
 
         <p className="mt-4">
-          Her series, including <em>Environmental Graphiti</em> and{" "}
-          <em>What's Your Mission?</em>, have been exhibited internationally and
-          continue to push the boundaries of data-driven contemporary art.
+          By recontextualizing charts, maps, and numbers, Singer turns data into
+          visual stories that reach beyond traditional scientific audiences. Her
+          series, including{" "}
+          <Link href="/artist/alisa-singer/environmental-graphiti">
+            Environmental Graphiti
+          </Link>{" "}
+          and <em>What’s Your Mission?</em>, have been exhibited
+          internationally.
         </p>
 
         <ArtistGallerySection imgs={allImages} />
 
         <ArtistProjectsSection artistId={AUTHOR} />
 
-        <h2 className="mb-4">Exhibition</h2>
-        <p className="mb-12">
-          No exhibitions are planned for this artist at the moment.
+        <h2 className="mb-4">Exhibitions</h2>
+        <p>
+          Alisa’s work has been exhibited in numerous renowned exhibitions. You
+          can{" "}
+          <a
+            href="https://www.alisasingerart.com/exhibit-or-acquire"
+            target="_blank"
+          >
+            contact her here
+          </a>{" "}
+          to organize an exhibition or to acquire an artwork.
         </p>
       </div>
+
+      <div className="full-bleed">
+        <div className="max-w-[900px] mx-auto">
+          <FiveImgsGallery
+            images={[
+              "/project/alisa-singer/environmental-graphiti/09.webp",
+              "/project/alisa-singer/environmental-graphiti/10.webp",
+              "/project/alisa-singer/environmental-graphiti/11.webp",
+              "/project/alisa-singer/environmental-graphiti/12.webp",
+              "/project/alisa-singer/environmental-graphiti/07-full.webp",
+            ]}
+            height={400}
+          />
+        </div>
+      </div>
+
+      <Spacing />
+
       <Contact />
     </>
   );
