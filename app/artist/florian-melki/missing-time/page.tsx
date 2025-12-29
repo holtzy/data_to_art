@@ -6,6 +6,7 @@ import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
@@ -49,14 +50,17 @@ export default function Page() {
 
       <div className="wrapper">
         <p className="drop-cap">
-          <i>Missing Time</i> is one of the most personal pieces in Florian
-          Melki’s collection <i>50 nuances de dataviz</i>, a long-term artistic
-          experiment exploring how a single dataset can reveal countless
-          perspectives. It began in 2016, when Florian started recording every
-          moment of his daily life — hours of sleep, work, and the many
-          nighttime awakenings spent soothing his one-year-old daughter. What
-          began as a quantified-self exercise soon became a meditation on time,
-          balance, and the intimate rhythms of everyday life.
+          <i>Missing Time</i> is one of the most personal pieces in{" "}
+          <Link href="/artist/florian-melki">Florian Melki</Link>’s collection{" "}
+          <i>50 nuances de dataviz</i>, a long-term artistic experiment
+          exploring how a single dataset can reveal countless perspectives.
+        </p>
+        <p>
+          It began in 2016, when Florian started recording every moment of his
+          daily life — hours of sleep, work, and the many nighttime awakenings
+          spent soothing his one-year-old daughter. What began as a
+          quantified-self exercise soon became a meditation on time, balance,
+          and the intimate rhythms of everyday life.
         </p>
 
         <p>
@@ -70,9 +74,10 @@ export default function Page() {
           in the spaces between?
         </p>
 
-        <Parallax
-          text="Missing Time"
-          imageUrl={`/project/${AUTHOR}/missing-time/01-full.webp`}
+        <ImgWithCaption
+          caption="Missing Time"
+          maxWidth={1100}
+          img={`/project/${AUTHOR}/missing-time/01-full.webp`}
         />
 
         <p className="drop-cap">

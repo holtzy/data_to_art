@@ -48,15 +48,15 @@ export default function Page() {
 
         <p className="drop-cap">
           Then comes his favorite part: experimenting with data visualization.
-          As a data analyst, I dive into data from a statistical perspective to
-          identify trends. Then I code my own visualizations from scratch,
+          As a data analyst, he dives into data from a statistical perspective
+          to identify trends. Then he codes his own visualizations from scratch,
           testing and iterating to discover new, creative ways of telling a
           story.
         </p>
         <p className="mt-4">
-          I truly believe that data visualization can make stories more
+          He truly believes that data visualization can make stories more
           powerful—revealing what’s hidden, explaining what’s really happening,
-          and shining a light on the unseen. Finally, the aesthetic side of my
+          and shining a light on the unseen. Finally, the aesthetic side of his
           work is a way to move people. Data can be tough and overwhelming, and
           art makes it more human, more engaging, and easier to grasp.
         </p>
@@ -76,8 +76,8 @@ export default function Page() {
 
         <h2 className="mb-4">Exhibition</h2>
         <p className="mb-12">
-          <i>Missing Time</i> was also presented as part of{" "}
-          <strong>Datarama #6</strong> during the{" "}
+          <Link href="/artist/florian-melki/missing-time">Missing Time</Link>{" "}
+          was also presented as part of <strong>Datarama #6</strong> during the{" "}
           <strong>Nantes Digital Week</strong> in France, in September 2021 — an
           exhibition co-organized by Florian and dedicated to the theme of
           network visualization. The event brought together eight artists and

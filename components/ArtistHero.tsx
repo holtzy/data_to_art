@@ -51,7 +51,10 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
 
       {/* Content */}
       <div className="relative z-10 flex flex-row gap-12 items-center justify-center h-full text-center px-4">
-        <img src={`/artist/${folder}.webp`} className="w-82 h-82" />
+        <img
+          src={`/artist/${folder}.webp`}
+          className="w-82 h-82 object-cover"
+        />
 
         <div className="flex flex-col items-start">
           <h1 className="!text-8xl !font-normal !tracking-wide">{name}</h1>
