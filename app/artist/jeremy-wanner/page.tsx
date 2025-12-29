@@ -24,7 +24,7 @@ export default function Page() {
 
       <Spacing />
 
-      <div className="relative wrapper max-w-6xl mx-auto px-4">
+      <div className="relative wrapper mx-auto px-4">
         <div className="mb-12">
           <p className="drop-cap">
             Jeremy Wanner grew up in the Jura mountains, spending his childhood
