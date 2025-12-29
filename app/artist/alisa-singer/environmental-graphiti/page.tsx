@@ -6,6 +6,7 @@ import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
@@ -44,9 +45,9 @@ export default function Page() {
           textures that invite both reflection and curiosity.
         </p>
 
-        <Parallax
-          text=""
-          imageUrl="/project/alisa-singer/environmental-graphiti/05.webp"
+        <ImgWithCaption
+          caption=""
+          img="/project/alisa-singer/environmental-graphiti/02.webp"
         />
 
         <p className="drop-cap">
