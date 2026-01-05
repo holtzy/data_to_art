@@ -7,6 +7,7 @@ import { ArtistProjectsSection } from "@/components/ArtistProjectsSection";
 import { ArtistGallerySection } from "@/components/ArtistGallerySection";
 import { getArtistImages } from "@/lib/get-artist-images";
 import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
+import Link from "next/link";
 
 const AUTHOR = "anne-laure-freant";
 
@@ -30,22 +31,39 @@ export default function Page() {
           <p className="drop-cap">
             Anne-Laure Fréant is a French artist and technical writer whose work
             explores how knowledge, memory, and environmental data can be
-            embedded into physical forms. Her practice spans datasculpture,
-            photography, and ceramics, transforming historical and scientific
-            data into tangible, contemplative artworks.
+            embedded into physical forms.
+          </p>
+          <p>
+            Her practice spans datasculpture, photography, and ceramics,
+            transforming historical and scientific data into tangible,
+            contemplative artworks.
           </p>
         </div>
 
-        <Parallax
-          text=""
-          imageUrl="/project/anne-laure-freant/flood-necklace/01-full.webp"
+        <ImgWithCaption
+          caption={
+            <span>
+              <Link href="/artist/anne-laure-freant/flood-necklace">
+                Flood Necklace
+              </Link>{" "}
+              is a ceramic datasculpture made from Loire Valley clay, where each
+              sphere represents a recorded flood of the Loire River
+            </span>
+          }
+          img="/project/anne-laure-freant/flood-necklace/08-full.webp"
         />
 
         <p className="drop-cap">
-          From embedding Loire River flood data into ceramic spheres to
-          visualizing seasonal river flows in wood, Anne-Laure’s work blends
-          rigorous research with inventive storytelling, turning numbers into
-          sculptural narratives.
+          From embedding Loire River flood data into{" "}
+          <Link href="/artist/anne-laure-freant/flood-necklace">
+            ceramic spheres
+          </Link>{" "}
+          to visualizing seasonal{" "}
+          <Link href="/artist/anne-laure-freant/life-of-a-river">
+            river flows
+          </Link>{" "}
+          in wood, Anne-Laure’s work blends rigorous research with inventive
+          storytelling, turning numbers into sculptural narratives.
         </p>
         <p className="mt-4">
           She investigates how technical and environmental knowledge can be
@@ -59,20 +77,38 @@ export default function Page() {
           img="/project/anne-laure-freant/life-of-a-river/01-full.webp"
           caption={
             <span>
-              "The Life of a River" by Anne-Laure Fréant represents monthly
-              water heights of the Loire River using stacked wooden discs,
-              capturing seasonal variations from 2000 to 2022.
+              The{" "}
+              <Link href="/artist/anne-laure-freant/life-of-a-river">
+                Life of a River
+              </Link>{" "}
+              by represents monthly water heights of the Loire River using
+              stacked wooden discs, capturing seasonal variations from 2000 to
+              2022.
             </span>
           }
         />
 
         <p className="mt-4">
-          Her datasculpture projects, including <em>The Flood Necklace</em> and{" "}
-          <em>The Life of a River</em>, explore historical and hydrological
-          phenomena, highlighting the interplay between data, memory, and
-          materiality. Anne-Laure also documents her process and insights in
-          dedicated blogs, contributing to research and reflection on data
-          physicalization.
+          Her datasculpture projects, including{" "}
+          <Link href="/artist/anne-laure-freant/flood-necklace">
+            The Flood Necklace
+          </Link>{" "}
+          and{" "}
+          <Link href="/artist/anne-laure-freant/life-of-a-river">
+            The Life of a River
+          </Link>
+          , explore historical and hydrological phenomena, highlighting the
+          interplay between data, memory, and materiality.
+        </p>
+        <p>
+          Anne-Laure also documents her process and insights in dedicated{" "}
+          <a
+            href="https://anne-laure-freant.gitbook.io/art-gallery"
+            target="_blank"
+          >
+            blogs
+          </a>
+          , contributing to research and reflection on data physicalization.
         </p>
 
         <ArtistGallerySection imgs={allImages} />
