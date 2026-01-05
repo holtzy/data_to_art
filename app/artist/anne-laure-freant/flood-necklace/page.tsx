@@ -6,6 +6,7 @@ import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
@@ -50,9 +51,17 @@ export default function Page() {
           frequencies decreased as containment infrastructure improved.
         </p>
 
-        <Parallax
-          text=""
-          imageUrl="/project/anne-laure-freant/flood-necklace/01-full.webp"
+        <ImgWithCaption
+          caption={
+            <span>
+              <Link href="/artist/anne-laure-freant/flood-necklace">
+                Flood Necklace
+              </Link>{" "}
+              is a ceramic datasculpture made from Loire Valley clay, where each
+              sphere represents a recorded flood of the Loire River
+            </span>
+          }
+          img="/project/anne-laure-freant/flood-necklace/08-full.webp"
         />
 
         <p className="drop-cap">

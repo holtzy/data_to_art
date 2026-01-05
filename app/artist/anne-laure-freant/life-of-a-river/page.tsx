@@ -6,6 +6,7 @@ import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
@@ -21,10 +22,10 @@ export default function Page() {
 
   const images = [
     "01-full.webp",
-    "02-full.webp",
-    "03-full.webp",
+    "06-full.webp",
+    "07-full.webp",
     "04-full.webp",
-    "05-full.webp",
+    "08-full.webp",
   ];
 
   return (
@@ -50,9 +51,19 @@ export default function Page() {
           the river itself.
         </p>
 
-        <Parallax
-          text=""
-          imageUrl="/project/anne-laure-freant/life-of-a-river/01-full.webp"
+        <ImgWithCaption
+          img="/project/anne-laure-freant/life-of-a-river/01-full.webp"
+          caption={
+            <span>
+              The{" "}
+              <Link href="/artist/anne-laure-freant/life-of-a-river">
+                Life of a River
+              </Link>{" "}
+              by represents monthly water heights of the Loire River using
+              stacked wooden discs, capturing seasonal variations from 2000 to
+              2022.
+            </span>
+          }
         />
 
         <p className="drop-cap">
