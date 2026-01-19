@@ -111,6 +111,25 @@ export default function Page() {
           , contributing to research and reflection on data physicalization.
         </p>
 
+        <h2>Beyond Material</h2>
+        <p>
+          Anne-Laure's interest for data-physicalization and data-sculpture goes
+          beyond experimenting with material.
+        </p>
+        <p>
+          In 2026, she is launching a new publication called <b>Datartefact</b>,
+          a visual and artistic magazine entirely dedicated to the practices of
+          making objects from and with data. The publication will feature both
+          historical artefacts and contemporary artistic projects, showcase a
+          curated selection of art-pieces, explore history of sciences and
+          techniques, and feature a selection of websites and books to nourish
+          analysis and creativity.
+        </p>
+        <p>
+          The first issue will be published in the Spring 2026 (print &
+          digital). You can reach out to Anne-Laure here for more info.
+        </p>
+
         <ArtistGallerySection imgs={allImages} />
 
         <ArtistProjectsSection artistId={AUTHOR} />

@@ -315,7 +315,7 @@ export const projectList: Project[] = [
   {
     name: "Flood necklace",
     folder: "flood-necklace",
-    link: "https://datartefacts.hypotheses.org/450",
+    link: "https://datartefacts.hypotheses.org/",
     artist: "anne-laure-freant",
     date: new Date("2025-08-09"),
     descriptionShort: (
@@ -331,7 +331,7 @@ export const projectList: Project[] = [
   {
     name: "The Life of a River",
     folder: "life-of-a-river",
-    link: "https://datartefacts.hypotheses.org/1950",
+    link: "https://datartefacts.hypotheses.org/",
     artist: "anne-laure-freant",
     date: new Date("2025-08-09"),
     descriptionShort: (
