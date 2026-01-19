@@ -52,10 +52,10 @@ export default function Page() {
           >
             PerfAnalytics
           </a>{" "}
-          research project. The data first is collected through a markerless
-          technique using only pre-calibrated cameras around the boxing ring.
-          Computer vision algorithms developed by the research team transform
-          the video flux into useful insights for athletes and coaches.
+          research project. The data is collected through a markerless technique
+          using only pre-calibrated cameras around the boxing ring. Computer
+          vision algorithms developed by the research team transform the video
+          flux into useful insights for athletes and coaches.
         </p>
         <p>
           Together with{" "}
@@ -65,11 +65,11 @@ export default function Page() {
           >
             Alexandre Schortgen
           </a>
-          , PhD candidate at INSEP and INRIA within the PerfAnalytics team, we
-          later turned the data captured at the French Olympic Qualification
-          Tournament into a new species of roses: <i>Rosa Pugilatu</i>. More
-          commonly known as the Glove Rose, it blossoms following an Olympic
-          flowering cycle.
+          , PhD candidate at INSEP and INRIA within the PerfAnalytics team, the
+          data captured at the French Olympic Qualification Tournament were
+          later transformed into a new species of roses: <i>Rosa Pugilatu</i>.
+          More commonly known as the Glove Rose, it blossoms following an
+          Olympic flowering cycle.
         </p>
 
         <ImgWithCaption

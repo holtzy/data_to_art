@@ -62,10 +62,10 @@ export default function Page() {
             designs invite audiences to explore, learn, and reflect.
           </p>
           <p className="mt-4">
-            In addition to her design practice, Cinzia teaches UX/UI design at
-            institutions such as IED Milano and Boolean Careers, fostering the
-            next generation of designers through a mix of theory, critical
-            thinking, and hands-on practice.
+            In addition to her design practice, Cinzia teaches UX/UI design and
+            data visualization at institutions such as IED and CFP Bauer Milano,
+            fostering the next generation of designers through a mix of theory,
+            critical thinking, and hands-on practice.
           </p>
         </div>
 

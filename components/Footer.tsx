@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Logo } from "./Logo";
 
 export default function Footer() {
@@ -16,7 +17,7 @@ export default function Footer() {
 
           <div className="text-sm font-light flex flex-row justify-end items-center mt-1">
             <span className="hidden sm:inline">
-              <span>About</span>
+              <Link href="/about">About</Link>
             </span>
           </div>
         </div>

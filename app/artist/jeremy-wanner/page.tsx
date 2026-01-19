@@ -27,16 +27,15 @@ export default function Page() {
       <div className="relative wrapper mx-auto px-4">
         <div className="mb-12">
           <p className="drop-cap">
-            Jeremy Wanner grew up in the Jura mountains, spending his childhood
-            between forest trails and sports fields. After completing a
-            sports-study training in handball until the baccalaureate, he moved
-            to Switzerland to study biomechanics at the Swiss Federal Institute
-            of Technology (EPFL) in Lausanne.
+            Originally from the Pays Horloger in the Jura mountain range, Jeremy
+            spent his childhood between forest trails and sports fields. After
+            completing a sport-study program in handball, he moved to
+            Switzerland to study biomechanics at the École Polytechnique
+            Fédérale de Lausanne (EPFL).
           </p>
           <p>
-            During his studies, he developed a strong passion for scientific
-            outreach and making complex concepts accessible to the general
-            public.
+            During his studies, he developed a strong interest in the many
+            facets of science communication and public engagement.
           </p>
         </div>
 
@@ -51,19 +50,21 @@ export default function Page() {
         />
 
         <p className="drop-cap">
-          In 2020, he joined the French National Institute of Sport, Expertise,
-          and Performance (INSEP) and its Medalability project as a
-          data-scientist, analyzing international competition in preparation for
-          the Paris 2024 Games. At the same time, he dedicated his free time to
-          turning everyday tools into means of artistic expression.
+          In 2020, he joined the French National Institute of Sport, Expertise
+          and Performance (INSEP), where he became part of the Médaillabilité
+          project, analyzing international competition in preparation for the
+          Paris 2024 Games. Alongside his professional work, he dedicates his
+          free time to repurposing the tools of his daily data-science practice
+          as means of artistic expression.
         </p>
         <p className="mt-4">
-          Passionate about creative detours, he founded{" "}
+          In 2024, he founded the data visualization studio{" "}
           <a href="https://oiiwa.fr" target="_blank">
             Oiiwa
-          </a>{" "}
-          in 2024. From this digital playground, he transforms raw digital
-          material into playful and intelligible forms.
+          </a>
+          , drawing both its name and inspiration from the heart of the
+          Haut-Doubs region. It is there that he now brings together his
+          passions for data science, performance, and artistic practices.
         </p>
 
         <div className="full-bleed my-12">

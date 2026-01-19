@@ -84,9 +84,9 @@ export const artistList = [
     descriptionShort: (
       <>
         <p>
-          Jeremy Wanner is a data scientist and creative from the Jura
-          mountains, transforming digital raw material into playful, tangible,
-          and interactive data art for diverse audiences.
+          Jeremy is a creative data scientist specialising in transforming
+          sports data into playful and artistic visualisations and
+          installations.
         </p>
       </>
     ),

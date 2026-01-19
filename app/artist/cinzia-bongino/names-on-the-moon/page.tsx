@@ -55,18 +55,18 @@ export default function Page() {
         />
 
         <p className="drop-cap">
-          Developed with lunar scientists and space enthusiasts, this project
-          transforms elevation and crater data into an interactive 3D map of the
-          Moon. Each feature is represented by color, height, and shading,
-          revealing subtle geological structures invisible in traditional
-          imagery.
+          This project transforms lunar surface features into a detailed
+          visualization, categorizing them by the names assigned to craters,
+          mountains, and other formations. Each feature is mapped and
+          represented visually, revealing patterns in how we have named and
+          documented our closest celestial neighbor.
         </p>
 
         <p>
-          The underlying data combines satellite measurements, laser altimetry,
-          and high-resolution photographic surveys. Using advanced GIS and 3D
-          modeling tools, the Moon’s surface was divided into a grid, each cell
-          representing elevation, crater depth, and regolith composition.
+          The underlying data comes from publicly available sources provided by
+          the International Astronomical Union (IAU) and the United States
+          Geological Survey (USGS), including satellite imagery, elevation data,
+          and feature catalogs that are freely accessible to everyone.
         </p>
 
         <div className="full-bleed ">
@@ -85,31 +85,25 @@ export default function Page() {
         </div>
 
         <p>
-          Beyond data, 3D modeling in Blender brought the Moon to life.
-          Elevation and surface textures were transformed into a visually
-          immersive experience, while spheres highlight key craters and
-          topographic anomalies.
+          Using QGIS, Cinzia mapped the lunar features onto raster images of the
+          Moon, creating detailed visualizations that highlight the distribution
+          and categorization of named sites across the lunar surface.
         </p>
 
         <p>
-          A final layer of artistry refined colors and contrasts, creating a
-          dramatic yet scientifically faithful representation suitable for both
-          exploration and presentation.
-        </p>
-
-        <p>
-          This project is more than a map — it’s a journey across lunar
-          landscapes, helping us understand the Moon’s terrain and fostering
+          This project is more than a map — it's a journey across lunar
+          landscapes, helping us understand the Moon's terrain and fostering
           appreciation for celestial exploration.
         </p>
 
-        <p>
-          Explore the Moon project and witness how data visualization can reveal
-          hidden details of our nearest celestial neighbor — crater by crater.
-        </p>
-
         <div className="mt-4">
-          <Link href={""} className={cn(buttonVariants())}>
+          <Link
+            href={
+              "https://www.canva.com/design/DAFXReSYkC8/QvtBAh393nWt2aZ0Drg7Rg/edit"
+            }
+            target="_blank"
+            className={cn(buttonVariants())}
+          >
             Official project page
           </Link>
         </div>
