@@ -76,13 +76,13 @@ export default function Page() {
 
         <h2 className="mb-4">Exhibition</h2>
         <p className="mb-12">
-          <Link href="/artist/florian-melki/missing-time">Missing Time</Link>{" "}
-          was also presented as part of <strong>Datarama #6</strong> during the{" "}
-          <strong>Nantes Digital Week</strong> in France, in September 2021 — an
-          exhibition co-organized by Florian and dedicated to the theme of
-          network visualization. The event brought together eight artists and
-          researchers from cities such as Nantes, Paris, Milan, and Montréal,
-          all exploring how data can become a creative medium.
+          Florian presented his first project "L'espace des paroles", a 3.5
+          meters-long dataviz, as part of <strong>Datarama #6</strong> during
+          the <strong>Nantes Digital Week</strong> in France, in September
+          2021 — an exhibition co-organized by Florian and dedicated to the
+          theme of network visualization. The event brought together eight
+          artists and researchers from cities such as Nantes, Paris, Milan, and
+          Montréal, all exploring how data can become a creative medium.
         </p>
         <ImgWithCaption
           img={`/project/florian-melki/other/01-full.webp`}

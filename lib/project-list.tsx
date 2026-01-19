@@ -273,7 +273,7 @@ export const projectList: Project[] = [
   {
     name: "Inner Metrics",
     folder: "inner-metrics",
-    link: "https://www.martaviz.nl/journal-dataviz",
+    link: "https://martaviz.nl/journal-dataviz",
     artist: "marta-sierra",
     date: new Date("2022-01-01"),
     descriptionShort: (

@@ -2,6 +2,8 @@
   "/(home)/page": "app/(home)/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/artist/anne-laure-freant/page": "app/artist/anne-laure-freant/page.js",
+  "/artist/florian-melki/missing-time/page": "app/artist/florian-melki/missing-time/page.js",
+  "/artist/florian-melki/page": "app/artist/florian-melki/page.js",
   "/artist/marlene-dorgny/manchester/page": "app/artist/marlene-dorgny/manchester/page.js",
   "/artist/marlene-dorgny/page": "app/artist/marlene-dorgny/page.js",
   "/artist/marlene-dorgny/riot/page": "app/artist/marlene-dorgny/riot/page.js",

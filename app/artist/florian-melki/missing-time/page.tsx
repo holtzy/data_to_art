@@ -24,7 +24,7 @@ export default function Page() {
   }
 
   const imagesTop = [
-    "01-full.webp",
+    "07-full.webp",
     "02-full.webp",
     "03-full.webp",
     "04-full.webp",
@@ -75,9 +75,9 @@ export default function Page() {
         </p>
 
         <ImgWithCaption
-          caption="Missing Time"
-          maxWidth={1100}
-          img={`/project/${AUTHOR}/missing-time/01-full.webp`}
+          caption="Le temps qui nous manque (The Missing Time)"
+          maxWidth={800}
+          img={`/project/${AUTHOR}/missing-time/07-full.webp`}
         />
 
         <p className="drop-cap">
