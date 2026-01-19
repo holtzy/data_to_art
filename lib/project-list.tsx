@@ -242,8 +242,9 @@ export const projectList: Project[] = [
     descriptionShort: (
       <>
         <p>
-          An exploration of the feminist punk movement Riot Grrrl, which emerged
-          in the early 1990s in the Pacific Northwest of the United States.
+          The dataviz Riot Grrrl project explores the feminist punk movement
+          that emerged in the early 1990s in the Pacific Northwest of the United
+          States.
         </p>
       </>
     ),

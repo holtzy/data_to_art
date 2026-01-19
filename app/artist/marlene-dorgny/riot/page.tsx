@@ -38,9 +38,9 @@ export default function Page() {
 
       <div className="wrapper">
         <p className="drop-cap">
-          Riot Grrrl is a data visualization project that explores the feminist
-          punk movement that emerged in the early 1990s in the Pacific Northwest
-          of the United States.
+          The dataviz Riot Grrrl project explores the feminist punk movement
+          that emerged in the early 1990s in the Pacific Northwest of the United
+          States.
         </p>
 
         <p>
@@ -74,12 +74,7 @@ export default function Page() {
           <div className="max-w-[1000px] mx-auto">
             <ImgWithCaption
               img="/project/marlene-dorgny/riot/02-full.webp"
-              caption={
-                <span>
-                  Early phases of the Riot Grrrl movement and the emergence of
-                  Sista Grrrl Riot
-                </span>
-              }
+              caption={<span>Mapping of the Riot Grrrl Movement</span>}
             />
           </div>
         </div>
@@ -97,6 +92,15 @@ export default function Page() {
           invite slow exploration. They emphasize connections between people,
           places, and creative families, offering a comprehensive view of a
           movement that was both fragmented and deeply connected.
+        </p>
+
+        <p>
+          This visualization is part of a larger collection of data
+          visualizations by Marlene Dorgny, which you can explore on{" "}
+          <a href="https://md-graphiste.com" target="_blank">
+            her website
+          </a>
+          .
         </p>
 
         <div className="mt-4">

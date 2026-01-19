@@ -60,7 +60,7 @@ export default function Page() {
             In 2018, she began visualizing a book about the Manchester music
             scene, told through personal testimonies of people crossing paths,
             connecting, and making music together. This{" "}
-            <Link href="/artist/marlene-dorgny/riot">project</Link> sparked a
+            <Link href="/artist/marlene-dorgny/manchester">project</Link> sparked a
             lasting passion for network mapping — a way to show relationships,
             encounters, and collaborations through data.
           </p>
