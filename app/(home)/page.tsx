@@ -339,7 +339,7 @@ export const BEST_IMAGES = [
   "/project/florent-lavergne/other/02-full.webp",
   "/project/florent-lavergne/naturality/06-full.webp",
   "/project/jeremy-wanner/other/02-full.webp",
-  "/project/jeremy-wanner/glove-rose/02-full.webp",
+  "/project/jeremy-wanner/glove-rose/01-full.webp",
   "/project/alisa-singer/environmental-graphiti/01-full.webp",
   "/project/laura-castro/fresquita-party/04-full.webp",
   "/project/alisa-singer/environmental-graphiti/06-medium.webp",
