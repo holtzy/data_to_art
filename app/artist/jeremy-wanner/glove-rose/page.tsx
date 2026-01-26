@@ -1,7 +1,5 @@
 "use client";
 
-import FiveImgsGallery from "@/components/FiveImgsGallery";
-import Parallax from "@/components/Parallax";
 import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
@@ -24,14 +22,6 @@ export default function Page() {
 
   // You may want to update these image names to match your actual files
   const imagesTop = ["03-full.webp", "02-full.webp", "04-full.webp"];
-
-  const images5 = [
-    "/project/jeremy-wanner/glove-rose/01-full.webp",
-    "/project/jeremy-wanner/glove-rose/02-full.webp",
-    "/project/jeremy-wanner/glove-rose/03-full.webp",
-    "/project/jeremy-wanner/glove-rose/04-full.webp",
-    "/project/jeremy-wanner/glove-rose/02-full.webp",
-  ];
 
   return (
     <>
@@ -74,7 +64,7 @@ export default function Page() {
 
         <ImgWithCaption
           caption="Glove Rose, a project by Jeremy Wanner"
-          img="/project/jeremy-wanner/glove-rose/01-full.webp"
+          img="/project/jeremy-wanner/glove-rose/02-full.png"
         />
 
         <p className="drop-cap">

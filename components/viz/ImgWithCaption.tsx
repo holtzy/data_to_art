@@ -16,10 +16,10 @@ export const ImgWithCaption = ({
     <div
       className={cn(
         "full-bleed my-12 mx-auto",
-        maxWidth && `max-w-[${maxWidth}px]`
+        maxWidth && `max-w-[${maxWidth}px]`,
       )}
     >
-      <img src={img} className="w-full" />
+      <img src={img} className="w-full" alt="data art image" />
       <div className="flex justify-end">
         <p className="text-slate-500 text-sm text-right max-w-[250px] mt-4 !leading-snug">
           {caption}

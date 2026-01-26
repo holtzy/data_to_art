@@ -2,7 +2,6 @@
 
 import { ProjectCard } from "@/components/ProjectCard";
 import { projectList } from "@/lib/project-list";
-import Link from "next/link";
 
 export default function Page() {
   return (
