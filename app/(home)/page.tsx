@@ -88,21 +88,21 @@ export default function Home() {
           title={"Meet the artists"}
           subtitle={
             <p className="font-opensauce">
-              Currently{" "}
+              Currently featuring{" "}
               <div className="w-3 inline-block">
                 <AnimatedCounter value={artistNumber} />
               </div>{" "}
-              creators listed
+              artists
             </p>
           }
         />
         <p>
-          Our goal is to showcase as many talented data artists as possible,
-          celebrating diverse voices and styles across the globe.
+          This gallery showcases a growing selection of talented data artists,
+          celebrating diverse voices and styles from around the world.
         </p>
         <p>
-          Explore their unique creations and get inspired by the endless ways
-          data can be transformed into art.
+          Explore their unique creations and get inspired by the many ways data
+          can be transformed into art.
         </p>
       </div>
 
@@ -127,7 +127,7 @@ export default function Home() {
 
       <Spacing />
 
-      <section className="relative bg-slate-50">
+      <section className="relative bg-slate-100">
         <NoiseDivider height={10} />
 
         <div className="wrapper py-20">

@@ -41,7 +41,7 @@ export function NoiseDivider({ height = 40, points = 50 }) {
       viewBox={`0 0 100 ${height}`}
       preserveAspectRatio="none"
     >
-      <path d={pathData} fill="#f8fafc" />
+      <path d={pathData} fill="#f1f5f9" />
     </svg>
   );
 }
