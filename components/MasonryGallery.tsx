@@ -21,14 +21,28 @@ export default function MasonryGallery({ imgPaths }: MasonryGalleryProps) {
   };
 
   return (
-    <Masonry<Item>
-      items={items} // Note: I cannot use an array of strings here, this is why I had to make this items object
-      render={Card}
-      columnWidth={300}
-      columnGutter={20}
-      itemHeightEstimate={320}
-      overscanBy={2}
-      columnCount={3}
-    />
+    <>
+      <div className="hidden md:block">
+        <Masonry<Item>
+          items={items} // Note: I cannot use an array of strings here, this is why I had to make this items object
+          render={Card}
+          columnWidth={300}
+          columnGutter={20}
+          itemHeightEstimate={320}
+          overscanBy={2}
+          columnCount={3}
+        />
+      </div>
+      <div className="block md:hidden">
+        <Masonry<Item>
+          items={items} // Note: I cannot use an array of strings here, this is why I had to make this items object
+          render={Card}
+          columnGutter={2}
+          itemHeightEstimate={320}
+          overscanBy={2}
+          columnCount={2}
+        />
+      </div>
+    </>
   );
 }

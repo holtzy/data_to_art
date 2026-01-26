@@ -6,7 +6,6 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 import { Spacing } from "@/components/Spacing";
-import FiveImgsGallery from "@/components/FiveImgsGallery";
 import { NoiseDivider } from "@/components/NoiseDivider";
 import { ArtistSection } from "./ArtistSection";
 import { Contact } from "@/components/Contact";
@@ -27,17 +26,14 @@ export default function Home() {
   return (
     <div>
       <section className="relative flex flex-col justify-center items-center pt-20 z-40 pointer-events-none">
-        <div className="relative px-40 pb-4 flex flex-col items-center mt-20">
+        <div className="relative px-4 md:px-40 pb-4 flex flex-col items-center mt-20">
           <div>
-            <div className="w-full flex justify-end">
-              <span className="font-opensauce text-slate-400 text-sm text-right uppercase font-extralight mb-2 tracking-wider">
+            <div className="w-full flex justify-center md:justify-end">
+              <span className="font-opensauce text-slate-400 text-xs md:text-sm uppercase font-extralight mb-2 tracking-wider">
                 Dive into the beauty of data
               </span>
             </div>
-            <h1
-              className="!font-normal !uppercase !tracking-wider"
-              style={{ fontSize: 150 }}
-            >
+            <h1 className="!font-normal !uppercase !tracking-wider text-[64px]! md:text-[150px]!">
               Data T<span className="!lowercase">o</span> Art
             </h1>
           </div>
@@ -49,8 +45,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="-mt-30 z-10">
-        <div className="relative max-w-[1700px] mx-auto h-[2000px] overflow-hidden px-24">
+      <section className="md:-mt-30 z-10">
+        <div className="relative max-w-[1700px] mx-auto h-[1000px] md:h-[2000px] overflow-hidden px-4 md:px-24">
           <MasonryGallery imgPaths={BEST_IMAGES} />
           <div className="absolute top-0 left-0 w-full h-42 bg-gradient-to-b from-background to-transparent pointer-events-none"></div>
           <div className="absolute bottom-0 left-0 w-full h-96 bg-gradient-to-t from-background to-transparent flex justify-center items-end">
