@@ -41,11 +41,9 @@ export default function Home() {
             </h1>
           </div>
           <p className="text-center max-w-[340px] text-2xl">
-            We're a curated online gallery showcasing the work of international
-            data experts. We believe in the beauty of data, and in the power of
-            visuals
-            <br />
-            to tell stories.
+            Data To Art is a curated online gallery showcasing the work of
+            international data experts. It explores the beauty of data and the
+            power of visual storytelling.
           </p>
         </div>
       </section>
@@ -120,7 +118,7 @@ export default function Home() {
           href={"/artists"}
           className={cn(
             buttonVariants({ size: "lg", variant: "default" }),
-            "mb-12"
+            "mb-12",
           )}
         >
           See all artists
@@ -212,7 +210,7 @@ export default function Home() {
             href={"#contact"}
             className={cn(
               buttonVariants({ size: "lg", variant: "outline" }),
-              "mb-12"
+              "mb-12",
             )}
           >
             Suggest an artist
