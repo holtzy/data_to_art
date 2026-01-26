@@ -17,6 +17,7 @@ import { SectionTitle } from "./SectionTitle";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { artistNumber } from "@/lib/artist-list";
 import { DataArtEventTable } from "../exhibition/DataArtEventTable";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 
 const MasonryGallery = dynamic(() => import("@/components/MasonryGallery"), {
   ssr: false,
@@ -64,24 +65,58 @@ export default function Home() {
       </section>
 
       <Spacing />
+      <Spacing />
 
-      {/* <div
-        className="full-bleed bg-repeat bg-[length:auto] py-20"
-        style={{ backgroundImage: "url('/asset/texture.png')" }}
-      >
-        <div className="wrapper relative mt-20 text-white">
-          <p className="text-center max-w-md text-3xl">
-            We collect stunning works from the world’s most innovative data
-            artists. Each piece transforms raw information into visual
-            experiences that inspire, inform, and amaze.
-          </p>
-          <div className="full-bleed flex justify-center mt-8">
-            <img src="project/jeremy-wanner/other/03.png" />
+      <div className="wrapper">
+        <SectionTitle
+          title={"Latest"}
+          subtitle={<span className="font-opensauce">What's up</span>}
+        />
+        <p>
+          Data to Art is constantly growing, with new artists and projects added
+          to the gallery as soon as we discover them.
+        </p>
+        <p>
+          Most recently, we were pleased to add the work of{" "}
+          <Link href="/artist/alisa-singer">Alisa Singer</Link>, whose art
+          transforms climate science, social issues, and personal experiences
+          into vibrant, data-driven visual pieces.
+        </p>
+
+        <div className="full-bleed">
+          <div className="max-w-[900px] mx-auto">
+            <ImgWithCaption
+              img="/project/alisa-singer/environmental-graphiti/02-full.webp"
+              caption={
+                <span>
+                  Alisa’s work is organized into a project titled{" "}
+                  <Link href="/artist/alisa-singer/environmental-graphiti">
+                    Environmental Graphiti
+                  </Link>
+                  .
+                </span>
+              }
+            />
           </div>
         </div>
+        <div className="w-full flex gap-2 justify-center my-10">
+          <Link
+            href={"#contact"}
+            className={cn(
+              buttonVariants({ size: "lg", variant: "outline" }),
+              "mb-12",
+            )}
+          >
+            Suggest an artist
+          </Link>{" "}
+          <Link
+            href={"/artist/alisa-singer"}
+            className={cn(buttonVariants({ size: "lg" }), "mb-12")}
+          >
+            Read more about Alisa
+          </Link>
+        </div>
       </div>
-
-      <Spacing /> */}
 
       <div className="wrapper relative mt-20">
         <SectionTitle
@@ -174,73 +209,21 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <Spacing />
-      <div className="wrapper">
-        <SectionTitle
-          title={"Latest"}
-          subtitle={<span className="font-opensauce">What's up</span>}
-        />
-        <p>
-          Data to Art is constantly growing, with new artists and projects added
-          to the gallery as soon as we discover them.
-        </p>
-        <p>
-          Most recently, we were pleased to add the work of{" "}
-          <Link href="/artist/alisa-singer">Alisa Singer</Link>, whose art
-          transforms climate science, social issues, and personal experiences
-          into vibrant, data-driven visual pieces.
-        </p>
 
-        <div className="full-bleed">
-          <div className="max-w-[900px] mx-auto">
-            <FiveImgsGallery
-              images={[
-                "/project/alisa-singer/environmental-graphiti/01-full.webp",
-                "/project/alisa-singer/environmental-graphiti/02-full.webp",
-                "/project/alisa-singer/environmental-graphiti/03-full.webp",
-                "/project/alisa-singer/environmental-graphiti/04-full.webp",
-                "/project/alisa-singer/environmental-graphiti/05-full.webp",
-              ]}
-              height={400}
-            />
-          </div>
-        </div>
-        <div className="w-full flex gap-2 justify-center my-10">
-          <Link
-            href={"#contact"}
-            className={cn(
-              buttonVariants({ size: "lg", variant: "outline" }),
-              "mb-12",
-            )}
-          >
-            Suggest an artist
-          </Link>{" "}
-          <Link
-            href={"/artist/alisa-singer"}
-            className={cn(buttonVariants({ size: "lg" }), "mb-12")}
-          >
-            Read more about Alisa
-          </Link>
-        </div>
-      </div>
+      <Spacing />
 
       <section className="my-24 wrapper">
         <SectionTitle
           title={"Exhibition"}
-          subtitle={<span className="font-opensauce">In real life</span>}
+          subtitle={<span className="font-opensauce">Data, In Real Life</span>}
         />
 
-        <p>
-          Data art is captivating on a screen, but its true magic comes alive in
-          the real world — on a canvas you can see, touch, and feel.
-        </p>
-
         <div className="full-bleed my-12 grid gap-2">
-          <img
+          {/* <img
             src="/asset/gallery.jpg"
             className="h-72 w-full object-cover"
             alt="Gallery"
-          />
+          /> */}
           <div className="grid grid-cols-2 gap-2">
             <img
               src="/asset/mockup1.webp"
@@ -254,7 +237,10 @@ export default function Home() {
             />
           </div>
         </div>
-
+        <p>
+          Data art is captivating on a screen, but its true magic comes alive in
+          the real world — on a canvas you can see, touch, and feel.
+        </p>
         <p>
           We celebrate this intersection of data, design, and emotion by
           gathering exhibitions, installations, and events from around the
@@ -283,9 +269,14 @@ export default function Home() {
             <div className="absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
               <Link
                 href="/exhibition"
-                className={buttonVariants({ size: "lg" })}
+                className={cn(
+                  buttonVariants({ size: "lg" }),
+                  "h-30 w-30 rounded-full text-center",
+                )}
               >
-                See all exhibitions
+                See all
+                <br />
+                exhibitions
               </Link>
             </div>
           </div>
@@ -294,50 +285,31 @@ export default function Home() {
 
       <section className="my-24 wrapper">
         <SectionTitle
-          title="Transform your data"
-          subtitle={<span className="font-opensauce">We can help</span>}
+          title="Create an Expo"
+          subtitle={<span className="font-opensauce">Work with us</span>}
         />
 
-        <div className="mt-12 grid grid-cols-12 gap-10 items-start">
-          {/* Image */}
-          <div className="relative col-span-3">
-            <div className="relative -ml-52">
-              <img
-                src="/asset/marthe-expo.jpeg"
-                alt="Data exhibition by Marthe Viallet"
-                className="w-full h-auto rounded-sm"
-              />
-            </div>
-          </div>
-
-          {/* Text */}
-          <div className="col-span-9 space-y-6">
-            <p>
-              Institutions and organizations today produce rich content — data,
-              research, narratives — yet often lack the formats needed to make
-              this content visible, readable and meaningful for their audiences.
-            </p>
-
-            <p>
-              In an era of constant scrolling, data remains confined to
-              standardized, screen-based formats, when it could instead be
-              experienced in physical space.
-            </p>
-          </div>
-        </div>
-
-        <p className="mt-8">
-          For over ten years, Marthe Viallet has been helping organizations{" "}
-          <b>transform complex data into exhibitions</b> and large-scale data
-          artworks designed beyond the screen. Through a curatorial approach
-          that brings together multiple visual languages, she helps reveal the
-          full value of existing data — turning information into clear, engaging
-          and culturally resonant experiences.
-        </p>
+        {/* Image */}
+        <img
+          src="/asset/marthe-expo.jpeg"
+          alt="Data exhibition by Marthe Viallet"
+          className="w-full"
+        />
 
         <p>
-          If you want to turn your data into a compelling medium for
-          communicating your findings, feel free to reach out to Marthe.
+          Designing a data exhibition requires more than displaying charts on
+          walls. It involves curatorial thinking, narrative structure, spatial
+          design, and a deep understanding of data as a cultural medium.
+        </p>
+        <p>
+          Data To Art develops data exhibitions for institutions and
+          organizations, transforming existing data into meaningful, accessible,
+          and engaging physical experiences. Curated and led by{" "}
+          <a href="https://www.wakeupdataviz.com/" target="_blank">
+            Marthe Viallet
+          </a>
+          , with over ten years of experience in data exhibitions and cultural
+          data projects.
         </p>
 
         <div className="flex justify-start gap-2 mt-12">
