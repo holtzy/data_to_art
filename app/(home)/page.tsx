@@ -154,7 +154,7 @@ export default function Home() {
             "mb-12",
           )}
         >
-          See all artists
+          See all
         </Link>
       </div>
 
