@@ -109,7 +109,7 @@ export default function Home() {
             href={"/artist/alisa-singer"}
             className={cn(buttonVariants({ size: "lg" }), "mb-12")}
           >
-            Read more about Alisa
+            Read more
           </Link>
         </div>
       </div>
@@ -137,7 +137,9 @@ export default function Home() {
         </p>
       </div>
 
-      <ArtistSection />
+      <div className="w-full overflow-x-scroll">
+        <ArtistSection />
+      </div>
 
       <div className="w-full flex gap-2 justify-center my-4">
         <EmailButton
@@ -308,15 +310,15 @@ export default function Home() {
           data projects.
         </p>
 
-        <div className="flex justify-start gap-2 mt-12">
+        <div className="flex justify-start gap-2 mt-12 flex-wrap">
           <a
             href="https://www.wakeupdataviz.com/"
             className={cn(buttonVariants({ size: "lg", variant: "outline" }))}
           >
-            See Marthe's work
+            Marthe's work
           </a>
           <EmailButton
-            name="Contact Marthe"
+            name="Contact Her"
             variant="default"
             link="wakeupdataviz@gmail.com"
           />
