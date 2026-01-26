@@ -7,6 +7,7 @@ import { ArtScienceCursorSection } from "../(home)/ArtScienceCursorSection";
 import Link from "next/link";
 import { EmailButton } from "@/components/EmailButton";
 import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
+import { Contact } from "@/components/Contact";
 
 export default function AboutPage() {
   return (
@@ -40,35 +41,6 @@ export default function AboutPage() {
           />
         </div>
       </div>
-
-      <Spacing />
-
-      <section className="wrapper">
-        <h1>What is Data Art</h1>
-        <p className="drop-cap">
-          Data art is a creative practice that transforms raw data into visually
-          compelling artworks. By blending aesthetics with information, data
-          artists use charts, patterns, and interactive visuals to reveal
-          stories, emotions, and insights hidden within datasets.{" "}
-        </p>
-        <p className="mb-12">
-          Data art acts as a cursor between science and abstraction. Some works
-          feel like scientific figures, with annotations and numbers that speak
-          for themselves. Others drift into pure abstraction, only revealing
-          their meaning with extra context.
-        </p>
-        <ArtScienceCursorSection />
-        <p>
-          While data art and generative art both involve digital creativity,
-          they are not the same. Data art specifically uses real-world data as
-          its source material, aiming to visualize information, patterns, or
-          stories embedded in that data.
-        </p>
-        <QuoteSection
-          text="Data art reveals meaning from datasets, while generative art
-                emphasizes process, randomness, and system-driven creativity."
-        />
-      </section>
 
       <Spacing />
 
@@ -148,6 +120,35 @@ export default function AboutPage() {
 
       <Spacing />
 
+      <section className="wrapper">
+        <h1>What is Data Art</h1>
+        <p className="drop-cap">
+          Data art is a creative practice that transforms raw data into visually
+          compelling artworks. By blending aesthetics with information, data
+          artists use charts, patterns, and interactive visuals to reveal
+          stories, emotions, and insights hidden within datasets.{" "}
+        </p>
+        <p className="mb-12">
+          Data art acts as a cursor between science and abstraction. Some works
+          feel like scientific figures, with annotations and numbers that speak
+          for themselves. Others drift into pure abstraction, only revealing
+          their meaning with extra context.
+        </p>
+        <ArtScienceCursorSection />
+        <p>
+          While data art and generative art both involve digital creativity,
+          they are not the same. Data art specifically uses real-world data as
+          its source material, aiming to visualize information, patterns, or
+          stories embedded in that data.
+        </p>
+        <QuoteSection
+          text="Data art reveals meaning from datasets, while generative art
+                emphasizes process, randomness, and system-driven creativity."
+        />
+      </section>
+
+      <Spacing />
+
       <section>
         <div className="wrapper mt-22">
           <h1>Create an exhibition</h1>
@@ -178,6 +179,10 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <Spacing />
+
+      <Contact />
     </>
   );
 }
