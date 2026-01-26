@@ -14,9 +14,9 @@ export default function AboutPage() {
     <>
       <div className="wrapper mt-40">
         <center>
-          <h1>About Data to Art</h1>
+          <h1>About Data To Art</h1>
           <p className="max-w-96">
-            Data to Art began as a meeting between a curator and a dataviz
+            Data To Art began as a meeting between a curator and a dataviz
             passionate. Both fascinated by the emotional side of data.
           </p>
         </center>
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 >
                   Nantes Digital Week
                 </a>
-                . Soon included in Data to Art.
+                . Soon included in Data To Art.
               </span>
             }
           />
@@ -56,7 +56,7 @@ export default function AboutPage() {
         <p>
           But these masterpieces are scattered across the internet, with no
           central place to discover or showcase them. That's why we created{" "}
-          <Link href="/">Data to Art</Link>.
+          <Link href="/">Data To Art</Link>.
         </p>
 
         <p>
@@ -72,7 +72,7 @@ export default function AboutPage() {
         </p>
 
         <p>
-          Data to Art is free, hybrid, and inclusive. It celebrates diverse
+          Data To Art is free, hybrid, and inclusive. It celebrates diverse
           approaches and styles, offering a space for creators to experiment and
           innovate. We invite you to experience data differently — to see its
           beauty, and to discover how it can move, inspire, and spark

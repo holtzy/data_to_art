@@ -34,10 +34,10 @@ A chart becomes a gesture
         where numbers meet human experience.
       </p>
 
-      <h2>What is Data to Art?</h2>
+      <h2>What is Data To Art?</h2>
       <h3>A gallery of emotions and structures</h3>
       <p>
-        Data to Art is a virtual gallery celebrating the most innovative,
+        Data To Art is a virtual gallery celebrating the most innovative,
         artistic, and thought-provoking forms of data representation.
       </p>
       <p>
@@ -64,7 +64,7 @@ A chart becomes a gesture
 
       <h3>A free and hybrid space</h3>
       <p>
-        Data to Art is an invitation to see, feel, and think differently about
+        Data To Art is an invitation to see, feel, and think differently about
         the representation of data. Graphic originality and visual intensity
         become forces of persuasion.
       </p>
@@ -87,7 +87,7 @@ A chart becomes a gesture
       </p>
       <QuoteSection text="We believe that a visualization can hang on a wall like a painting" />
       <p>
-        Data to Art is a source of inspiration, a visual manifesto, and a space
+        Data To Art is a source of inspiration, a visual manifesto, and a space
         of recognition for those who shape the culture of data with sensitivity,
         boldness, and originality.
       </p>

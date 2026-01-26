@@ -73,7 +73,7 @@ export default function Home() {
           subtitle={<span className="font-opensauce">What's up</span>}
         />
         <p>
-          Data to Art is constantly growing, with new artists and projects added
+          Data To Art is constantly growing, with new artists and projects added
           to the gallery as soon as we discover them.
         </p>
         <p>
