@@ -6,11 +6,6 @@ import { ArtistSection } from "../(home)/ArtistSection";
 import { Spacing } from "@/components/Spacing";
 import { Contact } from "@/components/Contact";
 
-// TODO
-// Here I want several options to visualize the artists:
-// - a globe
-// - a beeswarm that rates them according to their degree of data/art ratio
-
 export default function Page() {
   return (
     <>
@@ -34,7 +29,7 @@ export default function Page() {
 
       <div className="wrapper">
         <p>
-          Data to Art is a living project. Our goal is to feature one new artist
+          Data To Art is a living project. Our goal is to feature one new artist
           every week. If you would like your work to be included, or if you know
           someone whose work deserves to be showcased here, feel free to reach
           out to us.
