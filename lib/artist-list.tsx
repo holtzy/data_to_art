@@ -169,8 +169,7 @@ export const artistList = [
     location: [41.8832, 87.6324],
     city: "Chicago - 🇺🇸",
     homepageLink: "https://www.environmentalgraphiti.org/",
-    linkedinLink:
-      "https://www.linkedin.com/in/martasierragarcia/?originalSubdomain=nl",
+    linkedinLink: "https://www.linkedin.com/in/alisa-singer-7178024/",
   },
 
   {
