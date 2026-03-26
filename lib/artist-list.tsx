@@ -207,6 +207,22 @@ export const artistList = [
     homepageLink: "https://anne-laure-freant.gitbook.io/art-gallery",
     linkedinLink: "https://www.linkedin.com/in/annelaurefreant/",
   },
+  {
+    name: "Couple in Data",
+    descriptionShort: (
+      <>
+        <p>
+          Couple in Data is a creative duo working with data visualization and
+          everyday objects to make political, geopolitical, and social issues
+          visible beyond the screen.
+        </p>
+      </>
+    ),
+    folder: "couple-in-data",
+    location: [2.3514, 48.8575],
+    city: "Madrid - 🇪🇸",
+    homepageLink: "https://www.instagram.com/coupleindata/",
+  },
 ] as const satisfies readonly Artist[];
 
 export const artistNumber = artistList.length;

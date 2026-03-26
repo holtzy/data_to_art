@@ -345,4 +345,73 @@ export const projectList: Project[] = [
       </>
     ),
   },
+
+  ////////
+  ///////
+  // COUPLE IN DATA
+  ////////
+  ///////
+  {
+    name: "Human Rights Fans",
+    folder: "human-rights-fans",
+    link: "https://www.instagram.com/coupleindata/",
+    artist: "couple-in-data",
+    date: new Date("2022-01-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A scarf visualizing the thousands of migrant workers who died building
+          stadiums for the Qatar World Cup, turning data into a wearable symbol
+          that reminds us who we should truly support: human rights.
+        </p>
+      </>
+    ),
+  },
+  {
+    name: "Parity Under Construction",
+    folder: "parity-under-construction",
+    link: "https://www.instagram.com/coupleindata/",
+    artist: "couple-in-data",
+    date: new Date("2024-01-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A redesigned advertising trophy with 28% of its form removed to
+          reflect the gap separating women from equality in creative direction,
+          turning an award into a critique and a call to action.
+        </p>
+      </>
+    ),
+  },
+  {
+    name: "Loving Routine",
+    folder: "loving-routine",
+    link: "https://www.instagram.com/coupleindata/",
+    artist: "couple-in-data",
+    date: new Date("2020-01-01"),
+    descriptionShort: (
+      <>
+        <p>
+          Everyday couple life during Covid-19 reimagined through tangible data
+          visualizations, turning private routines into physical charts and
+          objects that question the paradox of intimacy and data privacy.
+        </p>
+      </>
+    ),
+  },
+  {
+    name: "Cuts of Corruption",
+    folder: "cuts-of-corruption",
+    link: "https://www.instagram.com/coupleindata/",
+    artist: "couple-in-data",
+    date: new Date("2022-01-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A data visualization project by Couple in Data exploring corruption
+          through physical objects and tangible data.
+        </p>
+      </>
+    ),
+  },
 ];
