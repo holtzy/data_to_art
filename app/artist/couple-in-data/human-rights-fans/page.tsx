@@ -20,11 +20,10 @@ export default function Page() {
   if (!artistInfo) return null;
 
   const images = [
-    "01-full.webp",
-    "02-full.webp",
-    "03-full.webp",
-    "04-full.webp",
+    "06-full.webp",
+    "07-full.webp",
     "05-full.webp",
+    "08-full.webp",
   ];
 
   return (
@@ -67,20 +66,18 @@ export default function Page() {
           cost of the World Cup in the culture of sport itself.
         </p>
 
-        <div className="full-bleed">
-          <div className="max-w-[900px] mx-auto">
-            <FiveImgsGallery
-              images={[
-                "/project/couple-in-data/human-rights-fans/01-full.webp",
-                "/project/couple-in-data/human-rights-fans/02-full.webp",
-                "/project/couple-in-data/human-rights-fans/03-full.webp",
-                "/project/couple-in-data/human-rights-fans/04-full.webp",
-                "/project/couple-in-data/human-rights-fans/05-full.webp",
-              ]}
-              height={400}
-            />
-          </div>
-        </div>
+        <ImgWithCaption
+          img="/project/couple-in-data/human-rights-fans/01-full.webp"
+          caption={
+            <span>
+              <Link href="/artist/couple-in-data/human-rights-fans">
+                Human Rights Fans
+              </Link>{" "}
+              — a scarf visualizing the thousands of migrant workers who died
+              building the stadiums for the Qatar World Cup.
+            </span>
+          }
+        />
 
         <div className="mt-4">
           <Link
