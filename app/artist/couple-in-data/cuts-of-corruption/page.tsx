@@ -36,6 +36,11 @@ export default function Page() {
       />
 
       <div className="wrapper">
+        <p>
+          <br />
+          <br />
+          <br />
+        </p>
         <p className="drop-cap">
           <em>Cuts of Corruption</em> is a data visualization project by Couple
           in Data that explores corruption through physical objects and tangible

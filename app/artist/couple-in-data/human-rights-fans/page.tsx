@@ -51,6 +51,7 @@ export default function Page() {
 
         <ImgWithCaption
           img="/project/couple-in-data/human-rights-fans/02-full.webp"
+          imgClassName="max-h-[500px] object-cover"
           caption={
             <span>
               The scarf transforms data about migrant worker deaths into a

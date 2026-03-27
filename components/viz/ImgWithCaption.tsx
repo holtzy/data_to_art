@@ -5,12 +5,14 @@ type ImgWithCaptionProps = {
   caption: ReactNode; // Just 1 span please
   img: string;
   maxWidth?: number;
+  imgClassName?: string;
 };
 
 export const ImgWithCaption = ({
   img,
   caption,
   maxWidth,
+  imgClassName,
 }: ImgWithCaptionProps) => {
   return (
     <div
@@ -19,7 +21,7 @@ export const ImgWithCaption = ({
         maxWidth && `max-w-[${maxWidth}px]`,
       )}
     >
-      <img src={img} className="w-full" alt="data art image" />
+      <img src={img} className={cn("w-full", imgClassName)} alt="data art image" />
       <div className="flex justify-end">
         <p className="text-slate-500 text-sm text-right max-w-[250px] mt-4 !leading-snug">
           {caption}

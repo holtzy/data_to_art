@@ -1,6 +1,5 @@
 "use client";
 
-import FiveImgsGallery from "@/components/FiveImgsGallery";
 import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
@@ -20,11 +19,11 @@ export default function Page() {
   if (!artistInfo) return null;
 
   const images = [
-    "01-full.webp",
-    "02-full.webp",
-    "03-full.webp",
     "04-full.webp",
     "05-full.webp",
+    "06-full.webp",
+    "07-full.webp",
+    "08-full.webp",
   ];
 
   return (
@@ -53,6 +52,7 @@ export default function Page() {
 
         <ImgWithCaption
           img="/project/couple-in-data/loving-routine/02-full.webp"
+          imgClassName="max-h-[500px] object-cover"
           caption={
             <span>
               Private routines transformed into physical charts and tangible
@@ -62,27 +62,21 @@ export default function Page() {
         />
 
         <p>
-          Each visualization is a small act of intimacy made public — a
-          reminder that behind every data point there is a lived moment, a
-          feeling, a person. The project blurs the line between personal diary
-          and data dashboard, inviting viewers to reflect on their own
-          routines and the traces they leave behind.
+          Each visualization is a small act of intimacy made public — a reminder
+          that behind every data point there is a lived moment, a feeling, a
+          person. The project blurs the line between personal diary and data
+          dashboard, inviting viewers to reflect on their own routines and the
+          traces they leave behind.
         </p>
 
-        <div className="full-bleed">
-          <div className="max-w-[900px] mx-auto">
-            <FiveImgsGallery
-              images={[
-                "/project/couple-in-data/loving-routine/01-full.webp",
-                "/project/couple-in-data/loving-routine/02-full.webp",
-                "/project/couple-in-data/loving-routine/03-full.webp",
-                "/project/couple-in-data/loving-routine/04-full.webp",
-                "/project/couple-in-data/loving-routine/05-full.webp",
-              ]}
-              height={400}
-            />
-          </div>
-        </div>
+        <ImgWithCaption
+          img="/project/couple-in-data/loving-routine/09-full.webp"
+          caption={
+            <span>
+              Each visualization is a small act of intimacy made public.
+            </span>
+          }
+        />
 
         <div className="mt-4">
           <Link
