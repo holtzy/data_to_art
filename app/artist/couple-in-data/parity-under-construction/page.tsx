@@ -1,6 +1,5 @@
 "use client";
 
-import FiveImgsGallery from "@/components/FiveImgsGallery";
 import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
@@ -19,13 +18,7 @@ export default function Page() {
   const artistInfo = artistList.find((a) => a.folder === projectInfo.artist);
   if (!artistInfo) return null;
 
-  const images = [
-    "01-full.webp",
-    "02-full.webp",
-    "03-full.webp",
-    "04-full.webp",
-    "05-full.webp",
-  ];
+  const images = ["01-full.webp", "04-full.webp", "05-full.webp"];
 
   return (
     <>
@@ -38,9 +31,9 @@ export default function Page() {
 
       <div className="wrapper">
         <p className="drop-cap">
-          <em>Parity Under Construction</em> redesigns the iconic trophy for
-          the Ibero-American Advertising Festival El Sol, removing 28% of its
-          form to reflect the gap that still separates women from equality in
+          <em>Parity Under Construction</em> redesigns the iconic trophy for the
+          Ibero-American Advertising Festival El Sol, removing 28% of its form
+          to reflect the gap that still separates women from equality in
           creative direction, where they represent only 28%.
         </p>
         <p>
@@ -51,7 +44,7 @@ export default function Page() {
         </p>
 
         <ImgWithCaption
-          img="/project/couple-in-data/parity-under-construction/02-full.webp"
+          img="/project/couple-in-data/parity-under-construction/06-full.webp"
           caption={
             <span>
               For the first time, this redesigned symbol was awarded at the
@@ -67,22 +60,17 @@ export default function Page() {
           hands of winners who are asked to confront it.
         </p>
 
-        <div className="full-bleed">
-          <div className="max-w-[900px] mx-auto">
-            <FiveImgsGallery
-              images={[
-                "/project/couple-in-data/parity-under-construction/01-full.webp",
-                "/project/couple-in-data/parity-under-construction/02-full.webp",
-                "/project/couple-in-data/parity-under-construction/03-full.webp",
-                "/project/couple-in-data/parity-under-construction/04-full.webp",
-                "/project/couple-in-data/parity-under-construction/05-full.webp",
-              ]}
-              height={400}
-            />
-          </div>
-        </div>
+        <ImgWithCaption
+          img="/project/couple-in-data/parity-under-construction/01-full.webp"
+          caption={
+            <span>
+              The redesigned trophy, with 28% of its form removed to reflect the
+              gender gap in creative direction.
+            </span>
+          }
+        />
 
-        <div className="mt-4">
+        <div className="mt-4 flex justify-center">
           <Link
             href={projectInfo.link}
             target="_blank"
