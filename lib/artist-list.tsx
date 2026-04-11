@@ -223,6 +223,23 @@ export const artistList = [
     city: "Madrid - 🇪🇸",
     homepageLink: "https://www.instagram.com/coupleindata/",
   },
+  {
+    name: "Loud Numbers",
+    descriptionShort: (
+      <>
+        <p>
+          Loud Numbers is a data sonification studio that transforms data into
+          sound. Blending artistic exploration with scientific rigour, the studio
+          creates audio experiences where numbers become music.
+        </p>
+      </>
+    ),
+    folder: "loud-numbers",
+    location: [9.0, 55.4],
+    city: "Sweden 🇸🇪 & England 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    homepageLink: "https://www.loudnumbers.net",
+    linkedinLink: "https://www.linkedin.com/in/duncangeere/",
+  },
 ] as const satisfies readonly Artist[];
 
 export const artistNumber = artistList.length;

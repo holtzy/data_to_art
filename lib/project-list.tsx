@@ -399,6 +399,60 @@ export const projectList: Project[] = [
       </>
     ),
   },
+  ////////
+  ///////
+  // LOUD NUMBERS
+  ////////
+  ///////
+  {
+    name: "Scorched Earth",
+    folder: "scorched-earth",
+    link: "https://www.loudnumbers.net/scorchedearth",
+    artist: "loud-numbers",
+    date: new Date("2024-01-01"),
+    descriptionShort: (
+      <>
+        <p>
+          An audiovisual artwork based on daily fire counts from the Swedish
+          county of Skåne during the extreme summer of 2018, blending data
+          sonification with audio-reactive visuals.
+        </p>
+      </>
+    ),
+  },
+  {
+    name: "The Carrington Event",
+    folder: "the-carrington-event",
+    link: "https://www.loudnumbers.net/carringtonevent",
+    artist: "loud-numbers",
+    date: new Date("2024-01-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A collaboration telling the story of the largest solar storm in
+          recorded history, transforming archival data from 1859 into audiovisual
+          experiences designed to be played live and exhibited in gallery spaces.
+        </p>
+      </>
+    ),
+  },
+  {
+    name: "On Standby",
+    folder: "on-standby",
+    link: "https://www.loudnumbers.net",
+    artist: "loud-numbers",
+    date: new Date("2024-01-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A 10-hour sound art piece based on energy data collected overnight
+          from volunteers in Malmö, Sweden — a meditative symphony of the unseen
+          energy that hums in our homes every night.
+        </p>
+      </>
+    ),
+  },
+
   {
     name: "Cuts of Corruption",
     folder: "cuts-of-corruption",
