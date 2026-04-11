@@ -5,6 +5,7 @@ import { PrevAndNextProjectLinks } from "@/components/PrevAndNextProjectLinks";
 import { ProjectHero } from "@/components/ProjectHero";
 import { Spacing } from "@/components/Spacing";
 import { buttonVariants } from "@/components/ui/button";
+import { ImgWithCaption } from "@/components/viz/ImgWithCaption";
 import { artistList } from "@/lib/artist-list";
 import { projectList } from "@/lib/project-list";
 import { cn } from "@/lib/utils";
@@ -36,15 +37,29 @@ export default function Page() {
       />
 
       <div className="wrapper">
-        <p>
-          <br />
-          <br />
-          <br />
-        </p>
+        <Spacing />
         <p className="drop-cap">
-          <em>Cuts of Corruption</em> is a data visualization project by Couple
-          in Data that explores corruption through physical objects and tangible
-          data representations.
+          Based on data collected between 2000 and 2020, the project takes the
+          form of <em>Chorizos</em> — a series of visualizations referencing the
+          Spanish slang for "thieves," commonly used to describe corrupt
+          politicians.
+        </p>
+
+        <div>
+          <ImgWithCaption
+            img="/project/couple-in-data/cuts-of-corruption/03-full.webp"
+            caption={<span>Chorizos is the slang for Thieves in spanish</span>}
+          />
+        </div>
+
+        <p className="drop-cap">
+          Through this play on language and material, corruption is translated
+          into forms that can be counted, compared, and confronted.
+        </p>
+        <p>
+          Each piece reveals different dimensions of the phenomenon — from the
+          number of cases by political party, to their geographic distribution,
+          typology of crimes, and estimated economic cost.
         </p>
 
         <div className="full-bleed">
@@ -61,6 +76,13 @@ export default function Page() {
             />
           </div>
         </div>
+
+        <p>
+          By bringing these figures into the physical world, Couple in Data
+          transforms abstract data into something visible and graspable,
+          inviting viewers to reflect on accountability, power, and the role of
+          citizens in shaping political systems.
+        </p>
 
         <div className="mt-4">
           <Link
