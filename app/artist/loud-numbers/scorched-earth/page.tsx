@@ -59,6 +59,18 @@ export default function Page() {
           The sound palette takes inspiration from horror movie soundtracks,
           folk music and 20th-century string music.
         </p>
+        <div className="my-12">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/Ppw2utyxEbo"
+            title="Scorched Earth — Loud Numbers"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+
         <Spacing />
         <div className="mt-4">
           <Link
