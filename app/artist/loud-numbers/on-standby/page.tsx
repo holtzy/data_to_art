@@ -44,7 +44,7 @@ export default function Page() {
         </p>
 
         <ImgWithCaption
-          img="/project/loud-numbers/on-standby/01-full.webp"
+          img="/project/loud-numbers/on-standby/02-full.webp"
           caption={
             <span>
               On Standby transforms overnight energy consumption data into an

@@ -40,8 +40,11 @@ export default function Page() {
             as a space for the sensitive interpretation of data. Where data
             visualisation often encourages a direct, frontal reading,
             sonification opens up a more diffuse, immersive and intimate
-            experience that unfolds over time. Data is no longer static. It
-            vibrates, repeats, intensifies or falls silent.
+            experience that unfolds over time.
+          </p>
+          <p>
+            Data is no longer static. It vibrates, repeats, intensifies or falls
+            silent.
           </p>
         </div>
 
@@ -60,14 +63,25 @@ export default function Page() {
 
         <div className="my-12">
           <p className="drop-cap">
-            Since the launch of the Loud Numbers podcast in 2019, the studio has
-            been developing sonic works in which scientific rigour sits alongside
-            musical composition. Each project is built on a precise translation
-            of data into sound parameters such as pitch, tempo, texture and
-            intensity, without reducing sound to a simple illustration. The
-            resulting compositions are conceived as genuine listening pieces,
-            capable of conveying information while also creating an emotional
-            experience.
+            Since the launch of the{" "}
+            <Link
+              href="https://www.loudnumbers.net/podcast"
+              target="_blank"
+            >
+              Loud Numbers podcast
+            </Link>{" "}
+            in 2019, the studio has been developing sonic works in which
+            scientific rigour sits alongside musical composition.
+          </p>
+          <p>
+            Each project is built on a precise translation of data into sound
+            parameters such as pitch, tempo, texture and intensity, without
+            reducing sound to a simple illustration.{" "}
+          </p>
+          <p>
+            The resulting compositions are conceived as genuine listening
+            pieces, capable of conveying information while also creating an
+            emotional experience.
           </p>
         </div>
 
@@ -80,11 +94,32 @@ export default function Page() {
           <p className="drop-cap">
             Through installations, radio broadcasts and experimental audio
             formats, Loud Numbers questions our relationship to data in a world
-            saturated with screens. By inviting audiences to listen to what is
-            usually shown, the studio encourages a shift in perception, allowing
-            systems, flows and dynamics that shape our environment to be
-            experienced differently.
+            saturated with screens.
           </p>
+          <p>
+            By inviting audiences to listen to what is usually shown, the studio
+            encourages a shift in perception, allowing systems, flows and
+            dynamics that shape our environment to be experienced differently.
+          </p>
+        </div>
+
+        <p>
+          Here is an example with the{" "}
+          <Link href="/artist/loud-numbers/the-carrington-event">
+            Carrington Event
+          </Link>{" "}
+          project:
+        </p>
+        <div className="my-12">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/319y5Y24iK0"
+            title="The Carrington Event — Loud Numbers"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
 
         <ArtistGallerySection imgs={allImages} />

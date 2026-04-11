@@ -42,8 +42,8 @@ export default function Page() {
           img="/project/loud-numbers/scorched-earth/01-full.webp"
           caption={
             <span>
-              Scorched Earth visualizes daily fire counts from the Swedish county
-              of Skåne during the extreme summer of 2018.
+              Scorched Earth visualizes daily fire counts from the Swedish
+              county of Skåne during the extreme summer of 2018.
             </span>
           }
         />
@@ -52,24 +52,14 @@ export default function Page() {
           Commissioned for the Nature's Harmony exhibition in Helsingborg,
           Sweden, in 2024, <em>Scorched Earth</em> is an audiovisual artwork
           based on daily fire counts from the Swedish county of Skåne during the
-          year 2018. It includes elements of data sonification and audio-reactive
-          visuals. The sound palette takes inspiration from horror movie
-          soundtracks, folk music and 20th-century string music.
+          year 2018.
         </p>
-
-        <div className="full-bleed">
-          <div className="max-w-[900px] mx-auto">
-            <FiveImgsGallery
-              images={[
-                "/project/loud-numbers/scorched-earth/01-full.webp",
-                "/project/loud-numbers/scorched-earth/02-full.webp",
-                "/project/loud-numbers/scorched-earth/03-full.webp",
-              ]}
-              height={400}
-            />
-          </div>
-        </div>
-
+        <p>
+          It includes elements of data sonification and audio-reactive visuals.
+          The sound palette takes inspiration from horror movie soundtracks,
+          folk music and 20th-century string music.
+        </p>
+        <Spacing />
         <div className="mt-4">
           <Link
             href={projectInfo.link}
