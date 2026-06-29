@@ -9,7 +9,7 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
   const { folder, name, homepageLink, linkedinLink, descriptionShort } = artist;
 
   return (
-    <section className="min-h-[80vh] w-full flex items-center justify-center px-8 py-12">
+    <section className="w-full flex items-center justify-center mt-40 mb-20">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         {/* Column 1 — cover image (hidden on small screens) */}
         <div
@@ -20,22 +20,28 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
         />
 
         {/* Column 2 — avatar, text and buttons */}
-        <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-6 max-w-md">
+        <div className="flex flex-col items-center text-center lg:items-start lg:text-left max-w-md">
           <img
             src={`/artist/${folder}.webp`}
             alt={name}
             className="w-40 h-40 rounded-full object-cover"
           />
 
-          <h1 className="!text-6xl lg:!text-7xl !font-normal !tracking-wide">
-            {name}
-          </h1>
+          {/* Name + description kept tight together */}
+          <div className="flex flex-col gap-0">
+            <h1 className="!text-6xl lg:!text-7xl !font-normal !tracking-wide !leading-tight">
+              {name}
+            </h1>
 
-          <p className="text-2xl tracking-wide" style={{ lineHeight: 1.3 }}>
-            {descriptionShort}
-          </p>
+            <p
+              className="text-2xl tracking-wide !mt-0"
+              style={{ lineHeight: 1.3 }}
+            >
+              {descriptionShort}
+            </p>
+          </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 mt-8">
             {linkedinLink && (
               <a
                 className={buttonVariants({ variant: "outline" })}
