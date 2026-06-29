@@ -93,9 +93,9 @@ Model: `app/artist/soha-elghany/missing-migrants/page.tsx`. Starts with `"use cl
 - `const PROJECT = "<project-slug>";` and `const AUTHOR = "<folder>";`
 - Looks up `projectInfo` from `projectList` and `artistInfo` from `artistList`.
 - `imagesTop` = array of `"NN-full.webp"` filenames for `<ProjectHero images={...} />`.
-- `images5` = array of full `/project/<folder>/<project>/NN-full.webp` paths for `<FiveImgsGallery>`.
-- Body paragraphs (first one often `className="drop-cap"`), a "Read full article" button to
-  `projectInfo.link`, and `<PrevAndNextProjectLinks currentProject={PROJECT} />`.
+- Body paragraphs (first one often `className="drop-cap"`), big full-bleed images
+  (see preferences below), a "Read full article" button to `projectInfo.link`, and
+  `<PrevAndNextProjectLinks currentProject={PROJECT} />`.
 
 **House preferences for project pages (from real feedback):**
 - **Prefer big full-bleed images over `FiveImgsGallery`.** `FiveImgsGallery` crops to a fixed
@@ -114,6 +114,9 @@ Model: `app/artist/soha-elghany/missing-migrants/page.tsx`. Starts with `"use cl
 - **End the body with a one-sentence conclusion** right before the final link button.
 - Surface the artist's **personal quote/citation** via `<QuoteSection text="…" />` (keep it to
   one punchy sentence — it renders at `text-4xl`).
+- **Intersperse full-bleed images within the prose**, not only inside edition sections. Drop a
+  striking image early (even mid-intro, between two paragraphs) to break up the text and set
+  the tone before the reader reaches the structured sections. Keep paragraphs short.
 
 ## 5. Images — `public/`
 
@@ -195,9 +198,14 @@ projects):
 
 ### Improvement log
 - 2026-06-29 — First real run: **Zeh Fernandes / GenCup** (single project, 4 World Cup
-  editions 2018/2019/2022/2023). Confirmed the path contracts above. Build passed.
-  Open items left for the user to confirm: artist **city/location** (defaulted São Paulo),
-  **homepageLink** (`zehfernandes.com`, unverified), **cover.webp** (a cropped portrait
-  poster — a wide image would sit better), and the project intro text (author's final
-  version was still pending; used the prior draft).
+  editions 2018/2019/2022/2023). Shipped and approved by the user. Confirmed the path
+  contracts above; build passed. Lessons folded into the steps above:
+  - Each edition had its OWN encoding + its OWN blueprint → per-edition "Reading the YYYY
+    system" keys, never one global legend.
+  - User preferred big full-bleed images over `FiveImgsGallery`, and added a full-bleed image
+    *mid-intro* between paragraphs → "intersperse images within the prose" preference.
+  - Needed a `<Spacing />` before `<Contact />` on the artist page.
+  - Values that were guessed/defaulted (re-confirm for future artists, don't assume a pattern):
+    city/location (São Paulo), `homepageLink` (`zehfernandes.com`), `cover.webp` (a cropped
+    portrait poster), and the project intro text (author's final version was still pending).
 _Notes captured while using this skill on real artists — refine the steps above as patterns become clearer._
