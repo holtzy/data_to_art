@@ -240,6 +240,21 @@ export const artistList = [
     homepageLink: "https://www.loudnumbers.net",
     linkedinLink: "https://www.linkedin.com/in/duncangeere/",
   },
+  {
+    name: "Zeh Fernandes",
+    descriptionShort: (
+      <>
+        <p>
+          Zeh Fernandes is a designer exploring how data and computation can
+          open new understandings.
+        </p>
+      </>
+    ),
+    folder: "zeh-fernandez",
+    location: [-46.6333, -23.5505], // [lng, lat] — São Paulo (TODO: confirm city)
+    city: "São Paulo - 🇧🇷",
+    homepageLink: "https://www.zehfernandes.com",
+  },
 ] as const satisfies readonly Artist[];
 
 export const artistNumber = artistList.length;

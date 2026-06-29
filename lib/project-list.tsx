@@ -468,4 +468,25 @@ export const projectList: Project[] = [
       </>
     ),
   },
+  ////////
+  ///////
+  // ZEH FERNANDES
+  ////////
+  ///////
+  {
+    name: "GenCup",
+    folder: "gencup",
+    link: "https://www.gencup.art/",
+    artist: "zeh-fernandez",
+    date: new Date("2022-12-18"),
+    descriptionShort: (
+      <>
+        <p>
+          GenCup — a contraction of <i>generative</i> and <i>World Cup</i> — is
+          a data-driven art project that turns football matches into textured
+          visual compositions, one poster per game.
+        </p>
+      </>
+    ),
+  },
 ];
