@@ -97,6 +97,24 @@ Model: `app/artist/soha-elghany/missing-migrants/page.tsx`. Starts with `"use cl
 - Body paragraphs (first one often `className="drop-cap"`), a "Read full article" button to
   `projectInfo.link`, and `<PrevAndNextProjectLinks currentProject={PROJECT} />`.
 
+**House preferences for project pages (from real feedback):**
+- **Prefer big full-bleed images over `FiveImgsGallery`.** `FiveImgsGallery` crops to a fixed
+  height (`object-cover`) and hides parts of the artwork. Favor `ImgWithCaption` (already
+  `full-bleed`, shows the whole uncropped image) wrapped in
+  `<div className="full-bleed"><div className="max-w-[Npx] mx-auto">…`, or plain
+  `grid grid-cols-N` of `<img className="w-full">` for uncropped thumbnails. Use ~`640px`
+  max-width for portrait pieces so they stay large without becoming absurdly tall.
+- If the artist provides a **"blueprint"/legend/diagram image** explaining how their encoding
+  works, give it a "How to read it" section with a short `<ul>` mapping each visual
+  property to the underlying data — don't just drop it in the gallery.
+  ⚠️ A blueprint is usually **specific to one series/edition**, not the whole project. If a
+  multi-edition project ships one blueprint per edition (each with its own logic), put each
+  reading key INSIDE its own edition section — never one global "how to read" for all of them.
+  Open each blueprint image and read its labels; the encoding differs per edition.
+- **End the body with a one-sentence conclusion** right before the final link button.
+- Surface the artist's **personal quote/citation** via `<QuoteSection text="…" />` (keep it to
+  one punchy sentence — it renders at `text-4xl`).
+
 ## 5. Images — `public/`
 
 Required:
