@@ -254,6 +254,7 @@ export const artistList = [
     location: [-46.6333, -23.5505], // [lng, lat] — São Paulo (TODO: confirm city)
     city: "São Paulo - 🇧🇷",
     homepageLink: "https://www.zehfernandes.com",
+    linkedinLink: "https://www.linkedin.com/in/zehfernandes/",
   },
 ] as const satisfies readonly Artist[];
 
