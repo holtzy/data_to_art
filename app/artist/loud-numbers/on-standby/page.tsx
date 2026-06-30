@@ -19,7 +19,7 @@ export default function Page() {
   const artistInfo = artistList.find((a) => a.folder === projectInfo.artist);
   if (!artistInfo) return null;
 
-  const images = ["02-full.webp"];
+  const images = ["01-full.webp"];
 
   return (
     <>
@@ -44,7 +44,7 @@ export default function Page() {
         </p>
 
         <ImgWithCaption
-          img="/project/loud-numbers/on-standby/02-full.webp"
+          img="/project/loud-numbers/on-standby/01-full.webp"
           caption={
             <span>
               On Standby transforms overnight energy consumption data into an
