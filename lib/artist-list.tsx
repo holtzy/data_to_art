@@ -256,6 +256,23 @@ export const artistList = [
     homepageLink: "https://www.zehfernandes.com",
     linkedinLink: "https://www.linkedin.com/in/zehfernandes/",
   },
+  {
+    name: "Nadieh Bremer",
+    descriptionShort: (
+      <>
+        <p>
+          A data visualization designer and data artist, working under Visual
+          Cinnamon, who creates bespoke, creative and vibrant visualizations of
+          data.
+        </p>
+      </>
+    ),
+    folder: "nadieh-bremer",
+    location: [5.6767, 52.0008], // [lng, lat] — Bennekom
+    city: "Bennekom - 🇳🇱",
+    homepageLink: "https://www.visualcinnamon.com",
+    linkedinLink: "https://www.linkedin.com/in/nbremer/",
+  },
 ] as const satisfies readonly Artist[];
 
 export const artistNumber = artistList.length;

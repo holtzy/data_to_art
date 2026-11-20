@@ -489,4 +489,55 @@ export const projectList: Project[] = [
       </>
     ),
   },
+  ////////
+  ///////
+  // NADIEH BREMER
+  ////////
+  ///////
+  {
+    name: "Searching for Birds",
+    folder: "searching-for-birds",
+    link: "https://searchingforbirds.visualcinnamon.com",
+    artist: "nadieh-bremer",
+    date: new Date("2026-02-01"),
+    descriptionShort: (
+      <>
+        <p>
+          An interactive story about the birds that capture our curiosity, told
+          through data, visuals and illustrations.
+        </p>
+      </>
+    ),
+  },
+  {
+    name: "Gold Record",
+    folder: "gold-record",
+    link: "https://www.visualcinnamon.com/portfolio/sony-music-data-art",
+    artist: "nadieh-bremer",
+    date: new Date("2020-06-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A data-art system that re-imagines music&apos;s &ldquo;Gold
+          Record&rdquo; poster, using data from the song itself and from its
+          life on Spotify and YouTube.
+        </p>
+      </>
+    ),
+  },
+  {
+    name: "Elemental Flows",
+    folder: "elemental-flows",
+    link: "https://www.visualcinnamon.com/art/elemental-flows",
+    artist: "nadieh-bremer",
+    date: new Date("2021-01-01"),
+    descriptionShort: (
+      <>
+        <p>
+          A data art collection of 4 + 1 pieces revealing data about the
+          elements we humans need to live: Earth, Water, Air, Sun and Digital.
+        </p>
+      </>
+    ),
+  },
 ];

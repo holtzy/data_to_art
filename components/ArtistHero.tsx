@@ -33,12 +33,13 @@ export default function ArtistHero({ artist }: ArtistHeroProps) {
               {name}
             </h1>
 
-            <p
+            {/* div, not p: descriptionShort already contains <p> tags */}
+            <div
               className="text-2xl tracking-wide !mt-0"
               style={{ lineHeight: 1.3 }}
             >
               {descriptionShort}
-            </p>
+            </div>
           </div>
 
           <div className="flex gap-2 mt-8">

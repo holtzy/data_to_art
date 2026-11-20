@@ -26,7 +26,10 @@ export const ProjectHero = ({
         <h1 className="!text-6xl !tracking-wider mb-4 text-right !font-normal">
           {name}
         </h1>
-        <p className="text-md mb-6 text-right text-black">{descriptionShort}</p>
+        {/* div, not p: descriptionShort already contains <p> tags */}
+        <div className="text-md mb-6 text-right text-black">
+          {descriptionShort}
+        </div>
 
         <div className="flex gap-2 items-center text-sm">
           <span>A project by </span>
