@@ -56,7 +56,7 @@ export default function Page() {
 
         <Parallax
           caption={
-            <p>
+            <span>
               Interactive installation at the{" "}
               <a
                 href="https://www.cinziabongino.com/projects/waste-streams.html"
@@ -65,7 +65,7 @@ export default function Page() {
                 Turn Signals – Design is not a Dashboard
               </a>{" "}
               exhibition.
-            </p>
+            </span>
           }
           imageUrl="/project/cinzia-bongino/waste-streams/01-full.webp"
         />
@@ -156,9 +156,9 @@ export default function Page() {
             height="315"
             src="https://www.youtube.com/embed/IiFamBzdmWg"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
 

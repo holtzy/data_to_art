@@ -78,11 +78,14 @@ export default function Page() {
           create empathy rather than desensitisation.
         </p>
 
-        <div className="mt-12 mx-auto">
-          <Link href={projectInfo.link || ""} className={cn(buttonVariants())}>
-            Read full article
-          </Link>
-        </div>
+        {/* Hidden until the project has a real link (placeholder is "https:") */}
+        {projectInfo.link.length > 8 && (
+          <div className="mt-12 mx-auto">
+            <Link href={projectInfo.link} className={cn(buttonVariants())}>
+              Read full article
+            </Link>
+          </div>
+        )}
 
         <ImgWithCaption
           caption="Humanising numbers: each dot represents a life lost, giving meaning to data from Gaza."

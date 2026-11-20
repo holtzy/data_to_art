@@ -37,13 +37,13 @@ export default function Page() {
 
         <ImgWithCaption
           caption={
-            <p>
+            <span>
               Interactive installation at the{" "}
               <Link href="/artist/cinzia-bongino/waste-streams">
                 Turn Signals – Design is not a Dashboard
               </Link>{" "}
               exhibition.
-            </p>
+            </span>
           }
           img="/project/cinzia-bongino/waste-streams/10-full.webp"
         />

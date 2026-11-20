@@ -49,7 +49,11 @@ Artist + projects then appear automatically on `/artists`, the globe, home and g
 ## 4. Check
 
 - `npx tsc --noEmit` is clean for the new files, then open every new page on the dev
-  server and scroll through: no broken images, nothing cropped.
+  server and scroll through: no broken images, nothing cropped, and **no red "Issues"
+  badge** from Next.js (bottom-left).
+- Common cause of that badge: a `<p>` inside a `<p>`. `descriptionShort` already holds a
+  `<p>`, and `ImgWithCaption` wraps `caption` in a `<p>` → pass captions as `<span>`.
+  In JSX, iframe attributes are `frameBorder` / `allowFullScreen` (camelCase).
 - Tell the user what was **guessed or missing** (e.g. no portrait, exact project dates, city coordinates).
 
 ## Log (lessons from real runs — fold recurring ones into the steps above)

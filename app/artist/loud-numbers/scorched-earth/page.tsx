@@ -19,7 +19,8 @@ export default function Page() {
   const artistInfo = artistList.find((a) => a.folder === projectInfo.artist);
   if (!artistInfo) return null;
 
-  const images = ["01-full.webp", "02-full.webp", "03-full.webp"];
+  // Only one image exists for this project (02 and 03 were missing).
+  const images = ["01-full.webp"];
 
   return (
     <>

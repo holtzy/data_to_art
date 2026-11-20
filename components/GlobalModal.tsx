@@ -150,7 +150,7 @@ const TallImgModalContent = ({
             {artist}
           </Link>
         </span>
-        <p className="text-gray-600 text-sm">{descriptionShort}</p>
+        <div className="text-gray-600 text-sm">{descriptionShort}</div>
         <div>
           <Link
             onClick={() => closeModal()}
@@ -199,7 +199,7 @@ const WideImgModalContent = ({
             </span>
           </div>
           <div className="w-96">
-            <p className="text-gray-600 text-sm">{descriptionShort}</p>
+            <div className="text-gray-600 text-sm">{descriptionShort}</div>
             <Link
               onClick={() => closeModal()}
               href={`/artist/${artist}/${folder}`}

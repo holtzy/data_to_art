@@ -41,7 +41,13 @@ export default function AvatarBeeswarm({
     // Run the simulation offline
     for (let i = 0; i < 300; i++) simulation.tick();
 
-    return simulation.nodes();
+    // Round positions: server and browser float math differs in the last
+    // digits, which caused a hydration mismatch.
+    return simulation.nodes().map((d) => ({
+      ...d,
+      x: Math.round(d.x! * 10) / 10,
+      y: Math.round(d.y! * 10) / 10,
+    }));
   }, [artistList, width, height]);
 
   return (

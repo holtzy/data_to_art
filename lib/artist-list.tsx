@@ -23,7 +23,7 @@ export const artistList = [
     folder: "florent-lavergne",
     location: [3.0795, 45.7935],
     city: "Clermont Ferrand - 🇫🇷",
-    homepageLink: "behance.net/lavergneflor",
+    homepageLink: "https://www.behance.net/lavergneflor",
     linkedinLink: "https://www.linkedin.com/in/lavergneflor",
   },
   {

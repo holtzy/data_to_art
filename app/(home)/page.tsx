@@ -118,13 +118,13 @@ export default function Home() {
         <SectionTitle
           title={"Meet the artists"}
           subtitle={
-            <p className="font-opensauce">
+            <span className="font-opensauce">
               Currently featuring{" "}
-              <div className="w-3 inline-block">
+              <span className="w-3 inline-block">
                 <AnimatedCounter value={artistNumber} />
-              </div>{" "}
+              </span>{" "}
               artists
-            </p>
+            </span>
           }
         />
         <p>
@@ -166,7 +166,7 @@ export default function Home() {
         <div className="wrapper py-20">
           <SectionTitle
             title={"What's that?"}
-            subtitle={<p className="font-opensauce">Data Art</p>}
+            subtitle={<span className="font-opensauce">Data Art</span>}
           />
 
           <p className="drop-cap">

@@ -64,7 +64,7 @@ export default function Page() {
 
         <ImgWithCaption
           caption="Glove Rose, a project by Jeremy Wanner"
-          img="/project/jeremy-wanner/glove-rose/02-full.png"
+          img="/project/jeremy-wanner/glove-rose/02-full.webp"
         />
 
         <p className="drop-cap">
@@ -117,11 +117,14 @@ export default function Page() {
 
         <Spacing />
 
-        <div className="mt-4 mx-auto">
-          <Link href={projectInfo.link || ""} className={cn(buttonVariants())}>
-            Official project page
-          </Link>
-        </div>
+        {/* Hidden until the project has a real link (placeholder is "https:") */}
+        {projectInfo.link.length > 8 && (
+          <div className="mt-4 mx-auto">
+            <Link href={projectInfo.link} className={cn(buttonVariants())}>
+              Official project page
+            </Link>
+          </div>
+        )}
 
         <Spacing />
 

@@ -73,7 +73,7 @@ export const ArtistSection = () => {
             <span className="block text-sm text-slate-500 font-opensauce">
               {hovered?.city}
             </span>
-            <p className="text-sm">{hovered?.descriptionShort}</p>
+            <div className="text-sm">{hovered?.descriptionShort}</div>
             <div className="mt-4">
               <Link
                 href={`artist/${hovered?.folder}`}

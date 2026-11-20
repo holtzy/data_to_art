@@ -20,7 +20,7 @@ export const ProjectHero = ({
   const { name, descriptionShort, date, folder } = project;
 
   return (
-    <section className="h-screen max-h-[900px] flex flex-col lg:flex-row gap-8 max-w-[900px] mx-auto overflow-hidden">
+    <section className="h-screen max-h-[900px] flex flex-col lg:flex-row gap-8 max-w-[900px] mx-auto overflow-hidden mb-12 lg:mb-0">
       {/* Left column */}
       <div className="lg:w-1/2 flex flex-col justify-center items-end">
         <h1 className="!text-6xl !tracking-wider mb-4 text-right !font-normal">
@@ -45,7 +45,8 @@ export const ProjectHero = ({
       </div>
 
       {/* Right column - Masonry style */}
-      <div className="relative lg:w-1/2 grid grid-cols-2 gap-3">
+      {/* min-h-0 + overflow-hidden: on phones the images get cut at the section bottom, so the white fade must sit there too */}
+      <div className="relative lg:w-1/2 grid grid-cols-2 gap-3 min-h-0 flex-1 lg:flex-none overflow-hidden">
         {/* White gradients*/}
         <div className="pointer-events-none absolute top-0 left-0 w-full h-54 bg-gradient-to-b from-white to-transparent z-10" />
         <div className="pointer-events-none absolute bottom-0 left-0 w-full h-54 bg-gradient-to-t from-white to-transparent z-10" />

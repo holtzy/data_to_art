@@ -407,7 +407,7 @@ export const projectList: Project[] = [
   {
     name: "Scorched Earth",
     folder: "scorched-earth",
-    link: "https://www.loudnumbers.net/scorchedearth",
+    link: "https://www.loudnumbers.net/scorched-earth",
     artist: "loud-numbers",
     date: new Date("2024-01-01"),
     descriptionShort: (

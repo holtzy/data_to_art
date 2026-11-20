@@ -100,7 +100,7 @@ export default function Page() {
 
         <div className="mt-8">
           <Link
-            href="https://environmentalenvironmental-graphiti.com"
+            href="https://www.environmentalgraphiti.org"
             className={cn(buttonVariants())}
           >
             Official project page

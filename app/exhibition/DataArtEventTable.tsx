@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
+import { StyleSheetManager } from "styled-components";
+import isPropValid from "@emotion/is-prop-valid";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 
@@ -145,15 +147,19 @@ export function DataArtEventTable() {
       )}
 
       {data.length > 0 && (
-        <DataTable
-          columns={columns}
-          data={data}
-          highlightOnHover
-          responsive
-          striped
-          defaultSortFieldId={3} // Sort by "From" by default
-          customStyles={customStyles}
-        />
+        // Stops the table library from passing its layout props
+        // (minWidth, allowOverflow…) to HTML elements, which React warns about.
+        <StyleSheetManager shouldForwardProp={(prop) => isPropValid(prop)}>
+          <DataTable
+            columns={columns}
+            data={data}
+            highlightOnHover
+            responsive
+            striped
+            defaultSortFieldId={3} // Sort by "From" by default
+            customStyles={customStyles}
+          />
+        </StyleSheetManager>
       )}
     </>
   );
