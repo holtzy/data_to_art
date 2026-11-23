@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         <div className="w-full flex gap-2 justify-center my-10">
           <Link
-            href={"#contact"}
+            href={"mailto:yan.holtz.data@gmail.com?subject=Artist%20suggestion%20for%20Data%20to%20Art"}
             className={cn(
               buttonVariants({ size: "lg", variant: "outline" }),
               "mb-12",
@@ -248,7 +248,7 @@ export default function Home() {
           Our goal is to build the most comprehensive archive of data art —
           past, present, and future. If you’ve come across an exhibition we
           should know about, we’d love for you to{" "}
-          <Link href="#contact">share it with us</Link>.
+          <Link href="mailto:yan.holtz.data@gmail.com?subject=Data%20art%20exhibition">share it with us</Link>.
         </p>
 
         <div className="full-bleed">
